@@ -1,6 +1,5 @@
 User-agent: *
 Sitemap: http://cateaf.com/sitemap.xml
-Sitemap: http://cateaf.com/baidusitemap.xml
 Disallow: /categories/
 Disallow: /archives/
 Disallow: /tags/

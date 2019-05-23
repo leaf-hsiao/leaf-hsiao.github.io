@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+
     <sitemap>
         <loc>http://cateaf.com/post-sitemap.xml</loc>
-        <lastmod>2018-09-29T20:49:43.960Z</lastmod>
+        <lastmod>2018-09-29T20:49:43.000Z</lastmod>
     </sitemap>
 
     <sitemap>
         <loc>http://cateaf.com/page-sitemap.xml</loc>
-        <lastmod>2018-09-29T20:45:08.110Z</lastmod>
+        <lastmod>2018-09-29T20:45:08.000Z</lastmod>
     </sitemap>
 
     <sitemap>
         <loc>http://cateaf.com/category-sitemap.xml</loc>
-        <lastmod>2017-03-06T02:56:07.969Z</lastmod>
+        <lastmod>2018-09-29T20:42:32.000Z</lastmod>
     </sitemap>
 
     <sitemap>
         <loc>http://cateaf.com/tag-sitemap.xml</loc>
-        <lastmod>2017-07-23T13:04:21.311Z</lastmod>
+        <lastmod>2018-09-29T20:45:47.000Z</lastmod>
     </sitemap>
 
 </sitemapindex>

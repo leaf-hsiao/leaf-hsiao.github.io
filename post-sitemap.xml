@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
     <url>
         <loc>http://cateaf.com</loc>
         <changefreq>daily</changefreq>
@@ -8,7 +9,7 @@
 
     <url>
         <loc>http://cateaf.com/2018/09/29/stop-using-qiniu/</loc>
-        <lastmod>2018-09-29T20:49:43.960Z</lastmod>
+        <lastmod>2018-09-29T20:49:43.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -16,7 +17,7 @@
 
     <url>
         <loc>http://cateaf.com/2017/09/03/audioquest-dragonfly-configuration/</loc>
-        <lastmod>2018-09-29T20:46:03.693Z</lastmod>
+        <lastmod>2018-09-29T20:46:03.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -24,7 +25,7 @@
 
     <url>
         <loc>http://cateaf.com/2017/05/06/thailand-tours/</loc>
-        <lastmod>2018-09-29T20:45:47.641Z</lastmod>
+        <lastmod>2018-09-29T20:45:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -32,7 +33,7 @@
 
     <url>
         <loc>http://cateaf.com/2017/08/29/coffee-in-austin/</loc>
-        <lastmod>2018-09-29T20:45:29.493Z</lastmod>
+        <lastmod>2018-09-29T20:45:29.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -40,7 +41,7 @@
 
     <url>
         <loc>http://cateaf.com/2017/06/21/gene-selection/</loc>
-        <lastmod>2018-09-29T20:43:44.730Z</lastmod>
+        <lastmod>2018-09-29T20:43:44.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -48,7 +49,7 @@
 
     <url>
         <loc>http://cateaf.com/2017/07/23/catfish/</loc>
-        <lastmod>2018-09-29T20:42:32.284Z</lastmod>
+        <lastmod>2018-09-29T20:42:32.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -56,7 +57,7 @@
 
     <url>
         <loc>http://cateaf.com/2016/06/04/a-new-beginning/</loc>
-        <lastmod>2018-09-29T20:42:11.425Z</lastmod>
+        <lastmod>2018-09-29T20:42:11.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -64,7 +65,7 @@
 
     <url>
         <loc>http://cateaf.com/2018/06/20/rose-cafe/</loc>
-        <lastmod>2018-09-29T20:39:05.142Z</lastmod>
+        <lastmod>2018-09-29T20:39:05.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -72,7 +73,7 @@
 
     <url>
         <loc>http://cateaf.com/2016/08/30/latex-math-symbols-cheetsheet/</loc>
-        <lastmod>2017-07-24T08:58:29.503Z</lastmod>
+        <lastmod>2017-07-24T08:58:29.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -80,7 +81,7 @@
 
     <url>
         <loc>http://cateaf.com/2016/08/29/cumcm-thesis-template/</loc>
-        <lastmod>2017-07-24T08:58:00.259Z</lastmod>
+        <lastmod>2017-07-24T08:58:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -88,7 +89,7 @@
 
     <url>
         <loc>http://cateaf.com/2017/03/01/hnu-thesis-template/</loc>
-        <lastmod>2017-07-24T08:57:41.017Z</lastmod>
+        <lastmod>2017-07-24T08:57:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -96,7 +97,7 @@
 
     <url>
         <loc>http://cateaf.com/2016/08/31/all-about-modeling-soft/</loc>
-        <lastmod>2017-07-23T13:04:21.311Z</lastmod>
+        <lastmod>2017-07-23T13:04:21.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -104,7 +105,7 @@
 
     <url>
         <loc>http://cateaf.com/2017/01/24/workflow/</loc>
-        <lastmod>2017-03-06T02:56:07.969Z</lastmod>
+        <lastmod>2017-03-06T02:56:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
