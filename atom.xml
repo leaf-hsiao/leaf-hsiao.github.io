@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Cateaf - Leaf&#39;s blog</title>
+  
+  <subtitle>Leaf&#39;s blog</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://cateaf.com/"/>
+  <updated>2018-09-29T20:49:43.000Z</updated>
+  <id>http://cateaf.com/</id>
+  
+  <author>
+    <name>Leaf Hsiao</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>停用七牛云</title>
+    <link href="http://cateaf.com/2018/09/29/stop-using-qiniu/"/>
+    <id>http://cateaf.com/2018/09/29/stop-using-qiniu/</id>
+    <published>2018-09-29T08:48:44.000Z</published>
+    <updated>2018-09-29T20:49:43.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt; 备案是不可能备案的
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>玫瑰咖啡</title>
+    <link href="http://cateaf.com/2018/06/20/rose-cafe/"/>
+    <id>http://cateaf.com/2018/06/20/rose-cafe/</id>
+    <published>2018-06-21T02:38:55.000Z</published>
+    <updated>2018-09-29T20:39:05.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt; 被惊艳到了，香气十足，发酵味恰到好处，丰富的 body ，以及回甘。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/rose-cafe.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt; 去年去广州办签证时跑了一趟恰好碰到公休，这次尝了一杯太阳神还买了半磅卢旺达。&lt;/p&gt;
+&lt;p&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Tour" scheme="http://cateaf.com/tags/Tour/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>吹一波 AudioQuest</title>
+    <link href="http://cateaf.com/2017/09/03/audioquest-dragonfly-configuration/"/>
+    <id>http://cateaf.com/2017/09/03/audioquest-dragonfly-configuration/</id>
+    <published>2017-09-03T04:01:57.000Z</published>
+    <updated>2018-09-29T20:46:03.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;被种草AudioQuest很久了，再加上等了一整年七彩虹也没放出USB-DAC的驱动，估摸着可能永久性鸽了，还是买了个DragonFly  Black试了试，在iPhone上尝试了一下效果提升了一耳朵，然后又被安利了JitterBug，感觉可以购买AudioQuest全家桶了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/audioquest/aq1.jpg&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Coffee in Austin</title>
+    <link href="http://cateaf.com/2017/08/29/coffee-in-austin/"/>
+    <id>http://cateaf.com/2017/08/29/coffee-in-austin/</id>
+    <published>2017-08-29T09:37:00.000Z</published>
+    <updated>2018-09-29T20:45:29.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在Austin抽空去探访了一下当地的咖啡馆&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Tour" scheme="http://cateaf.com/tags/Tour/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Catfish</title>
+    <link href="http://cateaf.com/2017/07/23/catfish/"/>
+    <id>http://cateaf.com/2017/07/23/catfish/</id>
+    <published>2017-07-23T13:09:20.000Z</published>
+    <updated>2018-09-29T20:42:32.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;A theme for &lt;a href=&quot;https://typora.io&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Typora&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Designed and tested on Windows 10, version 1703. Not fully tested, but should work for macOS/Linux. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Catfish&quot;&gt;&lt;a href=&quot;#Catfish&quot; class=&quot;headerlink&quot; title=&quot;Catfish&quot;&gt;&lt;/a&gt;Catfish&lt;/h2&gt;&lt;p&gt;&lt;del&gt;是猫鱼不是鲇鱼&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;啊好想吃猫鱼（叹气。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Project" scheme="http://cateaf.com/categories/Project/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Gene Selection</title>
+    <link href="http://cateaf.com/2017/06/21/gene-selection/"/>
+    <id>http://cateaf.com/2017/06/21/gene-selection/</id>
+    <published>2017-06-21T05:57:09.000Z</published>
+    <updated>2018-09-29T20:43:44.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;毕业典礼还是完美的睡过去了（叹气，毕业之后成为又丧又废的NEET。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;这半年主要都在折腾毕设，课题还是十分有趣的说。&lt;del&gt;虽然被自己搞得杂乱不堪&lt;/del&gt; 有种自己的大学变成了37,990,696 字节的感觉。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/graduation/thesis.png&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Math" scheme="http://cateaf.com/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>二月的泰国行</title>
+    <link href="http://cateaf.com/2017/05/06/thailand-tours/"/>
+    <id>http://cateaf.com/2017/05/06/thailand-tours/</id>
+    <published>2017-05-06T04:57:30.000Z</published>
+    <updated>2018-09-29T20:45:47.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;拖延症大概就是二月份的旅行拖到现在才想起动笔，而且还是毕设做得头晕脑胀过来缓缓。去泰国的缘由都不太记得了，反正是看到亚航的打折机票就直接剁了。签证也没有办，还好护照是有的。&lt;/p&gt;
+&lt;p&gt;攻略的话&lt;a href=&quot;http://www.lonelyplanet.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Lonely Planet&lt;/a&gt;的City Guides和&lt;a href=&quot;https://www.tripadvisor.cn&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;TripAdvisor&lt;/a&gt;之类的基本上撸了一遍，然后在Google Map里把点标记上就准备走人了。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Tour" scheme="http://cateaf.com/tags/Tour/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hnu-Thesis-Template</title>
+    <link href="http://cateaf.com/2017/03/01/hnu-thesis-template/"/>
+    <id>http://cateaf.com/2017/03/01/hnu-thesis-template/</id>
+    <published>2017-03-01T17:37:46.000Z</published>
+    <updated>2017-07-24T08:57:41.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;https://github.com/leaf-hsiao/HNUThesisTemplate/tree/master&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;湖南大学本科生毕业论文 $\LaTeX$
+        
+      
+    
+    </summary>
+    
+      <category term="Project" scheme="http://cateaf.com/categories/Project/"/>
+    
+    
+      <category term="LaTeX" scheme="http://cateaf.com/tags/LaTeX/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Workflow</title>
+    <link href="http://cateaf.com/2017/01/24/workflow/"/>
+    <id>http://cateaf.com/2017/01/24/workflow/</id>
+    <published>2017-01-24T12:28:17.000Z</published>
+    <updated>2017-03-06T02:56:07.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;购买了&lt;a href=&quot;https://itunes.apple.com/cn/app/id915249334&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Workflow&lt;/a&gt;之后，你果的设备生产力提高了两台Nexus&lt;/p&gt;
+&lt;p&gt;正如&lt;a href=&quot;https://my.workflow.is&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官方&lt;/a&gt;所宣称的&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Spend less taps, get more done.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这里将列举一些有趣的Workflow（&lt;em&gt;虽然官方已经加入了gallery功能&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;那就打造成个人向的收藏夹吧&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="productivity" scheme="http://cateaf.com/categories/productivity/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于建模软件的。。。</title>
+    <link href="http://cateaf.com/2016/08/31/all-about-modeling-soft/"/>
+    <id>http://cateaf.com/2016/08/31/all-about-modeling-soft/</id>
+    <published>2016-08-31T04:04:12.000Z</published>
+    <updated>2017-07-23T13:04:21.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;1年前老博客上的文章了，刚好在这次国赛前找到了，修正一些数据后重新发布&lt;/em&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Math" scheme="http://cateaf.com/tags/Math/"/>
+    
+      <category term="Mathematic Modelling" scheme="http://cateaf.com/tags/Mathematic-Modelling/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>$\LaTeX$ Math Symbols Cheetsheet</title>
+    <link href="http://cateaf.com/2016/08/30/latex-math-symbols-cheetsheet/"/>
+    <id>http://cateaf.com/2016/08/30/latex-math-symbols-cheetsheet/</id>
+    <published>2016-08-31T02:06:25.000Z</published>
+    <updated>2017-07-24T08:58:29.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一些基本的$\LaTeX$字符和运算符，供快速查阅使用&lt;br&gt;其实就是无聊敲的，参照：&lt;a href=&quot;https://www.rpi.edu/dept/arc/training/latex/LaTeX_symbols.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LaTeX_symbols.pdf&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Cheetsheet" scheme="http://cateaf.com/categories/Cheetsheet/"/>
+    
+    
+      <category term="LaTeX" scheme="http://cateaf.com/tags/LaTeX/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cumcm-Thesis-Template</title>
+    <link href="http://cateaf.com/2016/08/29/cumcm-thesis-template/"/>
+    <id>http://cateaf.com/2016/08/29/cumcm-thesis-template/</id>
+    <published>2016-08-30T01:46:40.000Z</published>
+    <updated>2017-07-24T08:58:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;2016 年 &lt;a href=&quot;http://www.mcm.edu.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;em&gt; 全国大学生数学建模竞赛&lt;/em&gt;&lt;/a&gt; $\LaTeX$
+        
+      
+    
+    </summary>
+    
+      <category term="Project" scheme="http://cateaf.com/categories/Project/"/>
+    
+    
+      <category term="LaTeX" scheme="http://cateaf.com/tags/LaTeX/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>新启动</title>
+    <link href="http://cateaf.com/2016/06/04/a-new-beginning/"/>
+    <id>http://cateaf.com/2016/06/04/a-new-beginning/</id>
+    <published>2016-06-05T02:38:42.000Z</published>
+    <updated>2018-09-29T20:42:11.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;原博的资料丢了，2 年了啊，摔 (╯‵□′)╯︵┻━┻ I’am angry.&lt;br&gt; 考虑历史的行程，重新搞了个大新闻（划掉），重新搞了个新博客。&lt;br&gt;Github 肥肠不清真，所以用了 Bitbucket。&lt;br&gt;继续使用 Hexo，这是坠吼滴。&lt;br&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

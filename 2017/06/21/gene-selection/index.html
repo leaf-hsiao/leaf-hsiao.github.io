@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>Gene Selection | Cateaf - Leaf&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="content-language" content="zh-CN"> 
+  <meta name="description" content="毕业典礼还是完美的睡过去了（叹气，毕业之后成为又丧又废的NEET。 这半年主要都在折腾毕设，课题还是十分有趣的说。虽然被自己搞得杂乱不堪 有种自己的大学变成了37,990,696 字节的感觉。">
+<meta name="keywords" content="Math">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Gene Selection">
+<meta property="og:url" content="http://cateaf.com/2017/06/21/gene-selection/index.html">
+<meta property="og:site_name" content="Cateaf - Leaf&#39;s blog">
+<meta property="og:description" content="毕业典礼还是完美的睡过去了（叹气，毕业之后成为又丧又废的NEET。 这半年主要都在折腾毕设，课题还是十分有趣的说。虽然被自己搞得杂乱不堪 有种自己的大学变成了37,990,696 字节的感觉。">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://cateaf.com/images/graduation/thesis.png">
+<meta property="og:image" content="http://cateaf.com/images/graduation/import.png">
+<meta property="og:image" content="http://cateaf.com/images/graduation/selec.png">
+<meta property="og:image" content="http://cateaf.com/images/graduation/manage.png">
+<meta property="og:updated_time" content="2018-09-29T20:43:44.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Gene Selection">
+<meta name="twitter:description" content="毕业典礼还是完美的睡过去了（叹气，毕业之后成为又丧又废的NEET。 这半年主要都在折腾毕设，课题还是十分有趣的说。虽然被自己搞得杂乱不堪 有种自己的大学变成了37,990,696 字节的感觉。">
+<meta name="twitter:image" content="http://cateaf.com/images/graduation/thesis.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Cateaf - Leaf&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.lug.ustc.edu.cn/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+    <svg data-name="logo-wrap" height="50" viewbox="0 0 1000 150" xmlns="http://www.w3.org/2000/svg">
+    <defs><style>.cls-1{fill:#fff;}</style></defs>
+    <path class="cls-1" d="M89.3,44.38c-5.53-5.53-13.37-8.73-22.46-8.73C48.66,35.65,35.47,48.84,35.47,67S48.66,98.4,66.84,98.4c9.09,0,16.93-3.21,22.46-8.91l25,24.6A66.83,66.83,0,1,1,66.84.18,66.13,66.13,0,0,1,113.9,19.61Z"/><path class="cls-1" d="M130.3,133.87L192.69,0.18h15.86l62.92,133.69H236.36l-8.2-17.47H173.43l-8,17.47H130.3Zm56.86-47.06h27.27L200.89,57.4Z"/>
+    <path class="cls-1" d="M275.75,0H381.1V34.94H345.62v98.93H310.51V34.94H275.75V0Z"/>
+    <path class="cls-1" d="M414.25,0.18h83.07V29.23h-48V51h42.42V80.57H449.36v24.6h48v28.7H414.25V0.18Z"/>
+    <path class="cls-1" d="M522.44,133.87L584.83,0.18h15.86l62.92,133.69H628.5l-8.2-17.47H565.58l-8,17.47H522.44ZM579.3,86.81h27.27L593,57.4Z"/><path class="cls-1" d="M690.35,0.18h83.78V29.06H725.46V50.8h43V80.57h-43v53.3H690.35V0.18Z"/>
+    </svg>
+      <!--<h1 id="logo-wrap">
+        <a href="/" id="logo">Cateaf - Leaf&#39;s blog</a>
+      </h1>
+        
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Leaf&#39;s blog</a>
+        </h2>
+       -->
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/links">Links</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        
+          <form action="/search/index.html" method="get" accept-charset="UTF-8" class="search-form">
+            <input name="search-input" class="search-form-input" placeholder="Search" type="search">
+            <button type="submit" class="search-form-submit"></button>
+          </form>
+        
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-gene-selection" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/06/21/gene-selection/" class="article-date" id="article-date">
+  <time datetime="2017-06-21T05:57:09.000Z" itemprop="datePublished">2017-06-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Gene Selection
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><em>毕业典礼还是完美的睡过去了（叹气，毕业之后成为又丧又废的 NEET。</em></p>
+<p>这半年主要都在折腾毕设，课题还是十分有趣的说。<del>虽然被自己搞得杂乱不堪</del> 有种自己的大学变成了 37,990,696 字节的感觉。</p>
+<p><img src="/images/graduation/thesis.png" alt></p>
+<a id="more"></a>
+<p>十分糟糕的心情，毕业开始丧。听着更加丧的歌总结一下毕设。</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&id=407918&auto=1&height=32"></iframe>
+
+<h1 id="十分传统的绪论"><a href="# 十分传统的绪论" class="headerlink" title="十分传统的绪论"></a>十分传统的绪论 </h1><p> 微阵列技术是用于分析基因表达的工具，可用于测定单个样品中的基因表达，或比较两种不同细胞类型或组织样品（如健康和癌组织）中的基因表达，近年来被广泛用于肿瘤细胞分子水平上的分类和预测研究。</p>
+<blockquote>
+<p>在传统医疗中，很难只根据病理检测结果来下一个准确的诊断。而微阵列技术能够有效的对肿瘤进行识别和诊断。微阵列数据包含了数量庞大的基因，和非常少量的样本。基因表达谱中包含许多的噪声基因和冗余基因，因此需要通过特征选择的方法对数据进行筛选，这一识别过程即为基因选择。</p>
+</blockquote>
+<p>特征选择是采用某种优化算法从微阵列数据中的所有属性特征里选出最具识别能力的基因子集的过程。特征选择有很多优点：</p>
+<ul>
+<li><p>减小尺寸以降低计算成本</p>
+</li>
+<li><p>降低噪音，提高分类精度;</p>
+</li>
+<li><p>能取得更多可解释的特征，来帮助识别和监测目标疾病或功能类型。</p>
+</li>
+</ul>
+<p>因此各种聚类，分类和预测技术已经被用来分析，分类和了解基因表达数据，如 Fisher 判别分析  ，人工神经网络 ，以及支持向量机等。通过基于表达谱分类识别算法，再利用分类器构建预测分类模型。</p>
+<p>因此设计本系统的目的在于提供一个可视化界面供研究人员直观的操控海量基因数据，选择不同的特征选择算法，直接获取结果。</p>
+<h1 id="图与脑洞"><a href="# 图与脑洞" class="headerlink" title="图与脑洞"></a>图与脑洞 </h1><p> 实在过于懒惰 UI 直接用 R 实现 <del> 赞美 bootstrap</del>，然后拖延症导致很多脑洞没实现，导师强烈要求（划掉）加上用户管理以及存储功能，其实本来只打算完成一个简单的基因选择的功能和结果可视化对比。</p>
+<p>继续懒惰的一个一个模块堆好了界面。</p>
+<p><del>无意义其实可以跳过</del></p>
+<p><img src="/images/graduation/import.png" alt="数据上传"></p>
+<p><img src="/images/graduation/selec.png" alt="基因选择"></p>
+<p><img src="/images/graduation/manage.png" alt="模块管理"></p>
+<h1 id="有点意义的笔记"><a href="# 有点意义的笔记" class="headerlink" title="有点意义的笔记"></a>有点意义的笔记 </h1><h2 id="算法概述"><a href="# 算法概述" class="headerlink" title="算法概述"></a> 算法概述 </h2><h3 id="mRMR"><a href="#mRMR" class="headerlink" title="mRMR"></a>mRMR</h3><p> 令 $S​$ 表示选定基因的子集，$\Omega​$ 是所有可用基因的集合; 最小冗余可以通过计算得到 $\min <em>{S\subset \Omega}\dfrac {1}{\left|S\right| ^{2}}\sum</em>{i,j\in S}I(g_i, g_j) ​$</p>
+<p>其中 $I(g_i, g_j)​$ 是 $i​$ 个 和 $j​$ 个 基因之间的互信息即测量这两个相互依赖的变量。两个离散随机变量 $g_i​$ 和 $g_j​$ 的互信息可以被定义为 $\sum_{m\in g_i}\sum_{n\in g_j}p(m,n)log\dfrac{p(m,n)}{p(m)p(n)}​$</p>
+<p>其中 $p(m, n)$ 是 $g_i$ 和 $g_j$ 的联合概率分布函数，$p(m)$ 和 $p(n)$ 分别是 $g_i$ 和 $g_j$ 的边际概率分布函数。<br>$|S|$ 是 $S$ 中基因数量，通常使用互信息 $I(T, g_j)$ 来计算从基因 $ g_i$ 到类 $ T = {t1,t2} $ 的区分能力，其中 $t_1$ 和 $t_2$ 表示健康和肿瘤类别。因此，最大相关性可以通过以下公式计算 $\max_{S\subset \Omega}\dfrac{1}{\left|S\right|}\sum_{i,j\in S}I(T, g_i)$</p>
+<p>mRMR 特征选择标准可以得到如下差异形式：$\max_{S\subset \Omega}{\sum_{i\in S}I(T, g_i)-[\dfrac{1}{\left|S\right|}\sum_{i,j\in S}I(g_i, g_j)]}$</p>
+<h3 id="ReliefF"><a href="#ReliefF" class="headerlink" title="ReliefF"></a>ReliefF</h3><p>设训练数据集为 $D$ ，样本抽取次数为 $m$ ，特征权重的阈值 $\delta$ , 最近邻样本个数 $k$ ，输出为各个特性的特征权重 $T$ 。<br>设所有特征权重为 0 ， $T​$ 为空集。从 $D​$ 中随机选择一个样本 $R​$ ；再从 $R​$ 的同类样本集中找到 $R​$ 的 $k​$ 个最近邻 $H_j(j=1,2,…,k)​$ , 再从每一个不同类的样本集中找出 $k​$ 个 最近邻 $M_j(C)​$ 。循环 $m​$ 次后开始从 $A=1​$ 到 $N​$ 计算特征 $W(A)=W(A)-\sum^{k}_{j=1}diff(A,R,H_j)/(mk)+\sum_{C \in class(R)}[\dfrac{p(C)}{1-p(Class(R))}\sum^k_{j=1}diff(A,R,M_j(C))]/(mk)​$</p>
+<h3 id="Fisher-Score"><a href="#Fisher-Score" class="headerlink" title="Fisher Score"></a>Fisher Score</h3><p>给定 $m$ 个特征， 将输入的矩阵 $\mathbf{X} \in \mathbb R^{d \times n}$ 缩小到 $\mathbf{Z} \in \mathbb R^{m \times n}$ ，则 Fisher Score 如下计算 $F(\mathbf{Z})=tr{(\mathbf{\widetilde{S}}_b)}(\mathbf{\widetilde{S}}_t + \gamma \mathbf{I})^{-1}$</p>
+<p>其中 $\gamma$ 是一个正规参数, $\widetilde{S}_b$ 和 $\widetilde{S}_t$ 如以下给出<br>$$<br>\widetilde{S}<em>b=\sum^c</em>{k=1}(\widetilde{\mu}_k-\widetilde{\mu})(\widetilde{\mu}_k-\widetilde{\mu})^T<br>$$<br>$$<br>\widetilde{S}<em>t=\sum^n</em>{i=1}(z_i-\widetilde{\mu})^T<br>$$</p>
+<h2 id="不存在的前端"><a href="# 不存在的前端" class="headerlink" title="不存在的前端"></a>不存在的前端</h2><blockquote>
+<p>Shiny is a new package from RStudio that makes it incredibly easy to build interactive web applications with R.</p>
+</blockquote>
+<p>可以说是非常便利了。只需要看官方的 <a href="http://shiny.rstudio.com/tutorial/" target="_blank" rel="noopener">tutorial</a>，再参考一下<a href="http://shiny.rstudio.com/gallery/" target="_blank" rel="noopener">gallery</a> 里的范例，从此不用切图 <del> 所以说前端就是伪需求 </del>。此外<a href="http://rstudio.github.io/shinydashboard/" target="_blank" rel="noopener">shinydashboard</a> 、<a href="http://rstudio.github.io/shinythemes/" target="_blank" rel="noopener">shinythemes</a> 、<a href="https://github.com/daattali/shinyjs/blob/master/README.md" target="_blank" rel="noopener">shinyjs</a> 、<a href="http://www.htmlwidgets.org/" target="_blank" rel="noopener">htmlwidgets</a> 能够继续扩展。</p>
+<h2 id="不存在的服务端"><a href="# 不存在的服务端" class="headerlink" title="不存在的服务端"></a>不存在的服务端 </h2><p> 三种基因选择方法分别调用了 <a href="https://cran.r-project.org/web/packages/mRMRe/index.html" target="_blank" rel="noopener">mRMRe</a>、<a href="https://cran.r-project.org/web/packages/CORElearn/index.html" target="_blank" rel="noopener">CORElearn</a>、<a href="https://cran.r-project.org/web/packages/MASS/index.html" target="_blank" rel="noopener">MASS</a> 三个 package 实现。然而，其实没什么好写的不如直接看官方 pdf。</p>
+<p><em>越写越不想写就这样吧，反正我也不知道我写了什么东西</em></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://cateaf.com/2017/06/21/gene-selection/" data-id="cjw18jn56000b0kvlsr8fapsr" class="article-share-link">Share</a>
+      
+        <a href="http://cateaf.com/2017/06/21/gene-selection/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Math/">Math</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/07/23/catfish/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Catfish
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/05/06/thailand-tours/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">二月的泰国行</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Cheetsheet/">Cheetsheet</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Project/">Project</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/productivity/">productivity</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mathematic-Modelling/">Mathematic Modelling</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tour/">Tour</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/LaTeX/" style="font-size: 20px;">LaTeX</a> <a href="/tags/Math/" style="font-size: 15px;">Math</a> <a href="/tags/Mathematic-Modelling/" style="font-size: 10px;">Mathematic Modelling</a> <a href="/tags/Tour/" style="font-size: 20px;">Tour</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/09/29/stop-using-qiniu/">停用七牛云</a>
+          </li>
+        
+          <li>
+            <a href="/2018/06/20/rose-cafe/">玫瑰咖啡</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/03/audioquest-dragonfly-configuration/">吹一波 AudioQuest</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/29/coffee-in-austin/">Coffee in Austin</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/23/catfish/">Catfish</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Leaf Hsiao<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a><br>
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-nc-sa.svg"></a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/links" class="mobile-nav-link">Links</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'cateaf';
+  
+  var disqus_url = 'http://cateaf.com/2017/06/21/gene-selection/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+<script src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.css">
+  <script src="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+
+
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true, 
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code','a'],
+            ignoreClass:"nonmath"
+        },
+        TeX: {
+            noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" }
+        },
+        "HTML-CSS": {
+            preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50),
+        }
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+  <script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+  
+  _st('install','G-aKmKG4n5gW154341Wd','2.0.0');
+</script>
+  
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
