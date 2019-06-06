@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://cateaf.com/"/>
-  <updated>2018-09-29T20:49:43.000Z</updated>
+  <updated>2019-06-06T20:56:59.393Z</updated>
   <id>http://cateaf.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>烤翅不存在的新奥尔良</title>
+    <link href="http://cateaf.com/2019/05/23/new-orleans/"/>
+    <id>http://cateaf.com/2019/05/23/new-orleans/</id>
+    <published>2019-05-23T12:10:49.000Z</published>
+    <updated>2019-06-06T20:56:59.393Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;新奥尔良地处路易斯安那，充满着南国风情，去之前留在Trip Ideas里的tag有Food, Art, Music, Nightlife，体验过后每一点都不会让人失望。三月中旬去的天气正好，既不炎热也不潮湿，&lt;del&gt;五月去佛罗里达那会儿一下飞机甚至能感受到水汽扑面&lt;/del&gt;。有机会的话还是很想去这里小住一段时间，悠悠闲闲的体验当地安逸的生活。当然南方的食物才是这趟旅行最不亏的，非常的具有特色。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/neworleans/IMG_6972.JPG&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Tour" scheme="http://cateaf.com/tags/Tour/"/>
+    
+  </entry>
   
   <entry>
     <title>停用七牛云</title>
