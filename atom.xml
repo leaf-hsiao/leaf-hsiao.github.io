@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://cateaf.com/"/>
-  <updated>2019-06-06T21:03:32.833Z</updated>
+  <updated>2019-10-16T06:06:34.877Z</updated>
   <id>http://cateaf.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>算法笔记</title>
+    <link href="http://cateaf.com/2019/10/15/algorithm/"/>
+    <id>http://cateaf.com/2019/10/15/algorithm/</id>
+    <published>2019-10-15T18:01:47.000Z</published>
+    <updated>2019-10-16T06:06:34.877Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;正好有人借593的笔记，稍微整理了一下=-=（还是可能有些许错误的）&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Cheetsheet" scheme="http://cateaf.com/categories/Cheetsheet/"/>
+    
+    
+      <category term="Note" scheme="http://cateaf.com/tags/Note/"/>
+    
+  </entry>
   
   <entry>
     <title>烤翅不存在的新奥尔良</title>
@@ -204,30 +224,6 @@
     
     
       <category term="LaTeX" scheme="http://cateaf.com/tags/LaTeX/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Workflow</title>
-    <link href="http://cateaf.com/2017/01/24/workflow/"/>
-    <id>http://cateaf.com/2017/01/24/workflow/</id>
-    <published>2017-01-24T12:28:17.000Z</published>
-    <updated>2017-03-06T02:56:07.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;购买了&lt;a href=&quot;https://itunes.apple.com/cn/app/id915249334&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Workflow&lt;/a&gt;之后，你果的设备生产力提高了两台Nexus&lt;/p&gt;
-&lt;p&gt;正如&lt;a href=&quot;https://my.workflow.is&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官方&lt;/a&gt;所宣称的&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Spend less taps, get more done.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;这里将列举一些有趣的Workflow（&lt;em&gt;虽然官方已经加入了gallery功能&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;那就打造成个人向的收藏夹吧&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="productivity" scheme="http://cateaf.com/categories/productivity/"/>
-    
     
   </entry>
   

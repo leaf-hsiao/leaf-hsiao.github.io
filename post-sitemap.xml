@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>http://cateaf.com/2019/10/15/algorithm/</loc>
+        <lastmod>2019-10-16T06:06:34.877Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://cateaf.com/2019/05/23/new-orleans/</loc>
         <lastmod>2019-06-06T21:03:32.833Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -106,14 +114,6 @@
     <url>
         <loc>http://cateaf.com/2016/08/31/all-about-modeling-soft/</loc>
         <lastmod>2017-07-23T13:04:21.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://cateaf.com/2017/01/24/workflow/</loc>
-        <lastmod>2017-03-06T02:56:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
