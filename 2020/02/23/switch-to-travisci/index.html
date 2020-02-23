@@ -6,15 +6,15 @@
   <title>改为由 Travis CI 部署 | Cateaf - Leaf&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta http-equiv="content-language" content="zh-CN"> 
-  <meta name="description" content="突然想起来用 Travis CI 来替换掉之前用的 hexo-deployer-git, 正好避免了源文件的管理混乱 虽然本来也没几篇文章。 网上很多老资料用的 Custom Deployment 的方法，现在 Travis CI 已经支持 GitHub Pages，只需要简单的配置一下即可。 Hexo 提供了  设置指南  以及 .travis.yml 的配置例子，当设置好后每次提交源文件到 m">
+  <meta name="description" content="突然想起来用 Travis CI 来替换掉之前用的 hexo-deployer-git, 正好避免了源文件的管理混乱 虽然本来也没几篇文章。 顺道还把被停用很久的 swiftype 关了换回了 Google CSE。一度不知道 swiftype 取消了免费账户 网上很多老资料用的 Custom Deployment 的方法，现在 Travis CI 已经支持 GitHub Pages，只需要简单的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="改为由 Travis CI 部署">
 <meta property="og:url" content="https://cateaf.com/2020/02/23/switch-to-travisci/index.html">
 <meta property="og:site_name" content="Cateaf - Leaf&#39;s blog">
-<meta property="og:description" content="突然想起来用 Travis CI 来替换掉之前用的 hexo-deployer-git, 正好避免了源文件的管理混乱 虽然本来也没几篇文章。 网上很多老资料用的 Custom Deployment 的方法，现在 Travis CI 已经支持 GitHub Pages，只需要简单的配置一下即可。 Hexo 提供了  设置指南  以及 .travis.yml 的配置例子，当设置好后每次提交源文件到 m">
+<meta property="og:description" content="突然想起来用 Travis CI 来替换掉之前用的 hexo-deployer-git, 正好避免了源文件的管理混乱 虽然本来也没几篇文章。 顺道还把被停用很久的 swiftype 关了换回了 Google CSE。一度不知道 swiftype 取消了免费账户 网上很多老资料用的 Custom Deployment 的方法，现在 Travis CI 已经支持 GitHub Pages，只需要简单的">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-02-23T15:22:39.000Z">
-<meta property="article:modified_time" content="2020-02-23T21:20:53.644Z">
+<meta property="article:modified_time" content="2020-02-23T22:48:44.144Z">
 <meta property="article:author" content="Leaf Hsiao">
 <meta name="twitter:card" content="summary">
   
@@ -75,10 +75,7 @@
       </nav>
       <div id="search-form-wrap">
         
-          <form action="/search/index.html" method="get" accept-charset="UTF-8" class="search-form">
-            <input name="search-input" class="search-form-input" placeholder="Search" type="search">
-            <button type="submit" class="search-form-submit"></button>
-          </form>
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://cateaf.com"></form>
         
       </div>
     </div>
@@ -108,6 +105,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>突然想起来用 <a href="https://travis-ci.com/" target="_blank" rel="noopener">Travis CI</a> 来替换掉之前用的 <a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">hexo-deployer-git</a>, 正好避免了源文件的管理混乱<del> 虽然本来也没几篇文章</del>。</p>
+<p>顺道还把被停用很久的 <a href="https://swiftype.com/" target="_blank" rel="noopener">swiftype</a> 关了换回了 Google CSE。<del>一度不知道 swiftype 取消了免费账户</del></p>
 <p>网上很多老资料用的 <a href="https://docs.travis-ci.com/user/deployment/custom/" target="_blank" rel="noopener">Custom Deployment</a> 的方法，现在 Travis CI 已经支持 GitHub Pages，只需要简单的配置一下即可。</p>
 <p>Hexo 提供了 <a href="https://hexo.io/docs/github-pages" target="_blank" rel="noopener"> 设置指南 </a> 以及 <code>.travis.yml</code> 的配置例子，当设置好后每次提交源文件到 master 分支 TravisCI 会自动生成页面并且部署到 gh-pages 分支上。</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">sudo:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">node_js</span></span><br><span class="line"><span class="attr">node_js:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="number">10</span> <span class="comment"># use nodejs v10 LTS</span></span><br><span class="line"><span class="attr">cache:</span> <span class="string">npm</span></span><br><span class="line"><span class="attr">branches:</span></span><br><span class="line">  <span class="attr">only:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">master</span> <span class="comment"># build master branch only</span></span><br><span class="line"><span class="attr">script:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">hexo</span> <span class="string">generate</span> <span class="comment"># generate static files</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">provider:</span> <span class="string">pages</span></span><br><span class="line">  <span class="attr">skip-cleanup:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">github-token:</span> <span class="string">$GH_TOKEN</span></span><br><span class="line">  <span class="attr">keep-history:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">on:</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br><span class="line">  <span class="attr">local-dir:</span> <span class="string">public</span></span><br></pre></td></tr></table></figure>
@@ -130,7 +128,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://cateaf.com/2020/02/23/switch-to-travisci/" data-id="ck6zje8m1000t1xhygzbd40mz" data-title="改为由 Travis CI 部署" class="article-share-link">Share</a>
+      <a data-url="https://cateaf.com/2020/02/23/switch-to-travisci/" data-id="ck6zmj7as000s29nbht7ag6p0" data-title="改为由 Travis CI 部署" class="article-share-link">Share</a>
       
         <a href="https://cateaf.com/2020/02/23/switch-to-travisci/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -276,16 +274,6 @@
 </script>
 
 
-
-  <script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-  
-  _st('install','G-aKmKG4n5gW154341Wd','2.0.0');
-</script>
-  
 
 
 <script src="/js/script.js"></script>
