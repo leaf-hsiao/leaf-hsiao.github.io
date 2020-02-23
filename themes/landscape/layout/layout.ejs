@@ -4,9 +4,13 @@
     <div id="wrap">
       <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
       <div class="outer">
+        <% if(page.layout == 'blank') {%>
+          <section id="main" style="float: none;"><%- body %></section>
+        <% }else{ %>
         <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+          <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
+            <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+          <% } %>
         <% } %>
       </div>
       <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>

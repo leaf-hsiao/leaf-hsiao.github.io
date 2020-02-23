@@ -1,30 +1,35 @@
-// https://github.com/chriskempson/tomorrow-theme
-highlight-background = #2d2d2d
-highlight-current-line = #393939
-highlight-selection = #515151
-highlight-foreground = #cccccc
-highlight-comment = #999999
-highlight-red = #f2777a
-highlight-orange = #f99157
-highlight-yellow = #ffcc66
-highlight-green = #99cc99
-highlight-aqua = #66cccc
-highlight-blue = #6699cc
-highlight-purple = #cc99cc
+// https://github.com/chriskempson/base16
+// https://github.com/ntpeters/base16-materialtheme-scheme
+base00 = #263238
+base01 = #2E3C43
+base02 = #314549
+base03 = #546E7A
+base04 = #B2CCD6
+base05 = #EEFFFF
+base06 = #EEFFFF
+base07 = #FFFFFF
+base08 = #F07178
+base09 = #F78C6C
+base0A = #FFCB6B
+base0B = #C3E88D
+base0C = #89DDFF
+base0D = #82AAFF
+base0E = #C792EA
+base0F = #FF5370
 
 $code-block
-  background: highlight-background
+  background: base00
   margin: 0 article-padding * -1
   padding: 15px article-padding
   border-style: solid
   border-color: color-border
   border-width: 1px 0
   overflow: auto
-  color: highlight-foreground
+  color: base05
   line-height: font-size * line-height
 
 $line-numbers
-  color: #666
+  color: base04
   font-size: 0.85em
 
 .article-entry
@@ -32,7 +37,7 @@ $line-numbers
     font-family: font-mono
   code
     background: color-background
-    text-shadow: 0 1px #fff
+    text-shadow: 0 1px base07
     padding: 0 0.3em
   pre
     @extend $code-block
@@ -55,7 +60,7 @@ $line-numbers
     figcaption
       clearfix()
       font-size: 0.85em
-      color: highlight-comment
+      color: base03
       line-height: 1em
       margin-bottom: 1em
       a
@@ -67,13 +72,13 @@ $line-numbers
     .line
       height: font-size * line-height
     .line.marked
-      background: highlight-selection
+      background: base02
   .gist
     margin: 0 article-padding * -1
     border-style: solid
     border-color: color-border
     border-width: 1px 0
-    background: highlight-background
+    background: base00
     padding: 15px article-padding 15px 0
     .gist-file
       border: none
@@ -94,8 +99,8 @@ $line-numbers
         padding: 0
         border: none
       .gist-meta
-        background: highlight-background
-        color: highlight-comment
+        background: base00
+        color: base03
         font: 0.85em font-sans
         text-shadow: 0 0
         padding: 0
@@ -110,7 +115,7 @@ $line-numbers
 pre
   .comment
   .title
-    color: highlight-comment
+    color: base03
   .variable
   .attribute
   .tag
@@ -123,27 +128,27 @@ pre
   .css .id
   .css .class
   .css .pseudo
-    color: highlight-red
+    color: base08
   .number
   .preprocessor
   .built_in
   .literal
   .params
   .constant
-    color: highlight-orange
+    color: base09
   .class
   .ruby .class .title
   .css .rules .attribute
-    color: highlight-green
+    color: base0B
   .string
   .value
   .inheritance
   .header
   .ruby .symbol
   .xml .cdata
-    color: highlight-green
+    color: base0B
   .css .hexcolor
-    color: highlight-aqua
+    color: base0C
   .function
   .python .decorator
   .python .title
@@ -152,7 +157,7 @@ pre
   .perl .sub
   .javascript .title
   .coffeescript .title
-    color: highlight-blue
+    color: base0D
   .keyword
   .javascript .function
-    color: highlight-purple
+    color: base0E
