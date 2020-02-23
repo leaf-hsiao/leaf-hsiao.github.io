@@ -3,23 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>玫瑰咖啡 | Cateaf - Leaf&#39;s blog</title>
+  <title>改为由 Travis CI 部署 | Cateaf - Leaf&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta http-equiv="content-language" content="zh-CN"> 
-  <meta name="description" content="被惊艳到了，香气十足，发酵味恰到好处，丰富的 body ，以及回甘。   去年去广州办签证时跑了一趟恰好碰到公休，这次尝了一杯太阳神还买了半磅卢旺达。  不过上次去的 Espresso Club 这次没时间去了。  两家都力荐。">
+  <meta name="description" content="突然想起来用 Travis CI 来替换掉之前用的 hexo-deployer-git, 正好避免了源文件的管理混乱 虽然本来也没几篇文章。 网上很多老资料用的 Custom Deployment 的方法，现在 Travis CI 已经支持 GitHub Pages，只需要简单的配置一下即可。 Hexo 提供了  设置指南  以及 .travis.yml 的配置例子，当设置好后每次提交源文件到 m">
 <meta property="og:type" content="article">
-<meta property="og:title" content="玫瑰咖啡">
-<meta property="og:url" content="https://cateaf.com/2018/06/21/rose-cafe/index.html">
+<meta property="og:title" content="改为由 Travis CI 部署">
+<meta property="og:url" content="https://cateaf.com/2020/02/23/switch-to-travisci/index.html">
 <meta property="og:site_name" content="Cateaf - Leaf&#39;s blog">
-<meta property="og:description" content="被惊艳到了，香气十足，发酵味恰到好处，丰富的 body ，以及回甘。   去年去广州办签证时跑了一趟恰好碰到公休，这次尝了一杯太阳神还买了半磅卢旺达。  不过上次去的 Espresso Club 这次没时间去了。  两家都力荐。">
+<meta property="og:description" content="突然想起来用 Travis CI 来替换掉之前用的 hexo-deployer-git, 正好避免了源文件的管理混乱 虽然本来也没几篇文章。 网上很多老资料用的 Custom Deployment 的方法，现在 Travis CI 已经支持 GitHub Pages，只需要简单的配置一下即可。 Hexo 提供了  设置指南  以及 .travis.yml 的配置例子，当设置好后每次提交源文件到 m">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://cateaf.com/images/rose-cafe.jpg">
-<meta property="article:published_time" content="2018-06-21T10:38:55.000Z">
+<meta property="article:published_time" content="2020-02-23T15:22:39.000Z">
 <meta property="article:modified_time" content="2020-02-23T21:20:53.644Z">
 <meta property="article:author" content="Leaf Hsiao">
-<meta property="article:tag" content="Tour">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cateaf.com/images/rose-cafe.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Cateaf - Leaf&#39;s blog" type="application/atom+xml">
   
@@ -88,10 +85,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="rose-rose-cafe" class="h-entry article article-type-rose" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-switch-to-travisci" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2018/06/21/rose-cafe/" class="article-date" id="article-date">
-  <time class="dt-published" datetime="2018-06-21T10:38:55.000Z" itemprop="datePublished">2018-06-21</time>
+    <a href="/2020/02/23/switch-to-travisci/" class="article-date" id="article-date">
+  <time class="dt-published" datetime="2020-02-23T15:22:39.000Z" itemprop="datePublished">2020-02-23</time>
 </a>
     
   </div>
@@ -102,7 +99,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      玫瑰咖啡
+      改为由 Travis CI 部署
     </h1>
   
 
@@ -110,42 +107,45 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p> 被惊艳到了，香气十足，发酵味恰到好处，丰富的 body ，以及回甘。</p>
-<p><img src="/images/rose-cafe.jpg" alt=""></p>
-<p> 去年去广州办签证时跑了一趟恰好碰到公休，这次尝了一杯太阳神还买了半磅卢旺达。</p>
-<p> 不过上次去的 Espresso Club 这次没时间去了。</p>
-<p> 两家都力荐。</p>
+        <p>突然想起来用 <a href="https://travis-ci.com/" target="_blank" rel="noopener">Travis CI</a> 来替换掉之前用的 <a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">hexo-deployer-git</a>, 正好避免了源文件的管理混乱<del> 虽然本来也没几篇文章</del>。</p>
+<p>网上很多老资料用的 <a href="https://docs.travis-ci.com/user/deployment/custom/" target="_blank" rel="noopener">Custom Deployment</a> 的方法，现在 Travis CI 已经支持 GitHub Pages，只需要简单的配置一下即可。</p>
+<p>Hexo 提供了 <a href="https://hexo.io/docs/github-pages" target="_blank" rel="noopener"> 设置指南 </a> 以及 <code>.travis.yml</code> 的配置例子，当设置好后每次提交源文件到 master 分支 TravisCI 会自动生成页面并且部署到 gh-pages 分支上。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">sudo:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">node_js</span></span><br><span class="line"><span class="attr">node_js:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="number">10</span> <span class="comment"># use nodejs v10 LTS</span></span><br><span class="line"><span class="attr">cache:</span> <span class="string">npm</span></span><br><span class="line"><span class="attr">branches:</span></span><br><span class="line">  <span class="attr">only:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">master</span> <span class="comment"># build master branch only</span></span><br><span class="line"><span class="attr">script:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">hexo</span> <span class="string">generate</span> <span class="comment"># generate static files</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">provider:</span> <span class="string">pages</span></span><br><span class="line">  <span class="attr">skip-cleanup:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">github-token:</span> <span class="string">$GH_TOKEN</span></span><br><span class="line">  <span class="attr">keep-history:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">on:</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br><span class="line">  <span class="attr">local-dir:</span> <span class="string">public</span></span><br></pre></td></tr></table></figure>
+
+<p>需要注意的是该方法不适用于仓库名为 <code>&lt;user&gt;.github.io</code> 这种格式的仓库，因为 GitHub 必须从 master 分支生成 user 和 organization 的页面而不是 gh-pages。</p>
+<blockquote>
+<p>User pages must be built from the <code>master</code> branch.</p>
+</blockquote>
+<p>因此如果用的是 personal 或者需要修改一下官方文档上的 yml 文件配置。</p>
+<p>现在 Travis CI 默认的依旧是 dpl v1，但是在 log 里又会按照 dpl v2 的指示弹警告，像</p>
+<blockquote>
+<p>deploy: deprecated key  skip_cleanup (not supported in dpl v2, use cleanup)</p>
+</blockquote>
+<p><code>cleanup</code>在 dpl v2 中默认是设置为 false 的而 dpl v1 中仍需要手动加入 <code>skip_cleanup: true</code> 来避免生成目录被删除。</p>
+<p>还有 <code>sudo: false</code><a href="https://blog.travis-ci.com/2018-11-19-required-linux-infrastructure-migration" target="_blank" rel="noopener"> 已被弃用 </a>，<code>github_token</code> 已经被替换为 <code>token</code> 等部分 dpl v2 的属性又已经被支持</p>
+<p>在基于目前的新文档的建议下，最后的 <code>.travis.yml</code> 设置如下</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">os:</span> <span class="string">linux</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">node_js</span></span><br><span class="line"><span class="attr">node_js:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="number">10</span></span><br><span class="line"><span class="attr">cache:</span> <span class="string">npm</span></span><br><span class="line"><span class="attr">branches:</span></span><br><span class="line">  <span class="attr">only:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">source</span> <span class="comment"># store source code of hexo in source branch</span></span><br><span class="line"><span class="attr">script:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">hexo</span> <span class="string">generate</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">provider:</span> <span class="string">pages</span></span><br><span class="line">  <span class="attr">skip_cleanup:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">token:</span> <span class="string">$GH_TOKEN</span></span><br><span class="line">  <span class="attr">keep_history:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">target_branch:</span> <span class="string">master</span></span><br><span class="line">  <span class="attr">on:</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">source</span></span><br><span class="line">  <span class="attr">local_dir:</span> <span class="string">public</span></span><br></pre></td></tr></table></figure>
+
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://cateaf.com/2018/06/21/rose-cafe/" data-id="ck6zje8lz000m1xhy27ri6tos" data-title="玫瑰咖啡" class="article-share-link">Share</a>
+      <a data-url="https://cateaf.com/2020/02/23/switch-to-travisci/" data-id="ck6zje8m1000t1xhygzbd40mz" data-title="改为由 Travis CI 部署" class="article-share-link">Share</a>
       
-        <a href="https://cateaf.com/2018/06/21/rose-cafe/#disqus_thread" class="article-comment-link">Comments</a>
+        <a href="https://cateaf.com/2020/02/23/switch-to-travisci/#disqus_thread" class="article-comment-link">Comments</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tour/" rel="tag">Tour</a></li></ul>
-
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-    <a href="/2018/09/29/stop-using-qiniu/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          停用七牛云
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/09/03/audioquest-dragonfly-configuration/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/10/16/algorithm/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">吹一波 AudioQuest</div>
+      <div class="article-nav-title">算法笔记</div>
     </a>
   
 </nav>
@@ -221,7 +221,7 @@
 <script>
   var disqus_shortname = 'cateaf';
   
-  var disqus_url = 'https://cateaf.com/2018/06/21/rose-cafe/';
+  var disqus_url = 'https://cateaf.com/2020/02/23/switch-to-travisci/';
   
   (function(){
     var dsq = document.createElement('script');

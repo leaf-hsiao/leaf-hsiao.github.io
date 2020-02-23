@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cateaf.com/"/>
-  <updated>2020-02-23T18:10:02.408Z</updated>
+  <updated>2020-02-23T21:20:53.644Z</updated>
   <id>https://cateaf.com/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>改为由 Travis CI 部署</title>
+    <link href="https://cateaf.com/2020/02/23/switch-to-travisci/"/>
+    <id>https://cateaf.com/2020/02/23/switch-to-travisci/</id>
+    <published>2020-02-23T15:22:39.000Z</published>
+    <updated>2020-02-23T21:20:53.644Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;突然想起来用 &lt;a href=&quot;https://travis-ci.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Travis CI&lt;/a&gt; 来替换掉之前用的 &lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>算法笔记</title>
-    <link href="https://cateaf.com/2019/10/15/algorithm/"/>
-    <id>https://cateaf.com/2019/10/15/algorithm/</id>
-    <published>2019-10-15T18:01:47.000Z</published>
-    <updated>2020-02-23T18:10:02.408Z</updated>
+    <link href="https://cateaf.com/2019/10/16/algorithm/"/>
+    <id>https://cateaf.com/2019/10/16/algorithm/</id>
+    <published>2019-10-16T02:01:47.000Z</published>
+    <updated>2020-02-23T21:20:53.644Z</updated>
     
     <summary type="html">
     
@@ -41,8 +64,8 @@
     <title>烤翅不存在的新奥尔良</title>
     <link href="https://cateaf.com/2019/05/23/new-orleans/"/>
     <id>https://cateaf.com/2019/05/23/new-orleans/</id>
-    <published>2019-05-23T12:10:49.000Z</published>
-    <updated>2020-02-23T18:10:02.408Z</updated>
+    <published>2019-05-23T20:10:49.000Z</published>
+    <updated>2020-02-23T21:20:53.644Z</updated>
     
     <summary type="html">
     
@@ -61,8 +84,8 @@
     <title>停用七牛云</title>
     <link href="https://cateaf.com/2018/09/29/stop-using-qiniu/"/>
     <id>https://cateaf.com/2018/09/29/stop-using-qiniu/</id>
-    <published>2018-09-29T08:48:44.000Z</published>
-    <updated>2020-02-23T18:10:02.408Z</updated>
+    <published>2018-09-29T16:48:44.000Z</published>
+    <updated>2020-02-23T21:20:53.644Z</updated>
     
     <summary type="html">
     
@@ -84,8 +107,8 @@
     <title>玫瑰咖啡</title>
     <link href="https://cateaf.com/2018/06/21/rose-cafe/"/>
     <id>https://cateaf.com/2018/06/21/rose-cafe/</id>
-    <published>2018-06-21T02:38:55.000Z</published>
-    <updated>2020-02-23T18:10:02.408Z</updated>
+    <published>2018-06-21T10:38:55.000Z</published>
+    <updated>2020-02-23T21:20:53.644Z</updated>
     
     <summary type="html">
     
@@ -111,8 +134,8 @@
     <title>吹一波 AudioQuest</title>
     <link href="https://cateaf.com/2017/09/03/audioquest-dragonfly-configuration/"/>
     <id>https://cateaf.com/2017/09/03/audioquest-dragonfly-configuration/</id>
-    <published>2017-09-03T04:01:57.000Z</published>
-    <updated>2020-02-23T18:10:02.408Z</updated>
+    <published>2017-09-03T12:01:57.000Z</published>
+    <updated>2020-02-23T21:20:53.644Z</updated>
     
     <summary type="html">
     
@@ -129,8 +152,8 @@
     <title>Coffee in Austin</title>
     <link href="https://cateaf.com/2017/08/29/coffee-in-austin/"/>
     <id>https://cateaf.com/2017/08/29/coffee-in-austin/</id>
-    <published>2017-08-29T09:37:00.000Z</published>
-    <updated>2020-02-23T18:10:02.408Z</updated>
+    <published>2017-08-29T17:37:00.000Z</published>
+    <updated>2020-02-23T21:20:53.644Z</updated>
     
     <summary type="html">
     
@@ -148,8 +171,8 @@
     <title>Catfish</title>
     <link href="https://cateaf.com/2017/07/23/catfish/"/>
     <id>https://cateaf.com/2017/07/23/catfish/</id>
-    <published>2017-07-23T13:09:20.000Z</published>
-    <updated>2020-02-23T18:10:02.408Z</updated>
+    <published>2017-07-23T21:09:20.000Z</published>
+    <updated>2020-02-23T21:20:53.644Z</updated>
     
     <summary type="html">
     
@@ -172,8 +195,8 @@
     <title>Gene Selection</title>
     <link href="https://cateaf.com/2017/06/21/gene-selection/"/>
     <id>https://cateaf.com/2017/06/21/gene-selection/</id>
-    <published>2017-06-21T05:57:09.000Z</published>
-    <updated>2020-02-23T18:10:02.408Z</updated>
+    <published>2017-06-21T13:57:09.000Z</published>
+    <updated>2020-02-23T21:20:53.644Z</updated>
     
     <summary type="html">
     
@@ -193,8 +216,8 @@
     <title>二月的泰国行</title>
     <link href="https://cateaf.com/2017/05/06/thailand-tours/"/>
     <id>https://cateaf.com/2017/05/06/thailand-tours/</id>
-    <published>2017-05-06T04:57:30.000Z</published>
-    <updated>2020-02-23T18:10:02.408Z</updated>
+    <published>2017-05-06T12:57:30.000Z</published>
+    <updated>2020-02-23T21:20:53.644Z</updated>
     
     <summary type="html">
     
@@ -211,10 +234,10 @@
   
   <entry>
     <title>Hnu-Thesis-Template</title>
-    <link href="https://cateaf.com/2017/03/01/hnu-thesis-template/"/>
-    <id>https://cateaf.com/2017/03/01/hnu-thesis-template/</id>
-    <published>2017-03-01T17:37:46.000Z</published>
-    <updated>2020-02-23T18:10:02.408Z</updated>
+    <link href="https://cateaf.com/2017/03/02/hnu-thesis-template/"/>
+    <id>https://cateaf.com/2017/03/02/hnu-thesis-template/</id>
+    <published>2017-03-02T01:37:46.000Z</published>
+    <updated>2020-02-23T21:20:53.644Z</updated>
     
     <summary type="html">
     
@@ -240,8 +263,8 @@
     <title>关于建模软件的。。。</title>
     <link href="https://cateaf.com/2016/08/31/all-about-modeling-soft/"/>
     <id>https://cateaf.com/2016/08/31/all-about-modeling-soft/</id>
-    <published>2016-08-31T04:04:12.000Z</published>
-    <updated>2020-02-23T18:10:02.408Z</updated>
+    <published>2016-08-31T12:04:12.000Z</published>
+    <updated>2020-02-23T21:20:53.644Z</updated>
     
     <summary type="html">
     
@@ -261,8 +284,8 @@
     <title>$\LaTeX$ Math Symbols Cheetsheet</title>
     <link href="https://cateaf.com/2016/08/31/latex-math-symbols-cheetsheet/"/>
     <id>https://cateaf.com/2016/08/31/latex-math-symbols-cheetsheet/</id>
-    <published>2016-08-31T02:06:25.000Z</published>
-    <updated>2020-02-23T18:10:02.408Z</updated>
+    <published>2016-08-31T10:06:25.000Z</published>
+    <updated>2020-02-23T21:20:53.644Z</updated>
     
     <summary type="html">
     
@@ -282,8 +305,8 @@
     <title>Cumcm-Thesis-Template</title>
     <link href="https://cateaf.com/2016/08/30/cumcm-thesis-template/"/>
     <id>https://cateaf.com/2016/08/30/cumcm-thesis-template/</id>
-    <published>2016-08-30T01:46:40.000Z</published>
-    <updated>2020-02-23T18:10:02.408Z</updated>
+    <published>2016-08-30T09:46:40.000Z</published>
+    <updated>2020-02-23T21:20:53.644Z</updated>
     
     <summary type="html">
     
@@ -309,8 +332,8 @@
     <title>新启动</title>
     <link href="https://cateaf.com/2016/06/05/a-new-beginning/"/>
     <id>https://cateaf.com/2016/06/05/a-new-beginning/</id>
-    <published>2016-06-05T02:38:42.000Z</published>
-    <updated>2020-02-23T18:10:02.408Z</updated>
+    <published>2016-06-05T10:38:42.000Z</published>
+    <updated>2020-02-23T21:20:53.644Z</updated>
     
     <summary type="html">
     

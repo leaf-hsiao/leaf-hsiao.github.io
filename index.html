@@ -83,10 +83,69 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-switch-to-travisci" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/02/23/switch-to-travisci/" class="article-date" id="article-date">
+  <time class="dt-published" datetime="2020-02-23T15:22:39.000Z" itemprop="datePublished">2020-02-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/02/23/switch-to-travisci/">改为由 Travis CI 部署</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>突然想起来用 <a href="https://travis-ci.com/" target="_blank" rel="noopener">Travis CI</a> 来替换掉之前用的 <a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">hexo-deployer-git</a>, 正好避免了源文件的管理混乱<del> 虽然本来也没几篇文章</del>。</p>
+<p>网上很多老资料用的 <a href="https://docs.travis-ci.com/user/deployment/custom/" target="_blank" rel="noopener">Custom Deployment</a> 的方法，现在 Travis CI 已经支持 GitHub Pages，只需要简单的配置一下即可。</p>
+<p>Hexo 提供了 <a href="https://hexo.io/docs/github-pages" target="_blank" rel="noopener"> 设置指南 </a> 以及 <code>.travis.yml</code> 的配置例子，当设置好后每次提交源文件到 master 分支 TravisCI 会自动生成页面并且部署到 gh-pages 分支上。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">sudo:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">node_js</span></span><br><span class="line"><span class="attr">node_js:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="number">10</span> <span class="comment"># use nodejs v10 LTS</span></span><br><span class="line"><span class="attr">cache:</span> <span class="string">npm</span></span><br><span class="line"><span class="attr">branches:</span></span><br><span class="line">  <span class="attr">only:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">master</span> <span class="comment"># build master branch only</span></span><br><span class="line"><span class="attr">script:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">hexo</span> <span class="string">generate</span> <span class="comment"># generate static files</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">provider:</span> <span class="string">pages</span></span><br><span class="line">  <span class="attr">skip-cleanup:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">github-token:</span> <span class="string">$GH_TOKEN</span></span><br><span class="line">  <span class="attr">keep-history:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">on:</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br><span class="line">  <span class="attr">local-dir:</span> <span class="string">public</span></span><br></pre></td></tr></table></figure>
+
+<p>需要注意的是该方法不适用于仓库名为 <code>&lt;user&gt;.github.io</code> 这种格式的仓库，因为 GitHub 必须从 master 分支生成 user 和 organization 的页面而不是 gh-pages。</p>
+<blockquote>
+<p>User pages must be built from the <code>master</code> branch.</p>
+</blockquote>
+<p>因此如果用的是 personal 或者需要修改一下官方文档上的 yml 文件配置。</p>
+<p>现在 Travis CI 默认的依旧是 dpl v1，但是在 log 里又会按照 dpl v2 的指示弹警告，像</p>
+<blockquote>
+<p>deploy: deprecated key  skip_cleanup (not supported in dpl v2, use cleanup)</p>
+</blockquote>
+<p><code>cleanup</code>在 dpl v2 中默认是设置为 false 的而 dpl v1 中仍需要手动加入 <code>skip_cleanup: true</code> 来避免生成目录被删除。</p>
+<p>还有 <code>sudo: false</code><a href="https://blog.travis-ci.com/2018-11-19-required-linux-infrastructure-migration" target="_blank" rel="noopener"> 已被弃用 </a>，<code>github_token</code> 已经被替换为 <code>token</code> 等部分 dpl v2 的属性又已经被支持</p>
+<p>在基于目前的新文档的建议下，最后的 <code>.travis.yml</code> 设置如下</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">os:</span> <span class="string">linux</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">node_js</span></span><br><span class="line"><span class="attr">node_js:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="number">10</span></span><br><span class="line"><span class="attr">cache:</span> <span class="string">npm</span></span><br><span class="line"><span class="attr">branches:</span></span><br><span class="line">  <span class="attr">only:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">source</span> <span class="comment"># store source code of hexo in source branch</span></span><br><span class="line"><span class="attr">script:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">hexo</span> <span class="string">generate</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">provider:</span> <span class="string">pages</span></span><br><span class="line">  <span class="attr">skip_cleanup:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">token:</span> <span class="string">$GH_TOKEN</span></span><br><span class="line">  <span class="attr">keep_history:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">target_branch:</span> <span class="string">master</span></span><br><span class="line">  <span class="attr">on:</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">source</span></span><br><span class="line">  <span class="attr">local_dir:</span> <span class="string">public</span></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://cateaf.com/2020/02/23/switch-to-travisci/" data-id="ck6zje8m1000t1xhygzbd40mz" data-title="改为由 Travis CI 部署" class="article-share-link">Share</a>
+      
+        <a href="https://cateaf.com/2020/02/23/switch-to-travisci/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-algorithm" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2019/10/15/algorithm/" class="article-date" id="article-date">
-  <time class="dt-published" datetime="2019-10-15T18:01:47.000Z" itemprop="datePublished">2019-10-16</time>
+    <a href="/2019/10/16/algorithm/" class="article-date" id="article-date">
+  <time class="dt-published" datetime="2019-10-16T02:01:47.000Z" itemprop="datePublished">2019-10-16</time>
 </a>
     
   <div class="article-category">
@@ -101,7 +160,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/10/15/algorithm/">算法笔记</a>
+      <a class="p-name article-title" href="/2019/10/16/algorithm/">算法笔记</a>
     </h1>
   
 
@@ -112,15 +171,15 @@
         <p>正好有人借593的笔记，稍微整理了一下=-=（还是可能有些许错误的）</p>
         
           <p class="article-more-link">
-            <a href="/2019/10/15/algorithm/#more">Read More</a>
+            <a href="/2019/10/16/algorithm/#more">Read More</a>
           </p>
         
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://cateaf.com/2019/10/15/algorithm/" data-id="ck6zckt8r00163pp36hhm8xrg" data-title="算法笔记" class="article-share-link">Share</a>
+      <a data-url="https://cateaf.com/2019/10/16/algorithm/" data-id="ck6zje8mu00171xhy3oboekpj" data-title="算法笔记" class="article-share-link">Share</a>
       
-        <a href="https://cateaf.com/2019/10/15/algorithm/#disqus_thread" class="article-comment-link">Comments</a>
+        <a href="https://cateaf.com/2019/10/16/algorithm/#disqus_thread" class="article-comment-link">Comments</a>
       
       
       
@@ -137,7 +196,7 @@
     <article id="post-new-orleans" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2019/05/23/new-orleans/" class="article-date" id="article-date">
-  <time class="dt-published" datetime="2019-05-23T12:10:49.000Z" itemprop="datePublished">2019-05-23</time>
+  <time class="dt-published" datetime="2019-05-23T20:10:49.000Z" itemprop="datePublished">2019-05-23</time>
 </a>
     
   </div>
@@ -166,7 +225,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://cateaf.com/2019/05/23/new-orleans/" data-id="ck6zckt7q000j3pp3fiwdeknf" data-title="烤翅不存在的新奥尔良" class="article-share-link">Share</a>
+      <a data-url="https://cateaf.com/2019/05/23/new-orleans/" data-id="ck6zje8lx000j1xhy2o5egoxr" data-title="烤翅不存在的新奥尔良" class="article-share-link">Share</a>
       
         <a href="https://cateaf.com/2019/05/23/new-orleans/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -185,7 +244,7 @@
     <article id="post-stop-using-qiniu" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2018/09/29/stop-using-qiniu/" class="article-date" id="article-date">
-  <time class="dt-published" datetime="2018-09-29T08:48:44.000Z" itemprop="datePublished">2018-09-29</time>
+  <time class="dt-published" datetime="2018-09-29T16:48:44.000Z" itemprop="datePublished">2018-09-29</time>
 </a>
     
   </div>
@@ -209,7 +268,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://cateaf.com/2018/09/29/stop-using-qiniu/" data-id="ck6zckt7t000q3pp3dcip9akb" data-title="停用七牛云" class="article-share-link">Share</a>
+      <a data-url="https://cateaf.com/2018/09/29/stop-using-qiniu/" data-id="ck6zje8m1000q1xhy389uf59m" data-title="停用七牛云" class="article-share-link">Share</a>
       
         <a href="https://cateaf.com/2018/09/29/stop-using-qiniu/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -226,7 +285,7 @@
     <article id="rose-rose-cafe" class="h-entry article article-type-rose" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2018/06/21/rose-cafe/" class="article-date" id="article-date">
-  <time class="dt-published" datetime="2018-06-21T02:38:55.000Z" itemprop="datePublished">2018-06-21</time>
+  <time class="dt-published" datetime="2018-06-21T10:38:55.000Z" itemprop="datePublished">2018-06-21</time>
 </a>
     
   </div>
@@ -254,7 +313,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://cateaf.com/2018/06/21/rose-cafe/" data-id="ck6zckt7s000m3pp3d6wee83t" data-title="玫瑰咖啡" class="article-share-link">Share</a>
+      <a data-url="https://cateaf.com/2018/06/21/rose-cafe/" data-id="ck6zje8lz000m1xhy27ri6tos" data-title="玫瑰咖啡" class="article-share-link">Share</a>
       
         <a href="https://cateaf.com/2018/06/21/rose-cafe/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -262,52 +321,6 @@
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tour/" rel="tag">Tour</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-audioquest-dragonfly-configuration" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2017/09/03/audioquest-dragonfly-configuration/" class="article-date" id="article-date">
-  <time class="dt-published" datetime="2017-09-03T04:01:57.000Z" itemprop="datePublished">2017-09-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2017/09/03/audioquest-dragonfly-configuration/">吹一波 AudioQuest</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>被种草AudioQuest很久了，再加上等了一整年七彩虹也没放出USB-DAC的驱动，估摸着可能永久性鸽了，还是买了个DragonFly  Black试了试，在iPhone上尝试了一下效果提升了一耳朵，然后又被安利了JitterBug，感觉可以购买AudioQuest全家桶了。</p>
-<p><img src="/images/audioquest/aq1.jpg" alt=""></p>
-        
-          <p class="article-more-link">
-            <a href="/2017/09/03/audioquest-dragonfly-configuration/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://cateaf.com/2017/09/03/audioquest-dragonfly-configuration/" data-id="ck6zckt7c00053pp3e5w99qd0" data-title="吹一波 AudioQuest" class="article-share-link">Share</a>
-      
-        <a href="https://cateaf.com/2017/09/03/audioquest-dragonfly-configuration/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-      
     </footer>
   </div>
   
@@ -350,7 +363,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li></ul>
     </div>
   </div>
 
