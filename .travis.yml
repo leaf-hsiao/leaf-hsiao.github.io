@@ -9,6 +9,7 @@ script:
   - hexo generate
 deploy:
   provider: pages
+  skip-cleanup: true
   token: $GH_TOKEN
   local_dir: public
   keep_history: true
