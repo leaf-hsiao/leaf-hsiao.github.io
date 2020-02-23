@@ -7,6 +7,8 @@ categories:
 
 突然想起来用 [Travis CI](https://travis-ci.com/) 来替换掉之前用的[hexo-deployer-git](https://github.com/hexojs/hexo-deployer-git), 正好避免了源文件的管理混乱~~虽然本来也没几篇文章~~。
 
+顺道还把被停用很久的[swiftype](https://swiftype.com/)关了换回了Google CSE。~~一度不知道swiftype取消了免费账户~~
+
 网上很多老资料用的[Custom Deployment](https://docs.travis-ci.com/user/deployment/custom/)的方法，现在Travis CI 已经支持GitHub Pages，只需要简单的配置一下即可。
 
 Hexo提供了[设置指南](https://hexo.io/docs/github-pages)以及`.travis.yml`的配置例子，当设置好后每次提交源文件到master分支 TravisCI会自动生成页面并且部署到gh-pages分支上。
