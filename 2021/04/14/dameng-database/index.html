@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#222">
+  <meta name="google-site-verification" content="hsoSqM_PEkU0rT0QGySXlkRcD6JNw24aQQH9DJxk66I">
+  <meta name="msvalidate.01" content="0CA355F79F618F8B850029EDA79C67FB">
+  <meta name="baidu-site-verification" content="EpHLert2YP">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"cateaf.com","root":"/","images":"/images","scheme":"Mist","version":"8.3.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":true,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
+<meta name="description" content="在测试服务器上部署了一个达梦单点服务，做一下简要的记录">
+<meta property="og:type" content="article">
+<meta property="og:title" content="达梦数据库的安装与使用">
+<meta property="og:url" content="https://cateaf.com/2021/04/14/dameng-database/index.html">
+<meta property="og:site_name" content="Cateaf">
+<meta property="og:description" content="在测试服务器上部署了一个达梦单点服务，做一下简要的记录">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-04-14T15:40:06.000Z">
+<meta property="article:modified_time" content="2021-04-20T15:02:33.895Z">
+<meta property="article:author" content="Leaf">
+<meta property="article:tag" content="database">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://cateaf.com/2021/04/14/dameng-database/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>达梦数据库的安装与使用 | Cateaf</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Cateaf" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Cateaf</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#dm8-%E5%AE%89%E8%A3%85"><span class="nav-number">1.</span> <span class="nav-text">DM8 安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E5%89%8D%E5%87%86%E5%A4%87"><span class="nav-number">1.1.</span> <span class="nav-text">安装前准备</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85%E7%9B%AE%E5%BD%95"><span class="nav-number">1.1.1.</span> <span class="nav-text">配置安装目录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE"><span class="nav-number">1.1.2.</span> <span class="nav-text">操作系统设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%8A%E4%BC%A0%E5%AE%89%E8%A3%85%E5%8C%85"><span class="nav-number">1.1.3.</span> <span class="nav-text">上传安装包</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85"><span class="nav-number">1.2.</span> <span class="nav-text">软件安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%95%E7%82%B9%E9%85%8D%E7%BD%AE"><span class="nav-number">1.3.</span> <span class="nav-text">单点配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">1.3.1.</span> <span class="nav-text">初始化数据库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%90%AF%E7%94%A8-dm-%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9C%8D%E5%8A%A1"><span class="nav-number">1.3.2.</span> <span class="nav-text">启用 DM 数据库服务</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%BB%B4%E6%8A%A4%E4%B8%8E%E7%AE%A1%E7%90%86"><span class="nav-number">2.</span> <span class="nav-text">数据库维护与管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A1%A8%E4%B8%8E%E7%94%A8%E6%88%B7%E5%88%9B%E5%BB%BA"><span class="nav-number">2.1.</span> <span class="nav-text">表与用户创建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-sql-%E8%84%9A%E6%9C%AC"><span class="nav-number">2.2.</span> <span class="nav-text">使用 sql 脚本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E8%A7%86%E5%9B%BE"><span class="nav-number">2.3.</span> <span class="nav-text">创建视图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E7%B4%A2%E5%BC%95"><span class="nav-number">2.4.</span> <span class="nav-text">创建索引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%87%E4%BB%BD"><span class="nav-number">2.5.</span> <span class="nav-text">数据库备份</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%89%A9%E7%90%86%E5%A4%87%E4%BB%BD"><span class="nav-number">2.5.1.</span> <span class="nav-text">物理备份</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%80%BB%E8%BE%91%E5%A4%87%E4%BB%BD"><span class="nav-number">2.5.2.</span> <span class="nav-text">逻辑备份</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-odbc"><span class="nav-number">3.</span> <span class="nav-text">配置 ODBC</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Leaf"
+      src="/logo.jpg">
+  <p class="site-author-name" itemprop="name">Leaf</p>
+  <div class="site-description" itemprop="description">Leaf's blog</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">19</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/leaf-hsiao" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;leaf-hsiao" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:leaf_hsiao@outlook.com" title="E-Mail → mailto:leaf_hsiao@outlook.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/leaf.hsiao" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;leaf.hsiao" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cateaf.com/2021/04/14/dameng-database/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/logo.jpg">
+      <meta itemprop="name" content="Leaf">
+      <meta itemprop="description" content="Leaf's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cateaf">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          达梦数据库的安装与使用
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-04-14 15:40:06" itemprop="dateCreated datePublished" datetime="2021-04-14T15:40:06+00:00">2021-04-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Database/" itemprop="url" rel="index"><span itemprop="name">Database</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2021/04/14/dameng-database/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/04/14/dameng-database/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>在测试服务器上部署了一个达梦单点服务，做一下简要的记录</p>
+<span id="more"></span>
+<h2 id="dm8-安装">DM8 安装</h2>
+<h3 id="安装前准备">安装前准备</h3>
+<h4 id="配置安装目录">配置安装目录</h4>
+<p>单独申请了一块盘<code>/dev/vdf</code>，分区格式化后将其挂载到 <code>/dm</code> 下</p>
+<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">fdisk &#x2F;dev&#x2F;vdf
+mkfx -t ext4 &#x2F;dev&#x2F;vdf1
+mkdir &#x2F;dm
+mount &#x2F;dev&#x2F;vdf1 &#x2F;dm</code></pre>
+<p>设置永久挂载</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">vi &#x2F;etc&#x2F;fstab
+&#x2F;dev&#x2F;vdf1	&#x2F;dmk	ext4	defaults	0	0
+mount -a</code></pre>
+<h4 id="操作系统设置">操作系统设置</h4>
+<h5 id="禁用-selinux">禁用 SELINUX</h5>
+<p>使用 setenforce 临时关闭</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">getenforce # 查看 SELINUX 状态，如果不是 disabled 状态使用 senenforce 设置
+setenforce 0</code></pre>
+<p>也可以修改 config 文件禁用</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">vi &#x2F;etc&#x2F;selinux&#x2F;config
+# 如果不是 disabled 状态则修改为disabled
+SELINUX&#x3D;disabled
+reboot</code></pre>
+<h5 id="关闭防火墙">关闭防火墙</h5>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">systemctl status firewalld # 查看防火墙状态
+systemctl stop firewalld
+systemctl disable firewalld</code></pre>
+<h5 id="设置文件最大打开数目">设置文件最大打开数目</h5>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ulimit -n 65536</code></pre>
+<p>修改 config 文件则永久生效</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">vi &#x2F;etc&#x2F;security&#x2F;limits.conf
+dmdba		soft	nofile	65536
+dmdba		hard	nofile	65536
+dmdba		soft	nproc	10240
+dmdba		hard	nproc	10240
+dmdba		soft	data	unlimited
+dmdba		hard	data	unlimited
+dmdba		soft	fsize	unlimited
+dmdba		hard	fsize	unlimited</code></pre>
+<h5 id="用户权限配置">用户权限配置</h5>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">groupadd dinstall
+useradd -g dinstall dmdba
+chown -R dmdba:dinstall &#x2F;dm</code></pre>
+<h5 id="其他设置">其他设置</h5>
+<p>关闭 CUPS, Postfix, rpcbind 服务</p>
+<h4 id="上传安装包">上传安装包</h4>
+<p>一共有<code>DMInstall.bin</code>，<code>dm.key</code>和<code>DmJdbcDriver16.jar</code>三个文件</p>
+<p>使用sftp上传到<code>/dm/software</code>下</p>
+<h3 id="软件安装">软件安装</h3>
+<p>切换到 dmdba执行安装</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">su - dmdba
+cd &#x2F;dm&#x2F;software&#x2F;
+chmod 755 *
+.&#x2F;DMInstall.bin -i</code></pre>
+<p>再此遇到了<code>Bash script and /bin/bash^M: bad interpreter: No such file or directory</code>的报错，可能是由于安装脚本在 Windows 下修改过导致，将换行符由 CRLF 转为 LF 可解决</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">sed -i -e &#39;s&#x2F;\r$&#x2F;&#x2F;&#39; DMInstall.bin</code></pre>
+<p>接着按提示导入 key，设置时区，设置目录为<code>/dm/dmdba/dmdbms</code></p>
+<p>再切回 root 用户执行脚本</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">su - root
+&#x2F;dm&#x2F;dmdba&#x2F;dmdbms&#x2F;script&#x2F;root&#x2F;root_installer.sh</code></pre>
+<p>配置好环境变量</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">vi ~&#x2F;.bash_profile
+export DM_HOME&#x3D;&quot;&#x2F;dmsoft&#x2F;dmdbms&quot;
+export PATH&#x3D;$DM_HOME&#x2F;bin:$PATH
+source ~&#x2F;.bash_profile</code></pre>
+<h3 id="单点配置">单点配置</h3>
+<h4 id="初始化数据库">初始化数据库</h4>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">su - dmdba
+cd &#x2F;dm
+mkdir dmdata dmarch dmbak
+cd dmdba&#x2F;dmdbms&#x2F;bin</code></pre>
+<p>通过 dminit 来设置参数</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">.&#x2F;dminit help # 查看参数说明，按照要求设置参数
+
+.&#x2F;dminit PATH&#x3D;&#x2F;dm&#x2F;dmdata DB_NAME&#x3D;DMDB INSTANCE_NAME&#x3D;DBSERVER PORT_NUM&#x3D;5238 LOG_SIZE&#x3D;300 EXTENT_SIZE&#x3D;16 SYSDBA_PWD&#x3D;[password] SYSAUDITOR_PWD&#x3D;[password]</code></pre>
+<h4 id="启用-dm-数据库服务">启用 DM 数据库服务</h4>
+<p>切到 root 用户</p>
+<p>将服务注册到操作系统</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">cd &#x2F;dm&#x2F;dmdba&#x2F;dmdbms&#x2F;script&#x2F;root
+.&#x2F;dm_service_installer.sh -t dmserver -dm_ini &#x2F;dm&#x2F;dmdata&#x2F;DMDB&#x2F;dm.ini -p DBSERVER</code></pre>
+<p>使用 systemctl 管理服务</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">systemctl enable DmServiceDBSERVER.service
+systemctl start DmServiceDBSERVER.service</code></pre>
+<h2 id="数据库维护与管理">数据库维护与管理</h2>
+<h3 id="表与用户创建">表与用户创建</h3>
+<p>登录数据库</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">cd &#x2F;dm&#x2F;dmdba&#x2F;dmdbms&#x2F;bin
+.&#x2F;disql SYSDBA&#x2F;[password]@localhost:5238</code></pre>
+<p>创建表空间 DMTBS，文件存储在 <code>/dm/dmdata</code>中，分为两个数据文件 DMTBS01.DBF 和 DMTBS02.DBF，每个文件初始大小为 64M，每次自动扩展 2M，单个数据文件最大 10G</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; CREATE TABLESPCE &quot;DMTBS&quot; DATAFILE &#39;&#x2F;dm&#x2F;dmdata&#x2F;DMTBS01.DBF&#39; SIZE 64 AUTOEXTEND ON NEXT 2 MAXSIZE 10240, &#39;&#x2F;dm&#x2F;dmdata&#x2F;DMTBS02.DBF&#39; SIZE 64 AUTOEXTEND ON NEXT 2 MAXSIZE 10240 CACHE &#x3D; NORMAL;</code></pre>
+<p>创建用户 DMTEST，密码 [password]，默认表空间为 DMTBS</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; CREATE USER &quot;DMTEST&quot; IDENTIFIED BY [password] DEFAULT TABLESPACE &quot;DMTBS&quot;</code></pre>
+<p>创建角色 TESTROLE，具有创建表，创建视图，创建索引的权限</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; CREATE ROLE TESTROLE;
+SQL&gt; GRANT CREATE TABLE, CREATE VIEW, CREATE INDEX TO TESTROLE;</code></pre>
+<p>将角色 RESOURCE，TESTROLE 赋给 DMTEST 用户，并赋予 DMTEST 查询 DBA_TABLESPACES 的权限</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; GRANT RESOURCE, TESTROLE TO DMTEST;
+SQL&gt; GRANT SELECT ON DBA_TABLESPACES TO DMTEST;</code></pre>
+<p>在 DMTEST 用户下创建 EMP 表和 DEPT 表。</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; CREATE TABLE EMP (
+    EMP_ID INT NOT NULL,
+    EMP_NAME VARCHAR(20),
+    EMAIL VARCHAR(50),
+    PHONE_NUM VARCHAR(20),
+    HIRE_DATE DATE,
+    JOB_ID VARCHAR(10),
+    MANAGER_ID INT,
+    SALARY INT,
+    DEPT_ID INT
+);
+SQL&gt; CREATE TABLE DEPT (
+    DEPT_ID INT NOT NULL,
+    DEPT_NAME VARCHAR(30),
+    LOCATION_ID INT,
+    LOCATION_ADDR VARCHAR(30)
+);</code></pre>
+<h3 id="使用-sql-脚本">使用 sql 脚本</h3>
+<p>假设有脚本<code>/dm/script1.sql</code></p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">INSERT INTO EMP (EMP_ID, EMP_NAME) VALUES (1, &#39;NAME&#39;);
+INSERT INTO EMP (EMP_ID, EMP_NAME, EMAIL) VALUES (2, &#39;NAME&#39;, &#39;a@b&#39;);
+INSERT INTO DEPT (DEPT_ID, DEPT_NAME) VALUES (1, &#39;DEPTNAME&#39;);</code></pre>
+<p>连接到数据库后可直接调用该脚本</p>
+<pre class="line-numbers language-none"><code class="language-none">SQL&gt; start &#x2F;dm&#x2F;script1.sql</code></pre>
+<h3 id="创建视图">创建视图</h3>
+<p>创建视图 VIEW_HIREDATE 存放 HIRE_DATE 为 2006-01-01 至 2009-01-01 的条目</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; CREATE VIEW VIEW_HIREDATE AS SELECT * FROM EMP WHERE HIRE_DATE BETWEEN &#39;2006-01-01&#39; AND &#39;2009-01-01&#39;;</code></pre>
+<p>创建视图 VIEW_SALARY 查询平均 SALARY 大于 12000 的 DEPT</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; CREATE VIEW VIEW_SALARY AS SELECT * FROM DEPT WHERE DEPT_ID IN (
+    SELECT DEPT_ID
+    FROM EMP
+    GROUP BY DEPT_ID
+    HAVING AVG(SALARY) &gt; 12000
+);</code></pre>
+<h3 id="创建索引">创建索引</h3>
+<p>在列 EMP_NAME 添加索引 IND_EMP_NAME</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">-- 创建索引表空间
+SQL&gt; CREATE TABLESPACE INDEX1 DATAFILE &#39;&#x2F;dm&#x2F;dmdata&#x2F;DMDB&#x2F;index1_01.dbf&#39; size 64 autoextend on next 10 mamxsize 2000;
+-- 创建索引
+SQL&gt; CREATE INDEX IND_EMP_NAME ON EMP(EMP_NAME) TABLESPACE INDEX1;</code></pre>
+<h3 id="数据库备份">数据库备份</h3>
+<h4 id="物理备份">物理备份</h4>
+<h5 id="冷备">冷备</h5>
+<p>使用 DMRMAN 进行冷备， DMAP 服务为打开状态， 并关闭数据库实例</p>
+<p>默认备份方式为完全备份</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 关闭数据库实例
+systemctl stop DmServiceDBSERVER.service
+cd &#x2F;dm&#x2F;dmdba&#x2F;dmdbms&#x2F;bin
+.&#x2F;dmrman
+# 完全备份
+RMAN&gt; backup database &#39;&#x2F;dm&#x2F;dmdata&#x2F;DMDB&#x2F;dm.ini&#39; full backupset &#39;&#x2F;dm&#x2F;dmbak&#x2F;DMDB_bak&#39;
+# 增量备份
+RMAN&gt; backup database &#39;&#x2F;dm&#x2F;dmdata&#x2F;DMDB&#x2F;dm.ini&#39; increment with backupdir &#39;&#x2F;dm&#x2F;dmbak&#39; backupset &#39;&#x2F;dm&#x2F;dmbak&#x2F;DMDB_bak&#39;
+# 查看备份信息
+RMAN&gt; show backupset &#39;&#x2F;dm&#x2F;dmbak&#x2F;DMDB_bak&#39;
+RMAN&gt; show backupset &#39;&#x2F;dm&#x2F;dmbak&#x2F;DMDB_bak&#39; info meta</code></pre>
+<h5 id="热备">热备</h5>
+<p>使用 SQL 进行备份，DMAP 服务和数据库实例都是打开状态，为了保证备份数据的一致性，需要配置并开启本地归档</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">-- 打开归档
+SQL&gt; ALTER DATABASE MOUNT;
+SQL&gt; ALTER DATABASE ADD ARCHIVELOG &#39;type&#x3D;local,dest&#x3D;&#x2F;dm&#x2F;dmarch,file_size&#x3D;64,space_limit&#x3D;0&#39;;
+-- 如果需要修改归档配置则可使用 ALTER DATABASE MODIFY ARCHIVELOG
+SQL&gt; ALTER DATABSE ARCHIVELOG;
+SQL&gt; ALTER DATABASE OPEN;
+-- 检查归档状态
+SQL&gt; SELECT name, status$, arch_mode FROM v$database;
+
+-- 完全备份
+SQL&gt; backup database full backupset &#39;&#x2F;dm&#x2F;dmbak&#x2F;DMDB_bak2&#39;;
+
+-- 增量备份
+SQL&gt; backup database increment backupset &#39;&#x2F;dm&#x2F;dmbak&#x2F;incr_DMDB_bak2&#39;;</code></pre>
+<h5 id="自动备份作业">自动备份作业</h5>
+<p>首先启动代理</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; SP_INIT_JOB_SYS(1);</code></pre>
+<p>可借助管理工具直接在 GUI 上编辑生成作业</p>
+<p>创建 JOB1，每周日晚 22:00 对数据库做完全备份</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; call SP_CREATE_JOB(&#39;JOB1&#39;,1,0,&#39;&#39;,0,0,&#39;&#39;,0,&#39;周日全备&#39;);
+SQL&gt; call SP_JOB_CONFIG_START(&#39;JOB1&#39;);
+SQL&gt; call SP_ADD_JOB_STEP(&#39;JOB1&#39;, &#39;全备&#39;, 5, &#39;01000&#x2F;dm&#x2F;dmbak&#39;, 1, 2, 0, 0, NULL, 0);
+SQL&gt; call SP_ADD_JOB_SCHEDULE(&#39;JOB1&#39;, &#39;周日执行&#39;, 1, 2, 1, 1, 0, &#39;22:00:00&#39;, NULL, &#39;2021-04-20 02:34:52&#39;, NULL, &#39;&#39;);
+SQL&gt; call SP_JOB_CONFIG_COMMIT(&#39;JOB1&#39;);</code></pre>
+<p>创建 JOB2，每周一到周六 22：00 对数据库做增量备份</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; call SP_CREATE_JOB(&#39;JOB2&#39;,1,0,&#39;&#39;,0,0,&#39;&#39;,0,&#39;平时增备&#39;);
+SQL&gt; call SP_JOB_CONFIG_START(&#39;JOB2&#39;);
+SQL&gt; call SP_ADD_JOB_STEP(&#39;JOB2&#39;, &#39;增备&#39;, 5, &#39;01000&#x2F;dm&#x2F;dmbak|&#x2F;dm&#x2F;dmbak&#39;, 1, 2, 0, 0, NULL, 0);
+SQL&gt; call SP_ADD_JOB_SCHEDULE(&#39;JOB1&#39;, &#39;周一到周六执行&#39;, 1, 2, 1, 126, 0, &#39;22:00:00&#39;, NULL, &#39;2021-04-20 02:34:52&#39;, NULL, &#39;&#39;);
+SQL&gt; call SP_JOB_CONFIG_COMMIT(&#39;JOB2&#39;);</code></pre>
+<h4 id="逻辑备份">逻辑备份</h4>
+<p>使用 dexp 对数据库执行逻辑导出</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">cd &#x2F;dm&#x2F;dmdba&#x2F;dmdbms&#x2F;bin
+.&#x2F;dexp SYSDBA&#x2F;[password]@localhost:5238 FILE&#x3D;dmdb_full.dmp LOG&#x3D;dmdb_full.log DIRECTORY&#x3D;&#x2F;dm&#x2F;dmbak FULL&#x3D;y</code></pre>
+<p>使用 dimp 导入</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">.&#x2F;dimp SYSDBA&#x2F;[password]@localhost:5238 FILE&#x3D;&#x2F;dm&#x2F;dmbak&#x2F;dmdb_full.dmp LOG&#x3D;&#x2F;dm&#x2F;dmbak&#x2F;dimp.log</code></pre>
+<h2 id="配置-odbc">配置 ODBC</h2>
+<p>编译好 ODBC 后，配置 odbc.ini 和 odbcinst.ini</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># odbc.ini
+[dm8]
+DESCRIPTION &#x3D; DM ODBC DSND
+DRIVER &#x3D; DM8 ODBC DRIVER
+SERVER &#x3D; localhost
+UID &#x3D; SYSDA
+PWD &#x3D; [password]
+TCP_PORT &#x3D; 5238
+
+# odbcinst.ini
+[DM8 ODBC DRIVER]
+DESCRIPTION &#x3D; ODBC DRIVER FOR DM8
+DRIVER &#x3D; &#x2F;dm&#x2F;dmdba&#x2F;dmdbms&#x2F;bin&#x2F;libdodbc.so</code></pre>
+<p>修改文件属性即可连接</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">chmod 777 odbc.ini
+chmod 777 odbcinst.ini
+su - dmdba
+isql dm8</code></pre>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Leaf
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://cateaf.com/2021/04/14/dameng-database/" title="达梦数据库的安装与使用">https://cateaf.com/2021/04/14/dameng-database/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/database/" rel="tag"># database</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/02/28/coffee-varieties/" rel="prev" title="咖啡豆种">
+                  <i class="fa fa-chevron-left"></i> 咖啡豆种
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2016 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fas fa-paw"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Leaf</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.1.0/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink.listen({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://cateaf.com/2021/04/14/dameng-database/',]
+      });
+      });
+  </script>
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://cateaf.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://cateaf.com/2021/04/14/dameng-database/";
+    this.page.identifier = "2021/04/14/dameng-database/";
+    this.page.title = "达梦数据库的安装与使用";
+    };
+  NexT.utils.loadComments('#disqus_thread', () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://cateaf.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

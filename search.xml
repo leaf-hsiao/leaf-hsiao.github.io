@@ -1,0 +1,2851 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>新启动</title>
+    <url>/2016/06/05/a-new-beginning/</url>
+    <content><![CDATA[<p>原博的资料丢了，2年了啊，摔(╯‵□′)╯︵┻━┻ I'am angry. 考虑历史的行程，重新搞了个大新闻（划掉），重新搞了个新博客。 <del>GitHub肥肠不清真，所以用了Bitbucket。</del> GitHub真香 继续使用Hexo，这是坠吼滴。 <img data-src="/images/girigiri.gif" /></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于建模软件的。。。</title>
+    <url>/2016/08/31/all-about-modeling-soft/</url>
+    <content><![CDATA[<p><em>1年前老博客上的文章了，刚好在这次国赛前找到了，修正一些数据后重新发布</em></p>
+<span id="more"></span>
+<h1 id="lingo">Lingo</h1>
+<blockquote>
+<p>LINGO全称是Linear INteractive and General Optimizer的缩写—-交互式的线性和通用优化求解器。它是一套设计用来帮助您快速，方便和有效的构建和求解线性，非线性，和整数最优化模型的功能全面的工具。包括功能强大的建模语言，建立和编辑问题的全功能环境，读取和写入Excel和数据库的功能，和一系列完全内置的求解程序.</p>
+</blockquote>
+<p><a href="http://www.lindo.com/">Official Website</a></p>
+<p><em>强迫症表示不用正版不舒服233333（其实是因为破解版大多都不完整）</em></p>
+<ol type="1">
+<li>在官网上找到合适的版本<a href="http://www.lindo.com/index.php?option=com_content&amp;view=article&amp;id=35&amp;Itemid=20">List</a> <img data-src="http://7rf2em.com1.z0.glb.clouddn.com/blogsoft-1.png" /> 填写好信息 <img data-src="http://7rf2em.com1.z0.glb.clouddn.com/blogsoft-2.png" /> 在邮箱里可以收到下载地址 或者直接在此下载（我只下了Lingo15的64位Linux版和Windows版，需要其他版本的只能自己去下了） <a href="http://www.lindo.com/downloads/LINGO-LINUX-64x86-15.0.run">Linux64</a> <a href="http://www.lindo.com/downloads/LINGO-WINDOWS-64x86-15.0.zip">Windos64</a></li>
+<li>首次运行选择Demo，即免费试用版，然后会有提示教育用途可以申请完整的lingo licence。确认之后会在lingo的安装目录下生成一个userinfo.txt</li>
+<li>将该文件以附件的形式发送给sales@lindo.com。<em>所以建议使用edu邮箱</em> <img data-src="http://7rf2em.com1.z0.glb.clouddn.com/blogsoft-3.png" /> 在72小时内会收到回复（我只等了1个小时） <img data-src="http://7rf2em.com1.z0.glb.clouddn.com/blogsoft-4.png" /> 就有了一个为期6个月的educational research license key。</li>
+<li>输入license <img data-src="http://7rf2em.com1.z0.glb.clouddn.com/blogsoft-5.png" /> 就可以使用正版的lingo了 <img data-src="http://7rf2em.com1.z0.glb.clouddn.com/blogsoft-6.png" /></li>
+<li>刚刚发邮件确认了这个key到期了可以再申请（所以学生期间可以无限用咯）</li>
+</ol>
+<p><em>补充：demo的license是1年，edu申请的是半年但是后者功能没有任何限制，变量个数等都是unlimited</em></p>
+<h1 id="matlab">Matlab</h1>
+<blockquote>
+<p>MATLAB® 是一个高级语言交互环境，可执行数值计算、可视化和编程。使用 MATLAB，您可以分析数据、开发算法以及创建模型和应用程序。使用相应语言、工具和内置数学函数，您可以探索多种方法并实现比电子表格或其他编程语言（例如 C/C++ 或 Java®）更快的解决方案。您可以将 MATLAB 用于大量应用，包括信号处理和通信、图像和视频处理、源代码管理系统、测试和测量、计算金融和计算生物。本行业及学术界中有超过一百万工程师和科学家使用 MATLAB 这种技术计算语言。</p>
+</blockquote>
+<h2 id="安装">安装</h2>
+<p><a href="https://cn.mathworks.com/downloads/web_downloads/select_platform">Download</a> <em>由于官网速度以及流量问题，还是推荐去pt站下载吧</em> 在<a href="https://cn.mathworks.com/programs/trials/trial_request.html">MathWorks</a>上可以申请30天的封装试用版的试用。 <img data-src="http://7rf2em.com1.z0.glb.clouddn.com/blogsoft-7.png" /> 要是像我一样有正版强迫症也可以叫美国同学帮你弄教育版或者自己去<a href="http://www.fakenamegenerator.com/advanced.php">生成美国人信息</a>，再<a href="https://eims.maricopa.edu/MAW/MAW.html">注册edu</a><em>没有验证过可行性</em></p>
+<p>PS: MathWorks 为 cumcm提供软件支持. 如果您的团队参加该竞赛并需要相关软件，可以<a href="http://cn.mathworks.com/academia/student-competitions/cumcm/">申请使用</a></p>
+<h2 id="工具箱">工具箱</h2>
+<p>从matlab7.0的1G不到到现在2015a的7G多，除了软件的更新，另外就是工具箱的扩充。安装的时候其实没必要全装了（120G的SSD实在吃不消</p>
+<p>常用的有</p>
+<p>1.计算金融学</p>
+<blockquote>
+<p>开发定量化应用程序并为市场数据建模，以实现最佳化性能和最小化风险。您可以将模型与数据来源集成，然后部署应用程序。</p>
+</blockquote>
+<ul>
+<li>MATLAB</li>
+<li>Curve Fitting Toolbox</li>
+<li>Database Toolbox</li>
+<li>Datafeed Toolbox</li>
+<li>Econometrics Toolbox</li>
+<li>Financial Instruments Toolbox</li>
+<li>Financial Toolbox</li>
+<li>Global Optimization Toolbox</li>
+<li>Optimization Toolbox</li>
+<li>Parallel Computing Toolbox</li>
+<li>Spreadsheet Link EX</li>
+<li>Statistics and Machine Learning Toolbox</li>
+<li>Symbolic Math Toolbox</li>
+</ul>
+<p>2.控制系统</p>
+<blockquote>
+<p>通过开发定制算法，在实施之前检验设计一致性并自动部署代码，来建模、确认和验证您的控制设计。</p>
+</blockquote>
+<ul>
+<li>MATLAB</li>
+<li>Simulink</li>
+<li>Control System Toolbox</li>
+<li>Signal Processing Toolbox</li>
+<li>Simulink Control Design</li>
+<li>Stateflow</li>
+<li>System Identification Toolbox</li>
+</ul>
+<p>3.图像处理和计算机视觉</p>
+<blockquote>
+<p>使用图形工具对图像和视频进行可视化和操作。连接到硬件并使用参考标准算法库开发新思路。</p>
+</blockquote>
+<ul>
+<li>MATLAB</li>
+<li>Computer Vision System Toolbox</li>
+<li>Image Acquisition Toolbox</li>
+<li>Image Processing Toolbox</li>
+<li>Parallel Computing Toolbox</li>
+<li>Signal Processing Toolbox</li>
+<li>Statistics and Machine Learning Toolbox</li>
+</ul>
+<p>4.信号处理和通信</p>
+<blockquote>
+<p>探索信号处理和应用，如音频和语音处理、信号可视化、时间和频率分析以及信号数据分析。</p>
+</blockquote>
+<ul>
+<li>MATLAB</li>
+<li>Simulink</li>
+<li>Communications System Toolbox</li>
+<li>Data Acquisition Toolbox</li>
+<li>DSP System Toolbox</li>
+<li>Instrument Control Toolbox</li>
+<li>Signal Processing Toolbox</li>
+</ul>
+<p>5.计算生物学</p>
+<blockquote>
+<p>使用数据分析和数学建模来理解和预测生物行为。您可以导入数据并为其建模，自动化工作流程元素，然后为研究定制算法和工具。</p>
+</blockquote>
+<ul>
+<li>MATLAB</li>
+<li>Bioinformatics Toolbox</li>
+<li>Curve Fitting Toolbox</li>
+<li>Global Optimization Toolbox</li>
+<li>Image Processing Toolbox</li>
+<li>Instrument Control Toolbox</li>
+<li>Optimization Toolbox</li>
+<li>Parallel Computing Toolbox</li>
+<li>Signal Processing Toolbox</li>
+<li>SimBiology</li>
+<li>Statistics and Machine Learning Toolbox</li>
+</ul>
+<p>6.数据分析</p>
+<blockquote>
+<p>通过实施数据拟合与动态系统建模和控制，对数据进行分析和深入了解。找到最佳解决方案并开发预测模型。</p>
+</blockquote>
+<ul>
+<li>MATLAB</li>
+<li>Curve Fitting Toolbox</li>
+<li>Database Toolbox</li>
+<li>Global Optimization Toolbox</li>
+<li>Neural Network Toolbox</li>
+<li>Optimization Toolbox</li>
+<li>Parallel Computing Toolbox</li>
+<li>Statistics and Machine Learning Toolbox</li>
+<li>Symbolic Math Toolbox</li>
+</ul>
+<h1 id="maple">Maple</h1>
+<blockquote>
+<p>Maple内置5,000多个计算函数，覆盖几乎所有的数学领域，领先的计算引擎提供广度、深度、和性能满足各种科学计算需求。Maple透过友好的智能界面提供强大的符号推导功能、无限精度数值计算、丰富的可视化工具、完整的编程语言、广泛的接口、美观的技术文件等，是您进行数学工作的理想工作环境。</p>
+</blockquote>
+<p>中国用户在此查看<a href="http://www.cybernet.sh.cn/product/2.html">产品列表</a>包括Maple，MapleSim，Maple T.A.等 还有免费的<a href="http://www.cybernet.sh.cn/product/146.html">Maple Player</a></p>
+<blockquote>
+<p>Maple Player 是一个免费程序，允许用户浏览和交互式操作任意的Maple文件。用户即使没有安装Maple软件，也能完成计算、可视化结果、以及探索概念。用户可以使用Maple Player打开其他人创建的Maple文件，Maplesoft也提供了大量的Maple文件，这些资料收集在Application Center，Teacher Resource Center， Maple Primes，The Mobius Project等。</p>
+</blockquote>
+<p>(其实够用了，毕竟用Maple用得少)</p>
+<h1 id="wolfram-mathematica">Wolfram Mathematica</h1>
+<blockquote>
+<p>全球现代技术计算的终极系统</p>
+</blockquote>
+<p>真.神器 介绍看<a href="http://www.wolfram.com/mathematica/">官网</a></p>
+<p>有Online版的和Desktop版的，但是价格是惊人的贵，而且也只有15天的试用期，无免费版。但是Mathematica和WolframLanguage集成到Raspbian中。所以可以购买只有25刀的<a href="https://www.raspberrypi.org/">树莓派</a>享用正版Mathematica。（为什么还不剁手！</p>
+<h1 id="r">R</h1>
+<blockquote>
+<p>R是用于统计分析、绘图的语言和操作环境。R是属于GNU系统的一个自由、免费、源代码开放的软件，它是一个用于统计计算和统计制图的优秀工具。</p>
+</blockquote>
+<p><a href="https://www.r-project.org/">下载</a> 新手推荐使用<a href="https://www.rstudio.com/">RStudio</a>当作IDE。</p>
+<p>另也有spss,eviews等收费软件可以使用</p>
+<h1 id="latex"><span class="math inline">\(\LaTeX\)</span></h1>
+<blockquote>
+<p>基于<span class="math inline">\(TeX\)</span>的排版系统，由美国电脑学家莱斯利·兰伯特在20世纪80年代初期开发，利用这种格式，即使使用者没有排版和程序设计的知识也可以充分发挥由<span class="math inline">\(TeX\)</span>所提供的强大功能，能在几天，甚至几小时内生成很多具有书籍品质的印刷品。对于生成复杂表格和数学公式，这一点表现得尤为突出。因此它非常适用于生成高印刷质量的科技和数学类文档。这个系统同样适用于生成从简单的信件到完整书籍的所有其他种类的文档。</p>
+</blockquote>
+<p>已经不是建模软件了（关于写论文用<span class="math inline">\(\TeX\)</span>还是Word还是看个人喜好吧，<span class="math inline">\(\TeX\)</span>更方便更漂亮而已</p>
+<p><del>可以使用<a href="http://www.ctex.org/HomePage">CTeX</a>作为入门套件</del></p>
+<p>不推荐使用CTeX</p>
+<blockquote>
+<ul>
+<li>CTeX 封装的 MikTeX 在实现 XeTeX 以及字体库的时候有一些问题，前者导致运行 XeLaTeX 异常缓慢，后者导致使用一些数学字体的时候会报错。</li>
+<li>CTeX 封装的默认编辑器 WinEdt 是闭源软件，实际上是在使用盗版软件。</li>
+<li>CTeX 封装的默认编辑器 WinEdt 修改了默认编码为 GBK, 这将在后续使用过程中产生很多问题，对初学者来说是不良的。</li>
+<li>CTeX 封装的默认编辑器 WinEdt 集成了太多的功能，并且修改了很多 LaTeX 的默认行为，对于初学者来说，这些未经通告的默认行为修改对于其对 LaTeX 的理解是不良的。</li>
+<li>CTeX 套装的 2.9.2.164 版本至今已经超过一年未更新，aloft 老大似乎也没有更新的愿望，事实上也没有必要再更新了。</li>
+<li>CTeX 由于封装 MikTeX 而只能运行于 Windows 平台。</li>
+<li>CTeX 是因为 CJK 包的字体配置复杂，为了免去入门用户的配置成本而推出的。</li>
+<li>而现在因为 XeTeX 引擎以及 xeCJK 宏包的出现，CJK 包已经成为过去。并且使用 zhm 可以与 CJK 结合方便地动态配置字体。因此 CTeX 曾经的优势实际上已经不成为优势，并且因其引起的各种国内期刊模板的老旧问题正不断成为阻碍中国 TeX 社区进步的恼人因素。.</li>
+</ul>
+</blockquote>
+<p>推荐使用<a href="http://tug.org/texlive/">TeXlive</a>+<a href="http://texstudio.sourceforge.net/">TeXstudio</a>或者用Sublime Text替代TeXstudio</p>
+<p>Update: CTeX在2月份开始又由Harry Chen和Liam Huang接手负责开发。所以随意选择啦。。。 PS: WinEdt也拿到了授权 （网上大部分模板都是在CTeX下制作的，如果想省事点的话就。。。</p>
+]]></content>
+      <tags>
+        <tag>math</tag>
+        <tag>mathematic modelling</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>吹一波AudioQuest</title>
+    <url>/2017/09/03/audioquest-dragonfly-configuration/</url>
+    <content><![CDATA[<p>被种草AudioQuest很久了，再加上等了一整年七彩虹也没放出USB-DAC的驱动，估摸着可能永久性鸽了，还是买了个DragonFly Black试了试，在iPhone上尝试了一下效果提升了一耳朵，然后又被安利了JitterBug，感觉可以购买AudioQuest全家桶了。</p>
+<p><img data-src="/images/audioquest/aq1.jpg" /></p>
+<span id="more"></span>
+<h1 id="jitterbug">JitterBug</h1>
+<blockquote>
+<p>JitterBug is designed to remove unwanted noise currents and parasitic resonances from both the data (communication) and Vbus (power) lines of USB ports.</p>
+</blockquote>
+<p>使用方式就是在你的DAC和电脑中间加入一个JitterBug，如果你的设备有多个USB口的话可以再接入一个JitterBug，音质能有进一步改善（当然也请不要再接入第三个JitterBug了，并不是越多越好。</p>
+<p>如果有其他设备连接电脑可以通过空余的JitterBug接入</p>
+<p><img data-src="/images/audioquest/jitterbug.png" /></p>
+<p>如果将将移动设备接入到支持USB输入口的播放器上时也可以在中间接入JitterBug，如果使用的是储存卡或者U盘之类的，也建议接入JitterBug。</p>
+<p>PS：JitterBug不会耗电</p>
+<h1 id="dragonfly-black">DragonFly Black</h1>
+<p>从2012年诞生开始，斩获了无数HI-FI大奖，低廉的价格但是有着不俗的音质。</p>
+<blockquote>
+<p>Beautiful music from computers and mobile devices.</p>
+</blockquote>
+<p>Black是DragonFly Series中的平民款，相比Red，Black的output为1.2v，而Red为2.1v，volume control不同，以及分别是ESS 9010和ESS9016。虽然看完德仪退休老员工<a href="https://www.ece.iastate.edu/the-department/external-advisory-council/bruce-trump/">Bruce Trump</a>的<a href="http://www.edn.com/electronics-blogs/the-signal/4415482/Slew-Rate-the-op-amp-speed-limit">文章</a>之后还是十分懵（谁推荐我看的(′д｀ )…彡…彡,唔看得懂的当我没说。再贴一篇<a href="http://e2e.ti.com/blogs_/b/analogwire/archive/2013/08/26/dac-essentials-understanding-your-dac-39-s-speed-limit">相关文章</a>。纠结清楚（其实并不清楚）了之后还是选择价格便宜一半的Black。可以看一下<a href="http://www.audioquest.com/wp-content/uploads/2016/04/dragonfly-spec-sheet-darktheme.pdf">DragonFly Model Comparison</a>详细比对。</p>
+<h2 id="features">Features</h2>
+<p>U盘大小，便宜的价格，直推耳机，支持大部分主流桌面和移动设备（天地良心没被抛弃的WinRT），可以直接再生任何类型的音频文件而不用考虑解析度之类的（反正就是能提升一耳朵听感，最重要的是<del>价格低廉</del>，一百刀能有这么好的音质和推力还有什么不满意的</p>
+<h2 id="configuration">Configuration</h2>
+<p>手头只有IOS和Win10，其实大都在官网上有<a href="http://www.audioquest.com/dragonfly-series/#downloads">说明</a>了（当个搬运工把XD</p>
+<p>在桌面系统下安装<a href="http://www.audioquest.com/digitalupdates">AQ Desktop App</a>更新到最新固件，然后开始使用</p>
+<h3 id="androidios">Android&amp;IOS</h3>
+<p>Android需要Jelly Bean以上，硬件也需要兼容，<a href="https://play.google.com/store/apps/details?id=org.tauruslabs.usbhostcheck">USB Host Check</a>可以检测是否支持，更多信息参考<a href="http://www.extreamsd.com/index.php/technology/usb-audio-driver">该文章</a>，同时也推荐使用他家的<a href="https://play.google.com/store/apps/details?id=com.extreamsd.usbaudioplayerpro">UAPP</a>在Android上播放。</p>
+<p>IOS使用的话官方建议使用<a href="https://www.apple.com/shop/product/MK0W2AM/A/lightning-to-usb-3-camera-adapter">Lightning to USB 3 Camera Adapter</a>转换，比起<a href="https://www.apple.com/shop/product/MD821AM/A/lightning-to-usb-camera-adapter">2.0</a>听感要好很多，稳定性也更好。</p>
+<h3 id="windows下的使用">Windows下的使用</h3>
+<p>将DragonFly设为默认播放设备</p>
+<p><img data-src="/images/audioquest/capture1.png" /></p>
+<p>关闭所有音效</p>
+<p><img data-src="/images/audioquest/capture2.png" /></p>
+<p>选择24bit/44100.0 Hz采样率，并勾选两个独占模式</p>
+<p><img data-src="/images/audioquest/capture3.png" /></p>
+<p>关于采样率直接的复制一下官方说明</p>
+<blockquote>
+<p>CDs操作系統的採樣率是 44100.0 Hz。壓縮的 MP3和AAC 音樂檔案和音頻流通常有三種不同層次的音質來編碼 - 128kbps, 256kbps (iTunes Plus), 和 320kbps — 然後大都再生為44100.0 Hz的文件。與此相似的，許多轉檔的 Apple Lossless 和 FLAC的下載音樂和CD音樂檔案也都再生為 44100.0 Hz的檔案。如果您有更高分辨率的檔案，選擇正確的較高採樣率是很重要的，這樣才能充分體現此音樂檔案的優點。讓高於 DragonFly Black的 96kHz 上限的採樣率檔案展現更好的音質，需要使用與其本身分辨率倍數相同的採樣率 。例如，一個192kHz 的檔案應使用 96kHz 來播放。 (i.e., 2 x 96000.0 = 192000.0).</p>
+<p>有些程序 (如 NPR) 使用 48000.0 Hz。 這些 24-bit/48000.0 Hz 檔案的音質表現也能十分接近比其更高採樣率的音樂檔案 。有些 “高分辨率”檔案使用 88200.0 Hz 因為這是 CD標準採樣率的整數倍。(i.e., 2 x 44100.0 = 88200.0). 還有些 “高分辨率”檔案使用 96000.0 Hz 因為這是 DVD、藍光播放器和電腦所用採樣率的整數倍。(i.e., 2 x 48000.0 = 96000.0).</p>
+</blockquote>
+<p><a href="http://www.audioquest.com/pdfs/Computer-Audio-Demystified-WhitePaper-EN-R2.pdf">进阶参考</a>（还是很重要的）</p>
+<p>机身上的LED灯代表了当前状况。</p>
+<ul>
+<li>红色: 待机</li>
+<li>绿色: 44100.0 Hz</li>
+<li>蓝色: 48000.0 Hz</li>
+<li>琥珀色: 88200.0 Hz</li>
+<li>紫红色: 96000.0 Hz</li>
+</ul>
+<p>针对iTunes, Roon, JRiver, foobar2000, Pure Music, Decibel,和Bit Perfect等可以通过进一步设置提升<del>玄学</del>听感，<a href="http://www.audioquest.com/pdfs/CA-Setup-Guide.pdf">Computer Audio Setup Guide</a>中给出了ITunes和JRiver的详细设置方案。</p>
+<h4 id="itunes">ITunes</h4>
+<p>在导入设置里导入使用选择AIFF或者Apple Lossless，设置为自动，勾选开启纠错功能。</p>
+<p><img data-src="/images/audioquest/capture4.png" /></p>
+<p>不要开启均衡器</p>
+<p><img data-src="/images/audioquest/capture5.png" /></p>
+<p>Enjoy ITunes.</p>
+<h4 id="foobar2000">Foobar2000</h4>
+<p>比起体验极其糟糕的ITunes，个人还是偏爱Foobar2000</p>
+<p>需要<a href="https://www.foobar2000.org/components/view/foo_out_wasapi">WASAPI output</a>支持</p>
+<p>Output Device选择WASAPI，format使用24bit</p>
+<p><img data-src="/images/audioquest/capture6.png" /></p>
+<p>然后再根据个人喜好调♂教DSP</p>
+<p>最后</p>
+<p><img data-src="/images/audioquest/aq2.jpg" /></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Catfish</title>
+    <url>/2017/07/23/catfish/</url>
+    <content><![CDATA[<blockquote>
+<p>A theme for <a href="https://typora.io">Typora</a></p>
+<p>Designed and tested on Windows 10, version 1703. Not fully tested, but should work for macOS/Linux.</p>
+</blockquote>
+<h2 id="catfish">Catfish</h2>
+<p><del>是猫鱼不是鲇鱼</del></p>
+<p>啊好想吃猫鱼（叹气。</p>
+<span id="more"></span>
+<p><em>screenshots:</em></p>
+<p><img data-src="/images/catfish/catfish1.png" /></p>
+<p><img data-src="/images/catfish/catfish2.png" /></p>
+<p><img data-src="/images/catfish/catfish3.png" /></p>
+<p>样式主要参照自己的博客。</p>
+<p>无衬线字体，衬线字体和等宽字体分别采用思源黑体，思源宋体， mononoki 。</p>
+<p>代码高亮使用 Material 配色。</p>
+<p>仅在Windows10 1703上测试使用，不知道在老系统以及macOS/Linux下显示如何，希望好心人帮忙测试。</p>
+<h2 id="下载安装">下载安装</h2>
+<p>已发布到<a href="http://theme.typora.io/theme/Catfish/">Catfish</a>，直接下载就好，bug什么的<del>不存在的</del>我会慢慢改的（我还记得的话），安装参照<a href="http://theme.typora.io/doc/Install-Theme/">Install Theme</a>。</p>
+<p>有问题报<a href="https://github.com/leaf-hsiao/catfish/issues">issue</a>就好喏XD</p>
+]]></content>
+      <categories>
+        <category>Project</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Coffee in Austin</title>
+    <url>/2017/08/29/coffee-in-austin/</url>
+    <content><![CDATA[<p>在Austin抽空去探访了一下当地的咖啡馆</p>
+<span id="more"></span>
+<h1 id="epicerie-cafe-grocery"><a href="http://epicerieaustin.com">Epicerie Cafe &amp; Grocery</a></h1>
+<p><em>2307 Hancock Dr, Austin, TX 78756</em></p>
+<p>之前听说店里用的blue bottle coffee，因此在空闲时间第一家溜过去。可能是因为消息来源已经是13年的了，取代了blue bottle是店里的咖啡。</p>
+<p><img data-src="/images/austin/IMG_3309.JPG" /></p>
+<p><img data-src="/images/austin/IMG_3311.JPG" /></p>
+<p>主食有Salads，Starters，Sandwich等，旁边的小黑板上写着咖啡和酒。尝试了 Porchetta Sandwich，典型的德州BBQ风味。尝试了一下冷萃。</p>
+<p><img data-src="/images/austin/IMG_3312.JPG" /></p>
+<p><img data-src="/images/austin/IMG_3310.JPG" /></p>
+<p>可以说是非常的焦苦了，相比较下主食的质量非常高（价格也是。旁边的柜子上摆着糖浆和啤酒。感觉上像是非常适合吃brunch的地方。</p>
+<p><img data-src="/images/austin/IMG_3313.JPG" /></p>
+<p><img data-src="/images/austin/IMG_3314.JPG" /></p>
+<p>hmm</p>
+<h1 id="andersons-coffee-co."><a href="https://andersonscoffee.com">Anderson's Coffee Co.</a></h1>
+<p><em>1601 W 38th St, Austin, TX 78701</em></p>
+<p>一家在本地开了快50年的烘焙商，一进门就是浓郁的咖啡香，前台的小哥说旁边的咖啡厅用的就是他们的豆子，喝咖啡的话可以去。主打中烘和深烘，店主偏爱用梅丽塔的单孔滤杯。</p>
+<p><img data-src="/images/austin/IMG_3348.JPG" /></p>
+<p>店里是卖豆子和设备的，有三桶咖啡摆在吧台上，每天用不一样的豆子，直接用bonavita的滴滤机做的，一刀一杯的售价性价比还是很高的（大概就是方便顾客尝尝豆子的的风味。虽然小哥极力推荐我第二天来喝苏门答腊，但是我鸽了，说好的临走前过来拎一袋豆子也被飓风阻止了。</p>
+<p><img data-src="/images/austin/IMG_3349.JPG" /></p>
+<p>表达了喜欢浅烘之后又顺道还给了我写了另外两家店的地址。</p>
+<p>#<a href="https://www.houndstoothcoffee.com">Houndstooth Coffee</a></p>
+<p><em>4200 N Lamar Blvd 120, Austin, TX 78756</em></p>
+<p>推荐的第一家就在Anderson旁边，是一家连锁店，奥斯汀和达拉斯都有分店。</p>
+<p><img data-src="/images/austin/IMG_3382.JPG" /></p>
+<p>EK43和Acaia这种标配，以及久违的见到了聪明杯。</p>
+<p><img data-src="/images/austin/IMG_3384.JPG" /></p>
+<p>热咖啡同样是机子做的，冷萃之外还有一款叫做Japanese iced coffee的，用蛋糕杯萃取下面用冰块接着。</p>
+<p><img data-src="/images/austin/IMG_3383.JPG" /></p>
+<p>两刀一杯，质量也不错。意式看起来也不错，但是没有尝试了。</p>
+<h1 id="cuvée-coffee-bar"><a href="http://cuveecoffee.com">Cuvée Coffee Bar</a></h1>
+<p><em>2000 E 6th St, Austin, TX 78702</em></p>
+<p>第二家店比较偏远拖了很久才去，用的机器自动注水（他们都这么懒的吗，店员说有利于保证出品的稳定性。</p>
+<p><img data-src="/images/austin/IMG_3719.JPG" /></p>
+<p>可惜了没有时间继续尝试了赶时间就打包拎走了。还不错顺带就拎了推荐的一包豆子，感觉生命又少了1秒。</p>
+<p><img data-src="/images/austin/IMG_3718.JPG" /></p>
+<p>店员又和我说了一家must go的也在不远处。</p>
+<h1 id="fleet-coffee"><a href="www.fleetcoffee.com">Fleet Coffee</a></h1>
+<p><em>2427 Webberville Rd, Austin, TX 78702</em></p>
+<p>和Cuvee挨得比较近，同样也是机器注水，只不过在Kalita之外还有Chemex可以选，价格mkt。</p>
+<p><img data-src="/images/austin/IMG_3799.JPG" /></p>
+<p>点了一杯肯尼亚6刀，豆子由<a href="https://madcapcoffee.com">madcap</a>,<a href="www.wreckingballcoffee.com">wrecking ball</a>,<a href="https://sweetbloomcoffee.com">sweet bloom</a>三家提供，质量非常高了，均价18刀/12oz左右。（又是飓风阻止了我在新进货的那一天去选豆子😭</p>
+<p><img data-src="/images/austin/IMG_3798.JPG" /></p>
+<p>坐在窗边把手机玩到快没电准备开溜（奥斯汀的太阳要是隔着玻璃坐在空调里观赏还是很美的，走之前又要了一杯冰咖啡，可能是在奥斯汀喝过最满意的了。</p>
+<p><img data-src="/images/austin/IMG_3807.JPG" /></p>
+<p>柑橘，茉莉花香，可能对大部分人而言口感偏淡了，但是在夏天来一杯恰到好处😋</p>
+<hr />
+<p>第二天就飓风来了，然后赶回国，豆子也没机会去买了，还有标注的几家还没去（只能期待下一次有机会再去了。</p>
+]]></content>
+      <tags>
+        <tag>tour</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>咖啡精制法</title>
+    <url>/2021/02/15/coffee-processing/</url>
+    <content><![CDATA[<p>大约5，6年前入的精品咖啡坑，几乎所有的知识都来源于探店和<a href="https://book.douban.com/author/203281/">田口護</a>和<a href="https://book.douban.com/tag/%E9%9F%A9%E6%80%80%E5%AE%97">韩怀宗</a>的著作，如今回家过年发现三线小城市都已经有很多精品咖啡店。虽然我一直的观点是作为顾客是不需要学习咖啡知识，只需要主观判断好喝与否即可，但是面对日渐繁杂的菜单，或是偶尔被好友问到“袋子上写的日晒和水洗是什么”，回答“不同的生豆处理方法”，又被问道“那有什么区别呢”，能蹦出来“日晒醇厚度更高水洗花香更重”，想要继续说下去又发现不知道该从哪里说起。又或者是被问到“不同滤杯出品有区别吗”，“瑰夏贵一些还是猫屎咖啡贵一些”之类的问题，虽能答得出要细说时又词穷。</p>
+<p>重新翻了一下手上的资料，还有<a href="https://book.douban.com/subject/30334671/"><em>The New Rules of Coffee</em></a>一类的休闲书。大多是些入门读物，用来介绍一些入门科普再好不过了。原计划是整理出一份思维导图，在整理途中发现内容比想象的要多，干脆写几篇读书笔记好了，就从咖啡精制法开始。感谢<a href="http://www.dianping.com/shop/H5rDaUajR13pXuDb">默咖啡</a>默老板帮助。</p>
+<span id="more"></span>
+<p>为了咖啡豆长时间保存，以便于储存及流通，而将咖啡果实的外皮和果肉去除，取出种子并将之烘干，这个过程称之为精制（processing）。主流的精制法有日晒，水洗和蜜处理，总的来说水洗由于每个步骤都会去除杂质，杂质和瑕疵豆少，外观整齐清洁，品质较高。但外在品质并不等同于内在品质，不同的精制法各有长短，尤其在精品咖啡出现后曾经被视为逊于水洗的日晒处理法因更丰富的风味又逐渐占据上风。换而言之</p>
+<blockquote><p>Washed coffee isn't clean. Natural coffee isn't dirty</p>
+<footer><strong>The New Rules of Coffee</strong><cite>Jordan Michelman / Zachary Carlsen</cite></footer></blockquote>
+<p>对介于日晒和水洗之间的半日晒或半水洗介绍时分类其实不太科学。通常的半水洗是指起源于巴西的黏膜干燥法半洗处理，而起源于印尼苏门答腊的湿刨法（Wet-Hulling）也是介于日晒和水洗之间的方法。在进入精品咖啡时代之后环保意识的变化，以及为了卖出高价咖啡的实用主义，半水洗在哥斯达黎加衍生的环保水洗法（ECO-WASHED）和蜜处理（Honey）逐渐占据主流市场。</p>
+<p>此外还有不同于以上处理方法的风渍处理法（Monsoon），还有广受诟病的经由动物消化系统处理，例如麝香猫咖啡/猫屎咖啡（Kopi Luwak）。</p>
+<h2 id="日晒-natural">日晒 Natural</h2>
+<p>亦被称为 Dry 以及 Unwashed，是最早被使用的处理法，Unwashed 是为了和 Washed 相对应，但会给人带来“没有清洗”的负面影响，而 Natural 给人天然的感觉，而有更良好的形象。</p>
+<p>日晒处理的作业过程简单，设备投资少，成本相对较低，但需要持续的日晒和平坦的地形。将采摘下的咖啡樱桃摊在露天日晒场，并适时搅拌以防干燥不均或者发酵，晒干顺利后的含水量约为11%-12%，再用去壳机去除外皮果肉和內果皮，经过选豆去除瑕疵豆分级后售卖。</p>
+<p>在处理时由于果肉和种子长期接触，比起水洗果味更容易渗透进去。日晒处理的咖啡豆偏软，具有丰富的酸性，不同于水洗保留更多的有机酸，日晒豆经过浅烘到中烘会产生柔和，醇厚的酸味。</p>
+<p>同时因保留了较多的糖分，若采用浅烘到中烘会产生棉花糖和糖浆系的甜香或奶油香，而超过中烘会产生坚果系，巧克力，可可系的香气。正如<a href="https://gendai.ismedia.jp/list/author/tanbeyukihiro">旦部幸博</a>谈及 Don Pachi 庄园的日晒瑰夏“除了有水洗瑰夏所有的柑橘芬芳，还具有与其完全不同的葡萄酒般的花香和果香”香味会更接近也门的摩卡（Mokha Mattari）香。虽然巴西式，也门式，中美式会有微妙的差别，总的来说是“巧克力与花系”的香气。</p>
+<p>日晒过程中如果处理不当会有瑕疵豆带有土壤的土腥味，发霉产生的霉锈味，异常发酵导致的馊味等。日晒处理的杂质和瑕疵豆相当多，需要花大量时间清除，像未熟豆和发酵豆在生豆阶段难以辨别，在烘焙中产生不良影响，而在杯测时则会有“rotten banana”, “baby diaper”一类的瑕疵风味产生。大小不一，干燥不均的豆子也会给烘焙带来麻烦，要避免烘焙过度。</p>
+<h2 id="水洗-washed">水洗 Washed</h2>
+<p>也叫 Wet，19世纪中期，因为加勒比海的西印度群岛咖啡收成季经常下雨无法日晒而出现。除去用水便利性的因素，哥伦比亚和中美洲各国均属于在政治性上靠近美国的地域即“美国后院”，而SCAA成立初期，要求咖啡的味道必须“干净”，水洗才符合美国标准，因而水洗被广泛使用。</p>
+<p>水洗处理法成本较高，精制步骤费工夫，而且需要大量的水。采收后在蓄水池中去除杂质和未熟豆，再由果肉去除机去除外果皮和果肉，接着用发酵槽去除内果皮上附着的粘膜，在水洗池中选出质量轻的豆子和豆质坚硬的豆子，日光干燥或者机器干燥至含水量12%-13%后去壳选豆售卖。</p>
+<p>与日晒的区别在于去除果肉后再干燥，干燥期短，能够保留的有机酸（柠檬酸和苹果酸）比例较高，因此会有新鲜水果和花香的特质。日晒处理大多在脱壳后保留银皮，在烘焙后就没有了，而水洗处理虽然会去掉银皮，但是只要不采用深烘，中央线仍会残留。少量残留时不构成影响，过多则会带来涩味。整体苦味和甜味均衡，口感温和顺口，浅烘到中烘易于产生鲜水果般的酸味。</p>
+<p>浸泡在发酵槽内导致糖分流失，外加微生物对糖分的分解作用，水洗豆的葡萄糖和果糖含量会相对减少，在烘焙中生成的酸会与减少的糖成正比，进而难以产生焦糖，糖浆，果仁，巧克力等香气，取而代之是淡淡内敛的果味和奢华的花香。浅烘产生鲜水果的香气，深烘则出现苯酚系的刺激性香味。</p>
+<p>发酵槽如果清理不完全，温湿度变化过大导致发酵槽中的微生物变化，像酪酸菌等细菌在水槽内异常繁殖，豆子会沾染上发酵的臭味，这些豆子外观和正常生豆无异难以找出。考虑到水洗豆酸味和涩味皆强烈的特质，烘焙时则要考虑酸味和涩味的控制。同时因为过于追求干净的味道，用大量的清水冲刷，或将黏液彻底去掉，导致味道消失，个性表现被束缚得越来越窄。</p>
+<h2 id="半水洗-semi-washed-semi-dry">半水洗 Semi-washed / Semi-dry</h2>
+<p>日晒与水洗的折中型，通常指起源于巴西的黏膜干燥法半洗处理/果肉日晒（Pulped Natural Method）和变型升级版的蜜处理（Honey) 。水洗法通过发酵槽利用微生物来去除果胶层，但是会产生大量的废液，这是违背可持续性理念的。</p>
+<p>果肉日晒是将收成的咖啡果实水洗后，再利用果肉去除机（Pulper）除去外皮和果肉以及杂质，不将咖啡果实放入发酵槽，而是使用黏膜去除机（Mucilage Removal）去除黏膜层（果胶），晒干后去壳挑去瑕疵豆后完成。</p>
+<p>由于强力去除果胶的方式，干净的目的达成，咖啡中酸度，甜度，香味都相当不错，味道的浓郁方面则有所欠缺。而蜜处理正是走向了“发酵的香味”。</p>
+<h3 id="蜜处理-honey">蜜处理 Honey</h3>
+<p>通常称为蜜处理的方法是果肉日晒的变型升级版，在哥斯达黎加，萨尔瓦多等中美洲地区，咖啡豆的表层黏膜极为粘滑且糖度高被称为 Miel，在拉丁文中意思为蜜。蜜处理中，比起果肉日晒会使用更少的水来清洗果胶，在干燥过程中会保留部分或者全部的“蜜”，这样便从水洗式单调乏味的味道走向复杂化。</p>
+<p>利用果胶残留量可以对香味进行调节，根据果胶保留率依次递减划分为<strong>黑蜜</strong>，<strong>红蜜</strong>，<strong>黄蜜</strong>，<strong>金蜜</strong>，<strong>白蜜</strong>，原则上完全去除果胶的是名为环保水洗法（ECO-WASHED）。按递减顺序发酵度从中到低，从近似日晒，逐渐接近水洗。</p>
+<p>由于咖啡豆周围的果肉较少，比起日晒过度发酵的风险要低，品质更稳定，相比水洗又有更圆润的酸味，更强烈的甜度和更复杂的口感，处理得当会得到兼具日晒和水洗优点的咖啡。环保水洗法加工产生的与水洗相同干净清爽的香味，蜜处理则产生与日晒同系的香气，有较强的巧克力般的甜香。果胶残余越多，风味则更浓郁，多变，越甜，熟透的水果味（浆果，黑樱桃）或葡萄酒味，麦芽，发酵味越强烈。</p>
+<p>果胶的保留也带来了风险，果胶越多越难处理，也需要更长的日晒时间，晒豆过程中处理不当容易过度发酵和发霉。</p>
+<h2 id="湿刨法-wet-hulling">湿刨法 Wet-Hulling</h2>
+<p>印度尼西亚语中的 Giling Basah。 印尼苏门答腊所使用的日晒和水洗的折中型，因曼特宁而知名，现在苏拉威西岛和巴布亚新几内亚等地区也采取该方式。因为当地多雨天气的原因，在果肉去除机去除果皮和果肉后发酵一晚上，接着将去掉果胶的咖啡豆稍微晾晒一下到含水量40%-50%就进行去壳，将抽取出来的生豆进行干燥，也因此得名湿刨法。</p>
+<p>干燥是在生豆状态下进行的，外观上会呈现出青绿色，烘焙后会有些许水果香，混杂独特的土味，还有少许刺舌感的刺激性香料和草药味，口感醇厚而且不酸。中烘时还能产生葡萄柚或奶油糖果的香气。</p>
+<p>在潮湿状况下去壳，咖啡豆比较容易发霉，没有干燥的咖啡生豆是软的，很容易导致咖啡豆因挤压出现两端裂开。</p>
+<h2 id="季风处理风渍处理-monsoon">季风处理/风渍处理 Monsoon</h2>
+<p>印度精品咖啡的特殊处理法，属于无意中发现的，在英国殖民期间向欧洲出口咖啡豆时，需要花上数月，生豆在船舱底部吸收了海面的湿气和咸味，具有独特的风味。</p>
+<p>逐渐完善之后创造出季风处理，将干燥的果实放在仓库内，经受潮湿的季风吹打，咖啡豆会发白膨胀，酸味会减少，整体茶感较强，口感浓郁。</p>
+<h2 id="动物消化系统处理">动物消化系统处理</h2>
+<p>将成熟的咖啡果实作为动物的粮食，经由消化酶和胃液分解果皮和果肉产生较短的肽，这改变了氨基酸的组成并影响了咖啡的香气，再将排泄出来的咖啡豆清洗晒干后制成的咖啡具有独特的风味。最具知名度的是印尼的猫屎咖啡（Kopi Luwak）。因为价值很高，其他地区相继模仿例如斯里兰卡的大象咖啡，越南的狸猫咖啡，巴西的肉垂凤冠雉咖啡。实际上噱头大于实用，参考 SCAA 的这篇文章完全就能理解猫屎咖啡的高价仅仅只是炒作。而他的风味，直言难喝或许有点过，但的确也好不到哪去，在杯测中也是获得了最低分。</p>
+<blockquote><p>After cupping the four samples, it was apparent that Luwak coffee sold for the story, not superior quality.</p>
+<footer><strong>Lily Kubota</strong><cite><a href="https://scanews.coffee/2011/11/02/the-value-of-a-good-story-or-how-to-turn-poop-into-gold/">The Value of a Good Story, Or: How to Turn Poop Into Gold</a></cite></footer></blockquote>
+<p>寻找排泄物不容易，果农为了利益开始人工笼养，麝香猫的生存环境极其恶劣，被迫吃下咖啡果实，死亡率非常的高。所以无论从道德角度还是风味角度上都建议抵制。</p>
+<h2 id="新式实验处理">新式实验处理</h2>
+<p>在发现咖啡樱桃的果肉和果胶层的发酵过程会大大影响咖啡豆的风味后，许多人开始对这一步骤进行创新，发展出了许多处理法，使得咖啡豆有更多元的风味。</p>
+<h3 id="厌氧发酵-anaerobic-fermentation">厌氧发酵 Anaerobic Fermentation</h3>
+<p>相对传统处理法的发酵过程而言，厌氧发酵在发酵桶内的变化更容易被监控也更可控。从而能够复制操作，稳定出品。</p>
+<p>一种厌氧发酵方法是靠单纯密封，依靠空气和咖啡樱桃中的微生物进行发酵，发酵过程中微生物会先进行大量繁殖，将氧气转为二氧化碳，再在厌氧条件下代谢将糖分分解成乳酸或者酒精。例如<strong>乳酸发酵法 Lactic Fermentation</strong>就是通过厌氧获得高浓度的乳酸菌，乳酸则会带来丰富的果味，高甜感，葡萄酒酸质，甚至酸奶风味。有些庄园在处理过程中会加入特定的酵母菌种，乳酸菌甚至别的品种的果胶来引入不同的味道。</p>
+<p>另一种知名度高的厌氧发酵就是<strong>二氧化碳浸渍处理 Carbonic Maceration</strong>，也就是<strong>红酒处理法</strong>，2015 年 WBC 澳洲选手 Sasa Sestic 靠着这款模拟红酒处理法的咖啡豆拿下冠军。该方法是在密闭容器中注入二氧化碳，挤出里面的氧气，在无氧环境下，杜绝有氧代谢，减缓咖啡果胶中糖分的分解速度，pH值也以更缓慢的速度下降，延长发酵时间，借此发展出更佳的甜味和更平衡的风味，甚至会带来一些像是红酒，威士忌，香蕉，泡泡糖的味道。</p>
+<p>为什么说厌氧发酵更可控呢？举个例子，哥伦比亚的 Monteblanco 庄园会依据测定的白利糖度（Brix）而决定处理方式。对不超过23度的咖啡樱桃使用<strong>双重厌氧 Double Anaerobic Fermentation</strong>时首先将咖啡樱桃直接放入密封的发酵桶中进行厌氧发酵一段时间，分离果肉后再放到新发酵桶中，最后再进行干燥处理。由于咖啡果肉和种子有了更长的接触时间，糖度随之提高，第一次发酵能将糖度提升4度，而在此期间只需要保证 pH 值不低于5则不会打破触感和酸度的平衡。如此便达成双重厌氧发酵的目的：比日晒出品拥有更高的甜度和复杂度。</p>
+<h3 id="酒桶静置-barrel-aged">酒桶静置 Barrel Aged</h3>
+<p>酒桶静置是将水洗或是日晒处理过的生豆直接放入曾经用来酿造烈酒的酒桶中，比如葡萄酒，威士忌，朗姆，波旁，进行静置。这样的豆子会具有橡木桶和烈酒的风味和特质，较为出名的有<strong>朗姆桶发酵 Rum Aged</strong>，直接将水洗或是日晒处理过的咖啡豆，放入陈年朗姆酒桶里三个月，让豆子吸附酒香。这样的咖啡豆会带有朗姆酒香。而豆子所吸收的酒精会在烘焙过程中蒸发，只留下独特的风味和芳香。</p>
+<p>同时重复使用酒桶来处理咖啡是一种可持续的做法，用于静置咖啡的酒桶有着更长的使用年限。</p>
+<p>随着精品咖啡的发展，也许会有更多的精制法出现，尝试一些新处理法的咖啡豆也会有许多惊喜。现有很多的流行处理法也未提及，等哪天喝到想到了再做补充。</p>
+<h2 id="参考资料">参考资料</h2>
+<p>田口護. <em>咖啡大全</em>. 積木文化出版，2004.</p>
+<p><a href="https://mybowlisfull.com/coffee/seven-processing-methods-of-coffee">一文看清 7 種咖啡生豆處理法 Seven Processing Methods of Coffee</a></p>
+<p><a href="https://www.coffeemart.com.tw/blog/2544">【咖啡處理法】咖啡愛好者必讀咖啡豆處理法大全</a></p>
+<p><a href="https://dailycoffeenews.com/2019/06/03/a-guide-to-carbonic-maceration-and-anaerobic-fermentation-in-coffee/">A Guide to Carbonic Maceration and Anaerobic Fermentation in Coffee</a></p>
+<p><a href="https://kauaicoffee.com/rum-barrel-aged-kauai-coffee/">Rum Barrel Aged Kauai Coffee</a></p>
+<p>https://www.facebook.com/beanslabcoffee/posts/1602851863173464/</p>
+<p><a href="https://medium.com/ally-coffee/coffee-processing-at-monteblanco-606ef7d425a4">Coffee Processing at Monteblanco</a></p>
+<p><a href="https://blog.coffeemart.com.tw/%E9%97%9C%E6%96%BC%E5%92%96%E5%95%A1%E8%B1%86/anaerobic-fermentation/">【咖啡處理法】你知道咖啡豆的厭氧發酵處理法 ，其實是參考葡萄酒嗎？</a></p>
+]]></content>
+      <categories>
+        <category>浅谈咖啡</category>
+      </categories>
+      <tags>
+        <tag>coffee</tag>
+        <tag>note</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Cumcm-Thesis-Template</title>
+    <url>/2016/08/30/cumcm-thesis-template/</url>
+    <content><![CDATA[<p>2016年<a href="http://www.mcm.edu.cn/"><em>全国大学生数学建模竞赛</em></a> <span class="math inline">\(\LaTeX\)</span>模板</p>
+<p>基于前辈的模板修改而来，为了更贴合我的使用习惯而做的改进。</p>
+<p>很惭愧，就做了一点微小的工作。</p>
+<p>Texlive2016下测试通过。</p>
+<p><a href="https://github.com/leaf-hsiao/cumcmthesis">项目地址</a></p>
+]]></content>
+      <categories>
+        <category>Project</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>达梦数据库的安装与使用</title>
+    <url>/2021/04/14/dameng-database/</url>
+    <content><![CDATA[<p>在测试服务器上部署了一个达梦单点服务，做一下简要的记录</p>
+<span id="more"></span>
+<h2 id="dm8-安装">DM8 安装</h2>
+<h3 id="安装前准备">安装前准备</h3>
+<h4 id="配置安装目录">配置安装目录</h4>
+<p>单独申请了一块盘<code>/dev/vdf</code>，分区格式化后将其挂载到 <code>/dm</code> 下</p>
+<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">fdisk &#x2F;dev&#x2F;vdf
+mkfx -t ext4 &#x2F;dev&#x2F;vdf1
+mkdir &#x2F;dm
+mount &#x2F;dev&#x2F;vdf1 &#x2F;dm</code></pre>
+<p>设置永久挂载</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">vi &#x2F;etc&#x2F;fstab
+&#x2F;dev&#x2F;vdf1	&#x2F;dmk	ext4	defaults	0	0
+mount -a</code></pre>
+<h4 id="操作系统设置">操作系统设置</h4>
+<h5 id="禁用-selinux">禁用 SELINUX</h5>
+<p>使用 setenforce 临时关闭</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">getenforce # 查看 SELINUX 状态，如果不是 disabled 状态使用 senenforce 设置
+setenforce 0</code></pre>
+<p>也可以修改 config 文件禁用</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">vi &#x2F;etc&#x2F;selinux&#x2F;config
+# 如果不是 disabled 状态则修改为disabled
+SELINUX&#x3D;disabled
+reboot</code></pre>
+<h5 id="关闭防火墙">关闭防火墙</h5>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">systemctl status firewalld # 查看防火墙状态
+systemctl stop firewalld
+systemctl disable firewalld</code></pre>
+<h5 id="设置文件最大打开数目">设置文件最大打开数目</h5>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ulimit -n 65536</code></pre>
+<p>修改 config 文件则永久生效</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">vi &#x2F;etc&#x2F;security&#x2F;limits.conf
+dmdba		soft	nofile	65536
+dmdba		hard	nofile	65536
+dmdba		soft	nproc	10240
+dmdba		hard	nproc	10240
+dmdba		soft	data	unlimited
+dmdba		hard	data	unlimited
+dmdba		soft	fsize	unlimited
+dmdba		hard	fsize	unlimited</code></pre>
+<h5 id="用户权限配置">用户权限配置</h5>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">groupadd dinstall
+useradd -g dinstall dmdba
+chown -R dmdba:dinstall &#x2F;dm</code></pre>
+<h5 id="其他设置">其他设置</h5>
+<p>关闭 CUPS, Postfix, rpcbind 服务</p>
+<h4 id="上传安装包">上传安装包</h4>
+<p>一共有<code>DMInstall.bin</code>，<code>dm.key</code>和<code>DmJdbcDriver16.jar</code>三个文件</p>
+<p>使用sftp上传到<code>/dm/software</code>下</p>
+<h3 id="软件安装">软件安装</h3>
+<p>切换到 dmdba执行安装</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">su - dmdba
+cd &#x2F;dm&#x2F;software&#x2F;
+chmod 755 *
+.&#x2F;DMInstall.bin -i</code></pre>
+<p>再此遇到了<code>Bash script and /bin/bash^M: bad interpreter: No such file or directory</code>的报错，可能是由于安装脚本在 Windows 下修改过导致，将换行符由 CRLF 转为 LF 可解决</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">sed -i -e &#39;s&#x2F;\r$&#x2F;&#x2F;&#39; DMInstall.bin</code></pre>
+<p>接着按提示导入 key，设置时区，设置目录为<code>/dm/dmdba/dmdbms</code></p>
+<p>再切回 root 用户执行脚本</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">su - root
+&#x2F;dm&#x2F;dmdba&#x2F;dmdbms&#x2F;script&#x2F;root&#x2F;root_installer.sh</code></pre>
+<p>配置好环境变量</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">vi ~&#x2F;.bash_profile
+export DM_HOME&#x3D;&quot;&#x2F;dmsoft&#x2F;dmdbms&quot;
+export PATH&#x3D;$DM_HOME&#x2F;bin:$PATH
+source ~&#x2F;.bash_profile</code></pre>
+<h3 id="单点配置">单点配置</h3>
+<h4 id="初始化数据库">初始化数据库</h4>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">su - dmdba
+cd &#x2F;dm
+mkdir dmdata dmarch dmbak
+cd dmdba&#x2F;dmdbms&#x2F;bin</code></pre>
+<p>通过 dminit 来设置参数</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">.&#x2F;dminit help # 查看参数说明，按照要求设置参数
+
+.&#x2F;dminit PATH&#x3D;&#x2F;dm&#x2F;dmdata DB_NAME&#x3D;DMDB INSTANCE_NAME&#x3D;DBSERVER PORT_NUM&#x3D;5238 LOG_SIZE&#x3D;300 EXTENT_SIZE&#x3D;16 SYSDBA_PWD&#x3D;[password] SYSAUDITOR_PWD&#x3D;[password]</code></pre>
+<h4 id="启用-dm-数据库服务">启用 DM 数据库服务</h4>
+<p>切到 root 用户</p>
+<p>将服务注册到操作系统</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">cd &#x2F;dm&#x2F;dmdba&#x2F;dmdbms&#x2F;script&#x2F;root
+.&#x2F;dm_service_installer.sh -t dmserver -dm_ini &#x2F;dm&#x2F;dmdata&#x2F;DMDB&#x2F;dm.ini -p DBSERVER</code></pre>
+<p>使用 systemctl 管理服务</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">systemctl enable DmServiceDBSERVER.service
+systemctl start DmServiceDBSERVER.service</code></pre>
+<h2 id="数据库维护与管理">数据库维护与管理</h2>
+<h3 id="表与用户创建">表与用户创建</h3>
+<p>登录数据库</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">cd &#x2F;dm&#x2F;dmdba&#x2F;dmdbms&#x2F;bin
+.&#x2F;disql SYSDBA&#x2F;[password]@localhost:5238</code></pre>
+<p>创建表空间 DMTBS，文件存储在 <code>/dm/dmdata</code>中，分为两个数据文件 DMTBS01.DBF 和 DMTBS02.DBF，每个文件初始大小为 64M，每次自动扩展 2M，单个数据文件最大 10G</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; CREATE TABLESPCE &quot;DMTBS&quot; DATAFILE &#39;&#x2F;dm&#x2F;dmdata&#x2F;DMTBS01.DBF&#39; SIZE 64 AUTOEXTEND ON NEXT 2 MAXSIZE 10240, &#39;&#x2F;dm&#x2F;dmdata&#x2F;DMTBS02.DBF&#39; SIZE 64 AUTOEXTEND ON NEXT 2 MAXSIZE 10240 CACHE &#x3D; NORMAL;</code></pre>
+<p>创建用户 DMTEST，密码 [password]，默认表空间为 DMTBS</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; CREATE USER &quot;DMTEST&quot; IDENTIFIED BY [password] DEFAULT TABLESPACE &quot;DMTBS&quot;</code></pre>
+<p>创建角色 TESTROLE，具有创建表，创建视图，创建索引的权限</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; CREATE ROLE TESTROLE;
+SQL&gt; GRANT CREATE TABLE, CREATE VIEW, CREATE INDEX TO TESTROLE;</code></pre>
+<p>将角色 RESOURCE，TESTROLE 赋给 DMTEST 用户，并赋予 DMTEST 查询 DBA_TABLESPACES 的权限</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; GRANT RESOURCE, TESTROLE TO DMTEST;
+SQL&gt; GRANT SELECT ON DBA_TABLESPACES TO DMTEST;</code></pre>
+<p>在 DMTEST 用户下创建 EMP 表和 DEPT 表。</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; CREATE TABLE EMP (
+    EMP_ID INT NOT NULL,
+    EMP_NAME VARCHAR(20),
+    EMAIL VARCHAR(50),
+    PHONE_NUM VARCHAR(20),
+    HIRE_DATE DATE,
+    JOB_ID VARCHAR(10),
+    MANAGER_ID INT,
+    SALARY INT,
+    DEPT_ID INT
+);
+SQL&gt; CREATE TABLE DEPT (
+    DEPT_ID INT NOT NULL,
+    DEPT_NAME VARCHAR(30),
+    LOCATION_ID INT,
+    LOCATION_ADDR VARCHAR(30)
+);</code></pre>
+<h3 id="使用-sql-脚本">使用 sql 脚本</h3>
+<p>假设有脚本<code>/dm/script1.sql</code></p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">INSERT INTO EMP (EMP_ID, EMP_NAME) VALUES (1, &#39;NAME&#39;);
+INSERT INTO EMP (EMP_ID, EMP_NAME, EMAIL) VALUES (2, &#39;NAME&#39;, &#39;a@b&#39;);
+INSERT INTO DEPT (DEPT_ID, DEPT_NAME) VALUES (1, &#39;DEPTNAME&#39;);</code></pre>
+<p>连接到数据库后可直接调用该脚本</p>
+<pre class="line-numbers language-none"><code class="language-none">SQL&gt; start &#x2F;dm&#x2F;script1.sql</code></pre>
+<h3 id="创建视图">创建视图</h3>
+<p>创建视图 VIEW_HIREDATE 存放 HIRE_DATE 为 2006-01-01 至 2009-01-01 的条目</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; CREATE VIEW VIEW_HIREDATE AS SELECT * FROM EMP WHERE HIRE_DATE BETWEEN &#39;2006-01-01&#39; AND &#39;2009-01-01&#39;;</code></pre>
+<p>创建视图 VIEW_SALARY 查询平均 SALARY 大于 12000 的 DEPT</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; CREATE VIEW VIEW_SALARY AS SELECT * FROM DEPT WHERE DEPT_ID IN (
+    SELECT DEPT_ID
+    FROM EMP
+    GROUP BY DEPT_ID
+    HAVING AVG(SALARY) &gt; 12000
+);</code></pre>
+<h3 id="创建索引">创建索引</h3>
+<p>在列 EMP_NAME 添加索引 IND_EMP_NAME</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">-- 创建索引表空间
+SQL&gt; CREATE TABLESPACE INDEX1 DATAFILE &#39;&#x2F;dm&#x2F;dmdata&#x2F;DMDB&#x2F;index1_01.dbf&#39; size 64 autoextend on next 10 mamxsize 2000;
+-- 创建索引
+SQL&gt; CREATE INDEX IND_EMP_NAME ON EMP(EMP_NAME) TABLESPACE INDEX1;</code></pre>
+<h3 id="数据库备份">数据库备份</h3>
+<h4 id="物理备份">物理备份</h4>
+<h5 id="冷备">冷备</h5>
+<p>使用 DMRMAN 进行冷备， DMAP 服务为打开状态， 并关闭数据库实例</p>
+<p>默认备份方式为完全备份</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 关闭数据库实例
+systemctl stop DmServiceDBSERVER.service
+cd &#x2F;dm&#x2F;dmdba&#x2F;dmdbms&#x2F;bin
+.&#x2F;dmrman
+# 完全备份
+RMAN&gt; backup database &#39;&#x2F;dm&#x2F;dmdata&#x2F;DMDB&#x2F;dm.ini&#39; full backupset &#39;&#x2F;dm&#x2F;dmbak&#x2F;DMDB_bak&#39;
+# 增量备份
+RMAN&gt; backup database &#39;&#x2F;dm&#x2F;dmdata&#x2F;DMDB&#x2F;dm.ini&#39; increment with backupdir &#39;&#x2F;dm&#x2F;dmbak&#39; backupset &#39;&#x2F;dm&#x2F;dmbak&#x2F;DMDB_bak&#39;
+# 查看备份信息
+RMAN&gt; show backupset &#39;&#x2F;dm&#x2F;dmbak&#x2F;DMDB_bak&#39;
+RMAN&gt; show backupset &#39;&#x2F;dm&#x2F;dmbak&#x2F;DMDB_bak&#39; info meta</code></pre>
+<h5 id="热备">热备</h5>
+<p>使用 SQL 进行备份，DMAP 服务和数据库实例都是打开状态，为了保证备份数据的一致性，需要配置并开启本地归档</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">-- 打开归档
+SQL&gt; ALTER DATABASE MOUNT;
+SQL&gt; ALTER DATABASE ADD ARCHIVELOG &#39;type&#x3D;local,dest&#x3D;&#x2F;dm&#x2F;dmarch,file_size&#x3D;64,space_limit&#x3D;0&#39;;
+-- 如果需要修改归档配置则可使用 ALTER DATABASE MODIFY ARCHIVELOG
+SQL&gt; ALTER DATABSE ARCHIVELOG;
+SQL&gt; ALTER DATABASE OPEN;
+-- 检查归档状态
+SQL&gt; SELECT name, status$, arch_mode FROM v$database;
+
+-- 完全备份
+SQL&gt; backup database full backupset &#39;&#x2F;dm&#x2F;dmbak&#x2F;DMDB_bak2&#39;;
+
+-- 增量备份
+SQL&gt; backup database increment backupset &#39;&#x2F;dm&#x2F;dmbak&#x2F;incr_DMDB_bak2&#39;;</code></pre>
+<h5 id="自动备份作业">自动备份作业</h5>
+<p>首先启动代理</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; SP_INIT_JOB_SYS(1);</code></pre>
+<p>可借助管理工具直接在 GUI 上编辑生成作业</p>
+<p>创建 JOB1，每周日晚 22:00 对数据库做完全备份</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; call SP_CREATE_JOB(&#39;JOB1&#39;,1,0,&#39;&#39;,0,0,&#39;&#39;,0,&#39;周日全备&#39;);
+SQL&gt; call SP_JOB_CONFIG_START(&#39;JOB1&#39;);
+SQL&gt; call SP_ADD_JOB_STEP(&#39;JOB1&#39;, &#39;全备&#39;, 5, &#39;01000&#x2F;dm&#x2F;dmbak&#39;, 1, 2, 0, 0, NULL, 0);
+SQL&gt; call SP_ADD_JOB_SCHEDULE(&#39;JOB1&#39;, &#39;周日执行&#39;, 1, 2, 1, 1, 0, &#39;22:00:00&#39;, NULL, &#39;2021-04-20 02:34:52&#39;, NULL, &#39;&#39;);
+SQL&gt; call SP_JOB_CONFIG_COMMIT(&#39;JOB1&#39;);</code></pre>
+<p>创建 JOB2，每周一到周六 22：00 对数据库做增量备份</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; call SP_CREATE_JOB(&#39;JOB2&#39;,1,0,&#39;&#39;,0,0,&#39;&#39;,0,&#39;平时增备&#39;);
+SQL&gt; call SP_JOB_CONFIG_START(&#39;JOB2&#39;);
+SQL&gt; call SP_ADD_JOB_STEP(&#39;JOB2&#39;, &#39;增备&#39;, 5, &#39;01000&#x2F;dm&#x2F;dmbak|&#x2F;dm&#x2F;dmbak&#39;, 1, 2, 0, 0, NULL, 0);
+SQL&gt; call SP_ADD_JOB_SCHEDULE(&#39;JOB1&#39;, &#39;周一到周六执行&#39;, 1, 2, 1, 126, 0, &#39;22:00:00&#39;, NULL, &#39;2021-04-20 02:34:52&#39;, NULL, &#39;&#39;);
+SQL&gt; call SP_JOB_CONFIG_COMMIT(&#39;JOB2&#39;);</code></pre>
+<h4 id="逻辑备份">逻辑备份</h4>
+<p>使用 dexp 对数据库执行逻辑导出</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">cd &#x2F;dm&#x2F;dmdba&#x2F;dmdbms&#x2F;bin
+.&#x2F;dexp SYSDBA&#x2F;[password]@localhost:5238 FILE&#x3D;dmdb_full.dmp LOG&#x3D;dmdb_full.log DIRECTORY&#x3D;&#x2F;dm&#x2F;dmbak FULL&#x3D;y</code></pre>
+<p>使用 dimp 导入</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">.&#x2F;dimp SYSDBA&#x2F;[password]@localhost:5238 FILE&#x3D;&#x2F;dm&#x2F;dmbak&#x2F;dmdb_full.dmp LOG&#x3D;&#x2F;dm&#x2F;dmbak&#x2F;dimp.log</code></pre>
+<h2 id="配置-odbc">配置 ODBC</h2>
+<p>编译好 ODBC 后，配置 odbc.ini 和 odbcinst.ini</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># odbc.ini
+[dm8]
+DESCRIPTION &#x3D; DM ODBC DSND
+DRIVER &#x3D; DM8 ODBC DRIVER
+SERVER &#x3D; localhost
+UID &#x3D; SYSDA
+PWD &#x3D; [password]
+TCP_PORT &#x3D; 5238
+
+# odbcinst.ini
+[DM8 ODBC DRIVER]
+DESCRIPTION &#x3D; ODBC DRIVER FOR DM8
+DRIVER &#x3D; &#x2F;dm&#x2F;dmdba&#x2F;dmdbms&#x2F;bin&#x2F;libdodbc.so</code></pre>
+<p>修改文件属性即可连接</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">chmod 777 odbc.ini
+chmod 777 odbcinst.ini
+su - dmdba
+isql dm8</code></pre>
+]]></content>
+      <categories>
+        <category>Database</category>
+      </categories>
+      <tags>
+        <tag>database</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Gene Selection</title>
+    <url>/2017/06/21/gene-selection/</url>
+    <content><![CDATA[<p><em>毕业典礼还是完美的睡过去了（叹气，毕业之后成为又丧又废的NEET。</em></p>
+<p>这半年主要都在折腾毕设，课题还是十分有趣的说。<del>虽然被自己搞得杂乱不堪</del> 有种自己的大学变成了37,990,696 字节的感觉。</p>
+<p><img data-src="/images/graduation/thesis.png" /></p>
+<span id="more"></span>
+<p>十分糟糕的心情，毕业开始丧。听着更加丧的歌总结一下毕设。</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&amp;id=407918&amp;auto=1&amp;height=32">
+</iframe>
+<h1 id="十分传统的绪论">十分传统的绪论</h1>
+<p>微阵列技术是用于分析基因表达的工具，可用于测定单个样品中的基因表达，或比较两种不同细胞类型或组织样品（如健康和癌组织）中的基因表达，近年来被广泛用于肿瘤细胞分子水平上的分类和预测研究。</p>
+<blockquote>
+<p>在传统医疗中，很难只根据病理检测结果来下一个准确的诊断。而微阵列技术能够有效的对肿瘤进行识别和诊断。微阵列数据包含了数量庞大的基因，和非常少量的样本。基因表达谱中包含许多的噪声基因和冗余基因，因此需要通过特征选择的方法对数据进行筛选，这一识别过程即为基因选择。</p>
+</blockquote>
+<p>特征选择是采用某种优化算法从微阵列数据中的所有属性特征里选出最具识别能力的基因子集的过程。特征选择有很多优点：</p>
+<ul>
+<li><p>减小尺寸以降低计算成本</p></li>
+<li><p>降低噪音，提高分类精度;</p></li>
+<li><p>能取得更多可解释的特征，来帮助识别和监测目标疾病或功能类型。</p></li>
+</ul>
+<p>因此各种聚类，分类和预测技术已经被用来分析，分类和了解基因表达数据，如 Fisher 判别分析 ，人工神经网络 ，以及支持向量机等。通过基于表达谱分类识别算法，再利用分类器构建预测分类模型。</p>
+<p>因此设计本系统的目的在于提供一个可视化界面供研究人员直观的操控海量基因数据，选择不同的特征选择算法，直接获取结果。</p>
+<h1 id="图与脑洞">图与脑洞</h1>
+<p>实在过于懒惰UI直接用R实现<del>赞美bootstrap</del>，然后拖延症导致很多脑洞没实现，导师强烈要求（划掉）加上用户管理以及存储功能，其实本来只打算完成一个简单的基因选择的功能和结果可视化对比。</p>
+<p>继续懒惰的一个一个模块堆好了界面。</p>
+<p><del>无意义其实可以跳过</del></p>
+<figure>
+<img data-src="/images/graduation/import.png" alt="数据上传" /><figcaption aria-hidden="true">数据上传</figcaption>
+</figure>
+<figure>
+<img data-src="/images/graduation/selec.png" alt="基因选择" /><figcaption aria-hidden="true">基因选择</figcaption>
+</figure>
+<figure>
+<img data-src="/images/graduation/manage.png" alt="模块管理" /><figcaption aria-hidden="true">模块管理</figcaption>
+</figure>
+<h1 id="有点意义的笔记">有点意义的笔记</h1>
+<h2 id="算法概述">算法概述</h2>
+<h3 id="mrmr">mRMR</h3>
+<p>令<span class="math inline">\(S​\)</span>表示选定基因的子集，<span class="math inline">\(\Omega​\)</span>是所有可用基因的集合;最小冗余可以通过计算得到<span class="math inline">\(\min _{S\subset \Omega }\dfrac {1}{\left|S\right| ^{2}}\sum_{i,j\in S}I(g_i, g_j) ​\)</span></p>
+<p>其中<span class="math inline">\(I(g_i, g_j)​\)</span>是 <span class="math inline">\(i​\)</span>个 和 <span class="math inline">\(j​\)</span>个 基因之间的互信息即测量这两个相互依赖的变量。两个离散随机变量<span class="math inline">\(g_i​\)</span>和<span class="math inline">\(g_j​\)</span>的互信息可以被定义为<span class="math inline">\(\sum_{m\in g_i}\sum_{n\in g_j}p(m,n )log\dfrac{p(m,n)}{p(m)p(n)}​\)</span></p>
+<p>其中<span class="math inline">\(p(m, n)\)</span>是<span class="math inline">\(g_i\)</span>和<span class="math inline">\(g_j\)</span>的联合概率分布函数，<span class="math inline">\(p(m)\)</span>和<span class="math inline">\(p(n)\)</span>分别是<span class="math inline">\(g_i\)</span>和<span class="math inline">\(g_j\)</span>的边际概率分布函数。 <span class="math inline">\(|S|\)</span> 是<span class="math inline">\(S\)</span>中基因数量，通常使用互信息<span class="math inline">\(I(T, g_j)\)</span>来计算从基因$ g_i<span class="math inline">\(到类\)</span> T = {t1,t2} <span class="math inline">\(的区分能力，其中\)</span>t_1<span class="math inline">\(和\)</span>t_2<span class="math inline">\(表示健康和肿瘤类别。因此，最大相关性可以通过以下公式计算\)</span><em>{S}</em>{i,jS}I(T, g_i)$</p>
+<p>mRMR 特征选择标准可以得到如下差异形式：<span class="math inline">\(\max_{S\subset \Omega }\{\sum_{i\in S}I(T, g_i)-[\dfrac{1}{\left|S\right|}\sum_{i,j\in S}I(g_i, g_j)]\}\)</span></p>
+<h3 id="relieff">ReliefF</h3>
+<p>设训练数据集为 <span class="math inline">\(D\)</span> ，样本抽取次数为 <span class="math inline">\(m\)</span> ，特征权重的阈值 <span class="math inline">\(\delta\)</span> ,最近邻样本个数 <span class="math inline">\(k\)</span> ，输出为各个特性的特征权重 <span class="math inline">\(T\)</span> 。 设所有特征权重为 0 ， <span class="math inline">\(T​\)</span> 为空集。从 <span class="math inline">\(D​\)</span> 中随机选择一个样本 <span class="math inline">\(R​\)</span> ；再从 <span class="math inline">\(R​\)</span> 的同类样本集中找到 <span class="math inline">\(R​\)</span> 的 <span class="math inline">\(k​\)</span> 个最近邻 <span class="math inline">\(H_j(j=1,2,...,k)​\)</span> , 再从每一个不同类的样本集中找出 <span class="math inline">\(k​\)</span> 个 最近邻 <span class="math inline">\(M_j(C)​\)</span> 。循环 <span class="math inline">\(m​\)</span> 次后开始从 <span class="math inline">\(A=1​\)</span> 到 <span class="math inline">\(N​\)</span> 计算特征<span class="math inline">\(W(A)=W(A)-\sum^{k}_{j=1}diff(A,R,H_j)/(mk)+\sum_{C \in class(R)}[\dfrac{p(C)}{1-p(Class(R))}\sum^k_{j=1}diff(A,R,M_j(C))]/(mk)​\)</span></p>
+<h3 id="fisher-score">Fisher Score</h3>
+<p>给定 <span class="math inline">\(m\)</span> 个特征， 将输入的矩阵 <span class="math inline">\(\mathbf{X} \in \mathbb R^{d \times n}\)</span> 缩小到 <span class="math inline">\(\mathbf{Z} \in \mathbb R^{m \times n}\)</span> ，则 Fisher Score 如下计算<span class="math inline">\(F( \mathbf{Z})=tr\{(\mathbf{\widetilde{S}}_b)\}(\mathbf{\widetilde{S}}_t + \gamma \mathbf{I})^{-1}\)</span></p>
+<p>其中 <span class="math inline">\(\gamma\)</span> 是一个正规参数, <span class="math inline">\(\widetilde{S}_b\)</span> 和 <span class="math inline">\(\widetilde{S}_t\)</span> 如以下给出 <span class="math display">\[
+\widetilde{S}_b=\sum^c_{k=1}(\widetilde{\mu}_k-\widetilde{\mu})(\widetilde{\mu}_k-\widetilde{\mu})^T
+\]</span> <span class="math display">\[
+\widetilde{S}_t=\sum^n_{i=1}(z_i-\widetilde{\mu})^T
+\]</span></p>
+<h2 id="不存在的前端">不存在的前端</h2>
+<blockquote>
+<p>Shiny is a new package from RStudio that makes it incredibly easy to build interactive web applications with R.</p>
+</blockquote>
+<p>可以说是非常便利了。只需要看官方的<a href="http://shiny.rstudio.com/tutorial/">tutorial</a>，再参考一下<a href="http://shiny.rstudio.com/gallery/">gallery</a>里的范例，从此不用切图<del>所以说前端就是伪需求</del>。此外<a href="http://rstudio.github.io/shinydashboard/">shinydashboard</a> 、<a href="http://rstudio.github.io/shinythemes/">shinythemes</a> 、<a href="https://github.com/daattali/shinyjs/blob/master/README.md">shinyjs</a> 、<a href="http://www.htmlwidgets.org/">htmlwidgets</a>能够继续扩展。</p>
+<h2 id="不存在的服务端">不存在的服务端</h2>
+<p>三种基因选择方法分别调用了<a href="https://cran.r-project.org/web/packages/mRMRe/index.html">mRMRe</a>、<a href="https://cran.r-project.org/web/packages/CORElearn/index.html">CORElearn</a>、<a href="https://cran.r-project.org/web/packages/MASS/index.html">MASS</a>三个package实现。然而，其实没什么好写的不如直接看官方pdf。</p>
+<p><em>越写越不想写就这样吧，反正我也不知道我写了什么东西</em></p>
+]]></content>
+      <tags>
+        <tag>math</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hnu-Thesis-Template</title>
+    <url>/2017/03/02/hnu-thesis-template/</url>
+    <content><![CDATA[<p><a href="https://github.com/leaf-hsiao/HNUThesisTemplate/tree/master">湖南大学本科生毕业论文<span class="math inline">\(\LaTeX\)</span>模板</a></p>
+<p>终于写完了。。。</p>
+<p>写模板逼死写论文；（</p>
+<p>在猝死之前睡觉去。。。</p>
+<p>（神志不清</p>
+<p>——————</p>
+<p>PS:</p>
+<p>每一章请在<code>body\</code>中建立独立的<code>tex</code>文件，并在<code>thesis.tex</code>中加入</p>
+<p>图片保存在<code>figures\</code>中</p>
+<p>论文标题等信息在<code>preface\cover.tex</code></p>
+<p>致谢在<code>appendix\acknowledgements.tex</code></p>
+]]></content>
+      <categories>
+        <category>Project</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>$\LaTeX$ Math Symbols Cheetsheet</title>
+    <url>/2016/08/31/latex-math-symbols-cheetsheet/</url>
+    <content><![CDATA[<p>一些基本的<span class="math inline">\(\LaTeX\)</span>字符和运算符，供快速查阅使用 其实就是无聊敲的，参照：<a href="https://www.rpi.edu/dept/arc/training/latex/LaTeX_symbols.pdf">LaTeX_symbols.pdf</a></p>
+<span id="more"></span>
+<h1 id="math-mode-accents">Math Mode Accents</h1>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Symbol</th>
+<th style="text-align: center;">Symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\hat{a}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\check{a}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\acute{a}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\grave{a}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\bar{a}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vec{a}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\dot{a}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\ddot{a}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\breve{a}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\tilde{a}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h1 id="greek-letters">Greek Letters</h1>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Symbol</th>
+<th style="text-align: center;">Symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(A\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\alpha\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(B\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\beta\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\Gamma\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\gamma\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\Delta\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\delta\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(E\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\epsilon\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(Z\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\zeta\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(H\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\eta\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\Theta\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\theta\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(I\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\iota\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(K\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\kappa\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\Lambda\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\lambda\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(M\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\mu\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(N\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\nu\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\Xi\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\xi\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(O\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\omicron\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\Pi\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(pi\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\Sigma\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\sigma\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(T\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\tau\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\Upsilon\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\upsilon\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\Phi\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\phi\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(X\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\chi\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\Psi\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\psi\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\Omega\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\omega\)</span></td>
+</tr>
+</tbody>
+</table>
+<h1 id="binary-operation-symbols">Binary Operation Symbols</h1>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Symbol</th>
+<th style="text-align: center;">Symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\pm\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\cap\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\diamond\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\oplus\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\mp\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\cup\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\bigtriangleup\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\ominus\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\times\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\uplus\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\bigtriangledown\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\otimes\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\div\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\sqcap\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\triangleleft\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\oslash\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\ast\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\sqcup\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\triangleright\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\odot\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\star\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\vee\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\lhd\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\bigcirc\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\circ\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\wedge\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\rhd\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\dagger\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\bullet\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\setminus\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\unlhd\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\ddagger\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\cdot\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\wr\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\unrhd\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\amalg\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(+\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-\)</span></td>
+</tr>
+</tbody>
+</table>
+<h1 id="relation-symbols">Relation Symbols</h1>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Symbol</th>
+<th style="text-align: center;">Symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\leq\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\geq\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\equiv\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\models\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\prec\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\succ\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\sim\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\perp\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\preceq\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\succeq\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\simeq\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\mid\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\ll\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\gg\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\asymp\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\parallel\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\subset\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\supset\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\approx\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\bowtie\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\subseteq\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\supseteq\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\cong\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\Join\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\sqsubset\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\sqsupset\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\neq\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\smile\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\sqsubseteq\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\sqsupseteq\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\doteq\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frown\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\in\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\ni\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\propto\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(=\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\vdash\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\dashv\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(&lt;\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(&gt;\)</span></td>
+</tr>
+</tbody>
+</table>
+<h1 id="punctuation-symbols">Punctuation Symbols</h1>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Symbol</th>
+<th style="text-align: center;">Symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(,\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(;\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\colon\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\ldotp\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\cdotp\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<h1 id="arrow-symbols">Arrow Symbols</h1>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Symbol</th>
+<th style="text-align: center;">Symbol</th>
+<th style="text-align: center;">Symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\leftarrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\longleftarrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\uparrow\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\Leftarrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\Longleftarrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\Uparrow\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\rightarrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\longrightarrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\downarrow\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\Rightarrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\Longrightarrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\Downarrow\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\leftrightarrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\longleftrightarrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\updownarrow\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\Leftrightarrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\Longleftrightarrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\Updownarrow\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\mapsto\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\longmapsto\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\nearrow\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\hookleftarrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\hookrightarrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\searrow\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\leftharpoonup\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\rightharpoonup\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\swarrow\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\leftharpoondown\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\rightharpoondown\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\nwarrow\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\rightleftharpoons\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\leadsto\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<h1 id="miscellaneous-symbols">Miscellaneous Symbols</h1>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Symbol</th>
+<th style="text-align: center;">Symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\ldots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\cdots\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\vdots\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\ddots\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\aleph\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\prime\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\forall\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\infty\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\hbar\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\emptyset\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\exists\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\Box\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\imath\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\nabla\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\neg\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\Diamond\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\jmath\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\surd\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\flat\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\triangle\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\ell\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\top\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\natural\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\clubsuit\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\wp\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\bot\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\sharp\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\diamondsuit\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\Re\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\backslash\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\heartsuit\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\Im\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\angle\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\partial\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\spadesuit\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\mho\)</span></td>
+</tr>
+</tbody>
+</table>
+<h1 id="variable-sized-symbols">Variable-sized Symbols</h1>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Symbol</th>
+<th style="text-align: center;">Symbols</th>
+<th style="text-align: center;">Symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\sum\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\bigcap\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\bigodot\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\bigcap\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\prod\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\bigotimes\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\coprod\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\bigsqcup\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\bigoplus\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\int\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\bigvee\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\biguplus\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\oint\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\bigwedge\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<h1 id="log-like-symbols">Log-like Symbols</h1>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Symbol</th>
+<th style="text-align: center;">Symbols</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\arccos\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\arcsin\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\arctan\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\arg\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\cos\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\cosh\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\cot\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\coth\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\csc\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\deg\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\det\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\dim\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\exp\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\gcd\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\hom\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\inf\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\ker\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\lg\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\lim\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\liminf\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\limsup\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\ln\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\log\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\max\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\min\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\Pr\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\sec\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\sin\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\sinh\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\sup\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\tan\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\tanh\)</span></td>
+</tr>
+</tbody>
+</table>
+<h1 id="delimiters">Delimiters</h1>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Symbol</th>
+<th style="text-align: center;">Symbols</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\lfloor\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\rfloor\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\lceil\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\rceil\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\langle\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\rangle\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(/\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\backslash\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\rmoustache\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\lmoustache\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\rgroup\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\lgroup\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\arrowvert\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\Arrowvert\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\bracevert\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<h1 id="some-other-constructions">Some Other Constructions</h1>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Symbol</th>
+<th style="text-align: center;">Symbols</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\widetilde{abc}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\widehat{abc}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\overleftarrow{abc}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\overrightarrow{abc}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\overline{abc}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\underline{abc}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\overbrace{abc}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\underbrace{abc}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\sqrt{abc}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\sqrt[n]{abc}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(f&#39;\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac{abc}{xyz}\)</span></td>
+</tr>
+</tbody>
+</table>
+]]></content>
+      <categories>
+        <category>Cheetsheet</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MySQL Stored Procedure</title>
+    <url>/2020/02/27/mysql-stored-procedure/</url>
+    <content><![CDATA[<p>MySQL里的 Stored Procedure 有点意思</p>
+<span id="more"></span>
+<p>由于大量的使用了表名作为参数，因此用concat函数来拼接，基本的框架就是</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">DROP PROCEDURE IF EXISTS initTable
+CREATE PROCEDURE initTable(IN tb1 VARCHAR(5), IN tb2 VARCHAR(5))
+BEGIN
+	SET @sqlstmt &#x3D; CONCAT(&#39;SELECT * FROM&#39;, tb1, &#39; &#39;, tb2, &#39; LIMIT 10&#39;);
+	PREPARE stmt FROM @sqlstmt
+	EXECUTE stmt
+END</code></pre>
+<p>然后通过 call 调用</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">CALL initTable(&#39;tb&#39;, &#39;anothertb&#39;)</code></pre>
+<p>但是在同一个procedure里对一张表进行多次update的话则会出现 can't lock table 的报错。可以利用 transaction 解决。而transaction在mysql语法中有点特殊，不是<code>BEGIN TRAN/COMMIT TRAN</code>这种形式。</p>
+<p>假设要update同一张表两次：</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">DROP PROCEDURE IF EXISTS updateTable
+CREATE PROCEDURE updateTable(IN tb VARCHAR(5))
+BEGIN
+	START TRANSACTION
+	SET @sqlstmt &#x3D; CONCAT(&#39;update &#39;, tb,&#39; SET A &#x3D; 1&#39;);
+	PREPARE stmt FROM @sqlstmt
+	EXECUTE stmt
+	COMMIT
+	
+	START TRANSACTION
+	SET @sqlstmt &#x3D; CONCAT(&#39;update &#39;, tb,&#39; SET B &#x3D; 2&#39;);
+	PREPARE stmt FROM @sqlstmt
+	EXECUTE stmt
+	COMMIT
+END</code></pre>
+<p>（一开始还以为mysql不支持transaction</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>烤翅不存在的新奥尔良</title>
+    <url>/2019/05/23/new-orleans/</url>
+    <content><![CDATA[<p>新奥尔良地处路易斯安那，充满着南国风情，去之前留在Trip Ideas里的tag有Food, Art, Music, Nightlife，体验过后每一点都不会让人失望。三月中旬去的天气正好，既不炎热也不潮湿，<del>五月去佛罗里达那会儿一下飞机甚至能感受到水汽扑面</del>。有机会的话还是很想去这里小住一段时间，悠悠闲闲的体验当地安逸的生活。当然南方的食物才是这趟旅行最不亏的，非常的具有特色。</p>
+<p><img data-src="/images/neworleans/IMG_6972.JPG" /></p>
+<span id="more"></span>
+<p>住在Before I Die Home，是第一面<a href="https://beforeidieproject.com/story">Before I Die Wall</a>曾经所在的地方。一开始并没有注意到这个小彩蛋，房东在客厅放了一本<a href="https://www.amazon.com/Before-I-Die-Candy-Chang/dp/1250020840">Before I Die</a>看完之后才发现背后的故事很有趣。</p>
+<p><img data-src="/images/neworleans/IMG_6892.jpg" /> <img data-src="/images/neworleans/IMG_6894.jpg" /></p>
+<p>步行十来分钟便可到French Quarter，French Quater可以算是整个新奥尔良的核心地带了，街道上有马车行驶，到晚上整片区域都充斥着酒吧的喧闹和Jazz，很适合慢悠悠的在街上游荡吃吃喝喝。</p>
+<p><img data-src="/images/neworleans/IMG_6911.jpg" /></p>
+<p>而新奥尔良的食物绝对的令人称赞，最出名的有Po' Boys 和 Gumbo。Po' Boys是路易斯安那的传统三明治，一般夹着炸海鲜，也有鸡肉牛肉的。Gumbo是路易斯安那的<a href="https://legis.la.gov/Legis/Law.aspx?d=285562">official state cuisine</a>, wikipedia上是翻译成秋葵浓汤，实际上口感更像咖喱一样，浇在饭上食用。秋葵实际上也不算是必需品，各种配料的都有，像芹菜，牡蛎，短尾鳄，兔肉，松鼠肉，香肠，各种各样的搭配都可以尝试。</p>
+<p>最后夹杂私货安利一家店，这家的烤兔兔非常好吃了，他家也有路易斯安那的另一道名菜Jambalaya，什锦饭。使用白饭和各种香料肉类烹煮而成，比起炒饭更为粘稠。</p>
+<p><img data-src="/images/neworleans/IMG_6900.jpg" /></p>
+<p>在城市的另一端，杜兰大学的对面，是和French Quarter风格完全相反的Audubon Park，漂亮的房子，美丽的湖景，还有满公园的鸭子，干净而且安静。此外还有二战纪念馆和墓园也值得一去。</p>
+<p>唯一的遗憾大概是没看到每年4月底5月初的Jazz Festival，毕竟Jazz是这个城市最大的亮点。</p>
+]]></content>
+      <tags>
+        <tag>tour</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Sending Notifications to Flutter App</title>
+    <url>/2020/04/30/sending-notifications-to-flutter-app/</url>
+    <content><![CDATA[<p>In this semester, our team tried to develop an mobile APP using Flutter. One user story is that when user are not using the APP, he/she should be notified when new friend request or new message coming</p>
+<p>Since we are using firebase as our backend service, cloud functions can be used to monitor the database, and send notifications when triggered</p>
+<span id="more"></span>
+<p><a href="https://firebase.google.com/docs/functions/use-cases">This document</a> provides a simple example:</p>
+<figure>
+<img data-src="https://firebase.google.com/docs/functions/images/notify.png" alt="img" /><figcaption aria-hidden="true">img</figcaption>
+</figure>
+<blockquote>
+<ol type="1">
+<li>The function triggers on writes to the Realtime Database path where followers are stored.</li>
+<li>The function composes a message to send via FCM.</li>
+<li>FCM sends the notification message to the user's device.</li>
+</ol>
+</blockquote>
+<h2 id="cloud-functions">Cloud Functions</h2>
+<h3 id="setting-triggers">Setting Triggers</h3>
+<p>Interactions between users is stored at <code>/users/&#123;userId&#125;/interactions/&#123;interactionID&#125;</code>in Cloud Firestore. Firebase SDK provide 4 triggers <code>onCreate</code>,<code>onUpdate</code>,<code>onDelete</code>,<code>onWrite</code></p>
+<p>In our case, we want to send a notification when user generate an interaction. So the function running on Node.js 8 should specify the document path and event type:</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">const functions &#x3D; require(&#39;firebase-functions&#39;);
+
+exports.notificationFCM &#x3D; functions.firestore
+  .document(&#39;&#x2F;users&#x2F;&#123;userId&#125;&#x2F;interactions&#x2F;&#123;interactionID&#125;&#39;)
+  .onCreate(async (snapshot, context) &#x3D;&gt; &#123; &#x2F;* ... *&#x2F; &#125;);</code></pre>
+<h3 id="parse-data">Parse Data</h3>
+<p>Based on the data we need, we can set the <a href="https://firebase.google.com/docs/cloud-messaging/concept-options">FCM messages</a> Notification messages will be displayed to end-user devices, data messages can be handled by client app and token is device registration token generated by FCM SDK in client app</p>
+<p>For given platform, token can be got as follows</p>
+<ul>
+<li>iOS (Swift) — <a href="https://firebase.google.com/docs/reference/swift/firebasemessaging/api/reference/Classes/Messaging#/c:objc(cs)FIRMessaging(im)retrieveFCMTokenForSenderID:completion:"><code>retrieveFCMTokenForSenderID:completion:</code></a></li>
+<li>Android — <a href="https://firebase.google.com/docs/reference/android/com/google/firebase/iid/FirebaseInstanceId#getToken(java.lang.String,%20java.lang.String)"><code>getToken()</code></a></li>
+</ul>
+<p>Users can have multiple devices, however, for convenience, just assume that token is stored as a string under the user profile</p>
+<p>The content of interaction is a JSON like data passed by snapshot</p>
+<pre class="line-numbers language-json" data-language="json"><code class="language-json">&#123; metaData: &#123;&#125;,
+  readed: false,
+  time: 1588268043715,
+  title: &#39;Friend Request from Leaf&#39;,
+  type: &#39;request&#39;,
+  userMeta: 
+   &#123; displayName: &#39;Leaf&#39;,
+     photoURL: &#39;&#39;,
+     uid: &#39;&#39; &#125; 
+ &#125;</code></pre>
+<p>Once getting token and notification data, we can set the message</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">const functions &#x3D; require(&#39;firebase-functions&#39;);
+
+exports.notificationFCM &#x3D; functions.firestore
+    .document(&#39;&#x2F;users&#x2F;&#123;userId&#125;&#x2F;interactions&#x2F;&#123;interactionID&#125;&#39;)
+    .onCreate(async (snapshot, context) &#x3D;&gt; &#123;
+        const interaction &#x3D; snapshot.data();
+        admin.firestore().collection(&#39;users&#39;).doc(context.params.userId).get().then((doc) &#x3D;&gt; &#123;
+          const deviceToken &#x3D; doc.get(&#39;deviceToken&#39;);
+            var payload &#x3D; &#123;
+              notification: &#123;
+                title: interaction.title,
+              &#125;,
+              data: &#123;
+                click_action: &#39;FLUTTER_NOTIFICATION_CLICK&#39;
+              &#125;,
+              token: deviceToken
+            &#125;;
+        &#125;);
+    &#125;);</code></pre>
+<h3 id="sending-message-via-firebase-cloud-messaging">Sending Message via Firebase Cloud Messaging</h3>
+<p>This is very straight forward, sending the message to target device, then receiving response or error code</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">const functions &#x3D; require(&#39;firebase-functions&#39;);
+
+exports.notificationFCM &#x3D; functions.firestore
+    .document(&#39;&#x2F;users&#x2F;&#123;userId&#125;&#x2F;interactions&#x2F;&#123;interactionID&#125;&#39;)
+    .onCreate(async (snapshot, context) &#x3D;&gt; &#123;
+        console.log(snapshot.data());
+        const interaction &#x3D; snapshot.data();
+        admin.firestore().collection(&#39;users&#39;).doc(context.params.userId).get().then((doc) &#x3D;&gt; &#123;
+          const deviceToken &#x3D; doc.get(&#39;deviceToken&#39;);
+          console.log(deviceToken)
+            var payload &#x3D; &#123;
+              notification: &#123;
+                title: interaction.title,
+              &#125;,
+              data: &#123;
+                click_action: &#39;FLUTTER_NOTIFICATION_CLICK&#39;
+              &#125;,
+              token: deviceToken
+            &#125;;
+            &#x2F;&#x2F; Send a message to the device corresponding to the provided
+            &#x2F;&#x2F; registration token.
+            admin.messaging().send(payload)
+              .then((response) &#x3D;&gt; &#123;
+                &#x2F;&#x2F; Response is a message ID string.
+                console.log(&#39;Successfully sent message:&#39;, response);
+              &#125;)
+              .catch((error) &#x3D;&gt; &#123;
+                console.log(&#39;Error sending message:&#39;, error);
+              &#125;);
+        &#125;);
+    &#125;);
+</code></pre>
+<p>The cloud work is completed, next step is to make your device receive notifications</p>
+<h2 id="firebase-messaging">Firebase Messaging</h2>
+<p><a href="https://pub.dev/packages/firebase_messaging">Firebase Messaging</a> is a flutter plugin for FCM, to use this, just update a dependency in the <code>pubspec.yaml</code>file</p>
+<p>The <a href="https://pub.dev/packages/firebase_messaging#-readme-tab-">README</a> file introduced how to integrate Firebase with your Android and IOS project, as we are using Cloud Storage and Firebase Auth. these part is already done yet. Then import the plugin and instantiate it in the Dart code</p>
+<pre class="line-numbers language-dart" data-language="dart"><code class="language-dart">import &#39;package:firebase_messaging&#x2F;firebase_messaging.dart&#39;;
+final FirebaseMessaging _firebaseMessaging &#x3D; FirebaseMessaging();</code></pre>
+<p>BTW, The device token can be accessed by doing so</p>
+<pre class="line-numbers language-dart" data-language="dart"><code class="language-dart">_firebaseMessaging.getToken().then((token) &#123;
+  print(token);
+&#125;);</code></pre>
+]]></content>
+      <categories>
+        <category>Project</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>停用七牛云</title>
+    <url>/2018/09/29/stopping-using-qiniu/</url>
+    <content><![CDATA[<p>备案是不可能备案的</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>改为由Travis CI部署</title>
+    <url>/2020/02/23/switching-to-travisci/</url>
+    <content><![CDATA[<p>突然想起来用 <a href="https://travis-ci.com/">Travis CI</a> 来替换掉之前用的<a href="https://github.com/hexojs/hexo-deployer-git">hexo-deployer-git</a>, 正好避免了源文件的管理混乱<del>虽然本来也没几篇文章</del>。</p>
+<p>顺道还把被停用很久的<a href="https://swiftype.com/">swiftype</a>关了换回了Google CSE。<del>一度不知道swiftype取消了免费账户</del></p>
+<p>网上很多老资料用的<a href="https://docs.travis-ci.com/user/deployment/custom/">Custom Deployment</a>的方法，现在Travis CI 已经支持GitHub Pages，只需要简单的配置一下即可。</p>
+<p>Hexo提供了<a href="https://hexo.io/docs/github-pages">设置指南</a>以及<code>.travis.yml</code>的配置例子，当设置好后每次提交源文件到master分支 TravisCI会自动生成页面并且部署到gh-pages分支上。</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">sudo: false
+language: node_js
+node_js:
+  - 10 # use nodejs v10 LTS
+cache: npm
+branches:
+  only:
+    - master # build master branch only
+script:
+  - hexo generate # generate static files
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: true
+  on:
+    branch: master
+  local-dir: public</code></pre>
+<p>需要注意的是该方法不适用于仓库名为<code>&lt;user&gt;.github.io</code>这种格式的仓库，因为GitHub 必须从master分支生成 user和organization的页面而不是gh-pages。</p>
+<blockquote>
+<p>User pages must be built from the <code>master</code> branch.</p>
+</blockquote>
+<p>因此如果用的是personal或者需要修改一下官方文档上的yml文件配置。</p>
+<p>现在Travis CI默认的依旧是dpl v1，但是在log里又会按照dpl v2 的指示弹警告，像</p>
+<blockquote>
+<p>deploy: deprecated key skip_cleanup (not supported in dpl v2, use cleanup)</p>
+</blockquote>
+<p><code>cleanup</code>在 dpl v2中默认是设置为 false 的而 dpl v1 中仍需要手动加入<code>skip_cleanup: true</code>来避免生成目录被删除。</p>
+<p>还有<code>sudo: false</code><a href="https://blog.travis-ci.com/2018-11-19-required-linux-infrastructure-migration">已被弃用</a>，<code>github_token</code>已经被替换为<code>token</code>等部分 dpl v2的属性又已经被支持</p>
+<p>在基于目前的新文档的建议下，最后的<code>.travis.yml</code>设置如下</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">os: linux
+language: node_js
+node_js:
+  - 10
+cache: npm
+branches:
+  only:
+    - source # store source code of hexo in source branch
+script:
+  - hexo generate
+deploy:
+  provider: pages
+  skip_cleanup: true
+  token: $GH_TOKEN
+  keep_history: true
+  target_branch: master
+  on:
+    branch: source
+  local_dir: public</code></pre>
+]]></content>
+  </entry>
+  <entry>
+    <title>二月的泰国行</title>
+    <url>/2017/05/06/thailand-tours/</url>
+    <content><![CDATA[<p>拖延症大概就是二月份的旅行拖到现在才想起动笔，而且还是毕设做得头晕脑胀过来缓缓。去泰国的缘由都不太记得了，反正是看到亚航的打折机票就直接剁了。签证也没有办，还好护照是有的。</p>
+<p>攻略的话<a href="http://www.lonelyplanet.com">Lonely Planet</a>的City Guides和<a href="https://www.tripadvisor.cn">TripAdvisor</a>之类的基本上撸了一遍，然后在Google Map里把点标记上就准备走人了。</p>
+<span id="more"></span>
+<p>在素万那普落地签后，让机场前台的小姐姐帮忙叫了Uber直接到Khao San Rd，炒饭炒粉什么的都塞点当作中餐晚餐了，廉价航空不提供免费食物也挺尴尬。</p>
+<p><img data-src="/images/thailand/IMG_8441.JPG" /></p>
+<p>晚上就坐在Red Sky Bar上俯瞰全城，位于55楼的Red Sky也是路易威登城市指南上推荐的，比较中心的地理位置，能俯瞰一下曼谷。食物没有尝试，酒水的味道其实很一般，不过因为是空中酒吧还是值得一去的。反正是吹风的（笑</p>
+<p><img data-src="/images/thailand/IMG_8467.JPG" /></p>
+<p>晚上在居民区吃了路边摊烧烤，味道还是很奇特的第二天早上就往Ko Samet赶去，因为是直接淘宝订的，其实也没什么特别的，在海上飙飙船，滑翔伞潜水什么的都尝试了，第一次去可以试试，第二次去也许可以考虑在沙滩边日光浴一天？比起芭提雅已经很不商业化了，物价的话还是整体偏高，尤其沉迷于菠萝椰子马杀鸡无法自拔。整体环境不错，大海特有的潮湿不太习惯。</p>
+<p>次日的下午回的曼谷，在市区闲逛了一晚后飞向清迈。</p>
+<p><img data-src="/images/thailand/IMG_8680.JPG" /></p>
+<p>到清迈决定慢下节奏好好玩了，房东是山东人，还是很友好的推荐了一些去处。在清迈大概就是不断地啃菠萝啃椰子啃榴莲。</p>
+<p>食物的话其实好吃的几家店都已经上了大众点评的首页，不过还是特别推荐<strong>Regina Chiang Mai Coffee House</strong>的</p>
+<p><img data-src="/images/thailand/IMG_8849.JPG" /></p>
+<p><img data-src="/images/thailand/IMG_8858.JPG" /></p>
+<p>不仔细瞧应该是不会注意到这家店的，门面内是卖一些礼品的，穿过房子餐桌露天摆在河边，看到河岸边上躺满的🐱 决定就在这里吃晚餐了。</p>
+<p><img data-src="/images/thailand/IMG_8835.JPG" /></p>
+<p><img data-src="/images/thailand/IMG_8842.JPG" /></p>
+<p><img data-src="/images/thailand/IMG_8844.JPG" /></p>
+<p>很美味的泰北菜，罗勒叶的味道习惯了会觉得很好吃的，菜的分量虽然不是很多，味道是可以给五星的。猫到腿上就赖着不走了，就餐的时候抱着一只猫简直太棒。</p>
+<p>比起周末的占满整个古城摆摊的集市，可能古城外的夜市更具有吸引力些，说是夜市其实更像菜市场一些，能看到当地人买菜，还有学生在买吃的。</p>
+<p><img data-src="/images/thailand/IMG_8866.JPG" /></p>
+<p>冻椰子，榴莲，果汁，烧烤，还有一些各种各样的小吃，如果不是能撑死大概会选择一家一家吃过去的。</p>
+<p><img data-src="/images/thailand/IMG_8871.JPG" /></p>
+<p><img data-src="/images/thailand/IMG_8874.JPG" /></p>
+<p>古城北面的凤飞飞猪脚饭味道也很棒（毕竟网红店233333</p>
+<p><img data-src="/images/thailand/IMG_8923.JPG" /></p>
+<p>整体来说泰北菜没有想像的不对胃口，而且国内的泰国菜普遍是南部口味，在清迈可以说是吃得爽极了，基本上没有踩到雷区，还有<strong>The Good View Bar &amp; Restaurant</strong>之类的餐厅也不错，地图上还有马的许多店子没去，打算下次再去扫一波。</p>
+<p>咖啡的话除了第一天在古城中心轴上一家店喝到了难以描述的肯尼亚之外，好印象还是有的。<em>其实也的确是因为时间不够没去很多家店了</em></p>
+<p>在清迈大学旁边的<strong>Taste cafe</strong>试了试本地豆，虽然之前没有听过泰国产区，但是店里只有这一支本地豆便试了试，比较干净，比较明亮的酸。</p>
+<p><img data-src="/images/thailand/IMG_8906.JPG" /></p>
+<p>店内都是大学生在做小组project，和店员用英文也能够顺畅的交流，用的Kalita扇形滤杯单点注水，磨豆机在仓库里没有看见，倒是特意把豆子拿给我看了看。</p>
+<p><img data-src="/images/thailand/IMG_8908.JPG" /></p>
+<p><img data-src="/images/thailand/IMG_8910.JPG" /></p>
+<p>然后继续往北到宁曼路，之前了解到<strong>Ristr8to Lab</strong>的老板在澳洲学艺，也拿过拉花冠军，EK43单独摆着但是不用，单品豆也仅供销售，由于语言障碍，想着要不试试Espresso也没能成功点单。</p>
+<p><img data-src="/images/thailand/IMG_8918.JPG" /></p>
+<p>在古城里倒是发现一家位于北部叫<strong>Ponganes Espresso</strong>的店意外的不错，在门口看到摆着一台Ditting就想应该不会差。</p>
+<p><img data-src="/images/thailand/IMG_8970.JPG" /></p>
+<p>品种也很多，本来想带包回来的，但是价格还是偏贵的，咖啡的价格倒是属于比较便宜的一类。</p>
+<p><img data-src="/images/thailand/IMG_8957.JPG" /></p>
+<p><img data-src="/images/thailand/IMG_8971.JPG" /></p>
+<p>当然有瑰夏就不犹豫了，虽然服务态度差到极致了，但是味道大概和服务态度是成反比的。（反正我从来都不在意服务态度这种东西2333333</p>
+<p><img data-src="/images/thailand/IMG_8965.JPG" /></p>
+<p><img data-src="/images/thailand/IMG_8969.JPG" /></p>
+<p>大概是因为这种慢慢悠悠吃吃喝喝的玩法，本来想去的拜县也没时间去了，大象营和丛林穿越还是花了一个白天去玩的，因为大象营是选的丛林附近的，没有按照Lonely Planet的推荐来，大概就成了此次旅行最后悔的地方吧。之后是了解了像这种驯象师手里拿的铁钩的基本都是在虐待动物，表演的大象里都有那种脑部凹陷的大象了。顺道不打广告的推荐一下<strong>Elephant Nature Park</strong>，<strong>Ran-Tong</strong>，<strong>Anantara Hotels Resorts &amp; Spas</strong>几个还可以，第一个也是在Lonely Planet清迈上推荐的TOP3，希望下一次去能看到更自然的大象吧。</p>
+<p>交通工具几乎是全线Uber，叫车都会让餐厅或者门童帮忙叫，选好地址让他们和司机沟通就好了，兜里准备好零钱当小费，虽然不是最便宜的出行方式但是应该是最方便的了，毕竟公共交通工具并不能便利的找到。有点奇怪的是曼谷的Uber只支持信用卡和付现，到清迈之后就能支付宝支付了。在商店还是推荐支付宝的，因为最优惠率的缘故还是比较省钱的，双币种信用卡的结算方式是泰铢兑美元再兑人民币应该是最划不来的，单币种稍微好些。</p>
+<p>（半夜睡前写博客的怪毛病应该也可以改改了</p>
+]]></content>
+      <tags>
+        <tag>tour</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>算法笔记</title>
+    <url>/2019/10/16/algorithm/</url>
+    <content><![CDATA[<p>正好有人借593的笔记，稍微整理了一下=-=（还是可能有些许错误的） <span id="more"></span></p>
+<h2 id="analysis-of-algorithms">Analysis of algorithms</h2>
+<p><span class="math inline">\(O(n)\)</span></p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">for(int i &#x3D; 0; i &lt; n; i++)&#123;&#x2F;&#x2F;O(n)
+    f();&#x2F;&#x2F;O(1)
+&#125;
+
+&#x2F;&#x2F;O(n)
+for (int i &#x3D; 0; i &lt; n; i++) &#123;
+&#125;
+for (int i &#x3D; 5; i &lt; n; i++) &#123;
+&#125;
+
+&#x2F;&#x2F;O(n)
+for (int i &#x3D; 5; i &lt; n; i+&#x3D;7) &#123;
+&#125;
+
+for i &lt;- 1 to sqrt(n) &#x2F;&#x2F;O(sqrt(n))
+
+for i &lt;- sqrt(n) to n &#x2F;&#x2F;O(n)
+    
+for i &lt;- n to n&#x2F;2 &#x2F;&#x2F;O(n)
+
+for i &lt;- n to n step n&#x2F;2 &#x2F;&#x2F;O(1)
+
+1 &lt; logn &lt; sqrt(n) &lt; n &lt; n^2
+
+for (int i &#x3D; 1; i &lt; n; i *&#x3D; 3) &#123; &#125; &#x2F;&#x2F;O(logn)
+for (int i &#x3D; 1; i &lt; n; i &#x3D; i * 3 + 8) &#123; &#125;&#x2F;&#x2F;O(logn)
+for (int i &#x3D; 1; i &lt; n; i *&#x3D; 2) &#123; &#x2F;&#x2F; 1, 2, 4, 8, ….  log2(n) 
+&#125;
+for (int i &#x3D; 1; i &lt; n; i *&#x3D; 3) &#123; &#x2F;&#x2F; 1, 3, 9, 27, ….  log3(n)
+&#125;
+for (int i &#x3D; 1; i &lt; sqrt(n); i *&#x3D; 3 &#123;&#125;  &#x2F;&#x2F;O(log sqrt(n))
+
+&#x2F;&#x2F;O(n*n) &#x3D; O(n^2)
+for (int i &#x3D; 0; i &lt; n; i++)  &#x2F;&#x2F;O(n)
+  for (int j &#x3D; 0; j &lt; n; j++) &#123; &#x2F;&#x2F;O(n)
+  &#125;
+&#125;
+
+&#x2F;&#x2F;O(n+n) &#x3D; O(n)
+for (int i &#x3D; 0; i &lt; n; i++)  &#x2F;&#x2F;O(n)
+&#125;
+for (int j &#x3D; 0; j &lt; n; j++) &#123; &#x2F;&#x2F;O(n)
+&#125;
+
+&#x2F;&#x2F;sum(1...n)&#x3D;O(n^2)
+for (int i &#x3D; 0; i &lt;&#x3D; n; i++)  &#x2F;&#x2F;O(n)
+  for (int j &#x3D; 0; j &lt;&#x3D; i; j++) &#123; &#x2F;&#x2F; 1 + 2 + 3 + … + n-1 + n 
+  &#125;
+&#125;
+
+&#x2F;&#x2F;O(n*sqrt(n))
+for (int i &#x3D; 0; i &lt;&#x3D; n; i++) &#123; &#x2F;&#x2F;O(n)
+  for (int j &#x3D; 0; j &lt; sqrt(n); j++) &#123; &#x2F;&#x2F;O(sqrt(n))
+  &#125;
+&#125;
+
+for (int i &#x3D; 0; i &lt;&#x3D; n; i++) &#123;  &#x2F;&#x2F;O(n)
+  for (int j &#x3D; 0; j &lt; n-sqrt(n); j++) &#123; 
+  &#125;
+&#125;
+
+&#x2F;&#x2F;O(n log2n)
+for (int i &#x3D; 0; i &lt; n; i++) &#123; &#x2F;&#x2F; O(n)
+ for (int j &#x3D; 1; j &lt; n; j *&#x3D; 2) &#123; &#x2F;&#x2F; O(log2n)
+ &#125;
+&#125;
+
+&#x2F;&#x2F;n(1+1&#x2F;2+1&#x2F;4+1&#x2F;8+...)
+&#x2F;&#x2F;\sum(1&#x2F;2^i)&#x3D;1
+&#x2F;&#x2F;O(n)
+for (int i &#x3D; 1; i &lt;&#x3D; n; i *&#x3D; 2) &#123; &#x2F;&#x2F; O(log2n)
+ for (int j &#x3D; 1; j &lt; i; j++) &#123; &#x2F;&#x2F; O(1 + 2 + 4 + 8 + …. + n)
+ &#125;
+&#125;
+
+&#x2F;&#x2F;O(n+m) if n ≈ m  O(2n) &#x3D; O(n)
+for (int i &#x3D; 0; i &lt; n; i++) &#123;  &#x2F;&#x2F;O(n)
+&#125;
+for (int j &#x3D; 0; j &lt; m; j++) &#123;  &#x2F;&#x2F;O(m)
+    cout &lt;&lt; i * j;	&#x2F;&#x2F;O(1)
+&#125;
+
+for (int i &#x3D; 1; i &lt; n; i *&#x3D; 2)	&#x2F;&#x2F;O(log n)
+  for (int j &#x3D; 1; j &lt; n; j++)	&#x2F;&#x2F;O(n)
+    System.out.println(i*j);
+
+for (int j &#x3D; 1; j &lt; n; j++)	&#x2F;&#x2F;O(n)
+  for (int i &#x3D; 1; i &lt; n; i *&#x3D; 2)	&#x2F;&#x2F;O(log n)
+    System.out.println(i*j);
+
+for (int i &#x3D; 0; i &lt; n; i++)  &#x2F;&#x2F;O(n)
+  for (int j &#x3D; i; j &lt; n; j++)	&#x2F;&#x2F; n + (n-1) + (n-2) + … 1
+    print(“x”);
+
+sum ← 912851;  &#x2F;&#x2F;O(1)
+for i ← 1 to n		
+   for j← 3 to i		&#x2F;&#x2F;   0 + 0 + 1 + 2 + 3 +  … n-3 &#x3D; O(n^2)
+      sum ← sum + i*j;
+   end
+end
+
+int f(int n) &#123; 
+  if (n &lt;&#x3D; 0)&#x2F;&#x2F;O(1)
+    return 1;
+  return n * f(n-1);
+&#125;
+f(5)&#x3D;5*f(4)&#x3D;5*4*f(3)...</code></pre>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">&#x2F;&#x2F;Fibo
+int fibo(int n) &#123; &#x2F;&#x2F;O(n)
+  int a &#x3D; 1, b &#x3D; 1, c;
+  for (int i &#x3D; 0; i &lt; n; i++) &#123;
+     c &#x3D; a + b;
+     a &#x3D; b;
+     b &#x3D; c;
+  &#125;
+   return c;
+&#125;
+
+int fibo2(int n) &#123; &#x2F;&#x2F;O(2^n)
+   if ( n &lt;&#x3D; 2)
+      return 1;
+   return fibo2(n-1) + fibo2(n-2);
+&#125;</code></pre>
+<h2 id="sorting">Sorting</h2>
+<h3 id="selection-sort">Selection Sort</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">void selectionSort(int x[], int n) &#123; &#x2F;&#x2F;O(n2)
+	for (int j &#x3D; n - 1; j &gt; 0; j--) &#123;
+		int pos &#x3D; 0;
+	  	for (int i &#x3D; 1; i &lt;&#x3D; j; i++) &#123;
+	    	if (x[i] &gt; x[pos])
+	      		pos &#x3D; i;
+	  	&#125;
+		if (j !&#x3D; pos)
+	    	swap(x[pos], x[j]);
+	&#125;
+&#125;</code></pre>
+<h3 id="insertion-sort">Insertion Sort</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">void InsertionSort(int x[], int n) &#123;
+	for (int i &#x3D; 1; i &lt; n; i++) &#123;
+		int temp &#x3D; x[i];
+		for (int j &#x3D; i - 1; j &gt;&#x3D; 0; j--)
+	    	if (x[j] &gt; temp)
+	        	x[j+1] &#x3D; x[j];
+	     	else &#123;
+	         	x[j+1] &#x3D; temp;
+	        	 break;
+	       	&#125;
+	     &#125;
+	     x[0] &#x3D; temp; &#x2F;&#x2F;TODO: BAD edge case here
+	&#125;
+&#125;</code></pre>
+<p>worst case 1 + 2 + … + (n - 1) = <span class="math inline">\(O(n^2)\)</span></p>
+<p>best case 1 + 1 + … + 1 = <span class="math inline">\(\Omega(n)\)</span></p>
+<h3 id="quick-sort">Quick Sort</h3>
+<ol type="1">
+<li><p>pick a pivot(a value in the middle)</p></li>
+<li><ol type="1">
+<li>pivot ← (x[left] + x[right]) / 2</li>
+<li>pivot ← (x[left] + x[right] + x[(left+right)/2]) / 3</li>
+<li>pivot ← x[random] random is unpredictable</li>
+</ol></li>
+<li><p>Do not use…</p></li>
+<li><ol type="1">
+<li>pivot ← x[left]</li>
+<li>pivot ← x[right]</li>
+</ol></li>
+</ol>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">quicksort(int[] x, int left, int right) &#123;
+	if (right - left &lt; 2)
+		return;
+	int pivot &#x3D; (x[left] + x[right])&#x2F;2;
+	int i &#x3D; left, j &#x3D; right;
+	
+	while (i &lt; j) &#123;        &#x2F;&#x2F;O(n)
+        while (x[i] &lt; pivot)
+        	i++;
+	    while (x[j] &gt;&#x3D; pivot)
+	        j--;
+	    if (i &lt; j) &#123;
+	    	swap(x[i], x[j]);
+	    &#125;
+	 &#125;
+	 &#x2F;&#x2F;i &#x3D;&#x3D; j
+	 quicksort(x, left, i-1 );  &#x2F;&#x2F; logn
+	 quicksort(x, i, right );
+&#125;
+
+quicksort(x, 0, x.length-1);</code></pre>
+<p>Worst case (pathological) <span class="math inline">\(O(n^2)\)</span></p>
+<h3 id="heap-sort">Heap Sort</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">makeheap(x)     
+	for i ← n&#x2F;2 to 0
+	    makesubheap(x, i)
+	end
+
+makesubheap(x, i)
+	if x[2i+1] &gt; x[2i+2]
+	    if x[i] &lt; x[2i+1]
+	    	swap(x[i], x[2i+1])
+	    	makesubheap(x, 2i+1)
+	    end
+	    else
+	    if x[i] &lt; x[2i+2]
+	        swap(x[i], x[2i+2])
+	    	makesubheap(x, 2i+2)
+	    end
+	end
+
+heapsort(x)
+	makeheap(x)
+	for i ← n-1 to 1
+	    swap(x[0], x[i])
+	    makesubheap(x, i-1)
+	end
+end
+&#x2F;&#x2F;makeheap &#x3D; (n&#x2F;2-1) log n + rebuild heap (n-1) log n &#x3D; O(n log n)</code></pre>
+<h3 id="merge-sort">Merge Sort</h3>
+<p>work each time: n</p>
+<p>number of iterations log n</p>
+<p>O(n log n)</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">&#x2F;&#x2F; merge lists a,b of size n into list c of size 2n
+merge(a, b, c) &#123;
+  i ← 0 &#x2F;&#x2F; position in a
+  j ← 0 &#x2F;&#x2F; position in b
+  k ← 0 &#x2F;&#x2F; position in c
+  while i &lt; n and j &lt; n
+      if a[i] &lt; b[j]
+             c[k] ← a[i]
+             i ← i + 1
+      else
+             c[k] ← b[j]
+             j ← j + 1
+      end
+      k ← k + 1
+  end
+&#125;</code></pre>
+<h2 id="shuffling">Shuffling</h2>
+<p><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">Fisher-Yates(x) &#x2F;&#x2F; O(N)
+    for i← x.length-1 to 0
+        pick ← random(0, i)
+        swap(x[i], x[pick])
+    end
+end</code></pre></p>
+<h2 id="searching">Searching</h2>
+<h3 id="linear-search">Linear Search</h3>
+<p>search(x, target)</p>
+<p><span class="math inline">\(O(n),\Omega(1), avg = n/2\)</span></p>
+<h3 id="binary-search">Binary Search</h3>
+<p>sort:O(n log n)</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">binarySearch(x, target)
+  L ← 0
+  R ← x.length-1
+  while (L &lt; R)
+      mid ← (L + R) &#x2F; 2
+      if x[mid] &gt; target
+        R ← mid - 1
+      else if x[mid] &lt; target
+        L ← mid + 1
+      else
+        return mid
+  end
+  return NOTFOUND
+end</code></pre>
+<h3 id="golden-mean-search">Golden Mean Search</h3>
+<p>L = 0</p>
+<p>R = 19</p>
+<p>S = (R-L) / = 19 * .6 = 11.4 =</p>
+<p>function f(x) = 4 - x2</p>
+<p>L = -2 R = 1 D = R-L = 3</p>
+<p>S = (R-L)/ 1.618 = 1.85</p>
+<p>X = R - 1.85 = -.85</p>
+<p>Y = L + 1.85 = -.15</p>
+<p>L = -.85</p>
+<p>S =(R-L)/ 1.618 = 1.143</p>
+<p>X = -.15</p>
+<p>Y = L + S = -.85 + 1.143 = .293</p>
+<p>R = .293</p>
+<h2 id="number-theoretic-algorithms">Number Theoretic Algorithms</h2>
+<h3 id="gcd">gcd</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">gcd(a,b)
+    if b &#x3D;&#x3D; 0
+        return a
+    end
+    return gcd(b, a mod b)
+end</code></pre>
+<p><span class="math inline">\(O(logn),\Omega(1)\)</span></p>
+<h3 id="lcm">lcm</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">&#x2F;&#x2F;O(log n)
+lcm(a,b) &#x3D; a * b &#x2F; gcd(a,b)  &#x2F;&#x2F; 1 + log(n)</code></pre>
+<h3 id="powermod">powermod</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">&#x2F;&#x2F;raise x to the power n
+bruteforcepower(x, n)
+    prod ← 1
+    for x ← 1 to n
+        prod ← prod * x
+    end
+    return prod
+end
+
+&#x2F;&#x2F;O(log n)
+&#x2F;&#x2F;raise x to the power n
+power(x, n)
+  prod ← 1
+  while n &gt; 0
+    if (n mod 2 !&#x3D; 0)
+      prod ← prod * x
+    end 
+    x ← x * x
+    n ← n &#x2F; 2
+  end
+  return prod
+end
+
+&#x2F;&#x2F;xn mod m
+powermod(x, n, m)
+  prod ← 1
+  while n &gt; 0
+    if (n mod 2 !&#x3D; 0)
+      prod ← prod * x mod m
+    end
+    x ← x * x mod m
+    n ← n &#x2F; 2
+  end
+  return prod
+end</code></pre>
+<h2 id="fermat">Fermat</h2>
+<p>if a^p-1 mod p == 1⇒ p is probably prime</p>
+<p>if a^p-1 mod p != 1⇒ p is definitely NOT prime</p>
+<h2 id="miller-rabin">Miller-Rabin</h2>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">MillerRabin(n, k)
+  WitnessLoop: for i ← 1 to k &#x2F;&#x2F; k trials
+    a← random[2, n − 2]
+    x ← a^d mod n
+   if x &#x3D; 1 or x &#x3D; n − 1 then
+      continue WitnessLoop
+   for j ← 1 to s − 1
+      x ← x2 mod n
+      if x &#x3D; 1 then
+         return false composite  (Carmichael?)
+      if x &#x3D; n − 1 then
+         continue WitnessLoop
+    end
+   return false (composite)
+return probably prime
+</code></pre>
+<h3 id="brute-force-trial-division">brute force trial division</h3>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;O(n)		Ω(1)
+bool isPrime(int n) &#123;
+  for (int i &#x3D; 2; i &lt; n&#x2F;2; i++) &#123;
+    if (n % i &#x3D;&#x3D; 0)
+      return false;
+  &#125;
+  return true;
+&#125;
+
+&#x2F;&#x2F;O(√n)		Ω(1)
+bool isPrime(int n) &#123;
+  for (int i &#x3D; 2; i &lt;&#x3D; sqrt(n); i++) &#123;
+    if (n % i &#x3D;&#x3D; 0)
+      return false;
+  &#125;
+  return true;
+&#125;</code></pre>
+<h3 id="eratosthenes-sieve">Eratosthenes' Sieve</h3>
+<pre class="line-numbers language-none"><code class="language-none">ImprovedEratosthenes(n)
+for i ← 2 to n
+	isPrime[i] ← true
+end
+for i ← 4 to n step 2
+	isPrime[i] ← false
+end
+for i ← 3 to n step 2
+	if isPrime[i]
+		for j ← i*i to n step 2i
+			isPrime[j] ← false
+		end
+	end
+end</code></pre>
+<h2 id="growarray">GrowArray</h2>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">class GrowArray &#123;
+private:
+    int* data;
+    int len;
+    int capacity;
+    void grow()&#123;
+        int* old &#x3D; data;
+        data &#x3D; new int[2*capacity + 1];
+        for (int i &#x3D; 0; i &lt; len; i++) &#x2F;&#x2F; memcpy(data, old, len* sizeof(int))
+            data[i] &#x3D; old[i];
+        delete old;
+        capacity &#x3D; 2 * capacity;
+    &#125;
+public:
+    GrowArray() &#123; data &#x3D; nullptr; len &#x3D; 0; capacity &#x3D; 0;&#125;
+    void addEnd(int v) &#123; &#x2F;&#x2F; O(1)
+        if (len &gt;&#x3D; capacity)
+            grow();
+        data[len++] &#x3D; v;
+        cout&lt;&lt;v&lt;&lt;endl;
+    &#125;
+&#125;;
+ 
+int main() &#123;
+const int n &#x3D; 1000000;
+GrowArray a;
+for (int i &#x3D; 0; i &lt; n; i++)
+    a.addEnd(i);
+&#125;</code></pre>
+<h2 id="linkedlist">Linkedlist</h2>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">class LinkedList &#123;
+private:
+    class Node &#123;
+        int val;
+        Node* next;
+        Node* prev;
+    &#125;;
+    Node* head;
+    Node* tail;
+public:
+    LinkedList() : head(nullptr), tail(nullptr) &#123;&#125; &#x2F;&#x2F; O(1)
+    ~LinkedList() &#123; &#x2F;&#x2F; O(1)
+        while (head !&#x3D; nullptr) &#123;
+            Node* temp &#x3D; head;
+            head &#x3D; head-&gt;next;
+            delete temp;
+        &#125;
+    &#125;
+    void addFirst(int v) &#123; &#x2F;&#x2F; O(1)
+        head &#x3D; new Node &#123;v, head, nullptr&#125;;
+        if (tail &#x3D;&#x3D; null)
+            tail &#x3D; head;
+        else
+            head-&gt;next-&gt;prev &#x3D; head;
+    &#125;
+    void addLast(int v) &#123;
+        tail &#x3D; new Node(v, nullptr, tail);
+        if (head &#x3D;&#x3D; nullptr)
+            head &#x3D; tail;
+        else
+            tail-&gt;prev-&gt;next &#x3D; tail;
+    &#125;
+    void removeFirst() &#123;
+        Node* temp &#x3D; head;
+        head &#x3D; head-&gt;next;
+        delete temp;
+    &#125;
+&#125;
+</code></pre>
+<h3 id="stack">Stack</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">class Stack &#123;
+private:
+    LinkedList impl; &#x2F;&#x2F;  addFirst O(1), addLast O(n), removeFirst O(1), removeLast O(n)
+    GrowArray impl; &#x2F;&#x2F;  addFirst O(n) addLast O(1), removeFirst O(n), removeLast O(1)
+public:
+    void push(int v) &#123; impl.addFirst(v); &#125;
+    int pop() &#123; return impl.removeFirst()&#125;
+    bool isEmpty() const &#123;&#125;
+    int size( const &#123;&#125;)
+&#125;;
+</code></pre>
+<h3 id="queue">Queue</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">class Queue &#123;
+private:
+    linkedList 2 templ; &#x2F;&#x2F;  has head and tail
+public:
+    void enqueue(int v) &#123;impl.addLast(v)&#125; &#x2F;&#x2F;  O(1)
+    int dequeue() &#123; impl.removeFirst()&#125; &#x2F;&#x2F;  O(1)
+    bool isEmpty() const &#123; return impl,isEmpty();&#125;
+&#125;</code></pre>
+<h2 id="trees">Trees</h2>
+<h3 id="binary-tree">Binary tree</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">class BinaryTree &#123;
+private:
+  class Node &#123;
+  public:
+    int val;
+    Node* parent;
+    Node* left;                &#x2F;&#x2F; int* a,b; a is pointer to int, b is just int
+    Node* right;
+    Node(int v, Node* L, Node* r) : val(v), left(L), right(R) &#123;&#125;
+  &#125;;
+  Node * root;
+public:
+  void add(int v) &#123;
+    if (root &#x3D;&#x3D; nullptr) &#123;
+      root &#x3D; new Node(v, nullptr, nullptr);
+      return;
+    &#125;
+  … &#125;
+
+inorder(node n)
+    if n &#x3D;&#x3D; null
+        return
+	inorder(n.left)
+    print (val)
+    inorder(n.right)
+end
+
+preorder(node n)
+    if n &#x3D;&#x3D; null
+        return
+    print (val)
+	preorder(n.left)
+    preorder(n.right)
+end
+
+postorder(node n)
+    if n &#x3D;&#x3D; null
+        return
+	postorder(n.left)
+    postorder(n.right)
+    print (val)
+end</code></pre>
+<h3 id="trie">Trie</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">class Trie &#123;
+private:
+    class Node&#123;
+    public:
+        Node* next[26];
+        bool isWord;
+        Node() : isWord(false) &#123;
+            for(int i &#x3D; 0; i &lt; 26; i++)&#123;
+                next[i] &#x3D; nullptr;
+            &#125;
+        &#125;
+    &#125;;
+    Node* root;
+
+public:
+    Trie() : root(new Node()) &#123;&#125;
+    ~Trie() &#123;
+        deleteNode(root);
+    &#125;
+    void deleteNode(Node* p)&#123;
+        for(int i &#x3D; 0; i &lt; 26; i++)&#123;
+            if(p-&gt;next[i]) deleteNode(p-&gt;next[i]);
+        &#125;
+        delete p;
+    &#125;
+
+    void insert(string word) &#123;
+        Node* temp &#x3D; root;
+        for(char c : word)&#123;
+            int index &#x3D; c - &#39;a&#39;;
+            if(temp-&gt;next[index] &#x3D;&#x3D; nullptr) temp-&gt;next[index] &#x3D; new Node();
+            temp &#x3D; temp-&gt;next[index];
+        &#125;
+        temp-&gt;isWord &#x3D; true;
+    &#125;
+
+    bool search(string word) &#123;
+        Node* temp &#x3D; root;
+        for(char c : word)&#123;
+            int index &#x3D; c - &#39;a&#39;;
+            if(temp-&gt;next[index] &#x3D;&#x3D; nullptr) return false;
+            temp &#x3D; temp-&gt;next[index];
+        &#125;
+        return temp-&gt;isWord;
+    &#125;
+
+    bool startsWith(string prefix) &#123;
+        Node* temp &#x3D; root;
+        for(char c : prefix)&#123;
+            int index &#x3D; c - &#39;a&#39;;
+            if(temp-&gt;next[index] &#x3D;&#x3D; nullptr) return false;
+            temp &#x3D; temp-&gt;next[index];
+        &#125;
+        return true;
+    &#125;
+&#125;;</code></pre>
+<h2 id="hashing">Hashing</h2>
+<h3 id="hash-functions">Hash functions</h3>
+<h3 id="linear-probing">Linear probing</h3>
+<blockquote>
+<p>Linear probing is a strategy for resolving collisions, by placing the new key into the closest following empty cell.</p>
+</blockquote>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">add(k)
+    if 2*used &gt;&#x3D; capacity
+        grow()
+    pos ← hash(k)
+    while table[pos] !&#x3D; EMPTY
+        pos++
+        if pos &gt;&#x3D; table.length
+            pos &#x3D; 0
+        end
+    end
+    used++
+    table[pos] ← k
+end
+
+find(k)
+	pos ← hash(k)
+	while table[pos] !&#x3D; EMPTY
+		if table[pos] &#x3D;&#x3D; k
+			return true
+		end
+		pos++
+		if pos &gt;&#x3D; table.length
+			pos &#x3D; 0
+		end
+	end
+	return false
+end
+
+bool ← remove(k)
+	pos ← hash(k)
+	while table[pos] !&#x3D; 0
+		if table[pos] &#x3D;&#x3D; k
+			table[pos] ← 0
+				&#x2F;&#x2F; redo everyone potential
+				&#x2F;&#x2F; until next 0
+			return
+		end
+		pos++
+		if pos &gt;&#x3D; table.length
+			pos &#x3D; 0
+		end
+	end
+	return false
+end</code></pre>
+<h3 id="quadratic-probing">Quadratic probing*</h3>
+<h3 id="linear-chaining">Linear chaining</h3>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">LinearChaining.add(k)
+	pos ← hash(k)
+	p ← table[pos].head
+	while p !&#x3D; null
+		if p.k &#x3D;&#x3D; k
+			return
+		p &#x3D; p.next
+	end
+	table[pos].addStart(k)
+end
+
+LinearChaning.find(k)
+	pos ← hash(k)
+	p ← table[pos].head
+	while p!&#x3D; null
+		if p.k &#x3D;&#x3D; k
+			return true
+		p &#x3D; p.next
+	end
+	return false
+end		</code></pre>
+<h3 id="perfect-hashing">Perfect hashing</h3>
+<h2 id="matrices">Matrices</h2>
+<h3 id="representation-rectangular-diagonal-tridiagonal">Representation (rectangular, diagonal, tridiagonal)</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">class Matrix&#123;
+private:
+    int row,cols;
+    double* m;
+public:
+    Matrix(int rows, int cols, double val) : rows(rows), cols(cols)&#123;
+        for (int i &#x3D; 0; i &lt; row * cols; i++)
+            m[i] &#x3D; val;
+    &#125;
+    ~Matrix()&#123;
+        delete []m
+    &#125;
+&#125;</code></pre>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">\\Lower Triangular Matrix
+get(i, j)
+	if(j &gt; i)
+		return 0
+	return m[i*(i+1)&#x2F;2+j]
+
+\\Diagonal Matrix
+get(i, j)
+	if(i &#x3D;&#x3D; j)
+		return m[i]
+	return 0
+	
+\\TriDiagonal Matrix
+get(i, j)
+	if(abs(j-i) &gt; 1)
+		return 0;
+	return m[2i+j]</code></pre>
+<h3 id="addition">Addition</h3>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">addition(a, b)
+	if a.rows !&#x3D; b.rows OR a.cols !&#x3D; b.cols
+		ERROR
+	end
+	for i ← 0 to rows*cols
+		ans[i] &#x3D; a[i] + b[i]
+	end
+	return ans
+end</code></pre>
+<h3 id="multiplication">Multiplication</h3>
+<pre class="line-numbers language-ps" data-language="ps"><code class="language-ps">mult(a, b)
+	if a.cols !&#x3D; b.rows
+		ERROR
+	end
+	for k ← 0 to a.rows-1
+		for i  ←  0 to b.cols - 1
+			sum ← 0
+			for j ← 0 to a.cols - 1
+				sum ← sum + a(k,j)*b(j,i)
+			end
+			ans(k,i) ← sum
+		end
+	end
+end</code></pre>
+<h3 id="solving-systems-gauss-jordan-elimination-partial-pivoting">Solving systems (Gauss-Jordan Elimination, partial pivoting)</h3>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">partialPivot(A,i)
+	max ← A(i,i)
+	maxpos ← i
+	for j ← i+1 to rows-1
+		if A(j,i) &gt; max
+			max ← A(j,i)
+			maxpos ← j
+		end
+	end
+	&#x2F;&#x2F;swap rows
+GaussianElimination(A,i)
+	for i ← 0 to rows-2
+		partialPivot(A,i)
+		for j ← i+1 to rows-1
+			s ← - A(j,i)&#x2F;A(i,i)
+			A(j,i) ← 0
+			for k ← i+1 to cols - 1
+				A(j,k) +&#x3D; s * m(i,j)
+			end
+		end
+	end</code></pre>
+<h3 id="gram-schmidt-orthogonalization">Gram-Schmidt orthogonalization</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">void subtractProj(int i, int j)&#123;
+    double dot &#x3D; 0;
+    for (int k &#x3D; 0; k &lt; rows; k++)
+        dot +&#x3D; (*this)(k,i) * (*this)(k,j);
+    &#x2F;&#x2F;&lt;u.v&gt;
+    for (int k &#x3D; 0; k &lt; rows; k++)
+        (*this)(k,j) -&#x3D; dot * (*this)(k,j);
+&#125;
+gramschmidt()&#123;
+    int n &#x3D; cols;
+    double mag &#x3D; 0;
+    for (int i &#x3D; 0; i &lt; n; i++)
+        mag +&#x3D; (*this)(i,0) * (*this)(i,0);
+    mag &#x3D; 1 &#x2F; sqrt(mag);
+    for (int i &#x3D; 0; i &lt; n; i++)
+        (*this)(i,0) *&#x3D; mag;
+    for(int j &#x3D; 1; j &lt; n; j++)&#123;
+        for (int i &#x3D; 0; i &lt; j; i++)
+            subtractProj(i,j);
+        double mag &#x3D; 0;
+        for (int i &#x3D; 0; i &lt; n; i++)
+            mag +&#x3D; (*this)(i,j) * (*this)(i,j);
+        mag &#x3D; 1&#x2F;sqrt(mag);
+        for (int i &#x3D; 0; i &lt; n; i++)
+            (*this)(i,j) *&#x3D; mag;
+    &#125;
+    return *this;  
+&#125;</code></pre>
+<h2 id="strings">Strings</h2>
+<h3 id="boyer-moore">Boyer-Moore</h3>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">void boyerMoore(const char s[], const char target[])&#123;
+    int jump[256];
+    int n &#x3D; strlen(s);
+    int len &#x3D; strlen(target);
+    for (int i &#x3D; 0; i &lt; 256; i++)
+        jump[i] &#x3D; len;
+    for (int i &#x3D; 0; i &lt; len; i++)
+        jump[target[i]] &#x3D; len - 1 - i;
+    for (int i &#x3D; len - 1; i&lt;n;)&#123;
+        int offset &#x3D; jump[s[i]];
+        if(offset &gt; 0)
+            i +&#x3D; offset;
+        else&#123;
+            for (int j &#x3D; i - len +1, k &#x3D; 0; j &lt; i; j++, k++)
+                if(target[k] !&#x3D; s[j])
+                    goto notfound;
+            cout &lt;&lt; &quot;Found: &quot; &lt; i-len +1&lt;&lt;endl;
+        notfound:
+            i+&#x3D;len;
+        &#125;
+&#125;
+    
+for i &#x3D;0 to 255
+    table[i] &#x3D; len
+for i &#x3D; 0 to len
+    table[target[i]] &#x3D; len - i - 1
+i &#x3D; len-1
+while (i &lt; n)
+    jump ← table[search[i]]
+    if (jump &#x3D;&#x3D; 0) &#123; &#x2F;&#x2F; possible match
+        &#x2F;&#x2F; compare the word letter by letter
+
+    &#125;
+    i ← i + jump
+end</code></pre>
+<h3 id="finite-state">Finite State*</h3>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class FiniteStateMachine &#123;
+private:
+	int currentState;
+	int next[NUMSTATES][256];
+public:
+	FiniteStateMachine() : currentState(0) &#123;
+		for (int i &#x3D; 0; i &lt; 256; i++)
+			next[0][i] &#x3D; 1;
+		for (int i &#x3D; &#39;a&#39;; i &lt;&#x3D; &#39;z&#39;; i++)
+			next[0][i] &#x3D; 0;
+		for (int i &#x3D; &#39;A&#39;; i &lt;&#x3D; &#39;Z&#39;; i++)
+			next[0][i] &#x3D; 0;
+		
+
+	&#125;
+	void exec(const char inp[]) &#123;
+		for (int i &#x3D; 0; inp[i] !&#x3D; &#39;\0&#39;; i++) &#123;
+			currentState &#x3D; next[currentState][inp[i]];
+			if (currentState &#x3D;&#x3D; 1)
+				return; &#x2F;&#x2F; get out when we reach the end state
+	&#125;
+&#125;;</code></pre>
+<h3 id="lcs">LCS</h3>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">int LCS(string s, string t)&#123;
+    int m &#x3D; s.size();
+    int n &#x3D; t.size();
+    int dp[m+1][n+1];
+    for(int i &#x3D; 0; i &lt; m + 1; i++)&#123;
+        for(int j &#x3D; 0; j &lt; n + 1; j++)&#123;
+            if(i&#x3D;&#x3D;0||j&#x3D;&#x3D;0)&#123;
+                d[i][j]&#x3D;0;
+            &#125;
+            else if(s[i-1]&#x3D;&#x3D;t[j-1])&#123;
+                dp[i][j] &#x3D; dp[i-1][j-1] + 1;
+            &#125;else&#123;
+                dp[i][j] &#x3D; max(dp[i-1][j],dp[i][j-1]);
+            &#125;
+        &#125;
+    &#125;
+    return dp[m][n];
+&#125;</code></pre>
+<h2 id="graphs">Graphs</h2>
+<h3 id="representation-list-or-matrix">Representation: list or matrix</h3>
+<figure>
+<img data-src="https://docs.google.com/drawings/d/sWyhI6FrcgmwhtdawJFsCZg/image?w=624&amp;h=107&amp;rev=90&amp;ac=1&amp;parent=1QRQ5hBbBiKXkq0xePaM74Dbq7uui8nGUhUarYntk3wY" alt="img" /><figcaption aria-hidden="true">img</figcaption>
+</figure>
+<p>find out if v1 is adjacent to v2 = O(E) = O(<span class="math inline">\(V^2\)</span>) Ω(1)</p>
+<p>find out the set of vertices connected to v is O(E)</p>
+<p>Storage: O(E) Ω(1)</p>
+<figure>
+<img data-src="https://docs.google.com/drawings/d/szZxUtrrzDPlGnxXMe6Hl3Q/image?w=199&amp;h=284&amp;rev=37&amp;ac=1&amp;parent=1QRQ5hBbBiKXkq0xePaM74Dbq7uui8nGUhUarYntk3wY" alt="img" /><figcaption aria-hidden="true">img</figcaption>
+</figure>
+<p>Storage: O(E) Ω(V)</p>
+<p>is vertex k adjacent to vertex m? O(V) Ω(1)</p>
+<p>find all vertices adjacent to vertex k? O(V) Ω(1)</p>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">isAdjacent(from,to)   &#x2F;&#x2F;O(V)
+allAdjacent(from) &#x2F;&#x2F;O(V), Ω(1) </code></pre>
+<figure>
+<img data-src="https://docs.google.com/drawings/d/s_S39ZP6f8cbZoeQk9bNpbQ/image?w=201&amp;h=178&amp;rev=49&amp;ac=1&amp;parent=1QRQ5hBbBiKXkq0xePaM74Dbq7uui8nGUhUarYntk3wY" alt="img" /><figcaption aria-hidden="true">img</figcaption>
+</figure>
+<p>Space complexity: O(E) = O(V2) Ω(V2) = Θ(V2)</p>
+<p>is vertex k adjacent to vertex m? O(1)</p>
+<p>find all vertices adjacent to k? O(V)</p>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">isAdjacent(from,to)   &#x2F;&#x2F;O(1)
+if from &lt; to
+        return isAdajacent(to, from)
+return m[from][to]
+end
+
+allAdjacent(from) &#x2F;&#x2F;O(V), Ω(V)  ⇒ θ(V)</code></pre>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class MatrixGraph &#123;
+  private double [] w;
+  private int V;
+  public boolean isAdjacent(int i, int j) &#123; return !isInf(w[i * V + j]); &#125; &#x2F;&#x2F;O(1)
+  public boolean[] adjacent(int v) &#123; … &#125; &#x2F;&#x2F; O(V) Ω(V)
+&#125;
+
+class EdgeListGraph &#123;
+  private static class Edge &#123;
+     int to;
+     double w;
+  &#125;
+  private LinkedList&lt;Edge&gt;[] v;
+  public boolean isAdjacent(int i, int j) &#123; … &#125; &#x2F;&#x2F;O(V)    Ω(1)
+  public boolean[] adjacent(int i) &#123; … &#125; &#x2F;&#x2F; O(V)        Ω(1)
+&#125;
+</code></pre>
+<h3 id="dfs">DFS</h3>
+<p>O(V2) worst case (matrix representation, ALWAYS)</p>
+<p>Ω(1) best case (with initial vertex not connected to anyone, list)</p>
+<p>Ω(V) best case (with initial vertex not connected to anyone, matrix)</p>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">g.DFS2(v,visited) &#x2F;&#x2F;O(V^2) Ω(1) with list impl
+	visited[v] ← true
+	print v
+	foreach v2 in adjacent(v)&#x2F;&#x2F; for matrix O(v), for linkedlist O(v)  Ω(1)
+		if NOT visited[v2]
+			g.DFS2(v2, visited)
+		end
+	end
+end
+g.DFS(v)
+	visited ← [false, false, ...,] &#x2F;&#x2F;O(v)
+	g.DFS2(v,visited)
+end
+
+&#x2F;&#x2F;iteratively
+g.DFS(v)
+	visited ← [false, false, ...,] &#x2F;&#x2F;O(v)
+	stack ← empty
+	stack.push(v)
+	visited[v] ← true
+	while NOT stack.empty()
+		v ← stack.pop();
+		print v
+		foreach v2 in adjacent(v)
+			if NOT visited[v2]
+				stack.push(v2)
+				visited[v2] ← true
+			end
+		end
+	end
+end</code></pre>
+<h3 id="bfs">BFS</h3>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">g.BFS(v)
+	visited ← [false, false, ...,] &#x2F;&#x2F;O(v)
+	queue ← empty
+	queue.enqueue(v)
+	visited[v] ← true
+	while NOT queue.empty()
+		v ← queue.dequeue();
+		print v
+		foreach v2 in adjacent(v)
+			if NOT visited[v2]
+				queue.enqueue(v2)
+				visited[v2] ← true
+			end
+		end
+	end
+end</code></pre>
+<h3 id="isconnected">IsConnected</h3>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">bool ← g.isConnected() &#x2F;&#x2F;O(V^2)
+	visited ← g.DFS(r)
+	for i ← 0 to V
+		if NOT visited[i]
+			return false
+	end
+	return true
+end</code></pre>
+<h3 id="bellman-fordove">Bellman-Ford//O(VE)</h3>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">BellmanFord(start, end)
+	cost ← [∞, ∞, ...]
+	cost[start] ← 0
+	for v ← 0 to V-1
+		for each edge e from v
+			if cost[v2] &gt; cost[v] + adjacent[v2]
+			cost[v2] ← cost[v] + adjacent[v2]
+			add to the list to recompute costs from v2
+		end
+	end
+end</code></pre>
+<h3 id="floyd-warshallov3">Floyd-Warshall//O(V^3)</h3>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">dist ← |V| × |V| array of minimum distances initialized to ∞
+
+for each vertex v
+	dist[v][v] ← 0
+for each edge (u,v)
+	dist[u][v] ← w(u,v) &#x2F;&#x2F;the weight of the edge (u,v)
+for k from 1 to V
+	for i from 1 to V
+		for j from 1 to V
+			if dist[i][j] &gt; dist[i][k] + dist[k][j]
+				dist[i][j] ← dist[i][k] + dist[k][j]
+			end
+		end
+	end
+end</code></pre>
+<h3 id="primov2">Prim//O(V^2)</h3>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">Prim(v)
+	visited ← new Vector(V, false)
+	visited[v] ← true
+	for i ← 1 to V-1
+		for all edges out of the visited set(V,2V,3V, ...) to V-1
+			min ← ∞
+			if isAdjacent(v,a) and NOT visited[a]
+				if getWeight(v,a) &lt; min
+					min ← getWeight(v,a)
+					minA ← a
+				end
+			end
+		end
+		visited[minA] ← trme
+		v ← minA
+	end
+end</code></pre>
+<h3 id="kruskaloe-log-e">Kruskal//O(E log E)</h3>
+<p>https://en.wikipedia.org/wiki/Kruskal%27s_algorithm</p>
+<h3 id="tsp">TSP*</h3>
+<h2 id="backtracking">Backtracking</h2>
+<h3 id="basic">Basic</h3>
+<h3 id="heaps">Heap's</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+
+class Permute &#123;
+private:
+	int* p;
+	int N;
+public:
+	Permute(int x[], int N) : p(x), N(N) &#123;
+		&#x2F;&#x2F;generate(N-1);
+		heaps(N-1);
+	&#125;
+	void generate(int n) &#123;
+		if (n &#x3D;&#x3D; 0) &#123;
+			doit();
+			return; &#x2F;&#x2F; What Sedgewick forgot!!!!
+		&#125;
+		for (int c &#x3D; 0; c &lt;&#x3D; n; c++) &#123;
+			swap(p[c], p[n]);
+			generate(n-1);
+			swap(p[c], p[n]);
+		&#125;
+	&#125;
+	void heaps(int n) &#123;
+		if (n &#x3D;&#x3D; 0) &#123;
+			doit();
+			return; &#x2F;&#x2F; What Sedgewick forgot!!!!
+		&#125;
+		for (int c &#x3D; 0; c &lt;&#x3D; n; c++) &#123;
+			generate(n-1);
+			swap(n % 2 ? p[0] : p[c] , p[n]);
+		&#125;
+	&#125;
+
+	void doit() const &#123;
+		for (int i &#x3D; 0; i &lt; N; i++)
+			cout &lt;&lt; p[i];
+		cout &lt;&lt; &#39;\n&#39;;
+	&#125;
+&#125;;
+
+
+int main() &#123;
+  int x[] &#x3D; &#123;1, 2, 3, 4&#125;;
+	Permute perm(x, 4);
+&#125;</code></pre>
+]]></content>
+      <categories>
+        <category>Cheetsheet</category>
+      </categories>
+      <tags>
+        <tag>note</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>咖啡豆种</title>
+    <url>/2021/02/28/coffee-varieties/</url>
+    <content><![CDATA[<p>首先摆一张 James Hoffmann 所创作的 <a href="https://shop.squaremilecoffee.com/products/coffee-variety-family-tree-timeline">Coffee variety family tree timeline</a>（平方英里有海报售）。</p>
+<figure>
+<img data-src="/images/coffee/VFamily_timeline-3_large.webp" alt="Coffee variety family tree timeline" /><figcaption aria-hidden="true">Coffee variety family tree timeline</figcaption>
+</figure>
+<p>可见咖啡之多，本文只对主流品种稍做介绍，若想详细了解咖啡豆种的发源，尤其是根据不同产区的细分，则可以去阅读 James 的<a href="https://book.douban.com/subject/33455203/">《世界咖啡地图》</a>。此外一些植物学名词可能使用不当，敬请谅解。</p>
+<span id="more"></span>
+<p>咖啡属于龙胆目茜草科咖啡属的常绿灌木，而其中主要流通的两大品种即阿拉比卡种（Coffea arabica）和罗布斯塔种（Coffea robusta）在田口護的咖啡大全中还提到了利比里亚种（Coffea liberica）与阿拉比卡和卡尼弗拉（Coffea canephora）并称三大原生种，但由于实在过于少见，姑且不提。实际上这三种咖啡种的译名分别为小果咖啡（阿拉比卡），中果咖啡（卡尼弗拉），大果咖啡（利比里亚）。</p>
+<h2 id="罗布斯塔">罗布斯塔</h2>
+<p>尽管因为罗布斯塔而闻名导致如今人们将卡尼弗拉称为罗布斯塔，实际上从植物学角度，罗布斯塔是卡尼弗拉种（Coffea canephora）下的变种，而卡尼弗拉种的两个主要变种为 robusta 和 nganda 。罗布斯塔比阿拉比卡晚了约100年才被认为是一种咖啡。罗布斯塔来词源是拉丁文 <em>robustus</em> 意味着坚硬强壮，其植株有着顽强的生命力，生长在不适合阿拉比卡生长的低海拔，高温多湿的地带，每株罗布斯塔的产豆量是阿拉比卡的两倍，抗叶锈病的能力也更强。罗布斯塔有着偏低的碳水化合物与脂质，偏高的绿原酸，稍多的蛋白质和氨基酸，阿拉比卡两倍的咖啡因。烘焙时绿原酸释放烟熏味和药味与蛋白质和氨基酸产生的焦糊味交织形成了独特的罗布味，而味觉方面因为蔗糖的缺少，几乎无法产生酸味，其他物质带来的苦味则单调且突出。因此罗布斯塔大多被用于速溶咖啡，罐装咖啡的生产，以及用于一些廉价的商业拼配。</p>
+<p>这并不意味着罗布斯塔完全就是低品质，在东南亚等地烘焙罗布斯塔时会添加砂糖来增加甜度，也有烘焙商通过高温蒸汽预处理对绿原酸进行水解（Hydrolyze）释放奎宁酸和咖啡酸来抑制土腥味和霉锈味，罗布斯塔的大产区越南则是在出品时加入大量的炼乳。罗布斯塔种亦有比赛和拍卖，有些意式拼配也会使用高品质的罗布斯塔来增加咖啡脂（Crema）。</p>
+<h2 id="阿拉比卡">阿拉比卡</h2>
+<p>世界上绝大部分的商业咖啡树（约 70% - 80%）都是阿拉比卡种，而在不同产区的标准，会根据自己的标准对其进行评分，分级，售卖。除了部分意式拼配外，精品咖啡只会用阿拉比卡种，因此反复强调“100%阿拉比卡”的咖啡正好反映出其优点的缺乏，其咖啡的品质也就不言而喻。</p>
+<p>阿拉比卡是咖啡属中唯一的多倍体种，根据遗传基因分析，阿拉比卡种是二倍体卡尼弗拉种和欧基尼奥伊德斯种（Coffea eugenioides）杂交而成的异源四倍体。铁皮卡种和波旁种是阿拉比卡的两个主要品种，是现代阿拉比卡咖啡的种植基础，自然变异， 或是人工选育产生了如今多样的咖啡种，<a href="https://sca.coffee/research/botany?page=resources&amp;d=a-botanists-guide-to-specialty-coffee">A Botanists' Guide to Specialty Coffee</a> 提供了一个张较为明晰的图谱。</p>
+<figure>
+<img data-src="/images/coffee/CoffeeVarieties-full.jpg" alt="Common Coffee Cultivars and their Origins" /><figcaption aria-hidden="true">Common Coffee Cultivars and their Origins</figcaption>
+</figure>
+<h3 id="铁皮卡及其衍生种-bourbon-typica-group-typica-related">铁皮卡及其衍生种 Bourbon-Typica Group (Typica-related)</h3>
+<h4 id="铁皮卡-typica">铁皮卡 Typica</h4>
+<p>阿拉比卡种中最接近原生种的品种，几乎所有的阿拉比卡种皆源于此，过去广泛的种于中南美州。铁皮卡的豆粒较大，成尖椭圆或瘦尖状，拥有绝佳的甜味和醇厚感，以及苹果酸和干净的口感。但其体质差，不耐叶锈病，在种植的时候需要相当多的遮阴树来遮挡，而且两年才能收成一次，产量很低。</p>
+<ul>
+<li>蓝山 Blue Mountain：牙买加蓝山可能是知名度最高的咖啡了，早于第三波甚至第二波之前就家喻户晓了，一度在每家咖啡馆和西餐厅的菜单上都有蓝山咖啡，即使并没有任何关系。蓝山并不是一个品种，他的生产加工以及出售都在JACRA（Jamaica Agricultural Commodities Regulatory Authority）的管控下，出售的咖啡需要含有超过一定比例的蓝山才能被授权命名蓝山咖啡。为了答谢日本企业在1962年对被飓风影响的牙买加咖啡产业的帮助，1972年签订了合约将80%的蓝山都提供给日本市场。因此市面上的蓝山才如此稀缺。</li>
+<li>科纳 Kona：知名度不如蓝山，但也溢价极高的咖啡之一。与蓝山一样，它也应该被视作铁皮卡的一个品牌，只是靠着夏威夷科纳地区独特的热带雨林气候和火山土壤而具有独特的风味。人工的采摘和加工而不是工业化大规模生产也提高了成本，同时也造成了其产量非常稀少，因而大部分市面上所卖的都是“科纳拼配”，即只含有10%的科纳。这两者的价格合理性的确值得质疑，随着其他咖啡种的发展，别的产区一样能得到高品质的咖啡 。<del>其实在写这篇时手头正好有30g蓝山，有熟苹果的味道和强烈的回甘，但要论性价比会觉得不值。</del></li>
+</ul>
+<h4 id="象豆-maragogipe">象豆 Maragogipe</h4>
+<p>铁皮卡的自然突变种，1870年在巴西马拉戈日皮（Maragogipe）被发现，植株，叶子，豆体都非常的大，但产量很低，因此种植不多。也正因其稀有，反而又引起大家的兴趣。</p>
+<h4 id="sl14-sl34">SL14 &amp; SL34</h4>
+<p>SL是20世纪30年代由肯尼亚的 Scott Agricultural Laboratories 选育出的咖啡种（如今的National Agricultural Laboratories, NARL，由英殖民政府在1922年建立）。SL14 是 1936 年从一棵标记为 Drought Resistant II （D.R. II） 的植株中选出的，因此有着抗旱的特性，除此外还有耐寒的和高产的特点，在肯尼亚和乌干达都有很重要的地位。D.R. II 的原始记录已经丢失，</p>
+<p>SL34是从肯尼亚卡比特的 Loresho 庄园的一株咖啡树选出的，因为 Scott Labs的研究经常是和当地的私人庄园主合作进行的。这株植株被标记为“French Mission”，根据传闻是由法国传教士从留尼旺岛（波旁岛）带来，因此 “French Mission” 一直被认为是波旁的另一个名字。但是根据基因测序 SL34 是铁皮卡衍生种，因此SL34从“French Mission”的来源可能并不正确。SL34 适应高海拔和雨水充足的地区，有着绝佳的品质。</p>
+<h3 id="波旁及其衍生种-bourbon-typica-group-bourbon-related">波旁及其衍生种 Bourbon-Typica Group (Bourbon-related)</h3>
+<h4 id="波旁-bourbon">波旁 Bourbon</h4>
+<p>铁皮卡突变产生的次种，两者都是现存最古老的品种，在18世纪早期被法国传教士由也门带到波旁岛（Île Bourbon），现称留尼汪岛（ La Réunion），而得名。19世纪中期被带到巴西，随机迅速传播到南美和中美其他地区。波旁的豆子颗粒小且浑圆，通常很甜，风味因产地而异，而“红波旁”，“黄波旁”，“粉红波旁”则是按照果实的颜色而命名。收成量比铁皮卡多20%-30%，并且更耐叶锈病，但收成依旧需要两年，如今的拉美地区更多在种植其他波旁衍生种，但萨尔瓦多，秘鲁，危地马拉，洪都拉斯仍有波旁种在种植。</p>
+<h4 id="卡杜拉-caturra">卡杜拉 Caturra</h4>
+<p>波旁一个单基因突变种，导致植株矮化（Dwarfism），名字来源于瓜拉尼语中的矮小，20世纪初期在巴西被发现，IAC（Instituto Agronômico） 对其进行育种。1940年后被引入危地马拉，但是又过了几十年后才被引入哥斯达黎加，洪都拉斯和巴拿马。卡杜拉的种植不需要遮阴树，可以直接种植在阳光下，因而能高密度型种植，品质也不错，虽然普遍认为略逊于波旁。</p>
+<h4 id="薇拉莎奇-villa-sarchi">薇拉莎奇 Villa Sarchi</h4>
+<p>也叫 La Luisa 或 Villalobos Bourbon，是波旁的单基因矮化自然突变种，能很好的适应高海拔和强风，20世纪中叶在哥斯达黎加被发现，由ICAFE（Instituto del Café de Costa Rica）育种，具有水果味和甜酸感。1974年被 IHCAFE（Instituto Hondureño del Café） 引入洪都拉斯，但依旧在哥斯达黎加以外的地方不多见。</p>
+<h4 id="帕卡斯-pacas">帕卡斯 Pacas</h4>
+<p>波旁的自然突变种，20世纪中叶在萨尔瓦多的咖啡农帕卡斯的庄园被发现。与巴西的卡杜拉和哥斯达黎加的薇拉莎奇相似，帕卡斯因单基因的突变导致矮化，这样有助于种植更密集从而提高产量。味道与波旁相似，甜感稍微逊色，产量比波旁高。1960年 ISIC（ Instituto Salvadoreño de Investigaciones del Café） 开始采用系谱法育种，同在1974年被 IHCAFE 引入洪都拉斯。</p>
+<h4 id="萨尔瓦多波旁-tekisic-improved-bourbon">萨尔瓦多波旁 Tekisic <em>Improved Bourbon</em></h4>
+<p>由 ISIC 选育的，成熟期短，并比波旁有着更高的产量，生长在高海拔地区，有着优秀的品质，但是不耐包括叶锈病在内的主流咖啡疾病。</p>
+<h4 id="sl28">SL28</h4>
+<p>SL28是非洲最知名和收到好评的品种，1931年 Scott Labs 的一名官员在 Tanganyika （今坦桑尼亚）发现了一种抗旱，抗病，抗虫的品种，带回种子后证实了它的抗旱性，1935年在 Tanganyika Drought Resistant 的一棵植株种选育出 SL28，并传播到乌干达和非洲其他地区。该品种适合种植在中高海拔地区，并有着抗旱特性，但容易患一些咖啡主流疾病。</p>
+<h3 id="铁皮卡与波旁的杂交即其衍生种-bourbon-typica-group-typica--and-bourbon-related">铁皮卡与波旁的杂交即其衍生种 Bourbon-Typica Group (Typica- and Bourbon-related)</h3>
+<h4 id="帕卡玛拉-pacamara">帕卡玛拉 Pacamara</h4>
+<p>象豆与帕卡斯的杂交种，名字也正来源于帕卡斯（<strong>Paca</strong>s）+ 象豆（<strong>Mara</strong>gogipe）。由 ISIC 不完全选择而成，因而特征并不稳定，每代的基因表达并不完全一致且易收叶锈病的影响。主要在萨尔瓦多种植，豆体大小仅次于象豆。味道非常独特，拥有花香和酸味，经常在超凡杯（Cup of Excellence competitions）中占据绝对优势。</p>
+<ul>
+<li>类似的品种还有 Maracaturra，起初由象豆（<strong>Mara</strong>gogipe）+ 卡杜拉 (<strong>Caturra</strong>)自然杂交在尼加拉瓜发现，INTA（Nicaraguan Institute of Agricultural Technology ）在1976年开始对其进行育种，但因为<a href="https://zh.wikipedia.org/wiki/%E5%B0%BC%E5%8A%A0%E6%8B%89%E7%93%9C%E9%9D%A9%E5%91%BD">尼加拉瓜革命</a>未能完成，如今中美洲地区有私人生厂商对其进行进一步的培育，但品种仍未稳定下来。</li>
+</ul>
+<h4 id="新世界-mundo-novo">新世界 Mundo Novo</h4>
+<p>铁皮卡和红波旁的自然杂交种，在20世纪中叶 IAC 培育了这一品种，并向咖啡农发放了种子，在 1977年 IAC 又研制出了新种子，因为其高产高品质在巴西秘鲁以及其他南美国家广受欢迎，其风味呈现巧克力，柑橘和香料的味道。但在中美洲和加勒比海地区几乎没有种植，1952曾引入过哥斯达黎加，但当地咖啡农因为咖啡树太高（超过3米）并不愿意种植这一品种。</p>
+<h4 id="卡杜艾-catuai">卡杜艾 Catuai</h4>
+<p>在 1949 年由 IAC 开始培育的新世界与黄果卡杜拉的杂交品种，起初叫做 H-2077，直到1972年才释出，并在巴西广泛种植。卡杜艾有着很高的产量，但在移植到中美洲后产量似乎有所下降，在哥斯达黎加和洪都拉斯的研究都发现卡杜艾和卡杜拉的产量没有显著差距，不过依旧得到了广泛的种植。</p>
+<h3 id="埃塞俄比亚传统品种-ethiopian-landrace">埃塞俄比亚传统品种 Ethiopian Landrace</h3>
+<h4 id="巴拿马瑰夏-geisha-panama-gesha">巴拿马瑰夏 Geisha (Panama) <em>Gesha</em></h4>
+<p>如今风头最盛的品种，Geisha 和 Gesha 两个词都被广泛使用，由于埃塞俄比亚土著语言与英文的翻译问题，最初的英文记录标注为在瑰夏山（Geisha Mountain）发现，接着数十年来咖啡研究人员都使用了这个拼写。而埃塞俄比亚地区并没有瑰夏山这个地方，只有 Gesha 这一地区。也有人谈及到最初推广该品种采用 Geisha （艺妓）这一名字是因为考虑到异国风情和性暗示能吸引到顾客，从咖啡文化来看应该抵制这一命名，因此也有很多咖啡从业人员希望能更正命名。</p>
+<p>20世纪30年代在埃塞俄比亚被发现，被带到坦桑尼亚的 Lyamungu 研究所，在1953年又被 CATIE （Centro Agronómico Tropical de Investigación y Enseñanza）引入到哥斯达黎加并被标注为 T2722，在60年代因为发现了其抗锈叶病，被 Don Pachi 引入到巴拿马，由于枝叶易碎，咖啡农的种植意愿不高。直到 2004 年翡翠庄园将瑰夏带到了 BoP（Best of Panama）上一炮而红，连续拿下05，06，07的冠军，导致之后比赛单独设立瑰夏组。巴拿马瑰夏有着茉莉花和蜜桃的香味，柔和的口感。</p>
+<p>有许多同样起源于 Gesha 地区的品种也称作瑰夏，不过 T2722 的后裔是独一无二的。因此也有人认为应该将巴拿马瑰夏叫做 Geisha， 而埃塞俄比亚地区的瑰夏叫做 Gesha 以作区分。</p>
+<h4 id="爪哇-java">爪哇 Java</h4>
+<p>19世纪由荷兰人从埃塞俄比亚引入爪哇岛，一度被认为是铁皮卡的衍生种，基因显示他是一种名叫 Abysinia 的原生种。20世纪中叶，被带到喀麦隆，在喀麦隆发现了能耐受 CBD（Coffee Berry Disease），经过20年培育，在20世纪晚期投入生产。1991年由 CIRAD（Centre de Coopération Internationale en Recherche Agronomique pour le Développement ）引入哥斯达黎加，尽管中美洲还未曾发现过 CBD，依旧担心可能会有。2016年巴拿马成为中美洲第一个官方承认 Java 的国家。Java 也被视为瑰夏的一种有趣的替代品，同样的高品质，且更耐受 CBD 和叶锈病。</p>
+<h3 id="阿拉比卡种间杂交第一代-f1-hybrid">阿拉比卡种间杂交第一代 F1 Hybrid</h3>
+<p>由差异较大的阿拉比卡种杂交产生的第一代（F1），通常能结合两个亲本的最佳特性，像是高产，高品质，抗病等特性。从 F1 上取得的种子并不会具有这些特性，因此该品种只能通过无性繁殖来保持性状稳定。F1 的亲本也会在基因差异较大的品种，这也能够最大限度的提高该品种的活力。</p>
+<p>20 世纪 70 年代肯尼亚政府为了解决 CBD 带来的损失开始研发了 Ruiru 11，育种者花费多半年将不同品种进行杂交，收集每一品种的最佳特性，这些工作创造了 Ruiru 11 的父本（后来又通过渐渗杂交培育了 Batian ，这些品种都在肯尼亚有着重要的地位），Ruiru 11 的父本有着抗 CBD 的特性（来自 Rume Sudan，帝汶种，K7）和良好的风味（来自 N39，SL28，SL34 和 波旁），而母本则有着可高密度种植的能力（矮化种）以及叶锈病和 CBD 抗性（来自卡杜拉和帝汶种 ）。由于 Ruiru 11 依靠人工授粉来进行大规模繁殖，因此很难满足咖啡农的需求。此外还有 Starmaya，Centroamericano，Milenio 等 F1 杂交种。</p>
+<h3 id="渐渗杂交-introgressed">渐渗杂交 Introgressed</h3>
+<blockquote>
+<p>渐渗杂交(Introgressive hybridization)一词最早是由Anderson和Hubricht在1938年通过植物杂交研究提出，指两物种的杂交后代与亲本之一或双亲反复回交，把某一亲本的性状带至另一亲本。</p>
+</blockquote>
+<p>在咖啡中主要指阿拉比卡从罗布斯塔种获取抗病的特性，也有少部分使用了利比里亚种。20世纪20年代东帝汶岛上的阿拉比卡和罗布斯塔通过有性生殖得到了帝汶杂交种（Timor Hybrid）。虽然这一品种风味一般，但因罗布斯塔基因有着抗叶锈病的特点，研究人员便利用它开始创造新的抗锈叶病品种，其中最主要的是使用了高产的矮种阿拉比卡——卡杜拉和薇拉莎奇</p>
+<h4 id="catimor-group">Catimor Group</h4>
+<p>由卡杜拉（<strong>Cat</strong>urra）和帝汶种（<strong>Timor</strong> Hybrid）杂交而来。</p>
+<p>在1958或者1959年，葡萄牙著名研究锈叶柄的机构 CIFC（Centro de Investigação das Ferrugens do Cafeeiro of Portugal）收到了两批帝汶种，他们选取了对其进行培育以获取抗锈叶病品种，在1967年一些卡杜拉和帝汶种杂交种得以产生。</p>
+<ul>
+<li>Red Caturra CIFC 19/1 x HDT CIFC 832/1 = H26</li>
+<li>Red Caturra CIFC 19/1 x HDT CIFC 832/2 = H46</li>
+</ul>
+<p>IAC 在巴西进行初步的测试后，将这些杂交种命名为 Catimor ，随着 CIFC 将最初的 Cartimo 发放到了全世界。CATIE在 收到了巴西 Federal University of Viçosa 培育出的第三代和第五代 H26，分别命名为 T5175 和 T8667 （ T 代表着 Turrialba，CATIE的研究站所在地）80年代这些种子在这个区域发放，基于这些 CATIE 在哥斯达黎加培育出了 Costa Rica 95，IHCAFE 在洪都拉斯培育出了 IHCAFE-90 和 Lempira, 萨尔瓦多则是培育出了 Catisic。此外还有 Fronton，Oro Azteca，Catimor 129 等品种。</p>
+<h4 id="sarchimor-group">Sarchimor Group</h4>
+<p>由薇拉莎奇（Villa <strong>Sarchi</strong>）和帝汶种（<strong>Timor</strong> Hybrid）杂交而来</p>
+<p>CIFC 用 HDT CIFC 832/2 和薇拉莎奇培育出了 Hybrid 361 (H361) 即 Sarchimor。在 IAC 测试后，CIFC 将种子发往了全世界。在中美洲 H361 首先被送到了哥斯达黎加的 CATIE ，并被命名为 T5296 ，选育后发往其他地区，在洪都拉斯培育出了 Parainema ，萨尔瓦多培育出了 Cuscatleco 。在波多黎各产生了 Limani，同样的在巴西则培育出了 Obata，Tupi，还有 IAPAR 59。</p>
+<h4 id="其它-other">其它 Other</h4>
+<p>也有并非由卡杜拉和薇拉莎奇培育的渐渗杂交种，Batian 是在 2010 年由肯尼亚的 CRS（Coffee Research Station），如今的 CRI（offee Research Institute），对 Ruiru 11 父系第五代选育而出的， 混有了 SL28，SL34，Rume Sudan，N39，K7， SL4 和帝汶种，植株高大，产量高，而且罕见的结合了抗病和恢复能力，品质也很高。</p>
+<p>Sln.6 则是由肯特种（Kent） 和 罗布斯塔种杂交得到的 S.274 再回交至 Kent 培育而得，基于此 2015 年卢旺达 RAB（Rwandan Agricultural Board）选育而出 RAB C15，具有非常高的抗病能力。</p>
+<p>稍许的介绍了一下主要的品种，更完备的阿拉比卡目录如下</p>
+<p>https://varieties.worldcoffeeresearch.org/info/catalog/download</p>
+<h2 id="参考资料">参考资料</h2>
+<p><a href="https://sca.coffee/research/botany?page=resources&amp;d=a-botanists-guide-to-specialty-coffee">A Botanists' Guide to Specialty Coffee</a></p>
+<p><a href="https://varieties.worldcoffeeresearch.org/info/coffee/about-varieties/bourbon-and-typica">History of Typica and Bourbon</a></p>
+<p><a href="http://www.kona-coffee-council.com/page-692163">100% KONA COFFEE - WHAT MAKES IT SO UNIQUE?</a></p>
+<p><a href="https://sprudge.com/stop-calling-it-geisha-already-136137.html">Stop Calling It “Geisha” Already</a></p>
+]]></content>
+      <categories>
+        <category>浅谈咖啡</category>
+      </categories>
+      <tags>
+        <tag>coffee</tag>
+        <tag>note</tag>
+      </tags>
+  </entry>
+</search>

@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#222">
+  <meta name="google-site-verification" content="hsoSqM_PEkU0rT0QGySXlkRcD6JNw24aQQH9DJxk66I">
+  <meta name="msvalidate.01" content="0CA355F79F618F8B850029EDA79C67FB">
+  <meta name="baidu-site-verification" content="EpHLert2YP">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"cateaf.com","root":"/","images":"/images","scheme":"Mist","version":"8.3.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":true,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
+<meta name="description" content="正好有人借593的笔记，稍微整理了一下&#x3D;-&#x3D;（还是可能有些许错误的）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="算法笔记">
+<meta property="og:url" content="https://cateaf.com/2019/10/16/algorithm/index.html">
+<meta property="og:site_name" content="Cateaf">
+<meta property="og:description" content="正好有人借593的笔记，稍微整理了一下&#x3D;-&#x3D;（还是可能有些许错误的）">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://docs.google.com/drawings/d/sWyhI6FrcgmwhtdawJFsCZg/image?w=624&amp;h=107&amp;rev=90&amp;ac=1&amp;parent=1QRQ5hBbBiKXkq0xePaM74Dbq7uui8nGUhUarYntk3wY">
+<meta property="og:image" content="https://docs.google.com/drawings/d/szZxUtrrzDPlGnxXMe6Hl3Q/image?w=199&amp;h=284&amp;rev=37&amp;ac=1&amp;parent=1QRQ5hBbBiKXkq0xePaM74Dbq7uui8nGUhUarYntk3wY">
+<meta property="og:image" content="https://docs.google.com/drawings/d/s_S39ZP6f8cbZoeQk9bNpbQ/image?w=201&amp;h=178&amp;rev=49&amp;ac=1&amp;parent=1QRQ5hBbBiKXkq0xePaM74Dbq7uui8nGUhUarYntk3wY">
+<meta property="article:published_time" content="2019-10-16T02:01:47.000Z">
+<meta property="article:modified_time" content="2021-04-20T15:02:33.895Z">
+<meta property="article:author" content="Leaf">
+<meta property="article:tag" content="note">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://docs.google.com/drawings/d/sWyhI6FrcgmwhtdawJFsCZg/image?w=624&amp;h=107&amp;rev=90&amp;ac=1&amp;parent=1QRQ5hBbBiKXkq0xePaM74Dbq7uui8nGUhUarYntk3wY">
+
+
+<link rel="canonical" href="https://cateaf.com/2019/10/16/algorithm/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>算法笔记 | Cateaf</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Cateaf" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Cateaf</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#analysis-of-algorithms"><span class="nav-number">1.</span> <span class="nav-text">Analysis of algorithms</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sorting"><span class="nav-number">2.</span> <span class="nav-text">Sorting</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#selection-sort"><span class="nav-number">2.1.</span> <span class="nav-text">Selection Sort</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#insertion-sort"><span class="nav-number">2.2.</span> <span class="nav-text">Insertion Sort</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#quick-sort"><span class="nav-number">2.3.</span> <span class="nav-text">Quick Sort</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#heap-sort"><span class="nav-number">2.4.</span> <span class="nav-text">Heap Sort</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#merge-sort"><span class="nav-number">2.5.</span> <span class="nav-text">Merge Sort</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shuffling"><span class="nav-number">3.</span> <span class="nav-text">Shuffling</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#searching"><span class="nav-number">4.</span> <span class="nav-text">Searching</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#linear-search"><span class="nav-number">4.1.</span> <span class="nav-text">Linear Search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#binary-search"><span class="nav-number">4.2.</span> <span class="nav-text">Binary Search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#golden-mean-search"><span class="nav-number">4.3.</span> <span class="nav-text">Golden Mean Search</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#number-theoretic-algorithms"><span class="nav-number">5.</span> <span class="nav-text">Number Theoretic Algorithms</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#gcd"><span class="nav-number">5.1.</span> <span class="nav-text">gcd</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lcm"><span class="nav-number">5.2.</span> <span class="nav-text">lcm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#powermod"><span class="nav-number">5.3.</span> <span class="nav-text">powermod</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fermat"><span class="nav-number">6.</span> <span class="nav-text">Fermat</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#miller-rabin"><span class="nav-number">7.</span> <span class="nav-text">Miller-Rabin</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#brute-force-trial-division"><span class="nav-number">7.1.</span> <span class="nav-text">brute force trial division</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#eratosthenes-sieve"><span class="nav-number">7.2.</span> <span class="nav-text">Eratosthenes&#39; Sieve</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#growarray"><span class="nav-number">8.</span> <span class="nav-text">GrowArray</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#linkedlist"><span class="nav-number">9.</span> <span class="nav-text">Linkedlist</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#stack"><span class="nav-number">9.1.</span> <span class="nav-text">Stack</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#queue"><span class="nav-number">9.2.</span> <span class="nav-text">Queue</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#trees"><span class="nav-number">10.</span> <span class="nav-text">Trees</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#binary-tree"><span class="nav-number">10.1.</span> <span class="nav-text">Binary tree</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#trie"><span class="nav-number">10.2.</span> <span class="nav-text">Trie</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hashing"><span class="nav-number">11.</span> <span class="nav-text">Hashing</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#hash-functions"><span class="nav-number">11.1.</span> <span class="nav-text">Hash functions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#linear-probing"><span class="nav-number">11.2.</span> <span class="nav-text">Linear probing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#quadratic-probing"><span class="nav-number">11.3.</span> <span class="nav-text">Quadratic probing*</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#linear-chaining"><span class="nav-number">11.4.</span> <span class="nav-text">Linear chaining</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#perfect-hashing"><span class="nav-number">11.5.</span> <span class="nav-text">Perfect hashing</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#matrices"><span class="nav-number">12.</span> <span class="nav-text">Matrices</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#representation-rectangular-diagonal-tridiagonal"><span class="nav-number">12.1.</span> <span class="nav-text">Representation (rectangular, diagonal, tridiagonal)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#addition"><span class="nav-number">12.2.</span> <span class="nav-text">Addition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#multiplication"><span class="nav-number">12.3.</span> <span class="nav-text">Multiplication</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solving-systems-gauss-jordan-elimination-partial-pivoting"><span class="nav-number">12.4.</span> <span class="nav-text">Solving systems (Gauss-Jordan Elimination, partial pivoting)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gram-schmidt-orthogonalization"><span class="nav-number">12.5.</span> <span class="nav-text">Gram-Schmidt orthogonalization</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#strings"><span class="nav-number">13.</span> <span class="nav-text">Strings</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#boyer-moore"><span class="nav-number">13.1.</span> <span class="nav-text">Boyer-Moore</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#finite-state"><span class="nav-number">13.2.</span> <span class="nav-text">Finite State*</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lcs"><span class="nav-number">13.3.</span> <span class="nav-text">LCS</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#graphs"><span class="nav-number">14.</span> <span class="nav-text">Graphs</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#representation-list-or-matrix"><span class="nav-number">14.1.</span> <span class="nav-text">Representation: list or matrix</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dfs"><span class="nav-number">14.2.</span> <span class="nav-text">DFS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#bfs"><span class="nav-number">14.3.</span> <span class="nav-text">BFS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#isconnected"><span class="nav-number">14.4.</span> <span class="nav-text">IsConnected</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#bellman-fordove"><span class="nav-number">14.5.</span> <span class="nav-text">Bellman-Ford&#x2F;&#x2F;O(VE)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#floyd-warshallov3"><span class="nav-number">14.6.</span> <span class="nav-text">Floyd-Warshall&#x2F;&#x2F;O(V^3)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#primov2"><span class="nav-number">14.7.</span> <span class="nav-text">Prim&#x2F;&#x2F;O(V^2)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#kruskaloe-log-e"><span class="nav-number">14.8.</span> <span class="nav-text">Kruskal&#x2F;&#x2F;O(E log E)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#tsp"><span class="nav-number">14.9.</span> <span class="nav-text">TSP*</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#backtracking"><span class="nav-number">15.</span> <span class="nav-text">Backtracking</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#basic"><span class="nav-number">15.1.</span> <span class="nav-text">Basic</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#heaps"><span class="nav-number">15.2.</span> <span class="nav-text">Heap&#39;s</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Leaf"
+      src="/logo.jpg">
+  <p class="site-author-name" itemprop="name">Leaf</p>
+  <div class="site-description" itemprop="description">Leaf's blog</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">19</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/leaf-hsiao" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;leaf-hsiao" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:leaf_hsiao@outlook.com" title="E-Mail → mailto:leaf_hsiao@outlook.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/leaf.hsiao" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;leaf.hsiao" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cateaf.com/2019/10/16/algorithm/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/logo.jpg">
+      <meta itemprop="name" content="Leaf">
+      <meta itemprop="description" content="Leaf's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cateaf">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          算法笔记
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-10-16 02:01:47" itemprop="dateCreated datePublished" datetime="2019-10-16T02:01:47+00:00">2019-10-16</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Cheetsheet/" itemprop="url" rel="index"><span itemprop="name">Cheetsheet</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2019/10/16/algorithm/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/10/16/algorithm/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>正好有人借593的笔记，稍微整理了一下=-=（还是可能有些许错误的） <span id="more"></span></p>
+<h2 id="analysis-of-algorithms">Analysis of algorithms</h2>
+<p><span class="math inline">\(O(n)\)</span></p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">for(int i &#x3D; 0; i &lt; n; i++)&#123;&#x2F;&#x2F;O(n)
+    f();&#x2F;&#x2F;O(1)
+&#125;
+
+&#x2F;&#x2F;O(n)
+for (int i &#x3D; 0; i &lt; n; i++) &#123;
+&#125;
+for (int i &#x3D; 5; i &lt; n; i++) &#123;
+&#125;
+
+&#x2F;&#x2F;O(n)
+for (int i &#x3D; 5; i &lt; n; i+&#x3D;7) &#123;
+&#125;
+
+for i &lt;- 1 to sqrt(n) &#x2F;&#x2F;O(sqrt(n))
+
+for i &lt;- sqrt(n) to n &#x2F;&#x2F;O(n)
+    
+for i &lt;- n to n&#x2F;2 &#x2F;&#x2F;O(n)
+
+for i &lt;- n to n step n&#x2F;2 &#x2F;&#x2F;O(1)
+
+1 &lt; logn &lt; sqrt(n) &lt; n &lt; n^2
+
+for (int i &#x3D; 1; i &lt; n; i *&#x3D; 3) &#123; &#125; &#x2F;&#x2F;O(logn)
+for (int i &#x3D; 1; i &lt; n; i &#x3D; i * 3 + 8) &#123; &#125;&#x2F;&#x2F;O(logn)
+for (int i &#x3D; 1; i &lt; n; i *&#x3D; 2) &#123; &#x2F;&#x2F; 1, 2, 4, 8, ….  log2(n) 
+&#125;
+for (int i &#x3D; 1; i &lt; n; i *&#x3D; 3) &#123; &#x2F;&#x2F; 1, 3, 9, 27, ….  log3(n)
+&#125;
+for (int i &#x3D; 1; i &lt; sqrt(n); i *&#x3D; 3 &#123;&#125;  &#x2F;&#x2F;O(log sqrt(n))
+
+&#x2F;&#x2F;O(n*n) &#x3D; O(n^2)
+for (int i &#x3D; 0; i &lt; n; i++)  &#x2F;&#x2F;O(n)
+  for (int j &#x3D; 0; j &lt; n; j++) &#123; &#x2F;&#x2F;O(n)
+  &#125;
+&#125;
+
+&#x2F;&#x2F;O(n+n) &#x3D; O(n)
+for (int i &#x3D; 0; i &lt; n; i++)  &#x2F;&#x2F;O(n)
+&#125;
+for (int j &#x3D; 0; j &lt; n; j++) &#123; &#x2F;&#x2F;O(n)
+&#125;
+
+&#x2F;&#x2F;sum(1...n)&#x3D;O(n^2)
+for (int i &#x3D; 0; i &lt;&#x3D; n; i++)  &#x2F;&#x2F;O(n)
+  for (int j &#x3D; 0; j &lt;&#x3D; i; j++) &#123; &#x2F;&#x2F; 1 + 2 + 3 + … + n-1 + n 
+  &#125;
+&#125;
+
+&#x2F;&#x2F;O(n*sqrt(n))
+for (int i &#x3D; 0; i &lt;&#x3D; n; i++) &#123; &#x2F;&#x2F;O(n)
+  for (int j &#x3D; 0; j &lt; sqrt(n); j++) &#123; &#x2F;&#x2F;O(sqrt(n))
+  &#125;
+&#125;
+
+for (int i &#x3D; 0; i &lt;&#x3D; n; i++) &#123;  &#x2F;&#x2F;O(n)
+  for (int j &#x3D; 0; j &lt; n-sqrt(n); j++) &#123; 
+  &#125;
+&#125;
+
+&#x2F;&#x2F;O(n log2n)
+for (int i &#x3D; 0; i &lt; n; i++) &#123; &#x2F;&#x2F; O(n)
+ for (int j &#x3D; 1; j &lt; n; j *&#x3D; 2) &#123; &#x2F;&#x2F; O(log2n)
+ &#125;
+&#125;
+
+&#x2F;&#x2F;n(1+1&#x2F;2+1&#x2F;4+1&#x2F;8+...)
+&#x2F;&#x2F;\sum(1&#x2F;2^i)&#x3D;1
+&#x2F;&#x2F;O(n)
+for (int i &#x3D; 1; i &lt;&#x3D; n; i *&#x3D; 2) &#123; &#x2F;&#x2F; O(log2n)
+ for (int j &#x3D; 1; j &lt; i; j++) &#123; &#x2F;&#x2F; O(1 + 2 + 4 + 8 + …. + n)
+ &#125;
+&#125;
+
+&#x2F;&#x2F;O(n+m) if n ≈ m  O(2n) &#x3D; O(n)
+for (int i &#x3D; 0; i &lt; n; i++) &#123;  &#x2F;&#x2F;O(n)
+&#125;
+for (int j &#x3D; 0; j &lt; m; j++) &#123;  &#x2F;&#x2F;O(m)
+    cout &lt;&lt; i * j;	&#x2F;&#x2F;O(1)
+&#125;
+
+for (int i &#x3D; 1; i &lt; n; i *&#x3D; 2)	&#x2F;&#x2F;O(log n)
+  for (int j &#x3D; 1; j &lt; n; j++)	&#x2F;&#x2F;O(n)
+    System.out.println(i*j);
+
+for (int j &#x3D; 1; j &lt; n; j++)	&#x2F;&#x2F;O(n)
+  for (int i &#x3D; 1; i &lt; n; i *&#x3D; 2)	&#x2F;&#x2F;O(log n)
+    System.out.println(i*j);
+
+for (int i &#x3D; 0; i &lt; n; i++)  &#x2F;&#x2F;O(n)
+  for (int j &#x3D; i; j &lt; n; j++)	&#x2F;&#x2F; n + (n-1) + (n-2) + … 1
+    print(“x”);
+
+sum ← 912851;  &#x2F;&#x2F;O(1)
+for i ← 1 to n		
+   for j← 3 to i		&#x2F;&#x2F;   0 + 0 + 1 + 2 + 3 +  … n-3 &#x3D; O(n^2)
+      sum ← sum + i*j;
+   end
+end
+
+int f(int n) &#123; 
+  if (n &lt;&#x3D; 0)&#x2F;&#x2F;O(1)
+    return 1;
+  return n * f(n-1);
+&#125;
+f(5)&#x3D;5*f(4)&#x3D;5*4*f(3)...</code></pre>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">&#x2F;&#x2F;Fibo
+int fibo(int n) &#123; &#x2F;&#x2F;O(n)
+  int a &#x3D; 1, b &#x3D; 1, c;
+  for (int i &#x3D; 0; i &lt; n; i++) &#123;
+     c &#x3D; a + b;
+     a &#x3D; b;
+     b &#x3D; c;
+  &#125;
+   return c;
+&#125;
+
+int fibo2(int n) &#123; &#x2F;&#x2F;O(2^n)
+   if ( n &lt;&#x3D; 2)
+      return 1;
+   return fibo2(n-1) + fibo2(n-2);
+&#125;</code></pre>
+<h2 id="sorting">Sorting</h2>
+<h3 id="selection-sort">Selection Sort</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">void selectionSort(int x[], int n) &#123; &#x2F;&#x2F;O(n2)
+	for (int j &#x3D; n - 1; j &gt; 0; j--) &#123;
+		int pos &#x3D; 0;
+	  	for (int i &#x3D; 1; i &lt;&#x3D; j; i++) &#123;
+	    	if (x[i] &gt; x[pos])
+	      		pos &#x3D; i;
+	  	&#125;
+		if (j !&#x3D; pos)
+	    	swap(x[pos], x[j]);
+	&#125;
+&#125;</code></pre>
+<h3 id="insertion-sort">Insertion Sort</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">void InsertionSort(int x[], int n) &#123;
+	for (int i &#x3D; 1; i &lt; n; i++) &#123;
+		int temp &#x3D; x[i];
+		for (int j &#x3D; i - 1; j &gt;&#x3D; 0; j--)
+	    	if (x[j] &gt; temp)
+	        	x[j+1] &#x3D; x[j];
+	     	else &#123;
+	         	x[j+1] &#x3D; temp;
+	        	 break;
+	       	&#125;
+	     &#125;
+	     x[0] &#x3D; temp; &#x2F;&#x2F;TODO: BAD edge case here
+	&#125;
+&#125;</code></pre>
+<p>worst case 1 + 2 + … + (n - 1) = <span class="math inline">\(O(n^2)\)</span></p>
+<p>best case 1 + 1 + … + 1 = <span class="math inline">\(\Omega(n)\)</span></p>
+<h3 id="quick-sort">Quick Sort</h3>
+<ol type="1">
+<li><p>pick a pivot(a value in the middle)</p></li>
+<li><ol type="1">
+<li>pivot ← (x[left] + x[right]) / 2</li>
+<li>pivot ← (x[left] + x[right] + x[(left+right)/2]) / 3</li>
+<li>pivot ← x[random] random is unpredictable</li>
+</ol></li>
+<li><p>Do not use…</p></li>
+<li><ol type="1">
+<li>pivot ← x[left]</li>
+<li>pivot ← x[right]</li>
+</ol></li>
+</ol>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">quicksort(int[] x, int left, int right) &#123;
+	if (right - left &lt; 2)
+		return;
+	int pivot &#x3D; (x[left] + x[right])&#x2F;2;
+	int i &#x3D; left, j &#x3D; right;
+	
+	while (i &lt; j) &#123;        &#x2F;&#x2F;O(n)
+        while (x[i] &lt; pivot)
+        	i++;
+	    while (x[j] &gt;&#x3D; pivot)
+	        j--;
+	    if (i &lt; j) &#123;
+	    	swap(x[i], x[j]);
+	    &#125;
+	 &#125;
+	 &#x2F;&#x2F;i &#x3D;&#x3D; j
+	 quicksort(x, left, i-1 );  &#x2F;&#x2F; logn
+	 quicksort(x, i, right );
+&#125;
+
+quicksort(x, 0, x.length-1);</code></pre>
+<p>Worst case (pathological) <span class="math inline">\(O(n^2)\)</span></p>
+<h3 id="heap-sort">Heap Sort</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">makeheap(x)     
+	for i ← n&#x2F;2 to 0
+	    makesubheap(x, i)
+	end
+
+makesubheap(x, i)
+	if x[2i+1] &gt; x[2i+2]
+	    if x[i] &lt; x[2i+1]
+	    	swap(x[i], x[2i+1])
+	    	makesubheap(x, 2i+1)
+	    end
+	    else
+	    if x[i] &lt; x[2i+2]
+	        swap(x[i], x[2i+2])
+	    	makesubheap(x, 2i+2)
+	    end
+	end
+
+heapsort(x)
+	makeheap(x)
+	for i ← n-1 to 1
+	    swap(x[0], x[i])
+	    makesubheap(x, i-1)
+	end
+end
+&#x2F;&#x2F;makeheap &#x3D; (n&#x2F;2-1) log n + rebuild heap (n-1) log n &#x3D; O(n log n)</code></pre>
+<h3 id="merge-sort">Merge Sort</h3>
+<p>work each time: n</p>
+<p>number of iterations log n</p>
+<p>O(n log n)</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">&#x2F;&#x2F; merge lists a,b of size n into list c of size 2n
+merge(a, b, c) &#123;
+  i ← 0 &#x2F;&#x2F; position in a
+  j ← 0 &#x2F;&#x2F; position in b
+  k ← 0 &#x2F;&#x2F; position in c
+  while i &lt; n and j &lt; n
+      if a[i] &lt; b[j]
+             c[k] ← a[i]
+             i ← i + 1
+      else
+             c[k] ← b[j]
+             j ← j + 1
+      end
+      k ← k + 1
+  end
+&#125;</code></pre>
+<h2 id="shuffling">Shuffling</h2>
+<p><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">Fisher-Yates(x) &#x2F;&#x2F; O(N)
+    for i← x.length-1 to 0
+        pick ← random(0, i)
+        swap(x[i], x[pick])
+    end
+end</code></pre></p>
+<h2 id="searching">Searching</h2>
+<h3 id="linear-search">Linear Search</h3>
+<p>search(x, target)</p>
+<p><span class="math inline">\(O(n),\Omega(1), avg = n/2\)</span></p>
+<h3 id="binary-search">Binary Search</h3>
+<p>sort:O(n log n)</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">binarySearch(x, target)
+  L ← 0
+  R ← x.length-1
+  while (L &lt; R)
+      mid ← (L + R) &#x2F; 2
+      if x[mid] &gt; target
+        R ← mid - 1
+      else if x[mid] &lt; target
+        L ← mid + 1
+      else
+        return mid
+  end
+  return NOTFOUND
+end</code></pre>
+<h3 id="golden-mean-search">Golden Mean Search</h3>
+<p>L = 0</p>
+<p>R = 19</p>
+<p>S = (R-L) / = 19 * .6 = 11.4 =</p>
+<p>function f(x) = 4 - x2</p>
+<p>L = -2 R = 1 D = R-L = 3</p>
+<p>S = (R-L)/ 1.618 = 1.85</p>
+<p>X = R - 1.85 = -.85</p>
+<p>Y = L + 1.85 = -.15</p>
+<p>L = -.85</p>
+<p>S =(R-L)/ 1.618 = 1.143</p>
+<p>X = -.15</p>
+<p>Y = L + S = -.85 + 1.143 = .293</p>
+<p>R = .293</p>
+<h2 id="number-theoretic-algorithms">Number Theoretic Algorithms</h2>
+<h3 id="gcd">gcd</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">gcd(a,b)
+    if b &#x3D;&#x3D; 0
+        return a
+    end
+    return gcd(b, a mod b)
+end</code></pre>
+<p><span class="math inline">\(O(logn),\Omega(1)\)</span></p>
+<h3 id="lcm">lcm</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">&#x2F;&#x2F;O(log n)
+lcm(a,b) &#x3D; a * b &#x2F; gcd(a,b)  &#x2F;&#x2F; 1 + log(n)</code></pre>
+<h3 id="powermod">powermod</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">&#x2F;&#x2F;raise x to the power n
+bruteforcepower(x, n)
+    prod ← 1
+    for x ← 1 to n
+        prod ← prod * x
+    end
+    return prod
+end
+
+&#x2F;&#x2F;O(log n)
+&#x2F;&#x2F;raise x to the power n
+power(x, n)
+  prod ← 1
+  while n &gt; 0
+    if (n mod 2 !&#x3D; 0)
+      prod ← prod * x
+    end 
+    x ← x * x
+    n ← n &#x2F; 2
+  end
+  return prod
+end
+
+&#x2F;&#x2F;xn mod m
+powermod(x, n, m)
+  prod ← 1
+  while n &gt; 0
+    if (n mod 2 !&#x3D; 0)
+      prod ← prod * x mod m
+    end
+    x ← x * x mod m
+    n ← n &#x2F; 2
+  end
+  return prod
+end</code></pre>
+<h2 id="fermat">Fermat</h2>
+<p>if a^p-1 mod p == 1⇒ p is probably prime</p>
+<p>if a^p-1 mod p != 1⇒ p is definitely NOT prime</p>
+<h2 id="miller-rabin">Miller-Rabin</h2>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">MillerRabin(n, k)
+  WitnessLoop: for i ← 1 to k &#x2F;&#x2F; k trials
+    a← random[2, n − 2]
+    x ← a^d mod n
+   if x &#x3D; 1 or x &#x3D; n − 1 then
+      continue WitnessLoop
+   for j ← 1 to s − 1
+      x ← x2 mod n
+      if x &#x3D; 1 then
+         return false composite  (Carmichael?)
+      if x &#x3D; n − 1 then
+         continue WitnessLoop
+    end
+   return false (composite)
+return probably prime
+</code></pre>
+<h3 id="brute-force-trial-division">brute force trial division</h3>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;O(n)		Ω(1)
+bool isPrime(int n) &#123;
+  for (int i &#x3D; 2; i &lt; n&#x2F;2; i++) &#123;
+    if (n % i &#x3D;&#x3D; 0)
+      return false;
+  &#125;
+  return true;
+&#125;
+
+&#x2F;&#x2F;O(√n)		Ω(1)
+bool isPrime(int n) &#123;
+  for (int i &#x3D; 2; i &lt;&#x3D; sqrt(n); i++) &#123;
+    if (n % i &#x3D;&#x3D; 0)
+      return false;
+  &#125;
+  return true;
+&#125;</code></pre>
+<h3 id="eratosthenes-sieve">Eratosthenes' Sieve</h3>
+<pre class="line-numbers language-none"><code class="language-none">ImprovedEratosthenes(n)
+for i ← 2 to n
+	isPrime[i] ← true
+end
+for i ← 4 to n step 2
+	isPrime[i] ← false
+end
+for i ← 3 to n step 2
+	if isPrime[i]
+		for j ← i*i to n step 2i
+			isPrime[j] ← false
+		end
+	end
+end</code></pre>
+<h2 id="growarray">GrowArray</h2>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">class GrowArray &#123;
+private:
+    int* data;
+    int len;
+    int capacity;
+    void grow()&#123;
+        int* old &#x3D; data;
+        data &#x3D; new int[2*capacity + 1];
+        for (int i &#x3D; 0; i &lt; len; i++) &#x2F;&#x2F; memcpy(data, old, len* sizeof(int))
+            data[i] &#x3D; old[i];
+        delete old;
+        capacity &#x3D; 2 * capacity;
+    &#125;
+public:
+    GrowArray() &#123; data &#x3D; nullptr; len &#x3D; 0; capacity &#x3D; 0;&#125;
+    void addEnd(int v) &#123; &#x2F;&#x2F; O(1)
+        if (len &gt;&#x3D; capacity)
+            grow();
+        data[len++] &#x3D; v;
+        cout&lt;&lt;v&lt;&lt;endl;
+    &#125;
+&#125;;
+ 
+int main() &#123;
+const int n &#x3D; 1000000;
+GrowArray a;
+for (int i &#x3D; 0; i &lt; n; i++)
+    a.addEnd(i);
+&#125;</code></pre>
+<h2 id="linkedlist">Linkedlist</h2>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">class LinkedList &#123;
+private:
+    class Node &#123;
+        int val;
+        Node* next;
+        Node* prev;
+    &#125;;
+    Node* head;
+    Node* tail;
+public:
+    LinkedList() : head(nullptr), tail(nullptr) &#123;&#125; &#x2F;&#x2F; O(1)
+    ~LinkedList() &#123; &#x2F;&#x2F; O(1)
+        while (head !&#x3D; nullptr) &#123;
+            Node* temp &#x3D; head;
+            head &#x3D; head-&gt;next;
+            delete temp;
+        &#125;
+    &#125;
+    void addFirst(int v) &#123; &#x2F;&#x2F; O(1)
+        head &#x3D; new Node &#123;v, head, nullptr&#125;;
+        if (tail &#x3D;&#x3D; null)
+            tail &#x3D; head;
+        else
+            head-&gt;next-&gt;prev &#x3D; head;
+    &#125;
+    void addLast(int v) &#123;
+        tail &#x3D; new Node(v, nullptr, tail);
+        if (head &#x3D;&#x3D; nullptr)
+            head &#x3D; tail;
+        else
+            tail-&gt;prev-&gt;next &#x3D; tail;
+    &#125;
+    void removeFirst() &#123;
+        Node* temp &#x3D; head;
+        head &#x3D; head-&gt;next;
+        delete temp;
+    &#125;
+&#125;
+</code></pre>
+<h3 id="stack">Stack</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">class Stack &#123;
+private:
+    LinkedList impl; &#x2F;&#x2F;  addFirst O(1), addLast O(n), removeFirst O(1), removeLast O(n)
+    GrowArray impl; &#x2F;&#x2F;  addFirst O(n) addLast O(1), removeFirst O(n), removeLast O(1)
+public:
+    void push(int v) &#123; impl.addFirst(v); &#125;
+    int pop() &#123; return impl.removeFirst()&#125;
+    bool isEmpty() const &#123;&#125;
+    int size( const &#123;&#125;)
+&#125;;
+</code></pre>
+<h3 id="queue">Queue</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">class Queue &#123;
+private:
+    linkedList 2 templ; &#x2F;&#x2F;  has head and tail
+public:
+    void enqueue(int v) &#123;impl.addLast(v)&#125; &#x2F;&#x2F;  O(1)
+    int dequeue() &#123; impl.removeFirst()&#125; &#x2F;&#x2F;  O(1)
+    bool isEmpty() const &#123; return impl,isEmpty();&#125;
+&#125;</code></pre>
+<h2 id="trees">Trees</h2>
+<h3 id="binary-tree">Binary tree</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">class BinaryTree &#123;
+private:
+  class Node &#123;
+  public:
+    int val;
+    Node* parent;
+    Node* left;                &#x2F;&#x2F; int* a,b; a is pointer to int, b is just int
+    Node* right;
+    Node(int v, Node* L, Node* r) : val(v), left(L), right(R) &#123;&#125;
+  &#125;;
+  Node * root;
+public:
+  void add(int v) &#123;
+    if (root &#x3D;&#x3D; nullptr) &#123;
+      root &#x3D; new Node(v, nullptr, nullptr);
+      return;
+    &#125;
+  … &#125;
+
+inorder(node n)
+    if n &#x3D;&#x3D; null
+        return
+	inorder(n.left)
+    print (val)
+    inorder(n.right)
+end
+
+preorder(node n)
+    if n &#x3D;&#x3D; null
+        return
+    print (val)
+	preorder(n.left)
+    preorder(n.right)
+end
+
+postorder(node n)
+    if n &#x3D;&#x3D; null
+        return
+	postorder(n.left)
+    postorder(n.right)
+    print (val)
+end</code></pre>
+<h3 id="trie">Trie</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">class Trie &#123;
+private:
+    class Node&#123;
+    public:
+        Node* next[26];
+        bool isWord;
+        Node() : isWord(false) &#123;
+            for(int i &#x3D; 0; i &lt; 26; i++)&#123;
+                next[i] &#x3D; nullptr;
+            &#125;
+        &#125;
+    &#125;;
+    Node* root;
+
+public:
+    Trie() : root(new Node()) &#123;&#125;
+    ~Trie() &#123;
+        deleteNode(root);
+    &#125;
+    void deleteNode(Node* p)&#123;
+        for(int i &#x3D; 0; i &lt; 26; i++)&#123;
+            if(p-&gt;next[i]) deleteNode(p-&gt;next[i]);
+        &#125;
+        delete p;
+    &#125;
+
+    void insert(string word) &#123;
+        Node* temp &#x3D; root;
+        for(char c : word)&#123;
+            int index &#x3D; c - &#39;a&#39;;
+            if(temp-&gt;next[index] &#x3D;&#x3D; nullptr) temp-&gt;next[index] &#x3D; new Node();
+            temp &#x3D; temp-&gt;next[index];
+        &#125;
+        temp-&gt;isWord &#x3D; true;
+    &#125;
+
+    bool search(string word) &#123;
+        Node* temp &#x3D; root;
+        for(char c : word)&#123;
+            int index &#x3D; c - &#39;a&#39;;
+            if(temp-&gt;next[index] &#x3D;&#x3D; nullptr) return false;
+            temp &#x3D; temp-&gt;next[index];
+        &#125;
+        return temp-&gt;isWord;
+    &#125;
+
+    bool startsWith(string prefix) &#123;
+        Node* temp &#x3D; root;
+        for(char c : prefix)&#123;
+            int index &#x3D; c - &#39;a&#39;;
+            if(temp-&gt;next[index] &#x3D;&#x3D; nullptr) return false;
+            temp &#x3D; temp-&gt;next[index];
+        &#125;
+        return true;
+    &#125;
+&#125;;</code></pre>
+<h2 id="hashing">Hashing</h2>
+<h3 id="hash-functions">Hash functions</h3>
+<h3 id="linear-probing">Linear probing</h3>
+<blockquote>
+<p>Linear probing is a strategy for resolving collisions, by placing the new key into the closest following empty cell.</p>
+</blockquote>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">add(k)
+    if 2*used &gt;&#x3D; capacity
+        grow()
+    pos ← hash(k)
+    while table[pos] !&#x3D; EMPTY
+        pos++
+        if pos &gt;&#x3D; table.length
+            pos &#x3D; 0
+        end
+    end
+    used++
+    table[pos] ← k
+end
+
+find(k)
+	pos ← hash(k)
+	while table[pos] !&#x3D; EMPTY
+		if table[pos] &#x3D;&#x3D; k
+			return true
+		end
+		pos++
+		if pos &gt;&#x3D; table.length
+			pos &#x3D; 0
+		end
+	end
+	return false
+end
+
+bool ← remove(k)
+	pos ← hash(k)
+	while table[pos] !&#x3D; 0
+		if table[pos] &#x3D;&#x3D; k
+			table[pos] ← 0
+				&#x2F;&#x2F; redo everyone potential
+				&#x2F;&#x2F; until next 0
+			return
+		end
+		pos++
+		if pos &gt;&#x3D; table.length
+			pos &#x3D; 0
+		end
+	end
+	return false
+end</code></pre>
+<h3 id="quadratic-probing">Quadratic probing*</h3>
+<h3 id="linear-chaining">Linear chaining</h3>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">LinearChaining.add(k)
+	pos ← hash(k)
+	p ← table[pos].head
+	while p !&#x3D; null
+		if p.k &#x3D;&#x3D; k
+			return
+		p &#x3D; p.next
+	end
+	table[pos].addStart(k)
+end
+
+LinearChaning.find(k)
+	pos ← hash(k)
+	p ← table[pos].head
+	while p!&#x3D; null
+		if p.k &#x3D;&#x3D; k
+			return true
+		p &#x3D; p.next
+	end
+	return false
+end		</code></pre>
+<h3 id="perfect-hashing">Perfect hashing</h3>
+<h2 id="matrices">Matrices</h2>
+<h3 id="representation-rectangular-diagonal-tridiagonal">Representation (rectangular, diagonal, tridiagonal)</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">class Matrix&#123;
+private:
+    int row,cols;
+    double* m;
+public:
+    Matrix(int rows, int cols, double val) : rows(rows), cols(cols)&#123;
+        for (int i &#x3D; 0; i &lt; row * cols; i++)
+            m[i] &#x3D; val;
+    &#125;
+    ~Matrix()&#123;
+        delete []m
+    &#125;
+&#125;</code></pre>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">\\Lower Triangular Matrix
+get(i, j)
+	if(j &gt; i)
+		return 0
+	return m[i*(i+1)&#x2F;2+j]
+
+\\Diagonal Matrix
+get(i, j)
+	if(i &#x3D;&#x3D; j)
+		return m[i]
+	return 0
+	
+\\TriDiagonal Matrix
+get(i, j)
+	if(abs(j-i) &gt; 1)
+		return 0;
+	return m[2i+j]</code></pre>
+<h3 id="addition">Addition</h3>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">addition(a, b)
+	if a.rows !&#x3D; b.rows OR a.cols !&#x3D; b.cols
+		ERROR
+	end
+	for i ← 0 to rows*cols
+		ans[i] &#x3D; a[i] + b[i]
+	end
+	return ans
+end</code></pre>
+<h3 id="multiplication">Multiplication</h3>
+<pre class="line-numbers language-ps" data-language="ps"><code class="language-ps">mult(a, b)
+	if a.cols !&#x3D; b.rows
+		ERROR
+	end
+	for k ← 0 to a.rows-1
+		for i  ←  0 to b.cols - 1
+			sum ← 0
+			for j ← 0 to a.cols - 1
+				sum ← sum + a(k,j)*b(j,i)
+			end
+			ans(k,i) ← sum
+		end
+	end
+end</code></pre>
+<h3 id="solving-systems-gauss-jordan-elimination-partial-pivoting">Solving systems (Gauss-Jordan Elimination, partial pivoting)</h3>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">partialPivot(A,i)
+	max ← A(i,i)
+	maxpos ← i
+	for j ← i+1 to rows-1
+		if A(j,i) &gt; max
+			max ← A(j,i)
+			maxpos ← j
+		end
+	end
+	&#x2F;&#x2F;swap rows
+GaussianElimination(A,i)
+	for i ← 0 to rows-2
+		partialPivot(A,i)
+		for j ← i+1 to rows-1
+			s ← - A(j,i)&#x2F;A(i,i)
+			A(j,i) ← 0
+			for k ← i+1 to cols - 1
+				A(j,k) +&#x3D; s * m(i,j)
+			end
+		end
+	end</code></pre>
+<h3 id="gram-schmidt-orthogonalization">Gram-Schmidt orthogonalization</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">void subtractProj(int i, int j)&#123;
+    double dot &#x3D; 0;
+    for (int k &#x3D; 0; k &lt; rows; k++)
+        dot +&#x3D; (*this)(k,i) * (*this)(k,j);
+    &#x2F;&#x2F;&lt;u.v&gt;
+    for (int k &#x3D; 0; k &lt; rows; k++)
+        (*this)(k,j) -&#x3D; dot * (*this)(k,j);
+&#125;
+gramschmidt()&#123;
+    int n &#x3D; cols;
+    double mag &#x3D; 0;
+    for (int i &#x3D; 0; i &lt; n; i++)
+        mag +&#x3D; (*this)(i,0) * (*this)(i,0);
+    mag &#x3D; 1 &#x2F; sqrt(mag);
+    for (int i &#x3D; 0; i &lt; n; i++)
+        (*this)(i,0) *&#x3D; mag;
+    for(int j &#x3D; 1; j &lt; n; j++)&#123;
+        for (int i &#x3D; 0; i &lt; j; i++)
+            subtractProj(i,j);
+        double mag &#x3D; 0;
+        for (int i &#x3D; 0; i &lt; n; i++)
+            mag +&#x3D; (*this)(i,j) * (*this)(i,j);
+        mag &#x3D; 1&#x2F;sqrt(mag);
+        for (int i &#x3D; 0; i &lt; n; i++)
+            (*this)(i,j) *&#x3D; mag;
+    &#125;
+    return *this;  
+&#125;</code></pre>
+<h2 id="strings">Strings</h2>
+<h3 id="boyer-moore">Boyer-Moore</h3>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">void boyerMoore(const char s[], const char target[])&#123;
+    int jump[256];
+    int n &#x3D; strlen(s);
+    int len &#x3D; strlen(target);
+    for (int i &#x3D; 0; i &lt; 256; i++)
+        jump[i] &#x3D; len;
+    for (int i &#x3D; 0; i &lt; len; i++)
+        jump[target[i]] &#x3D; len - 1 - i;
+    for (int i &#x3D; len - 1; i&lt;n;)&#123;
+        int offset &#x3D; jump[s[i]];
+        if(offset &gt; 0)
+            i +&#x3D; offset;
+        else&#123;
+            for (int j &#x3D; i - len +1, k &#x3D; 0; j &lt; i; j++, k++)
+                if(target[k] !&#x3D; s[j])
+                    goto notfound;
+            cout &lt;&lt; &quot;Found: &quot; &lt; i-len +1&lt;&lt;endl;
+        notfound:
+            i+&#x3D;len;
+        &#125;
+&#125;
+    
+for i &#x3D;0 to 255
+    table[i] &#x3D; len
+for i &#x3D; 0 to len
+    table[target[i]] &#x3D; len - i - 1
+i &#x3D; len-1
+while (i &lt; n)
+    jump ← table[search[i]]
+    if (jump &#x3D;&#x3D; 0) &#123; &#x2F;&#x2F; possible match
+        &#x2F;&#x2F; compare the word letter by letter
+
+    &#125;
+    i ← i + jump
+end</code></pre>
+<h3 id="finite-state">Finite State*</h3>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class FiniteStateMachine &#123;
+private:
+	int currentState;
+	int next[NUMSTATES][256];
+public:
+	FiniteStateMachine() : currentState(0) &#123;
+		for (int i &#x3D; 0; i &lt; 256; i++)
+			next[0][i] &#x3D; 1;
+		for (int i &#x3D; &#39;a&#39;; i &lt;&#x3D; &#39;z&#39;; i++)
+			next[0][i] &#x3D; 0;
+		for (int i &#x3D; &#39;A&#39;; i &lt;&#x3D; &#39;Z&#39;; i++)
+			next[0][i] &#x3D; 0;
+		
+
+	&#125;
+	void exec(const char inp[]) &#123;
+		for (int i &#x3D; 0; inp[i] !&#x3D; &#39;\0&#39;; i++) &#123;
+			currentState &#x3D; next[currentState][inp[i]];
+			if (currentState &#x3D;&#x3D; 1)
+				return; &#x2F;&#x2F; get out when we reach the end state
+	&#125;
+&#125;;</code></pre>
+<h3 id="lcs">LCS</h3>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">int LCS(string s, string t)&#123;
+    int m &#x3D; s.size();
+    int n &#x3D; t.size();
+    int dp[m+1][n+1];
+    for(int i &#x3D; 0; i &lt; m + 1; i++)&#123;
+        for(int j &#x3D; 0; j &lt; n + 1; j++)&#123;
+            if(i&#x3D;&#x3D;0||j&#x3D;&#x3D;0)&#123;
+                d[i][j]&#x3D;0;
+            &#125;
+            else if(s[i-1]&#x3D;&#x3D;t[j-1])&#123;
+                dp[i][j] &#x3D; dp[i-1][j-1] + 1;
+            &#125;else&#123;
+                dp[i][j] &#x3D; max(dp[i-1][j],dp[i][j-1]);
+            &#125;
+        &#125;
+    &#125;
+    return dp[m][n];
+&#125;</code></pre>
+<h2 id="graphs">Graphs</h2>
+<h3 id="representation-list-or-matrix">Representation: list or matrix</h3>
+<figure>
+<img data-src="https://docs.google.com/drawings/d/sWyhI6FrcgmwhtdawJFsCZg/image?w=624&amp;h=107&amp;rev=90&amp;ac=1&amp;parent=1QRQ5hBbBiKXkq0xePaM74Dbq7uui8nGUhUarYntk3wY" alt="img" /><figcaption aria-hidden="true">img</figcaption>
+</figure>
+<p>find out if v1 is adjacent to v2 = O(E) = O(<span class="math inline">\(V^2\)</span>) Ω(1)</p>
+<p>find out the set of vertices connected to v is O(E)</p>
+<p>Storage: O(E) Ω(1)</p>
+<figure>
+<img data-src="https://docs.google.com/drawings/d/szZxUtrrzDPlGnxXMe6Hl3Q/image?w=199&amp;h=284&amp;rev=37&amp;ac=1&amp;parent=1QRQ5hBbBiKXkq0xePaM74Dbq7uui8nGUhUarYntk3wY" alt="img" /><figcaption aria-hidden="true">img</figcaption>
+</figure>
+<p>Storage: O(E) Ω(V)</p>
+<p>is vertex k adjacent to vertex m? O(V) Ω(1)</p>
+<p>find all vertices adjacent to vertex k? O(V) Ω(1)</p>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">isAdjacent(from,to)   &#x2F;&#x2F;O(V)
+allAdjacent(from) &#x2F;&#x2F;O(V), Ω(1) </code></pre>
+<figure>
+<img data-src="https://docs.google.com/drawings/d/s_S39ZP6f8cbZoeQk9bNpbQ/image?w=201&amp;h=178&amp;rev=49&amp;ac=1&amp;parent=1QRQ5hBbBiKXkq0xePaM74Dbq7uui8nGUhUarYntk3wY" alt="img" /><figcaption aria-hidden="true">img</figcaption>
+</figure>
+<p>Space complexity: O(E) = O(V2) Ω(V2) = Θ(V2)</p>
+<p>is vertex k adjacent to vertex m? O(1)</p>
+<p>find all vertices adjacent to k? O(V)</p>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">isAdjacent(from,to)   &#x2F;&#x2F;O(1)
+if from &lt; to
+        return isAdajacent(to, from)
+return m[from][to]
+end
+
+allAdjacent(from) &#x2F;&#x2F;O(V), Ω(V)  ⇒ θ(V)</code></pre>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class MatrixGraph &#123;
+  private double [] w;
+  private int V;
+  public boolean isAdjacent(int i, int j) &#123; return !isInf(w[i * V + j]); &#125; &#x2F;&#x2F;O(1)
+  public boolean[] adjacent(int v) &#123; … &#125; &#x2F;&#x2F; O(V) Ω(V)
+&#125;
+
+class EdgeListGraph &#123;
+  private static class Edge &#123;
+     int to;
+     double w;
+  &#125;
+  private LinkedList&lt;Edge&gt;[] v;
+  public boolean isAdjacent(int i, int j) &#123; … &#125; &#x2F;&#x2F;O(V)    Ω(1)
+  public boolean[] adjacent(int i) &#123; … &#125; &#x2F;&#x2F; O(V)        Ω(1)
+&#125;
+</code></pre>
+<h3 id="dfs">DFS</h3>
+<p>O(V2) worst case (matrix representation, ALWAYS)</p>
+<p>Ω(1) best case (with initial vertex not connected to anyone, list)</p>
+<p>Ω(V) best case (with initial vertex not connected to anyone, matrix)</p>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">g.DFS2(v,visited) &#x2F;&#x2F;O(V^2) Ω(1) with list impl
+	visited[v] ← true
+	print v
+	foreach v2 in adjacent(v)&#x2F;&#x2F; for matrix O(v), for linkedlist O(v)  Ω(1)
+		if NOT visited[v2]
+			g.DFS2(v2, visited)
+		end
+	end
+end
+g.DFS(v)
+	visited ← [false, false, ...,] &#x2F;&#x2F;O(v)
+	g.DFS2(v,visited)
+end
+
+&#x2F;&#x2F;iteratively
+g.DFS(v)
+	visited ← [false, false, ...,] &#x2F;&#x2F;O(v)
+	stack ← empty
+	stack.push(v)
+	visited[v] ← true
+	while NOT stack.empty()
+		v ← stack.pop();
+		print v
+		foreach v2 in adjacent(v)
+			if NOT visited[v2]
+				stack.push(v2)
+				visited[v2] ← true
+			end
+		end
+	end
+end</code></pre>
+<h3 id="bfs">BFS</h3>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">g.BFS(v)
+	visited ← [false, false, ...,] &#x2F;&#x2F;O(v)
+	queue ← empty
+	queue.enqueue(v)
+	visited[v] ← true
+	while NOT queue.empty()
+		v ← queue.dequeue();
+		print v
+		foreach v2 in adjacent(v)
+			if NOT visited[v2]
+				queue.enqueue(v2)
+				visited[v2] ← true
+			end
+		end
+	end
+end</code></pre>
+<h3 id="isconnected">IsConnected</h3>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">bool ← g.isConnected() &#x2F;&#x2F;O(V^2)
+	visited ← g.DFS(r)
+	for i ← 0 to V
+		if NOT visited[i]
+			return false
+	end
+	return true
+end</code></pre>
+<h3 id="bellman-fordove">Bellman-Ford//O(VE)</h3>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">BellmanFord(start, end)
+	cost ← [∞, ∞, ...]
+	cost[start] ← 0
+	for v ← 0 to V-1
+		for each edge e from v
+			if cost[v2] &gt; cost[v] + adjacent[v2]
+			cost[v2] ← cost[v] + adjacent[v2]
+			add to the list to recompute costs from v2
+		end
+	end
+end</code></pre>
+<h3 id="floyd-warshallov3">Floyd-Warshall//O(V^3)</h3>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">dist ← |V| × |V| array of minimum distances initialized to ∞
+
+for each vertex v
+	dist[v][v] ← 0
+for each edge (u,v)
+	dist[u][v] ← w(u,v) &#x2F;&#x2F;the weight of the edge (u,v)
+for k from 1 to V
+	for i from 1 to V
+		for j from 1 to V
+			if dist[i][j] &gt; dist[i][k] + dist[k][j]
+				dist[i][j] ← dist[i][k] + dist[k][j]
+			end
+		end
+	end
+end</code></pre>
+<h3 id="primov2">Prim//O(V^2)</h3>
+<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">Prim(v)
+	visited ← new Vector(V, false)
+	visited[v] ← true
+	for i ← 1 to V-1
+		for all edges out of the visited set(V,2V,3V, ...) to V-1
+			min ← ∞
+			if isAdjacent(v,a) and NOT visited[a]
+				if getWeight(v,a) &lt; min
+					min ← getWeight(v,a)
+					minA ← a
+				end
+			end
+		end
+		visited[minA] ← trme
+		v ← minA
+	end
+end</code></pre>
+<h3 id="kruskaloe-log-e">Kruskal//O(E log E)</h3>
+<p>https://en.wikipedia.org/wiki/Kruskal%27s_algorithm</p>
+<h3 id="tsp">TSP*</h3>
+<h2 id="backtracking">Backtracking</h2>
+<h3 id="basic">Basic</h3>
+<h3 id="heaps">Heap's</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+
+class Permute &#123;
+private:
+	int* p;
+	int N;
+public:
+	Permute(int x[], int N) : p(x), N(N) &#123;
+		&#x2F;&#x2F;generate(N-1);
+		heaps(N-1);
+	&#125;
+	void generate(int n) &#123;
+		if (n &#x3D;&#x3D; 0) &#123;
+			doit();
+			return; &#x2F;&#x2F; What Sedgewick forgot!!!!
+		&#125;
+		for (int c &#x3D; 0; c &lt;&#x3D; n; c++) &#123;
+			swap(p[c], p[n]);
+			generate(n-1);
+			swap(p[c], p[n]);
+		&#125;
+	&#125;
+	void heaps(int n) &#123;
+		if (n &#x3D;&#x3D; 0) &#123;
+			doit();
+			return; &#x2F;&#x2F; What Sedgewick forgot!!!!
+		&#125;
+		for (int c &#x3D; 0; c &lt;&#x3D; n; c++) &#123;
+			generate(n-1);
+			swap(n % 2 ? p[0] : p[c] , p[n]);
+		&#125;
+	&#125;
+
+	void doit() const &#123;
+		for (int i &#x3D; 0; i &lt; N; i++)
+			cout &lt;&lt; p[i];
+		cout &lt;&lt; &#39;\n&#39;;
+	&#125;
+&#125;;
+
+
+int main() &#123;
+  int x[] &#x3D; &#123;1, 2, 3, 4&#125;;
+	Permute perm(x, 4);
+&#125;</code></pre>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Leaf
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://cateaf.com/2019/10/16/algorithm/" title="算法笔记">https://cateaf.com/2019/10/16/algorithm/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/note/" rel="tag"># note</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2019/05/23/new-orleans/" rel="prev" title="烤翅不存在的新奥尔良">
+                  <i class="fa fa-chevron-left"></i> 烤翅不存在的新奥尔良
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2020/02/23/switching-to-travisci/" rel="next" title="改为由Travis CI部署">
+                  改为由Travis CI部署 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2016 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fas fa-paw"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Leaf</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.1.0/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink.listen({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://cateaf.com/2019/10/16/algorithm/',]
+      });
+      });
+  </script>
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://cateaf.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://cateaf.com/2019/10/16/algorithm/";
+    this.page.identifier = "2019/10/16/algorithm/";
+    this.page.title = "算法笔记";
+    };
+  NexT.utils.loadComments('#disqus_thread', () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://cateaf.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

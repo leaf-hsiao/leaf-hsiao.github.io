@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#222">
+  <meta name="google-site-verification" content="hsoSqM_PEkU0rT0QGySXlkRcD6JNw24aQQH9DJxk66I">
+  <meta name="msvalidate.01" content="0CA355F79F618F8B850029EDA79C67FB">
+  <meta name="baidu-site-verification" content="EpHLert2YP">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"cateaf.com","root":"/","images":"/images","scheme":"Mist","version":"8.3.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":true,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
+<meta name="description" content="In this semester, our team tried to develop an mobile APP using Flutter. One user story is that when user are not using the APP, he&#x2F;she should be notified when new friend request or new message coming">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sending Notifications to Flutter App">
+<meta property="og:url" content="https://cateaf.com/2020/04/30/sending-notifications-to-flutter-app/index.html">
+<meta property="og:site_name" content="Cateaf">
+<meta property="og:description" content="In this semester, our team tried to develop an mobile APP using Flutter. One user story is that when user are not using the APP, he&#x2F;she should be notified when new friend request or new message coming">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://firebase.google.com/docs/functions/images/notify.png">
+<meta property="article:published_time" content="2020-04-30T22:24:57.000Z">
+<meta property="article:modified_time" content="2021-04-20T15:02:33.895Z">
+<meta property="article:author" content="Leaf">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://firebase.google.com/docs/functions/images/notify.png">
+
+
+<link rel="canonical" href="https://cateaf.com/2020/04/30/sending-notifications-to-flutter-app/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>Sending Notifications to Flutter App | Cateaf</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Cateaf" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Cateaf</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#cloud-functions"><span class="nav-number">1.</span> <span class="nav-text">Cloud Functions</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#setting-triggers"><span class="nav-number">1.1.</span> <span class="nav-text">Setting Triggers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#parse-data"><span class="nav-number">1.2.</span> <span class="nav-text">Parse Data</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sending-message-via-firebase-cloud-messaging"><span class="nav-number">1.3.</span> <span class="nav-text">Sending Message via Firebase Cloud Messaging</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#firebase-messaging"><span class="nav-number">2.</span> <span class="nav-text">Firebase Messaging</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Leaf"
+      src="/logo.jpg">
+  <p class="site-author-name" itemprop="name">Leaf</p>
+  <div class="site-description" itemprop="description">Leaf's blog</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">19</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/leaf-hsiao" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;leaf-hsiao" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:leaf_hsiao@outlook.com" title="E-Mail → mailto:leaf_hsiao@outlook.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/leaf.hsiao" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;leaf.hsiao" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cateaf.com/2020/04/30/sending-notifications-to-flutter-app/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/logo.jpg">
+      <meta itemprop="name" content="Leaf">
+      <meta itemprop="description" content="Leaf's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cateaf">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Sending Notifications to Flutter App
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-04-30 22:24:57" itemprop="dateCreated datePublished" datetime="2020-04-30T22:24:57+00:00">2020-04-30</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Project/" itemprop="url" rel="index"><span itemprop="name">Project</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/04/30/sending-notifications-to-flutter-app/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/04/30/sending-notifications-to-flutter-app/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>In this semester, our team tried to develop an mobile APP using Flutter. One user story is that when user are not using the APP, he/she should be notified when new friend request or new message coming</p>
+<p>Since we are using firebase as our backend service, cloud functions can be used to monitor the database, and send notifications when triggered</p>
+<span id="more"></span>
+<p><a target="_blank" rel="noopener" href="https://firebase.google.com/docs/functions/use-cases">This document</a> provides a simple example:</p>
+<figure>
+<img data-src="https://firebase.google.com/docs/functions/images/notify.png" alt="img" /><figcaption aria-hidden="true">img</figcaption>
+</figure>
+<blockquote>
+<ol type="1">
+<li>The function triggers on writes to the Realtime Database path where followers are stored.</li>
+<li>The function composes a message to send via FCM.</li>
+<li>FCM sends the notification message to the user's device.</li>
+</ol>
+</blockquote>
+<h2 id="cloud-functions">Cloud Functions</h2>
+<h3 id="setting-triggers">Setting Triggers</h3>
+<p>Interactions between users is stored at <code>/users/&#123;userId&#125;/interactions/&#123;interactionID&#125;</code>in Cloud Firestore. Firebase SDK provide 4 triggers <code>onCreate</code>,<code>onUpdate</code>,<code>onDelete</code>,<code>onWrite</code></p>
+<p>In our case, we want to send a notification when user generate an interaction. So the function running on Node.js 8 should specify the document path and event type:</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">const functions &#x3D; require(&#39;firebase-functions&#39;);
+
+exports.notificationFCM &#x3D; functions.firestore
+  .document(&#39;&#x2F;users&#x2F;&#123;userId&#125;&#x2F;interactions&#x2F;&#123;interactionID&#125;&#39;)
+  .onCreate(async (snapshot, context) &#x3D;&gt; &#123; &#x2F;* ... *&#x2F; &#125;);</code></pre>
+<h3 id="parse-data">Parse Data</h3>
+<p>Based on the data we need, we can set the <a target="_blank" rel="noopener" href="https://firebase.google.com/docs/cloud-messaging/concept-options">FCM messages</a> Notification messages will be displayed to end-user devices, data messages can be handled by client app and token is device registration token generated by FCM SDK in client app</p>
+<p>For given platform, token can be got as follows</p>
+<ul>
+<li>iOS (Swift) — <a target="_blank" rel="noopener" href="https://firebase.google.com/docs/reference/swift/firebasemessaging/api/reference/Classes/Messaging#/c:objc(cs)FIRMessaging(im)retrieveFCMTokenForSenderID:completion:"><code>retrieveFCMTokenForSenderID:completion:</code></a></li>
+<li>Android — <a target="_blank" rel="noopener" href="https://firebase.google.com/docs/reference/android/com/google/firebase/iid/FirebaseInstanceId#getToken(java.lang.String,%20java.lang.String)"><code>getToken()</code></a></li>
+</ul>
+<p>Users can have multiple devices, however, for convenience, just assume that token is stored as a string under the user profile</p>
+<p>The content of interaction is a JSON like data passed by snapshot</p>
+<pre class="line-numbers language-json" data-language="json"><code class="language-json">&#123; metaData: &#123;&#125;,
+  readed: false,
+  time: 1588268043715,
+  title: &#39;Friend Request from Leaf&#39;,
+  type: &#39;request&#39;,
+  userMeta: 
+   &#123; displayName: &#39;Leaf&#39;,
+     photoURL: &#39;&#39;,
+     uid: &#39;&#39; &#125; 
+ &#125;</code></pre>
+<p>Once getting token and notification data, we can set the message</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">const functions &#x3D; require(&#39;firebase-functions&#39;);
+
+exports.notificationFCM &#x3D; functions.firestore
+    .document(&#39;&#x2F;users&#x2F;&#123;userId&#125;&#x2F;interactions&#x2F;&#123;interactionID&#125;&#39;)
+    .onCreate(async (snapshot, context) &#x3D;&gt; &#123;
+        const interaction &#x3D; snapshot.data();
+        admin.firestore().collection(&#39;users&#39;).doc(context.params.userId).get().then((doc) &#x3D;&gt; &#123;
+          const deviceToken &#x3D; doc.get(&#39;deviceToken&#39;);
+            var payload &#x3D; &#123;
+              notification: &#123;
+                title: interaction.title,
+              &#125;,
+              data: &#123;
+                click_action: &#39;FLUTTER_NOTIFICATION_CLICK&#39;
+              &#125;,
+              token: deviceToken
+            &#125;;
+        &#125;);
+    &#125;);</code></pre>
+<h3 id="sending-message-via-firebase-cloud-messaging">Sending Message via Firebase Cloud Messaging</h3>
+<p>This is very straight forward, sending the message to target device, then receiving response or error code</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">const functions &#x3D; require(&#39;firebase-functions&#39;);
+
+exports.notificationFCM &#x3D; functions.firestore
+    .document(&#39;&#x2F;users&#x2F;&#123;userId&#125;&#x2F;interactions&#x2F;&#123;interactionID&#125;&#39;)
+    .onCreate(async (snapshot, context) &#x3D;&gt; &#123;
+        console.log(snapshot.data());
+        const interaction &#x3D; snapshot.data();
+        admin.firestore().collection(&#39;users&#39;).doc(context.params.userId).get().then((doc) &#x3D;&gt; &#123;
+          const deviceToken &#x3D; doc.get(&#39;deviceToken&#39;);
+          console.log(deviceToken)
+            var payload &#x3D; &#123;
+              notification: &#123;
+                title: interaction.title,
+              &#125;,
+              data: &#123;
+                click_action: &#39;FLUTTER_NOTIFICATION_CLICK&#39;
+              &#125;,
+              token: deviceToken
+            &#125;;
+            &#x2F;&#x2F; Send a message to the device corresponding to the provided
+            &#x2F;&#x2F; registration token.
+            admin.messaging().send(payload)
+              .then((response) &#x3D;&gt; &#123;
+                &#x2F;&#x2F; Response is a message ID string.
+                console.log(&#39;Successfully sent message:&#39;, response);
+              &#125;)
+              .catch((error) &#x3D;&gt; &#123;
+                console.log(&#39;Error sending message:&#39;, error);
+              &#125;);
+        &#125;);
+    &#125;);
+</code></pre>
+<p>The cloud work is completed, next step is to make your device receive notifications</p>
+<h2 id="firebase-messaging">Firebase Messaging</h2>
+<p><a target="_blank" rel="noopener" href="https://pub.dev/packages/firebase_messaging">Firebase Messaging</a> is a flutter plugin for FCM, to use this, just update a dependency in the <code>pubspec.yaml</code>file</p>
+<p>The <a target="_blank" rel="noopener" href="https://pub.dev/packages/firebase_messaging#-readme-tab-">README</a> file introduced how to integrate Firebase with your Android and IOS project, as we are using Cloud Storage and Firebase Auth. these part is already done yet. Then import the plugin and instantiate it in the Dart code</p>
+<pre class="line-numbers language-dart" data-language="dart"><code class="language-dart">import &#39;package:firebase_messaging&#x2F;firebase_messaging.dart&#39;;
+final FirebaseMessaging _firebaseMessaging &#x3D; FirebaseMessaging();</code></pre>
+<p>BTW, The device token can be accessed by doing so</p>
+<pre class="line-numbers language-dart" data-language="dart"><code class="language-dart">_firebaseMessaging.getToken().then((token) &#123;
+  print(token);
+&#125;);</code></pre>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Leaf
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://cateaf.com/2020/04/30/sending-notifications-to-flutter-app/" title="Sending Notifications to Flutter App">https://cateaf.com/2020/04/30/sending-notifications-to-flutter-app/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020/02/27/mysql-stored-procedure/" rel="prev" title="MySQL Stored Procedure">
+                  <i class="fa fa-chevron-left"></i> MySQL Stored Procedure
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2021/02/15/coffee-processing/" rel="next" title="咖啡精制法">
+                  咖啡精制法 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2016 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fas fa-paw"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Leaf</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.1.0/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink.listen({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://cateaf.com/2020/04/30/sending-notifications-to-flutter-app/',]
+      });
+      });
+  </script>
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://cateaf.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://cateaf.com/2020/04/30/sending-notifications-to-flutter-app/";
+    this.page.identifier = "2020/04/30/sending-notifications-to-flutter-app/";
+    this.page.title = "Sending Notifications to Flutter App";
+    };
+  NexT.utils.loadComments('#disqus_thread', () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://cateaf.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

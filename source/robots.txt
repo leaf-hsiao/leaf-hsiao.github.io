@@ -1,8 +1,0 @@
-User-agent: *
-Sitemap: http://cateaf.com/sitemap.xml
-Disallow: /categories/
-Disallow: /archives/
-Disallow: /tags/
-Disallow: /data/
-Disallow: /links/
-Disallow: /static/
