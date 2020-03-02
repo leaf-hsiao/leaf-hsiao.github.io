@@ -3,14 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives | Cateaf - Leaf&#39;s blog</title>
+  <title>MySQL Stored Procedure | Cateaf - Leaf&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta http-equiv="content-language" content="zh-CN"> 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Cateaf - Leaf&#39;s blog">
-<meta property="og:url" content="https://cateaf.com/archives/page/2/index.html">
+  <meta name="description" content="一月的时候重构了一个洗数据的代码，在 Jupyter 上用 ipython-sql 写的 sql，数据库用的 MySQL 8。 理论上更高效的做法应该是直接读到 dataframe 里再进行数据清洗，由于之前已经用 sql 完整实现了一遍再加上时间不是很充裕选择了用 Stored Procedure 来封装之前的 sql">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL Stored Procedure">
+<meta property="og:url" content="https://cateaf.com/2020/02/27/mysql-stored-procedure/index.html">
 <meta property="og:site_name" content="Cateaf - Leaf&#39;s blog">
+<meta property="og:description" content="一月的时候重构了一个洗数据的代码，在 Jupyter 上用 ipython-sql 写的 sql，数据库用的 MySQL 8。 理论上更高效的做法应该是直接读到 dataframe 里再进行数据清洗，由于之前已经用 sql 完整实现了一遍再加上时间不是很充裕选择了用 Stored Procedure 来封装之前的 sql">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-02-27T11:04:46.000Z">
+<meta property="article:modified_time" content="2020-03-02T06:04:42.411Z">
 <meta property="article:author" content="Leaf Hsiao">
 <meta name="twitter:card" content="summary">
   
@@ -79,131 +83,77 @@
 </header>
       <div class="outer">
         
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-rose">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/06/21/rose-cafe/" class="archive-article-date" id="article-date">
-  <time class="dt-published" datetime="2018-06-21T10:38:55.000Z" itemprop="datePublished">Jun 21</time>
+        <section id="main"><article id="post-mysql-stored-procedure" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/02/27/mysql-stored-procedure/" class="article-date" id="article-date">
+  <time class="dt-published" datetime="2020-02-27T11:04:46.000Z" itemprop="datePublished">2020-02-27</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/06/21/rose-cafe/">玫瑰咖啡</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      MySQL Stored Procedure
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>一月的时候重构了一个洗数据的代码，在 Jupyter 上用 <a href="https://github.com/catherinedevlin/ipython-sql" target="_blank" rel="noopener">ipython-sql</a> 写的 sql，数据库用的 MySQL 8。</p>
+<p>理论上更高效的做法应该是直接读到 <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html" target="_blank" rel="noopener">dataframe</a> 里再进行数据清洗，由于之前已经用 sql 完整实现了一遍再加上时间不是很充裕选择了用 Stored Procedure 来封装之前的 sql</p>
+<a id="more"></a>
+
+<p>由于大量的使用了表名作为参数，因此用 concat 函数来拼接，基本的框架就是</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">PROCEDURE</span> <span class="keyword">IF</span> <span class="keyword">EXISTS</span> initTable</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">PROCEDURE</span> initTable(<span class="keyword">IN</span> tb1 <span class="built_in">VARCHAR</span>(<span class="number">5</span>), <span class="keyword">IN</span> tb2 <span class="built_in">VARCHAR</span>(<span class="number">5</span>))</span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line">	<span class="keyword">SET</span> @sqlstmt = <span class="keyword">CONCAT</span>(<span class="string">'SELECT * FROM'</span>, tb1, <span class="string">''</span>, tb2, <span class="string">' LIMIT 10'</span>);</span><br><span class="line">	<span class="keyword">PREPARE</span> stmt <span class="keyword">FROM</span> @sqlstmt</span><br><span class="line">	<span class="keyword">EXECUTE</span> stmt</span><br><span class="line"><span class="keyword">END</span></span><br></pre></td></tr></table></figure>
+
+<p>然后通过 call 调用</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CALL</span> initTable(<span class="string">'tb'</span>, <span class="string">'anothertb'</span>)</span><br></pre></td></tr></table></figure>
+
+<p>但是在同一个 procedure 里对一张表进行多次 update 的话则会出现 can’t lock table 的报错。可以利用 transaction 解决。而 transaction 在 mysql 语法中有点特殊，不是 <code>BEGIN TRAN/COMMIT TRAN</code> 这种形式。</p>
+<p>假设要 update 同一张表两次：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">PROCEDURE</span> <span class="keyword">IF</span> <span class="keyword">EXISTS</span> updateTable</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">PROCEDURE</span> updateTable(<span class="keyword">IN</span> tb <span class="built_in">VARCHAR</span>(<span class="number">5</span>))</span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line">	<span class="keyword">START</span> <span class="keyword">TRANSACTION</span></span><br><span class="line">	<span class="keyword">SET</span> @sqlstmt = <span class="keyword">CONCAT</span>(<span class="string">'update'</span>, tb,<span class="string">'SET A = 1'</span>);</span><br><span class="line">	<span class="keyword">PREPARE</span> stmt <span class="keyword">FROM</span> @sqlstmt</span><br><span class="line">	<span class="keyword">EXECUTE</span> stmt</span><br><span class="line">	<span class="keyword">COMMIT</span></span><br><span class="line">	</span><br><span class="line">	<span class="keyword">START</span> <span class="keyword">TRANSACTION</span></span><br><span class="line">	<span class="keyword">SET</span> @sqlstmt = <span class="keyword">CONCAT</span>(<span class="string">'update'</span>, tb,<span class="string">'SET B = 2'</span>);</span><br><span class="line">	<span class="keyword">PREPARE</span> stmt <span class="keyword">FROM</span> @sqlstmt</span><br><span class="line">	<span class="keyword">EXECUTE</span> stmt</span><br><span class="line">	<span class="keyword">COMMIT</span></span><br><span class="line"><span class="keyword">END</span></span><br></pre></td></tr></table></figure>
+
+<p>（一开始还以为 mysql 不支持 transaction</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://cateaf.com/2020/02/27/mysql-stored-procedure/" data-id="ck7a26tij000izslw779e1tq5" data-title="MySQL Stored Procedure" class="article-share-link">Share</a>
+      
+        <a href="https://cateaf.com/2020/02/27/mysql-stored-procedure/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+      
+    </footer>
   </div>
-</article>
   
     
-    
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/09/03/audioquest-dragonfly-configuration/" class="archive-article-date" id="article-date">
-  <time class="dt-published" datetime="2017-09-03T12:01:57.000Z" itemprop="datePublished">Sep 3</time>
-</a>
-      
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/03/audioquest-dragonfly-configuration/">吹一波 AudioQuest</a>
-    </h1>
   
+    <a href="/2020/02/23/switch-to-travisci/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">改为由 Travis CI 部署</div>
+    </a>
+  
+</nav>
 
-    </header>
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
   </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/08/29/coffee-in-austin/" class="archive-article-date" id="article-date">
-  <time class="dt-published" datetime="2017-08-29T17:37:00.000Z" itemprop="datePublished">Aug 29</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/29/coffee-in-austin/">Coffee in Austin</a>
-    </h1>
-  
+</section>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/07/23/catfish/" class="archive-article-date" id="article-date">
-  <time class="dt-published" datetime="2017-07-23T21:09:20.000Z" itemprop="datePublished">Jul 23</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/23/catfish/">Catfish</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/06/21/gene-selection/" class="archive-article-date" id="article-date">
-  <time class="dt-published" datetime="2017-06-21T13:57:09.000Z" itemprop="datePublished">Jun 21</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/21/gene-selection/">Gene Selection</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-
-  <nav id="page-nav">
-    
-    <a class="extend prev" rel="prev" href="/archives/">&laquo; Prev</a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/page/3/">3</a><a class="page-number" href="/archives/page/4/">4</a><a class="extend next" rel="next" href="/archives/page/3/">Next &raquo;</a>
-  </nav>
 </section>
           
             <aside id="sidebar">
@@ -266,10 +216,12 @@
 <script>
   var disqus_shortname = 'cateaf';
   
+  var disqus_url = 'https://cateaf.com/2020/02/27/mysql-stored-procedure/';
+  
   (function(){
     var dsq = document.createElement('script');
     dsq.async = true;
-    dsq.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>
