@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Sending Notifications to Flutter App | Cateaf - Leaf&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="content-language" content="zh-CN"> 
+  <meta name="description" content="In this semester, our team tried to develop an mobile APP using Flutter. One user story is that when user are not using the APP, he&#x2F;she should be notified when new friend request or new message coming">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sending Notifications to Flutter App">
+<meta property="og:url" content="https://cateaf.com/2020/04/30/sending-notifications-to-flutter-app/index.html">
+<meta property="og:site_name" content="Cateaf - Leaf&#39;s blog">
+<meta property="og:description" content="In this semester, our team tried to develop an mobile APP using Flutter. One user story is that when user are not using the APP, he&#x2F;she should be notified when new friend request or new message coming">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://firebase.google.com/docs/functions/images/notify.png">
+<meta property="article:published_time" content="2020-04-30T22:24:57.000Z">
+<meta property="article:modified_time" content="2020-05-01T02:29:40.704Z">
+<meta property="article:author" content="Leaf Hsiao">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://firebase.google.com/docs/functions/images/notify.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Cateaf - Leaf&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.lug.ustc.edu.cn/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+    <svg data-name="logo-wrap" height="50" viewBox="0 0 1000 150" xmlns="http://www.w3.org/2000/svg">
+    <defs><style>.cls-1{fill:#fff;}</style></defs>
+    <path class="cls-1" d="M89.3,44.38c-5.53-5.53-13.37-8.73-22.46-8.73C48.66,35.65,35.47,48.84,35.47,67S48.66,98.4,66.84,98.4c9.09,0,16.93-3.21,22.46-8.91l25,24.6A66.83,66.83,0,1,1,66.84.18,66.13,66.13,0,0,1,113.9,19.61Z"/><path class="cls-1" d="M130.3,133.87L192.69,0.18h15.86l62.92,133.69H236.36l-8.2-17.47H173.43l-8,17.47H130.3Zm56.86-47.06h27.27L200.89,57.4Z"/>
+    <path class="cls-1" d="M275.75,0H381.1V34.94H345.62v98.93H310.51V34.94H275.75V0Z"/>
+    <path class="cls-1" d="M414.25,0.18h83.07V29.23h-48V51h42.42V80.57H449.36v24.6h48v28.7H414.25V0.18Z"/>
+    <path class="cls-1" d="M522.44,133.87L584.83,0.18h15.86l62.92,133.69H628.5l-8.2-17.47H565.58l-8,17.47H522.44ZM579.3,86.81h27.27L593,57.4Z"/><path class="cls-1" d="M690.35,0.18h83.78V29.06H725.46V50.8h43V80.57h-43v53.3H690.35V0.18Z"/>
+    </svg>
+      <!--<h1 id="logo-wrap">
+        <a href="/" id="logo">Cateaf - Leaf&#39;s blog</a>
+      </h1>
+        
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Leaf&#39;s blog</a>
+        </h2>
+       -->
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://cateaf.com"></form>
+        
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        
+        <section id="main"><article id="post-sending-notifications-to-flutter-app" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/04/30/sending-notifications-to-flutter-app/" class="article-date" id="article-date">
+  <time class="dt-published" datetime="2020-04-30T22:24:57.000Z" itemprop="datePublished">2020-04-30</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Project/">Project</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Sending Notifications to Flutter App
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>In this semester, our team tried to develop an mobile APP using Flutter. One user story is that when user are not using the APP, he/she should be notified when new friend request or new message coming</p>
+<p>Since we are using firebase as our backend service, cloud functions can be used to monitor the database, and send notifications when triggered</p>
+<a id="more"></a>
+
+<p><a href="https://firebase.google.com/docs/functions/use-cases" target="_blank" rel="noopener">This document</a> provides a simple example:</p>
+<p><img src="https://firebase.google.com/docs/functions/images/notify.png" alt="img"></p>
+<blockquote>
+<ol>
+<li>The function triggers on writes to the Realtime Database path where followers are stored.</li>
+<li>The function composes a message to send via FCM.</li>
+<li>FCM sends the notification message to the user’s device.</li>
+</ol>
+</blockquote>
+<h2 id="Cloud-Functions"><a href="#Cloud-Functions" class="headerlink" title="Cloud Functions"></a>Cloud Functions</h2><h3 id="Setting-Triggers"><a href="#Setting-Triggers" class="headerlink" title="Setting Triggers"></a>Setting Triggers</h3><p>Interactions between users is stored at <code>/users/{userId}/interactions/{interactionID}</code>in Cloud Firestore. Firebase SDK provide 4 triggers <code>onCreate</code>,<code>onUpdate</code>,<code>onDelete</code>,<code>onWrite</code></p>
+<p>In our case, we want to send a notification when user generate an interaction. So the function running on Node.js 8 should specify the document path and event type:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> functions = <span class="built_in">require</span>(<span class="string">'firebase-functions'</span>);</span><br><span class="line"></span><br><span class="line">exports.notificationFCM = functions.firestore</span><br><span class="line">  .document(<span class="string">'/users/&#123;userId&#125;/interactions/&#123;interactionID&#125;'</span>)</span><br><span class="line">  .onCreate(<span class="keyword">async</span> (snapshot, context) =&gt; &#123; <span class="comment">/* ... */</span> &#125;);</span><br></pre></td></tr></table></figure>
+
+<h3 id="Parse-Data"><a href="#Parse-Data" class="headerlink" title="Parse Data"></a>Parse Data</h3><p>Based on the data we need, we can set the <a href="https://firebase.google.com/docs/cloud-messaging/concept-options" target="_blank" rel="noopener">FCM messages</a> Notification messages will be displayed to end-user devices, data messages can be handled by client app and token is device registration token generated by FCM SDK in client app</p>
+<p>For given platform, token can be got as follows</p>
+<ul>
+<li>iOS (Swift) — <a href="https://firebase.google.com/docs/reference/swift/firebasemessaging/api/reference/Classes/Messaging#/c:objc(cs)FIRMessaging(im)retrieveFCMTokenForSenderID:completion:" target="_blank" rel="noopener"><code>retrieveFCMTokenForSenderID:completion:</code></a></li>
+<li>Android — [<code>getToken()</code>](<a href="https://firebase.google.com/docs/reference/android/com/google/firebase/iid/FirebaseInstanceId#getToken" target="_blank" rel="noopener">https://firebase.google.com/docs/reference/android/com/google/firebase/iid/FirebaseInstanceId#getToken</a>(java.lang.String, java.lang.String))</li>
+</ul>
+<p>Users can have multiple devices, however, for convenience, just assume that token is stored as a string under the user profile</p>
+<p>The content of interaction is a JSON like data passed by snapshot</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123; metaData: &#123;&#125;,</span><br><span class="line">  readed: false,</span><br><span class="line">  time: 1588268043715,</span><br><span class="line">  title: 'Friend Request from Leaf',</span><br><span class="line">  type: 'request',</span><br><span class="line">  userMeta: </span><br><span class="line">   &#123; displayName: 'Leaf',</span><br><span class="line">     photoURL: '',</span><br><span class="line">     uid:'' &#125; </span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>Once getting token and notification data, we can set the message</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> functions = <span class="built_in">require</span>(<span class="string">'firebase-functions'</span>);</span><br><span class="line"></span><br><span class="line">exports.notificationFCM = functions.firestore</span><br><span class="line">    .document(<span class="string">'/users/&#123;userId&#125;/interactions/&#123;interactionID&#125;'</span>)</span><br><span class="line">    .onCreate(<span class="keyword">async</span> (snapshot, context) =&gt; &#123;</span><br><span class="line">        <span class="keyword">const</span> interaction = snapshot.data();</span><br><span class="line">        admin.firestore().collection(<span class="string">'users'</span>).doc(context.params.userId).get().then(<span class="function">(<span class="params">doc</span>) =&gt;</span> &#123;</span><br><span class="line">          <span class="keyword">const</span> deviceToken = doc.get(<span class="string">'deviceToken'</span>);</span><br><span class="line">            <span class="keyword">var</span> payload = &#123;</span><br><span class="line">              notification: &#123;</span><br><span class="line">                title: interaction.title,</span><br><span class="line">              &#125;,</span><br><span class="line">              data: &#123;</span><br><span class="line">                click_action: <span class="string">'FLUTTER_NOTIFICATION_CLICK'</span></span><br><span class="line">              &#125;,</span><br><span class="line">              token: deviceToken</span><br><span class="line">            &#125;;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure>
+
+<h3 id="Sending-Message-via-Firebase-Cloud-Messaging"><a href="#Sending-Message-via-Firebase-Cloud-Messaging" class="headerlink" title="Sending Message via Firebase Cloud Messaging"></a>Sending Message via Firebase Cloud Messaging</h3><p>This is very straight forward, sending the message to target device, then receiving response or error code</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> functions = <span class="built_in">require</span>(<span class="string">'firebase-functions'</span>);</span><br><span class="line"></span><br><span class="line">exports.notificationFCM = functions.firestore</span><br><span class="line">    .document(<span class="string">'/users/&#123;userId&#125;/interactions/&#123;interactionID&#125;'</span>)</span><br><span class="line">    .onCreate(<span class="keyword">async</span> (snapshot, context) =&gt; &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(snapshot.data());</span><br><span class="line">        <span class="keyword">const</span> interaction = snapshot.data();</span><br><span class="line">        admin.firestore().collection(<span class="string">'users'</span>).doc(context.params.userId).get().then(<span class="function">(<span class="params">doc</span>) =&gt;</span> &#123;</span><br><span class="line">          <span class="keyword">const</span> deviceToken = doc.get(<span class="string">'deviceToken'</span>);</span><br><span class="line">          <span class="built_in">console</span>.log(deviceToken)</span><br><span class="line">            <span class="keyword">var</span> payload = &#123;</span><br><span class="line">              notification: &#123;</span><br><span class="line">                title: interaction.title,</span><br><span class="line">              &#125;,</span><br><span class="line">              data: &#123;</span><br><span class="line">                click_action: <span class="string">'FLUTTER_NOTIFICATION_CLICK'</span></span><br><span class="line">              &#125;,</span><br><span class="line">              token: deviceToken</span><br><span class="line">            &#125;;</span><br><span class="line">            <span class="comment">// Send a message to the device corresponding to the provided</span></span><br><span class="line">            <span class="comment">// registration token.</span></span><br><span class="line">            admin.messaging().send(payload)</span><br><span class="line">              .then(<span class="function">(<span class="params">response</span>) =&gt;</span> &#123;</span><br><span class="line">                <span class="comment">// Response is a message ID string.</span></span><br><span class="line">                <span class="built_in">console</span>.log(<span class="string">'Successfully sent message:'</span>, response);</span><br><span class="line">              &#125;)</span><br><span class="line">              .catch(<span class="function">(<span class="params">error</span>) =&gt;</span> &#123;</span><br><span class="line">                <span class="built_in">console</span>.log(<span class="string">'Error sending message:'</span>, error);</span><br><span class="line">              &#125;);</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure>
+
+<p>The cloud work is completed, next step is to make your device receive notifications</p>
+<h2 id="Firebase-Messaging"><a href="#Firebase-Messaging" class="headerlink" title="Firebase Messaging"></a>Firebase Messaging</h2><p><a href="https://pub.dev/packages/firebase_messaging" target="_blank" rel="noopener">Firebase Messaging</a> is a flutter plugin for FCM, to use this, just update a dependency in the <code>pubspec.yaml</code>file</p>
+<p>The <a href="https://pub.dev/packages/firebase_messaging#-readme-tab-" target="_blank" rel="noopener">README</a> file introduced how to integrate Firebase with your Android and IOS project, as we are using Cloud Storage and Firebase Auth. these part is already done yet. Then  import the plugin and instantiate it in the Dart code</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:firebase_messaging/firebase_messaging.dart'</span>;</span><br><span class="line"><span class="keyword">final</span> FirebaseMessaging _firebaseMessaging = FirebaseMessaging();</span><br></pre></td></tr></table></figure>
+
+<p>BTW, The device token can be accessed by doing so</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">_firebaseMessaging.getToken().then((token) &#123;</span><br><span class="line">  <span class="built_in">print</span>(token);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://cateaf.com/2020/04/30/sending-notifications-to-flutter-app/" data-id="ck9nkxfq4000r0tlthjs421jo" data-title="Sending Notifications to Flutter App" class="article-share-link">Share</a>
+      
+        <a href="https://cateaf.com/2020/04/30/sending-notifications-to-flutter-app/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/02/27/mysql-stored-procedure/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">MySQL Stored Procedure</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</section>
+          
+            <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Cheetsheet/">Cheetsheet</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Project/">Project</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/" rel="tag">LaTeX</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/" rel="tag">Math</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mathematic-Modelling/" rel="tag">Mathematic Modelling</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Note/" rel="tag">Note</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tour/" rel="tag">Tour</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+</aside>
+          
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 Leaf Hsiao<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a><br>
+      <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-nc-sa.svg" /></a>
+    </div>
+  </div>
+</footer> 
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'cateaf';
+  
+  var disqus_url = 'https://cateaf.com/2020/04/30/sending-notifications-to-flutter-app/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.async = true;
+    dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+  
+<link rel="stylesheet" href="//cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.css">
+
+  
+<script src="//cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true, 
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code','a'],
+            ignoreClass:"nonmath"
+        },
+        TeX: {
+            noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" }
+        },
+        "HTML-CSS": {
+            preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50),
+        }
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
