@@ -117,6 +117,10 @@ button::-moz-focus-inner {
   src: url("fonts/fontawesome-webfont.eot?v=#4.7.0");
   src: url("fonts/fontawesome-webfont.eot?#iefix&v=#4.7.0") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff?v=#4.7.0") format("woff"), url("fonts/fontawesome-webfont.ttf?v=#4.7.0") format("truetype"), url("fonts/fontawesome-webfont.svg#fontawesomeregular?v=#4.7.0") format("svg");
 }
+@font-face {
+  font-family: mononoki;
+  src: local("mononoki"), url("fonts/mononoki-Regular.woff2") format("woff2");
+}
 html,
 body,
 #container {
@@ -124,7 +128,7 @@ body,
 }
 body {
   background: #eee;
-  font: 14px 'Source Sans Pro', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, Arial, sans-serif;
+  font: 14px -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
   -webkit-text-size-adjust: 100%;
 }
 .outer {
@@ -482,7 +486,7 @@ body {
   background: none;
   color: #555;
   width: 100%;
-  font: 13px 'Source Sans Pro', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, Arial, sans-serif;
+  font: 13px -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
   outline: none;
 }
 .search-form-input::-webkit-search-results-decoration,
@@ -627,7 +631,7 @@ a.article-title:hover {
   padding: 10px 0;
 }
 .article-entry blockquote {
-  font-family: 'Source Serif Pro', STHeiti, Garamond, SimSun, Georgia, Times New Roman, serif;
+  font-family: Georgia, "Nimbus Roman No9 L", "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;
   font-size: 1.1em;
   margin: 1.6em 20px;
   border-left: 5px solid #ddd;
@@ -636,7 +640,7 @@ a.article-title:hover {
 .article-entry blockquote footer {
   font-size: 14px;
   margin: 1.6em 0;
-  font-family: 'Source Sans Pro', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, Arial, sans-serif;
+  font-family: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
 }
 .article-entry blockquote footer cite:before {
   content: "—";
@@ -841,7 +845,7 @@ a.article-title:hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font: 14px 'Source Sans Pro', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, Arial, sans-serif;
+  font: 14px -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
   padding: 0 15px;
   color: #555;
   outline: none;
@@ -1115,7 +1119,7 @@ a.article-title:hover {
 }
 .article-entry pre,
 .article-entry code {
-  font-family: 'Source Code Pro', Monaco, Menlo, Consolas, Courier New, monospace;
+  font-family: mononoki, Monaco, Menlo, 'Ubuntu Mono', Consolas, 'Courier New', Courier, 'Source Code Pro', 'Sarasa Mono SC', monospace;
 }
 .article-entry code {
   background: #eee;
@@ -1177,7 +1181,7 @@ a.article-title:hover {
 }
 .article-entry .gist .gist-file {
   border: none;
-  font-family: 'Source Code Pro', Monaco, Menlo, Consolas, Courier New, monospace;
+  font-family: mononoki, Monaco, Menlo, 'Ubuntu Mono', Consolas, 'Courier New', Courier, 'Source Code Pro', 'Sarasa Mono SC', monospace;
   margin: 0;
 }
 .article-entry .gist .gist-file .gist-data {
@@ -1200,7 +1204,7 @@ a.article-title:hover {
 .article-entry .gist .gist-file .gist-meta {
   background: #263238;
   color: #546e7a;
-  font: 0.85em 'Source Sans Pro', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, Arial, sans-serif;
+  font: 0.85em -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
   text-shadow: 0 0;
   padding: 0;
   margin-top: 1em;
