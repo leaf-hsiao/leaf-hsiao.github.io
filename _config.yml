@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Cateaf - Leaf's blog
-subtitle: Leaf's blog
-description:
+title: Cateaf
+subtitle:
+description: Leaf's blog
 keywords:
 author: Leaf Hsiao
 language: en
@@ -93,3 +93,9 @@ feed:
   content_limit_delim: ' '
   order_by: -date
   icon: icon.png
+
+lazyload:
+  enable: true
+  onlypost: false # optional
+  loadingImg: # optional eg ./images/loading.gif
+  isSPA: false # optional

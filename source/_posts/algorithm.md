@@ -643,54 +643,62 @@ end
 ### Trie
 
 ```cpp
-class Trie{
+class Trie {
 private:
     class Node{
+    public:
         Node* next[26];
         bool isWord;
-    }
-    Node root;
+        Node() : isWord(false) {
+            for(int i = 0; i < 26; i++){
+                next[i] = nullptr;
+            }
+        }
+    };
+    Node* root;
+
 public:
-    Trie() {}// set up the empty trie root contains all null pointers 
+    Trie() : root(new Node()) {}
     ~Trie() {
-        Node* p = root;
-        for (int i = 0; i < 26; i++)
-            if (p->next[i] != nullptr)
-                deleteNode(p->next[i]);
+        deleteNode(root);
     }
-    
-    void insert(String word) {
-        Node* temp = root;
-        for (int i = 0; i < word.size; i++)
-            int index = word[i] - 'a';
-            if temp->next[index] == nullptr
-                temp->next[index] = new Node();
-        	temp = temp->next[index];
-        temp->isWord = true;
+    void deleteNode(Node* p){
+        for(int i = 0; i < 26; i++){
+            if(p->next[i]) deleteNode(p->next[i]);
+        }
+        delete p;
     }
-    
-    bool containsPrefix(String word) {
+
+    void insert(string word) {
         Node* temp = root;
-        for (i = 0; i < word.size; i++) {
-            int index = word[i] - 'a';
-            if (temp->next[index] == nullptr)
-                return false;
+        for(char c : word){
+            int index = c - 'a';
+            if(temp->next[index] == nullptr) temp->next[index] = new Node();
             temp = temp->next[index];
         }
-        return true;
+        temp->isWord = true;
     }
-    bool contains(String word) {
+
+    bool search(string word) {
         Node* temp = root;
-        for (i = 0; to word.size) {
-            int index = word[i] - 'a';
-            if (temp->next[index] == nullptr)
-                return false;
+        for(char c : word){
+            int index = c - 'a';
+            if(temp->next[index] == nullptr) return false;
             temp = temp->next[index];
         }
         return temp->isWord;
     }
-}
-}
+
+    bool startsWith(string prefix) {
+        Node* temp = root;
+        for(char c : prefix){
+            int index = c - 'a';
+            if(temp->next[index] == nullptr) return false;
+            temp = temp->next[index];
+        }
+        return true;
+    }
+};
 ```
 
 ## Hashing
