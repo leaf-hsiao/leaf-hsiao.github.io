@@ -1307,6 +1307,9 @@ pre .javascript .function {
 .widget-wrap {
   margin: 50px 0;
 }
+.widget-title {
+  font-family: mononoki, Monaco, Menlo, 'Ubuntu Mono', Consolas, 'Courier New', Courier, 'Source Code Pro', 'Sarasa Mono SC', monospace;
+}
 .widget {
   color: #777;
   text-shadow: 0 1px #fff;
