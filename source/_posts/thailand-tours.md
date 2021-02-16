@@ -1,7 +1,7 @@
 ---
 title: 二月的泰国行
 date: 2017-05-06 12:57:30
-tags: Tour
+tags: tour
 categories: 
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: 关于建模软件的。。。
 tags:
-  - Math
-  - Mathematic Modelling
-categories: []
+  - math
+  - mathematic modelling
+categories:
 date: 2016-08-31 12:04:12
 ---
 

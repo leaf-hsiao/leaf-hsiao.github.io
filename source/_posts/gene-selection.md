@@ -1,7 +1,7 @@
 ---
 title: Gene Selection
 date: 2017-06-21 13:57:09
-tags: Math
+tags: math
 categories:
 ---
 

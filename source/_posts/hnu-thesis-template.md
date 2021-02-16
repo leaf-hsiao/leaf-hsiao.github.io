@@ -1,10 +1,8 @@
 ---
 title: hnu-thesis-template
 date: 2017-03-02 01:37:46
-tags: 
-  - LaTeX
-categories:
-  - Project
+tags: LaTeX
+categories: Project
 ---
 
 [湖南大学本科生毕业论文$\LaTeX$模板](https://github.com/leaf-hsiao/HNUThesisTemplate/tree/master)
