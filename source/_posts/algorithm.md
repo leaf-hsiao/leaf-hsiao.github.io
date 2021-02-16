@@ -1,7 +1,7 @@
 ---
 title: 算法笔记
 date: 2019-10-16 02:01:47
-tags: Note
+tags: note
 categories: Cheetsheet
 ---
 正好有人借593的笔记，稍微整理了一下=-=（还是可能有些许错误的）

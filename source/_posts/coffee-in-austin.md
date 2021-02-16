@@ -1,7 +1,7 @@
 ---
 title: Coffee in Austin
 date: 2017-08-29 17:37:00
-tags: Tour
+tags: tour
 categories:
 ---
 

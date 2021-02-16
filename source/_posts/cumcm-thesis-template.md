@@ -1,10 +1,8 @@
 ---
 title: cumcm-thesis-template
 date: 2016-08-30 09:46:40
-tags: 
-  - LaTeX
-categories:
-  - Project
+tags: LaTeX
+categories: Project
 ---
 
 

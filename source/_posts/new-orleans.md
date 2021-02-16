@@ -1,7 +1,7 @@
 ---
 title: 烤翅不存在的新奥尔良
 date: 2019-05-23 20:10:49
-tags: Tour
+tags: tour
 categories:
 ---
 
