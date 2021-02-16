@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cateaf.com/"/>
-  <updated>2020-06-10T16:18:25.387Z</updated>
+  <updated>2021-02-16T14:08:04.299Z</updated>
   <id>https://cateaf.com/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>咖啡精制法</title>
+    <link href="https://cateaf.com/2021/02/15/coffee-processing/"/>
+    <id>https://cateaf.com/2021/02/15/coffee-processing/</id>
+    <published>2021-02-15T11:14:44.000Z</published>
+    <updated>2021-02-16T14:08:04.299Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;大约5，6年前入的精品咖啡坑，几乎所有的知识都来源于探店和&lt;a href=&quot;https://book.douban.com/author/203281/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;田口 護&lt;/a&gt;的几本著作，过了这么多年，设备也换过几轮了，到如今回家过年发现三线小城市都已经有很多精品咖啡店。虽然我一直是认为作为顾客是不需要学习咖啡知识，而只需要主观判断好喝或是不好喝即可，但是面对日渐繁杂的菜单，或是偶尔被好友问到“袋子上写的日晒和水洗是什么”，回答“不同的生豆处理方法”，又被问道“那有什么区别呢”，能蹦出来“日晒醇厚度更高水洗花香更重”，想要继续说下去又发现不知道该从哪里说起。又或者是被问到“不同滤杯出品有区别吗”，“瑰夏贵一些还是猫屎咖啡贵一些”之类的问题，虽能答得出要细说时又词穷。&lt;/p&gt;
+&lt;p&gt;又重新翻了一下手上的资料，还有&lt;a href=&quot;https://book.douban.com/subject/30334671/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;em&gt;The New Rules of Coffee&lt;/em&gt;&lt;/a&gt;一类的休闲书。大多是些入门读物，用来介绍一些如同入门科普再好不过了。原计划是整理出一份思维导图，在整理途中发现内容比想象的要多，干脆写几篇读书笔记好了，就从咖啡精制法开始。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="浅谈咖啡" scheme="https://cateaf.com/categories/%E6%B5%85%E8%B0%88%E5%92%96%E5%95%A1/"/>
+    
+    
+      <category term="coffee" scheme="https://cateaf.com/tags/coffee/"/>
+    
+      <category term="note" scheme="https://cateaf.com/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Sending Notifications to Flutter App</title>
     <link href="https://cateaf.com/2020/04/30/sending-notifications-to-flutter-app/"/>
     <id>https://cateaf.com/2020/04/30/sending-notifications-to-flutter-app/</id>
     <published>2020-04-30T22:24:57.000Z</published>
-    <updated>2020-06-10T16:18:25.387Z</updated>
+    <updated>2021-02-16T14:08:04.299Z</updated>
     
     <summary type="html">
     
@@ -41,7 +65,7 @@
     <link href="https://cateaf.com/2020/02/27/mysql-stored-procedure/"/>
     <id>https://cateaf.com/2020/02/27/mysql-stored-procedure/</id>
     <published>2020-02-27T11:04:46.000Z</published>
-    <updated>2020-06-10T16:18:25.387Z</updated>
+    <updated>2021-02-16T14:08:04.299Z</updated>
     
     <summary type="html">
     
@@ -59,7 +83,7 @@
     <link href="https://cateaf.com/2020/02/23/switch-to-travisci/"/>
     <id>https://cateaf.com/2020/02/23/switch-to-travisci/</id>
     <published>2020-02-23T15:22:39.000Z</published>
-    <updated>2020-06-10T16:18:25.387Z</updated>
+    <updated>2021-02-16T14:08:04.299Z</updated>
     
     <summary type="html">
     
@@ -82,7 +106,7 @@
     <link href="https://cateaf.com/2019/10/16/algorithm/"/>
     <id>https://cateaf.com/2019/10/16/algorithm/</id>
     <published>2019-10-16T02:01:47.000Z</published>
-    <updated>2020-06-10T16:18:25.383Z</updated>
+    <updated>2021-02-16T14:08:04.299Z</updated>
     
     <summary type="html">
     
@@ -94,7 +118,7 @@
       <category term="Cheetsheet" scheme="https://cateaf.com/categories/Cheetsheet/"/>
     
     
-      <category term="Note" scheme="https://cateaf.com/tags/Note/"/>
+      <category term="note" scheme="https://cateaf.com/tags/note/"/>
     
   </entry>
   
@@ -103,7 +127,7 @@
     <link href="https://cateaf.com/2019/05/23/new-orleans/"/>
     <id>https://cateaf.com/2019/05/23/new-orleans/</id>
     <published>2019-05-23T20:10:49.000Z</published>
-    <updated>2020-06-10T16:18:25.387Z</updated>
+    <updated>2021-02-16T14:08:04.299Z</updated>
     
     <summary type="html">
     
@@ -114,7 +138,7 @@
     
     
     
-      <category term="Tour" scheme="https://cateaf.com/tags/Tour/"/>
+      <category term="tour" scheme="https://cateaf.com/tags/tour/"/>
     
   </entry>
   
@@ -123,7 +147,7 @@
     <link href="https://cateaf.com/2018/09/29/stop-using-qiniu/"/>
     <id>https://cateaf.com/2018/09/29/stop-using-qiniu/</id>
     <published>2018-09-29T16:48:44.000Z</published>
-    <updated>2020-06-10T16:18:25.387Z</updated>
+    <updated>2021-02-16T14:08:04.299Z</updated>
     
     <summary type="html">
     
@@ -146,7 +170,7 @@
     <link href="https://cateaf.com/2018/06/21/rose-cafe/"/>
     <id>https://cateaf.com/2018/06/21/rose-cafe/</id>
     <published>2018-06-21T10:38:55.000Z</published>
-    <updated>2020-06-10T16:18:25.387Z</updated>
+    <updated>2021-02-16T14:08:04.299Z</updated>
     
     <summary type="html">
     
@@ -163,7 +187,7 @@
     
     
     
-      <category term="Tour" scheme="https://cateaf.com/tags/Tour/"/>
+      <category term="tour" scheme="https://cateaf.com/tags/tour/"/>
     
   </entry>
   
@@ -172,7 +196,7 @@
     <link href="https://cateaf.com/2017/09/03/audioquest-dragonfly-configuration/"/>
     <id>https://cateaf.com/2017/09/03/audioquest-dragonfly-configuration/</id>
     <published>2017-09-03T12:01:57.000Z</published>
-    <updated>2020-06-10T16:18:25.387Z</updated>
+    <updated>2021-02-16T14:08:04.299Z</updated>
     
     <summary type="html">
     
@@ -190,7 +214,7 @@
     <link href="https://cateaf.com/2017/08/29/coffee-in-austin/"/>
     <id>https://cateaf.com/2017/08/29/coffee-in-austin/</id>
     <published>2017-08-29T17:37:00.000Z</published>
-    <updated>2020-06-10T16:18:25.387Z</updated>
+    <updated>2021-02-16T14:08:04.299Z</updated>
     
     <summary type="html">
     
@@ -200,7 +224,7 @@
     
     
     
-      <category term="Tour" scheme="https://cateaf.com/tags/Tour/"/>
+      <category term="tour" scheme="https://cateaf.com/tags/tour/"/>
     
   </entry>
   
@@ -209,7 +233,7 @@
     <link href="https://cateaf.com/2017/07/23/catfish/"/>
     <id>https://cateaf.com/2017/07/23/catfish/</id>
     <published>2017-07-23T21:09:20.000Z</published>
-    <updated>2020-06-10T16:18:25.387Z</updated>
+    <updated>2021-02-16T14:08:04.299Z</updated>
     
     <summary type="html">
     
@@ -233,7 +257,7 @@
     <link href="https://cateaf.com/2017/06/21/gene-selection/"/>
     <id>https://cateaf.com/2017/06/21/gene-selection/</id>
     <published>2017-06-21T13:57:09.000Z</published>
-    <updated>2020-06-10T16:18:25.387Z</updated>
+    <updated>2021-02-16T14:08:04.299Z</updated>
     
     <summary type="html">
     
@@ -245,7 +269,7 @@
     
     
     
-      <category term="Math" scheme="https://cateaf.com/tags/Math/"/>
+      <category term="math" scheme="https://cateaf.com/tags/math/"/>
     
   </entry>
   
@@ -254,7 +278,7 @@
     <link href="https://cateaf.com/2017/05/06/thailand-tours/"/>
     <id>https://cateaf.com/2017/05/06/thailand-tours/</id>
     <published>2017-05-06T12:57:30.000Z</published>
-    <updated>2020-06-10T16:18:25.387Z</updated>
+    <updated>2021-02-16T14:08:04.299Z</updated>
     
     <summary type="html">
     
@@ -265,7 +289,7 @@
     
     
     
-      <category term="Tour" scheme="https://cateaf.com/tags/Tour/"/>
+      <category term="tour" scheme="https://cateaf.com/tags/tour/"/>
     
   </entry>
   
@@ -274,7 +298,7 @@
     <link href="https://cateaf.com/2017/03/02/hnu-thesis-template/"/>
     <id>https://cateaf.com/2017/03/02/hnu-thesis-template/</id>
     <published>2017-03-02T01:37:46.000Z</published>
-    <updated>2020-06-10T16:18:25.387Z</updated>
+    <updated>2021-02-16T14:08:04.299Z</updated>
     
     <summary type="html">
     
@@ -301,7 +325,7 @@
     <link href="https://cateaf.com/2016/08/31/all-about-modeling-soft/"/>
     <id>https://cateaf.com/2016/08/31/all-about-modeling-soft/</id>
     <published>2016-08-31T12:04:12.000Z</published>
-    <updated>2020-06-10T16:18:25.383Z</updated>
+    <updated>2021-02-16T14:08:04.299Z</updated>
     
     <summary type="html">
     
@@ -311,9 +335,9 @@
     
     
     
-      <category term="Math" scheme="https://cateaf.com/tags/Math/"/>
+      <category term="math" scheme="https://cateaf.com/tags/math/"/>
     
-      <category term="Mathematic Modelling" scheme="https://cateaf.com/tags/Mathematic-Modelling/"/>
+      <category term="mathematic modelling" scheme="https://cateaf.com/tags/mathematic-modelling/"/>
     
   </entry>
   
@@ -322,7 +346,7 @@
     <link href="https://cateaf.com/2016/08/31/latex-math-symbols-cheetsheet/"/>
     <id>https://cateaf.com/2016/08/31/latex-math-symbols-cheetsheet/</id>
     <published>2016-08-31T10:06:25.000Z</published>
-    <updated>2020-06-10T16:18:25.387Z</updated>
+    <updated>2021-02-16T14:08:04.299Z</updated>
     
     <summary type="html">
     
@@ -343,7 +367,7 @@
     <link href="https://cateaf.com/2016/08/30/cumcm-thesis-template/"/>
     <id>https://cateaf.com/2016/08/30/cumcm-thesis-template/</id>
     <published>2016-08-30T09:46:40.000Z</published>
-    <updated>2020-06-10T16:18:25.387Z</updated>
+    <updated>2021-02-16T14:08:04.299Z</updated>
     
     <summary type="html">
     
@@ -370,7 +394,7 @@
     <link href="https://cateaf.com/2016/06/05/a-new-beginning/"/>
     <id>https://cateaf.com/2016/06/05/a-new-beginning/</id>
     <published>2016-06-05T10:38:42.000Z</published>
-    <updated>2020-06-10T16:18:25.383Z</updated>
+    <updated>2021-02-16T14:08:04.299Z</updated>
     
     <summary type="html">
     
