@@ -4,9 +4,7 @@ date: 2020-02-27 11:04:46
 tags:
 ---
 
-一月的时候重构了一个洗数据的代码，在 Jupyter 上用 [ipython-sql](https://github.com/catherinedevlin/ipython-sql) 写的 sql，数据库用的 MySQL 8。
-
-理论上更高效的做法应该是直接读到 [dataframe](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) 里再进行数据清洗，由于之前已经用 sql 完整实现了一遍再加上时间不是很充裕选择了用 Stored Procedure 来封装之前的 sql
+MySQL里的 Stored Procedure 有点意思
 
 <!-- more -->
 
