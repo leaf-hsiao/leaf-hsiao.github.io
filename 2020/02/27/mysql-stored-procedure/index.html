@@ -8,15 +8,15 @@
   <title>MySQL Stored Procedure | Cateaf</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta http-equiv="content-language" content="zh-CN"> 
-  <meta name="description" content="一月的时候重构了一个洗数据的代码，在 Jupyter 上用 ipython-sql 写的 sql，数据库用的 MySQL 8。 理论上更高效的做法应该是直接读到 dataframe 里再进行数据清洗，由于之前已经用 sql 完整实现了一遍再加上时间不是很充裕选择了用 Stored Procedure 来封装之前的 sql">
+  <meta name="description" content="MySQL里的 Stored Procedure 有点意思">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MySQL Stored Procedure">
 <meta property="og:url" content="https://cateaf.com/2020/02/27/mysql-stored-procedure/index.html">
 <meta property="og:site_name" content="Cateaf">
-<meta property="og:description" content="一月的时候重构了一个洗数据的代码，在 Jupyter 上用 ipython-sql 写的 sql，数据库用的 MySQL 8。 理论上更高效的做法应该是直接读到 dataframe 里再进行数据清洗，由于之前已经用 sql 完整实现了一遍再加上时间不是很充裕选择了用 Stored Procedure 来封装之前的 sql">
+<meta property="og:description" content="MySQL里的 Stored Procedure 有点意思">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-02-27T11:04:46.000Z">
-<meta property="article:modified_time" content="2021-02-16T14:08:04.299Z">
+<meta property="article:modified_time" content="2021-02-17T16:04:12.401Z">
 <meta property="article:author" content="Leaf Hsiao">
 <meta name="twitter:card" content="summary">
   
@@ -99,8 +99,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>一月的时候重构了一个洗数据的代码，在 Jupyter 上用 <a href="https://github.com/catherinedevlin/ipython-sql" target="_blank" rel="noopener">ipython-sql</a> 写的 sql，数据库用的 MySQL 8。</p>
-<p>理论上更高效的做法应该是直接读到 <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html" target="_blank" rel="noopener">dataframe</a> 里再进行数据清洗，由于之前已经用 sql 完整实现了一遍再加上时间不是很充裕选择了用 Stored Procedure 来封装之前的 sql</p>
+        <p>MySQL 里的 Stored Procedure 有点意思</p>
 <a id="more"></a>
 
 <p>由于大量的使用了表名作为参数，因此用 concat 函数来拼接，基本的框架就是</p>
@@ -118,7 +117,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://cateaf.com/2020/02/27/mysql-stored-procedure/" data-id="ckl830glq000i22vi0rv5eyyf" data-title="MySQL Stored Procedure" class="article-share-link">Share</a>
+      <a data-url="https://cateaf.com/2020/02/27/mysql-stored-procedure/" data-id="ckl9mlnmt000i1ipcdrhqh6kc" data-title="MySQL Stored Procedure" class="article-share-link">Share</a>
       
         <a href="https://cateaf.com/2020/02/27/mysql-stored-procedure/#disqus_thread" class="article-comment-link">Comments</a>
       
