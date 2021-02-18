@@ -3,10 +3,10 @@
   <title>Cateaf</title>
   <icon>https://cateaf.com/icon.png</icon>
   
-  <link href="/atom.xml" rel="self"/>
+  <link href="https://cateaf.com/atom.xml" rel="self"/>
   
   <link href="https://cateaf.com/"/>
-  <updated>2021-02-17T16:04:12.401Z</updated>
+  <updated>2021-02-18T02:44:27.094Z</updated>
   <id>https://cateaf.com/</id>
   
   <author>
@@ -21,22 +21,20 @@
     <link href="https://cateaf.com/2021/02/15/coffee-processing/"/>
     <id>https://cateaf.com/2021/02/15/coffee-processing/</id>
     <published>2021-02-15T11:14:44.000Z</published>
-    <updated>2021-02-17T16:04:12.401Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;大约5，6年前入的精品咖啡坑，几乎所有的知识都来源于探店和&lt;a href=&quot;https://book.douban.com/author/203281/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;田口 護&lt;/a&gt;和&lt;a href=&quot;https://book.douban.com/tag/%E9%9F%A9%E6%80%80%E5%AE%97&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;韩怀宗&lt;/a&gt;的著作，如今回家过年发现三线小城市都已经有很多精品咖啡店。虽然我一直的观点是作为顾客是不需要学习咖啡知识，只需要主观判断好喝与否即可，但是面对日渐繁杂的菜单，或是偶尔被好友问到“袋子上写的日晒和水洗是什么”，回答“不同的生豆处理方法”，又被问道“那有什么区别呢”，能蹦出来“日晒醇厚度更高水洗花香更重”，想要继续说下去又发现不知道该从哪里说起。又或者是被问到“不同滤杯出品有区别吗”，“瑰夏贵一些还是猫屎咖啡贵一些”之类的问题，虽能答得出要细说时又词穷。&lt;/p&gt;
-&lt;p&gt;又重新翻了一下手上的资料，还有&lt;a href=&quot;https://book.douban.com/subject/30334671/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;em&gt;The New Rules of Coffee&lt;/em&gt;&lt;/a&gt;一类的休闲书。大多是些入门读物，用来介绍一些入门科普再好不过了。原计划是整理出一份思维导图，在整理途中发现内容比想象的要多，干脆写几篇读书笔记好了，就从咖啡精制法开始。也顺道感谢&lt;a href=&quot;http://www.dianping.com/shop/H5rDaUajR13pXuDb&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;默咖啡&lt;/a&gt;的默老板帮助。&lt;/p&gt;
-    
-    </summary>
+    <updated>2021-02-18T02:44:27.094Z</updated>
     
     
-      <category term="浅谈咖啡" scheme="https://cateaf.com/categories/%E6%B5%85%E8%B0%88%E5%92%96%E5%95%A1/"/>
+    <summary type="html">&lt;p&gt;大约5，6年前入的精品咖啡坑，几乎所有的知识都来源于探店和&lt;a href=&quot;https://book.douban.com/author/203281/&quot;&gt;田口 護&lt;/a&gt;和&lt;a href=&quot;https://book.douban.com/tag/%E9%9F%A9%E6%80%80%E5%AE%97&quot;&gt;韩怀宗&lt;/a&gt;的著作，如今回家过年发现三线小城市都已经有很多精品咖啡店。虽然我一直的观点是作为顾客是不需要学习咖啡知识，只需要主观判断好喝与否即可，但是面对日渐繁杂的菜单，或是偶尔被好友问到“袋子上写的日晒和水洗是什么”，回答“不同的生豆处理方法”，又被问道“那有什么区别呢”，能蹦出来“日晒醇厚度更高水洗花香更重”，想要继续说下去又发现不知道该从哪里说起。又或者是被问到“不同滤杯出品有区别吗”，“瑰夏贵一些还是猫屎咖啡贵一些”之类的问题，虽能答得出要细说时又词穷。&lt;/p&gt;
+&lt;p&gt;重新翻了一下手上的资料，还有&lt;a href=&quot;https://book.douban.com/subject/30334671/&quot;&gt;&lt;em&gt;The New Rules of Coffee&lt;/em&gt;&lt;/a&gt;一类的休闲书。大多是些入门读物，用来介绍一些入门科普再好不过了。原计划是整理出一份思维导图，在整理途中发现内容比想象的要多，干脆写几篇读书笔记好了，就从咖啡精制法开始。感谢&lt;a href=&quot;http://www.dianping.com/shop/H5rDaUajR13pXuDb&quot;&gt;默咖啡&lt;/a&gt;默老板帮助。&lt;/p&gt;</summary>
     
     
-      <category term="coffee" scheme="https://cateaf.com/tags/coffee/"/>
     
-      <category term="note" scheme="https://cateaf.com/tags/note/"/>
+    <category term="浅谈咖啡" scheme="https://cateaf.com/categories/%E6%B5%85%E8%B0%88%E5%92%96%E5%95%A1/"/>
+    
+    
+    <category term="coffee" scheme="https://cateaf.com/tags/coffee/"/>
+    
+    <category term="note" scheme="https://cateaf.com/tags/note/"/>
     
   </entry>
   
@@ -45,17 +43,15 @@
     <link href="https://cateaf.com/2020/04/30/sending-notifications-to-flutter-app/"/>
     <id>https://cateaf.com/2020/04/30/sending-notifications-to-flutter-app/</id>
     <published>2020-04-30T22:24:57.000Z</published>
-    <updated>2021-02-17T16:04:12.401Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;In this semester, our team tried to develop an mobile APP using Flutter. One user story is that when user are not using the APP, he/she should be notified when new friend request or new message coming&lt;/p&gt;
-&lt;p&gt;Since we are using firebase as our backend service, cloud functions can be used to monitor the database, and send notifications when triggered&lt;/p&gt;
-    
-    </summary>
+    <updated>2021-02-18T02:44:27.094Z</updated>
     
     
-      <category term="Project" scheme="https://cateaf.com/categories/Project/"/>
+    <summary type="html">&lt;p&gt;In this semester, our team tried to develop an mobile APP using Flutter. One user story is that when user are not using the APP, he/she should be notified when new friend request or new message coming&lt;/p&gt;
+&lt;p&gt;Since we are using firebase as our backend service, cloud functions can be used to monitor the database, and send notifications when triggered&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Project" scheme="https://cateaf.com/categories/Project/"/>
     
     
   </entry>
@@ -65,13 +61,11 @@
     <link href="https://cateaf.com/2020/02/27/mysql-stored-procedure/"/>
     <id>https://cateaf.com/2020/02/27/mysql-stored-procedure/</id>
     <published>2020-02-27T11:04:46.000Z</published>
-    <updated>2021-02-17T16:04:12.401Z</updated>
+    <updated>2021-02-18T02:44:27.094Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;MySQL里的 Stored Procedure 有点意思&lt;/p&gt;
+    <summary type="html">&lt;p&gt;MySQL里的 Stored Procedure 有点意思&lt;/p&gt;</summary>
     
-    </summary>
     
     
     
@@ -82,19 +76,17 @@
     <link href="https://cateaf.com/2020/02/23/switch-to-travisci/"/>
     <id>https://cateaf.com/2020/02/23/switch-to-travisci/</id>
     <published>2020-02-23T15:22:39.000Z</published>
-    <updated>2021-02-17T16:04:12.401Z</updated>
+    <updated>2021-02-18T02:44:27.094Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;p&gt;突然想起来用 &lt;a href=&quot;https://travis-ci.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Travis CI&lt;/a&gt; 来替换掉之前用的 &lt;a
+    <summary type="html">&lt;p&gt;突然想起来用 &lt;a href=&quot;https://travis-ci.com/&quot;&gt;Travis CI&lt;/a&gt; 来替换掉之前用的 &lt;a</summary>
         
       
     
-    </summary>
     
     
     
@@ -105,19 +97,17 @@
     <link href="https://cateaf.com/2019/10/16/algorithm/"/>
     <id>https://cateaf.com/2019/10/16/algorithm/</id>
     <published>2019-10-16T02:01:47.000Z</published>
-    <updated>2021-02-17T16:04:12.401Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;正好有人借593的笔记，稍微整理了一下=-=（还是可能有些许错误的）&lt;/p&gt;
-    
-    </summary>
+    <updated>2021-02-18T02:44:27.090Z</updated>
     
     
-      <category term="Cheetsheet" scheme="https://cateaf.com/categories/Cheetsheet/"/>
+    <summary type="html">&lt;p&gt;正好有人借593的笔记，稍微整理了一下=-=（还是可能有些许错误的）&lt;/p&gt;</summary>
     
     
-      <category term="note" scheme="https://cateaf.com/tags/note/"/>
+    
+    <category term="Cheetsheet" scheme="https://cateaf.com/categories/Cheetsheet/"/>
+    
+    
+    <category term="note" scheme="https://cateaf.com/tags/note/"/>
     
   </entry>
   
@@ -126,18 +116,16 @@
     <link href="https://cateaf.com/2019/05/23/new-orleans/"/>
     <id>https://cateaf.com/2019/05/23/new-orleans/</id>
     <published>2019-05-23T20:10:49.000Z</published>
-    <updated>2021-02-17T16:04:12.401Z</updated>
+    <updated>2021-02-18T02:44:27.094Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;新奥尔良地处路易斯安那，充满着南国风情，去之前留在Trip Ideas里的tag有Food, Art, Music, Nightlife，体验过后每一点都不会让人失望。三月中旬去的天气正好，既不炎热也不潮湿，&lt;del&gt;五月去佛罗里达那会儿一下飞机甚至能感受到水汽扑面&lt;/del&gt;。有机会的话还是很想去这里小住一段时间，悠悠闲闲的体验当地安逸的生活。当然南方的食物才是这趟旅行最不亏的，非常的具有特色。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==&quot; data-original=&quot;/images/neworleans/IMG_6972.JPG&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;新奥尔良地处路易斯安那，充满着南国风情，去之前留在Trip Ideas里的tag有Food, Art, Music, Nightlife，体验过后每一点都不会让人失望。三月中旬去的天气正好，既不炎热也不潮湿，&lt;del&gt;五月去佛罗里达那会儿一下飞机甚至能感受到水汽扑面&lt;/del&gt;。有机会的话还是很想去这里小住一段时间，悠悠闲闲的体验当地安逸的生活。当然南方的食物才是这趟旅行最不亏的，非常的具有特色。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/neworleans/IMG_6972.JPG&quot;&gt;&lt;/p&gt;</summary>
     
     
     
-      <category term="tour" scheme="https://cateaf.com/tags/tour/"/>
+    
+    <category term="tour" scheme="https://cateaf.com/tags/tour/"/>
     
   </entry>
   
@@ -146,19 +134,17 @@
     <link href="https://cateaf.com/2018/09/29/stop-using-qiniu/"/>
     <id>https://cateaf.com/2018/09/29/stop-using-qiniu/</id>
     <published>2018-09-29T16:48:44.000Z</published>
-    <updated>2021-02-17T16:04:12.401Z</updated>
+    <updated>2021-02-18T02:44:27.094Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;p&gt; 备案是不可能备案的
+    <summary type="html">&lt;p&gt; 备案是不可能备案的</summary>
         
       
     
-    </summary>
     
     
     
@@ -169,24 +155,24 @@
     <link href="https://cateaf.com/2018/06/21/rose-cafe/"/>
     <id>https://cateaf.com/2018/06/21/rose-cafe/</id>
     <published>2018-06-21T10:38:55.000Z</published>
-    <updated>2021-02-17T16:04:12.401Z</updated>
+    <updated>2021-02-18T02:44:27.094Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;p&gt; 被惊艳到了，香气十足，发酵味恰到好处，丰富的 body ，以及回甘。&lt;/p&gt;
-&lt;p&gt;&lt;img
+    <summary type="html">&lt;p&gt; 被惊艳到了，香气十足，发酵味恰到好处，丰富的 body ，以及回甘。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/rose-cafe.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt; 去年去广州办签证时跑了一趟恰好碰到公休，这次尝了一杯太阳神还买了半磅卢旺达。&lt;/p&gt;
+&lt;p&gt;</summary>
         
       
     
-    </summary>
     
     
     
-      <category term="tour" scheme="https://cateaf.com/tags/tour/"/>
+    <category term="tour" scheme="https://cateaf.com/tags/tour/"/>
     
   </entry>
   
@@ -195,14 +181,12 @@
     <link href="https://cateaf.com/2017/09/03/audioquest-dragonfly-configuration/"/>
     <id>https://cateaf.com/2017/09/03/audioquest-dragonfly-configuration/</id>
     <published>2017-09-03T12:01:57.000Z</published>
-    <updated>2021-02-17T16:04:12.401Z</updated>
+    <updated>2021-02-18T02:44:27.094Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;被种草AudioQuest很久了，再加上等了一整年七彩虹也没放出USB-DAC的驱动，估摸着可能永久性鸽了，还是买了个DragonFly  Black试了试，在iPhone上尝试了一下效果提升了一耳朵，然后又被安利了JitterBug，感觉可以购买AudioQuest全家桶了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==&quot; data-original=&quot;/images/audioquest/aq1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;被种草AudioQuest很久了，再加上等了一整年七彩虹也没放出USB-DAC的驱动，估摸着可能永久性鸽了，还是买了个DragonFly  Black试了试，在iPhone上尝试了一下效果提升了一耳朵，然后又被安利了JitterBug，感觉可以购买AudioQuest全家桶了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/audioquest/aq1.jpg&quot;&gt;&lt;/p&gt;</summary>
     
-    </summary>
     
     
     
@@ -213,17 +197,15 @@
     <link href="https://cateaf.com/2017/08/29/coffee-in-austin/"/>
     <id>https://cateaf.com/2017/08/29/coffee-in-austin/</id>
     <published>2017-08-29T17:37:00.000Z</published>
-    <updated>2021-02-17T16:04:12.401Z</updated>
+    <updated>2021-02-18T02:44:27.094Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;在Austin抽空去探访了一下当地的咖啡馆&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;在Austin抽空去探访了一下当地的咖啡馆&lt;/p&gt;</summary>
     
     
     
-      <category term="tour" scheme="https://cateaf.com/tags/tour/"/>
+    
+    <category term="tour" scheme="https://cateaf.com/tags/tour/"/>
     
   </entry>
   
@@ -232,21 +214,19 @@
     <link href="https://cateaf.com/2017/07/23/catfish/"/>
     <id>https://cateaf.com/2017/07/23/catfish/</id>
     <published>2017-07-23T21:09:20.000Z</published>
-    <updated>2021-02-17T16:04:12.401Z</updated>
+    <updated>2021-02-18T02:44:27.094Z</updated>
     
-    <summary type="html">
     
-      &lt;blockquote&gt;
-&lt;p&gt;A theme for &lt;a href=&quot;https://typora.io&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Typora&lt;/a&gt;&lt;/p&gt;
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;A theme for &lt;a href=&quot;https://typora.io/&quot;&gt;Typora&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Designed and tested on Windows 10, version 1703. Not fully tested, but should work for macOS/Linux. &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&quot;Catfish&quot;&gt;&lt;a href=&quot;#Catfish&quot; class=&quot;headerlink&quot; title=&quot;Catfish&quot;&gt;&lt;/a&gt;Catfish&lt;/h2&gt;&lt;p&gt;&lt;del&gt;是猫鱼不是鲇鱼&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;啊好想吃猫鱼（叹气。&lt;/p&gt;
-    
-    </summary>
+&lt;p&gt;啊好想吃猫鱼（叹气。&lt;/p&gt;</summary>
     
     
-      <category term="Project" scheme="https://cateaf.com/categories/Project/"/>
+    
+    <category term="Project" scheme="https://cateaf.com/categories/Project/"/>
     
     
   </entry>
@@ -256,19 +236,17 @@
     <link href="https://cateaf.com/2017/06/21/gene-selection/"/>
     <id>https://cateaf.com/2017/06/21/gene-selection/</id>
     <published>2017-06-21T13:57:09.000Z</published>
-    <updated>2021-02-17T16:04:12.401Z</updated>
+    <updated>2021-02-18T02:44:27.094Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;&lt;em&gt;毕业典礼还是完美的睡过去了（叹气，毕业之后成为又丧又废的NEET。&lt;/em&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;em&gt;毕业典礼还是完美的睡过去了（叹气，毕业之后成为又丧又废的NEET。&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;这半年主要都在折腾毕设，课题还是十分有趣的说。&lt;del&gt;虽然被自己搞得杂乱不堪&lt;/del&gt; 有种自己的大学变成了37,990,696 字节的感觉。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==&quot; data-original=&quot;/images/graduation/thesis.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-    
-    </summary>
+&lt;p&gt;&lt;img src=&quot;/images/graduation/thesis.png&quot;&gt;&lt;/p&gt;</summary>
     
     
     
-      <category term="math" scheme="https://cateaf.com/tags/math/"/>
+    
+    <category term="math" scheme="https://cateaf.com/tags/math/"/>
     
   </entry>
   
@@ -277,18 +255,16 @@
     <link href="https://cateaf.com/2017/05/06/thailand-tours/"/>
     <id>https://cateaf.com/2017/05/06/thailand-tours/</id>
     <published>2017-05-06T12:57:30.000Z</published>
-    <updated>2021-02-17T16:04:12.401Z</updated>
+    <updated>2021-02-18T02:44:27.094Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;拖延症大概就是二月份的旅行拖到现在才想起动笔，而且还是毕设做得头晕脑胀过来缓缓。去泰国的缘由都不太记得了，反正是看到亚航的打折机票就直接剁了。签证也没有办，还好护照是有的。&lt;/p&gt;
-&lt;p&gt;攻略的话&lt;a href=&quot;http://www.lonelyplanet.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Lonely Planet&lt;/a&gt;的City Guides和&lt;a href=&quot;https://www.tripadvisor.cn&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;TripAdvisor&lt;/a&gt;之类的基本上撸了一遍，然后在Google Map里把点标记上就准备走人了。&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;拖延症大概就是二月份的旅行拖到现在才想起动笔，而且还是毕设做得头晕脑胀过来缓缓。去泰国的缘由都不太记得了，反正是看到亚航的打折机票就直接剁了。签证也没有办，还好护照是有的。&lt;/p&gt;
+&lt;p&gt;攻略的话&lt;a href=&quot;http://www.lonelyplanet.com/&quot;&gt;Lonely Planet&lt;/a&gt;的City Guides和&lt;a href=&quot;https://www.tripadvisor.cn/&quot;&gt;TripAdvisor&lt;/a&gt;之类的基本上撸了一遍，然后在Google Map里把点标记上就准备走人了。&lt;/p&gt;</summary>
     
     
     
-      <category term="tour" scheme="https://cateaf.com/tags/tour/"/>
+    
+    <category term="tour" scheme="https://cateaf.com/tags/tour/"/>
     
   </entry>
   
@@ -297,25 +273,23 @@
     <link href="https://cateaf.com/2017/03/02/hnu-thesis-template/"/>
     <id>https://cateaf.com/2017/03/02/hnu-thesis-template/</id>
     <published>2017-03-02T01:37:46.000Z</published>
-    <updated>2021-02-17T16:04:12.401Z</updated>
+    <updated>2021-02-18T02:44:27.094Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;p&gt;&lt;a href=&quot;https://github.com/leaf-hsiao/HNUThesisTemplate/tree/master&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;湖南大学本科生毕业论文 $\LaTeX$
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/leaf-hsiao/HNUThesisTemplate/tree/master&quot;&gt;湖南大学本科生毕业论文 $\LaTeX$</summary>
         
       
     
-    </summary>
     
     
-      <category term="Project" scheme="https://cateaf.com/categories/Project/"/>
+    <category term="Project" scheme="https://cateaf.com/categories/Project/"/>
     
     
-      <category term="LaTeX" scheme="https://cateaf.com/tags/LaTeX/"/>
+    <category term="LaTeX" scheme="https://cateaf.com/tags/LaTeX/"/>
     
   </entry>
   
@@ -324,19 +298,17 @@
     <link href="https://cateaf.com/2016/08/31/all-about-modeling-soft/"/>
     <id>https://cateaf.com/2016/08/31/all-about-modeling-soft/</id>
     <published>2016-08-31T12:04:12.000Z</published>
-    <updated>2021-02-17T16:04:12.401Z</updated>
+    <updated>2021-02-18T02:44:27.094Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;&lt;em&gt;1年前老博客上的文章了，刚好在这次国赛前找到了，修正一些数据后重新发布&lt;/em&gt;&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;&lt;em&gt;1年前老博客上的文章了，刚好在这次国赛前找到了，修正一些数据后重新发布&lt;/em&gt;&lt;/p&gt;</summary>
     
     
     
-      <category term="math" scheme="https://cateaf.com/tags/math/"/>
     
-      <category term="mathematic modelling" scheme="https://cateaf.com/tags/mathematic-modelling/"/>
+    <category term="math" scheme="https://cateaf.com/tags/math/"/>
+    
+    <category term="mathematic modelling" scheme="https://cateaf.com/tags/mathematic-modelling/"/>
     
   </entry>
   
@@ -345,19 +317,17 @@
     <link href="https://cateaf.com/2016/08/31/latex-math-symbols-cheetsheet/"/>
     <id>https://cateaf.com/2016/08/31/latex-math-symbols-cheetsheet/</id>
     <published>2016-08-31T10:06:25.000Z</published>
-    <updated>2021-02-17T16:04:12.401Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;一些基本的$\LaTeX$字符和运算符，供快速查阅使用&lt;br&gt;其实就是无聊敲的，参照：&lt;a href=&quot;https://www.rpi.edu/dept/arc/training/latex/LaTeX_symbols.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LaTeX_symbols.pdf&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
+    <updated>2021-02-18T02:44:27.094Z</updated>
     
     
-      <category term="Cheetsheet" scheme="https://cateaf.com/categories/Cheetsheet/"/>
+    <summary type="html">&lt;p&gt;一些基本的$\LaTeX$字符和运算符，供快速查阅使用&lt;br&gt;其实就是无聊敲的，参照：&lt;a href=&quot;https://www.rpi.edu/dept/arc/training/latex/LaTeX_symbols.pdf&quot;&gt;LaTeX_symbols.pdf&lt;/a&gt;&lt;/p&gt;</summary>
     
     
-      <category term="LaTeX" scheme="https://cateaf.com/tags/LaTeX/"/>
+    
+    <category term="Cheetsheet" scheme="https://cateaf.com/categories/Cheetsheet/"/>
+    
+    
+    <category term="LaTeX" scheme="https://cateaf.com/tags/LaTeX/"/>
     
   </entry>
   
@@ -366,25 +336,23 @@
     <link href="https://cateaf.com/2016/08/30/cumcm-thesis-template/"/>
     <id>https://cateaf.com/2016/08/30/cumcm-thesis-template/</id>
     <published>2016-08-30T09:46:40.000Z</published>
-    <updated>2021-02-17T16:04:12.401Z</updated>
+    <updated>2021-02-18T02:44:27.094Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;p&gt;2016 年 &lt;a href=&quot;http://www.mcm.edu.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;em&gt; 全国大学生数学建模竞赛&lt;/em&gt;&lt;/a&gt; $\LaTeX$
+    <summary type="html">&lt;p&gt;2016 年 &lt;a href=&quot;http://www.mcm.edu.cn/&quot;&gt;&lt;em&gt; 全国大学生数学建模竞赛&lt;/em&gt;&lt;/a&gt; $\LaTeX$</summary>
         
       
     
-    </summary>
     
     
-      <category term="Project" scheme="https://cateaf.com/categories/Project/"/>
+    <category term="Project" scheme="https://cateaf.com/categories/Project/"/>
     
     
-      <category term="LaTeX" scheme="https://cateaf.com/tags/LaTeX/"/>
+    <category term="LaTeX" scheme="https://cateaf.com/tags/LaTeX/"/>
     
   </entry>
   
@@ -393,19 +361,17 @@
     <link href="https://cateaf.com/2016/06/05/a-new-beginning/"/>
     <id>https://cateaf.com/2016/06/05/a-new-beginning/</id>
     <published>2016-06-05T10:38:42.000Z</published>
-    <updated>2021-02-17T16:04:12.401Z</updated>
+    <updated>2021-02-18T02:44:27.090Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;p&gt;原博的资料丢了，2 年了啊，摔 (╯‵□′)╯︵┻━┻ I’am angry.&lt;br&gt; 考虑历史的行程，重新搞了个大新闻（划掉），重新搞了个新博客。&lt;br&gt;Github 肥肠不清真，所以用了 Bitbucket。&lt;br&gt;继续使用 Hexo，这是坠吼滴。&lt;br&gt;&lt;img
+    <summary type="html">&lt;p&gt;原博的资料丢了，2 年了啊，摔 (╯‵□′)╯︵┻━┻ I’am angry.&lt;br&gt; 考虑历史的行程，重新搞了个大新闻（划掉），重新搞了个新博客。&lt;br&gt;Github 肥肠不清真，所以用了 Bitbucket。&lt;br&gt;继续使用 Hexo，这是坠吼滴。&lt;br&gt;&lt;img</summary>
         
       
     
-    </summary>
     
     
     
