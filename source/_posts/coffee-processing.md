@@ -17,7 +17,9 @@ categories: 浅谈咖啡
 
 为了咖啡豆长时间保存，以便于储存及流通，而将咖啡果实的外皮和果肉去除，取出种子并将之烘干，这个过程称之为精制（processing）。主流的精制法有日晒，水洗和蜜处理，总的来说水洗由于每个步骤都会去除杂质，杂质和瑕疵豆少，外观整齐清洁，品质较高。但外在品质并不等同于内在品质，不同的精制法各有长短，尤其在精品咖啡出现后曾经被视为逊于水洗的日晒处理法因更丰富的风味又逐渐占据上风。换而言之
 
-> Washed coffee isn't clean. Natural coffee isn't dirty
+{% blockquote The New Rules of Coffee, Jordan Michelman / Zachary Carlsen %}
+Washed coffee isn't clean. Natural coffee isn't dirty
+{% endblockquote %}
 
 对介于日晒和水洗之间的半日晒或半水洗介绍时分类其实不太科学。通常的半水洗是指起源于巴西的黏膜干燥法半洗处理，而起源于印尼苏门答腊的湿刨法（Wet-Hulling）也是介于日晒和水洗之间的方法。在进入精品咖啡时代之后环保意识的变化，以及为了卖出高价咖啡的实用主义，半水洗在哥斯达黎加衍生的环保水洗法（ECO-WASHED）和蜜处理（Honey）逐渐占据主流市场。
 
@@ -73,7 +75,7 @@ categories: 浅谈咖啡
 
 在潮湿状况下去壳，咖啡豆比较容易发霉，没有干燥的咖啡生豆是软的，很容易导致咖啡豆因挤压出现两端裂开。
 
-## 季风处理（Monsoon）
+## 季风处理/风渍处理 Monsoon
 
 印度精品咖啡的特殊处理法，属于无意中发现的，在英国殖民期间向欧洲出口咖啡豆时，需要花上数月，生豆在船舱底部吸收了海面的湿气和咸味，具有独特的风味。
 
@@ -81,9 +83,11 @@ categories: 浅谈咖啡
 
 ## 动物消化系统处理
 
-将成熟的咖啡果实作为动物的粮食，经由消化酶和胃液分解果皮和果肉产生较短的肽，这改变了氨基酸的组成并影响了咖啡的香气，再将排泄出来的咖啡豆清洗晒干后制成的咖啡具有独特的风味。最具知名度的是印尼的猫屎咖啡（Kopi Luwak）。因为价值很高，其他地区相继模仿例如大象咖啡，越南的狸猫咖啡。实际上噱头大于实用，参考 SCAA 这篇 [The Value of A Good Story, Or: How to Turn Poop into Gold](https://scanews.coffee/2011/11/02/the-value-of-a-good-story-or-how-to-turn-poop-into-gold/) 完全就能理解猫屎咖啡的高价仅仅只是炒作而成的。而他的风味，简而言之就是难喝。在杯测中也是获得了最低分。
+将成熟的咖啡果实作为动物的粮食，经由消化酶和胃液分解果皮和果肉产生较短的肽，这改变了氨基酸的组成并影响了咖啡的香气，再将排泄出来的咖啡豆清洗晒干后制成的咖啡具有独特的风味。最具知名度的是印尼的猫屎咖啡（Kopi Luwak）。因为价值很高，其他地区相继模仿例如大象咖啡，越南的狸猫咖啡。实际上噱头大于实用，参考 SCAA 的这篇完全就能理解猫屎咖啡的高价仅仅只是炒作而成的。而他的风味，简而言之就是难喝。在杯测中也是获得了最低分。
 
-> After cupping the four samples, it was apparent that Luwak coffee sold for the story, not superior quality.
+{% blockquote Lily Kubota https://scanews.coffee/2011/11/02/the-value-of-a-good-story-or-how-to-turn-poop-into-gold/ The Value of A Good Story, Or: How to Turn Poop into Gold %}
+After cupping the four samples, it was apparent that Luwak coffee sold for the story, not superior quality.
+{% endblockquote %}
 
 寻找排泄物不容易，果农为了利益开始人工笼养，麝香猫的生存环境极其恶劣，被迫吃下咖啡果实，死亡率非常的高。所以无论从道德角度还是风味角度上都建议抵制。
 
@@ -108,3 +112,22 @@ categories: 浅谈咖啡
 同时重复使用酒桶来处理咖啡是一种可持续的做法，用于静置咖啡的酒桶有着更长的使用年限。
 
 随着精品咖啡的发展，也许会有更多的精制法出现，尝试一些新处理法的咖啡豆也会有许多惊喜。现有很多的流行处理法也未提及，等哪天喝到想到了再做补充。
+
+## 参考资料
+
+ 田口護. *咖啡大全*. 積木文化出版，2004.
+
+[一文看清 7 種咖啡生豆處理法 Seven Processing Methods of Coffee](https://mybowlisfull.com/coffee/seven-processing-methods-of-coffee)
+
+[【咖啡處理法】咖啡愛好者必讀咖啡豆處理法大全](https://www.coffeemart.com.tw/blog/2544)
+
+[A Guide to Carbonic Maceration and Anaerobic Fermentation in Coffee](https://dailycoffeenews.com/2019/06/03/a-guide-to-carbonic-maceration-and-anaerobic-fermentation-in-coffee/)
+
+[Rum Barrel Aged Kauai Coffee](https://kauaicoffee.com/rum-barrel-aged-kauai-coffee/)
+
+https://www.facebook.com/beanslabcoffee/posts/1602851863173464/
+
+[Coffee Processing at Monteblanco](https://medium.com/ally-coffee/coffee-processing-at-monteblanco-606ef7d425a4)
+
+[【咖啡處理法】你知道咖啡豆的厭氧發酵處理法 ，其實是參考葡萄酒嗎？](https://blog.coffeemart.com.tw/%E9%97%9C%E6%96%BC%E5%92%96%E5%95%A1%E8%B1%86/anaerobic-fermentation/)
+
