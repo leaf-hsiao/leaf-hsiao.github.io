@@ -26,7 +26,7 @@
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.3.0"></head>
+<meta name="generator" content="Hexo 5.4.0"></head>
 
 <body>
   <div id="container">
@@ -112,7 +112,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://cateaf.com/2021/02/15/coffee-processing/" data-id="ckla9h0sk000czurqahc23che" data-title="咖啡精制法" class="article-share-link">Share</a>
+      <a data-url="https://cateaf.com/2021/02/15/coffee-processing/" data-id="cklmhppqi000c0yp9gpjtac8u" data-title="咖啡精制法" class="article-share-link">Share</a>
       
         <a href="https://cateaf.com/2021/02/15/coffee-processing/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -164,7 +164,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://cateaf.com/2020/04/30/sending-notifications-to-flutter-app/" data-id="ckla9h0st000zzurq6eib1wmy" data-title="Sending Notifications to Flutter App" class="article-share-link">Share</a>
+      <a data-url="https://cateaf.com/2020/04/30/sending-notifications-to-flutter-app/" data-id="cklmhppqw000z0yp9h10k0ldf" data-title="Sending Notifications to Flutter App" class="article-share-link">Share</a>
       
         <a href="https://cateaf.com/2020/04/30/sending-notifications-to-flutter-app/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -209,7 +209,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://cateaf.com/2020/02/27/mysql-stored-procedure/" data-id="ckla9h0sq000ozurq06j391n2" data-title="MySQL Stored Procedure" class="article-share-link">Share</a>
+      <a data-url="https://cateaf.com/2020/02/27/mysql-stored-procedure/" data-id="cklmhppqs000o0yp98gai1v86" data-title="MySQL Stored Procedure" class="article-share-link">Share</a>
       
         <a href="https://cateaf.com/2020/02/27/mysql-stored-procedure/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -250,6 +250,7 @@
 <p>网上很多老资料用的 <a target="_blank" rel="noopener" href="https://docs.travis-ci.com/user/deployment/custom/">Custom Deployment</a> 的方法，现在 Travis CI 已经支持 GitHub Pages，只需要简单的配置一下即可。</p>
 <p>Hexo 提供了 <a target="_blank" rel="noopener" href="https://hexo.io/docs/github-pages"> 设置指南 </a> 以及 <code>.travis.yml</code> 的配置例子，当设置好后每次提交源文件到 master 分支 TravisCI 会自动生成页面并且部署到 gh-pages 分支上。</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">sudo:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">node_js</span></span><br><span class="line"><span class="attr">node_js:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="number">10</span> <span class="comment"># use nodejs v10 LTS</span></span><br><span class="line"><span class="attr">cache:</span> <span class="string">npm</span></span><br><span class="line"><span class="attr">branches:</span></span><br><span class="line">  <span class="attr">only:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">master</span> <span class="comment"># build master branch only</span></span><br><span class="line"><span class="attr">script:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">hexo</span> <span class="string">generate</span> <span class="comment"># generate static files</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">provider:</span> <span class="string">pages</span></span><br><span class="line">  <span class="attr">skip-cleanup:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">github-token:</span> <span class="string">$GH_TOKEN</span></span><br><span class="line">  <span class="attr">keep-history:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">on:</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br><span class="line">  <span class="attr">local-dir:</span> <span class="string">public</span></span><br></pre></td></tr></table></figure>
+
 <p>需要注意的是该方法不适用于仓库名为 <code>&lt;user&gt;.github.io</code> 这种格式的仓库，因为 GitHub 必须从 master 分支生成 user 和 organization 的页面而不是 gh-pages。</p>
 <blockquote>
 <p>User pages must be built from the <code>master</code> branch.</p>
@@ -264,10 +265,11 @@
 <p>在基于目前的新文档的建议下，最后的 <code>.travis.yml</code> 设置如下</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">os:</span> <span class="string">linux</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">node_js</span></span><br><span class="line"><span class="attr">node_js:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="number">10</span></span><br><span class="line"><span class="attr">cache:</span> <span class="string">npm</span></span><br><span class="line"><span class="attr">branches:</span></span><br><span class="line">  <span class="attr">only:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">source</span> <span class="comment"># store source code of hexo in source branch</span></span><br><span class="line"><span class="attr">script:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">hexo</span> <span class="string">generate</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">provider:</span> <span class="string">pages</span></span><br><span class="line">  <span class="attr">skip_cleanup:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">token:</span> <span class="string">$GH_TOKEN</span></span><br><span class="line">  <span class="attr">keep_history:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">target_branch:</span> <span class="string">master</span></span><br><span class="line">  <span class="attr">on:</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">source</span></span><br><span class="line">  <span class="attr">local_dir:</span> <span class="string">public</span></span><br></pre></td></tr></table></figure>
 
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://cateaf.com/2020/02/23/switch-to-travisci/" data-id="ckla9h0su0014zurqfech8qct" data-title="改为由 Travis CI 部署" class="article-share-link">Share</a>
+      <a data-url="https://cateaf.com/2020/02/23/switch-to-travisci/" data-id="cklmhppqy00140yp9855d6ka1" data-title="改为由 Travis CI 部署" class="article-share-link">Share</a>
       
         <a href="https://cateaf.com/2020/02/23/switch-to-travisci/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -316,7 +318,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://cateaf.com/2019/10/16/algorithm/" data-id="ckla9h0sy001fzurq6jkjhq97" data-title="算法笔记" class="article-share-link">Share</a>
+      <a data-url="https://cateaf.com/2019/10/16/algorithm/" data-id="cklmhppr3001e0yp9bjji8a82" data-title="算法笔记" class="article-share-link">Share</a>
       
         <a href="https://cateaf.com/2019/10/16/algorithm/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -465,7 +467,8 @@
 <script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
+                preloadRatio: 1,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 </html>
