@@ -31,21 +31,91 @@ categories: 浅谈咖啡
 
 ![Common Coffee Cultivars and their Origins](/images/coffee/CoffeeVarieties-full.jpg)
 
-另外则有一份较为完备的阿拉比卡目录可以下载https://varieties.worldcoffeeresearch.org/info/catalog/download。
+另外则有一份较为完备的阿拉比卡目录如下
 
-### 波旁和铁比卡及其衍生种 Bourbon and Typica Group
+https://varieties.worldcoffeeresearch.org/info/catalog/download。
 
-
+### 铁比卡及其衍生种 Bourbon-Typica Group (Typica-related) 
 
 #### 铁比卡 Typica
 
 阿拉比卡种中最接近原生种的品种，几乎所有的阿拉比卡种皆源于此，过去广泛的种于中南美州。铁比卡的豆粒较大，成尖椭圆或瘦尖状，拥有绝佳的甜味和醇厚感，以及苹果酸和干净的口感。但其体质差，不耐叶锈病，在种植的时候需要相当多的遮阴树来遮挡，而且两年才能收成一次，产量很低。
 
-### 波旁 Bourbon
+#### Harra Rwanda
 
-铁皮卡突变产生的次种，两者都是现存最古老的品种，被法国殖民者由也门移植到东非的马达加斯加，再到波旁岛（Île Bourbon），现称留尼汪岛（ La Réunion），而得名，随后又随着殖民到巴西。波旁的豆子颗粒小且浑圆，通常很甜，风味因产地而异，而“红波旁”，“黄波旁”“粉红波旁”则是按照果实的颜色而命名。收成量比铁比卡多20%-30%，并且更耐叶锈病，但收成依旧需要两年。
+#### Maragogipe 象豆
 
+铁比卡的自然突变种，1870年在巴西马拉戈日皮（Maragogipe）被发现，植株，叶子，豆体都非常的大，但产量很低，因此种植不多。
 
+#### Mibirizi
+
+#### Nyasaland
+
+#### Pache
+
+#### Pop3303/21
+
+#### SL14
+
+#### SL34
+
+### 波旁及其衍生种 Bourbon-Typica Group (Bourbon-related) 
+
+#### 波旁 Bourbon
+
+铁皮卡突变产生的次种，两者都是现存最古老的品种，在18世纪早期被法国传教士由也门带到波旁岛（Île Bourbon），现称留尼汪岛（ La Réunion），而得名。19世纪中期被带到巴西，随机迅速传播到南美和中美其他地区。波旁的豆子颗粒小且浑圆，通常很甜，风味因产地而异，而“红波旁”，“黄波旁”，“粉红波旁”则是按照果实的颜色而命名。收成量比铁比卡多20%-30%，并且更耐叶锈病，但收成依旧需要两年，如今的拉美地区更多在种植其他波旁衍生种，但萨尔瓦多，秘鲁，危地马拉，洪都拉斯仍有波旁种在种植。
+
+#### 卡杜拉 Caturra
+
+波旁一个单基因突变种，植株矮化（Dwarfism），名字来源于瓜拉尼语中的矮小，20世纪初期在巴西被发现，IAC 对其进行育种。1940年后被引入危地马拉，但是又过了几十年后才被引入哥斯达黎加，洪都拉斯和巴拿马。卡杜拉的种植不需要遮阴树，可以直接种植在阳光下，也因此导致了高密度型种植的开始。
+
+#### 薇拉莎奇 Villa Sarchi
+
+也叫 La Luisa 或 Villalobos Bourbon，是波旁的单基因矮化自然突变种，能很好的适应高海拔和强风，20世纪60年代在哥斯达黎加被发现，由ICAFE育种，1974年被 IHCAFE 引入洪都拉斯。
+
+#### 帕卡斯 Pacas
+
+波旁的自然突变种，20世纪中叶在萨尔瓦多的咖啡农帕卡斯的庄园被发现。与巴西的卡杜拉和哥斯达黎加的薇拉莎奇相似，帕卡斯因单基因的突变导致矮化，这样有助于种植更密集从而提高产量。1960年 ISIC 开始采用系谱法育种，同在1974年被 IHCAFE 引入洪都拉斯。
+
+### 波旁与铁皮卡 Bourbon-Typica Group (Typica- and Bourbon-related)  
+
+#### Mundo Novo
+
+铁皮卡和波旁的自然杂交种，最初在 Novo Mundo 种植 （现 Urupês），在1950年后种子发放给了咖啡农，在1977
+
+#### Bourbon Mayaguez 139
+
+#### Bourbon Mayaguez 71
+
+#### Jackson 2/1257
+
+#### K7
+
+#### KP423
+
+#### SL28
+
+#### Tekisic
+
+#### Venecia
+
+#### Catuai
+
+#### Mundo Novo
+
+#### Pacamara
+
+### Ethiopian Landrace
+
+#### Geisha (Panama)
+
+#### Java
+
+### Introgressed
+
+#### Anacafe 14
+
+#### Catimor129
 
 ## 参考资料
 
