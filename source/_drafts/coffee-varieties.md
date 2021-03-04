@@ -31,10 +31,6 @@ categories: 浅谈咖啡
 
 ![Common Coffee Cultivars and their Origins](/images/coffee/CoffeeVarieties-full.jpg)
 
-另外则有一份较为完备的阿拉比卡目录如下
-
-https://varieties.worldcoffeeresearch.org/info/catalog/download。
-
 ### 铁皮卡及其衍生种 Bourbon-Typica Group (Typica-related)
 
 #### 铁皮卡 Typica
@@ -42,25 +38,17 @@ https://varieties.worldcoffeeresearch.org/info/catalog/download。
 阿拉比卡种中最接近原生种的品种，几乎所有的阿拉比卡种皆源于此，过去广泛的种于中南美州。铁皮卡的豆粒较大，成尖椭圆或瘦尖状，拥有绝佳的甜味和醇厚感，以及苹果酸和干净的口感。但其体质差，不耐叶锈病，在种植的时候需要相当多的遮阴树来遮挡，而且两年才能收成一次，产量很低。
 
 - 蓝山 Blue Mountain：牙买加蓝山可能是知名度最高的咖啡了，早于第三波甚至第二波之前就家喻户晓了，一度在每家咖啡馆和西餐厅的菜单上都有蓝山咖啡，即使并没有任何关系。蓝山并不是一个品种，他的生产加工以及出售都在JACRA（Jamaica Agricultural Commodities Regulatory Authority）的管控下，出售的咖啡需要含有超过一定比例的蓝山才能被授权命名蓝山咖啡。为了答谢日本企业在1962年对被飓风影响的牙买加咖啡产业的帮助，1972年签订了合约将80%的蓝山都提供给日本市场。因此市面上的蓝山才如此稀缺。
-- 科纳 Kona：知名度不如蓝山，但也昂贵的咖啡之一。与蓝山一样，它也应该被视作铁皮卡的一个品牌，只是靠着夏威夷科纳地区独特的热带雨林气候和火山土壤而具有独特的风味。人工的采摘和加工而不是工业化大规模生产也提高了成本，同时也造成了其产量非常稀少，因而大部分市面上所卖的都是“科纳拼配”，即只含有10%的科纳。这两者的价格合理性的确值得质疑，不过随着其他咖啡种的发展，别的产区一样能得到高品质的咖啡 。~~其实在写这篇文章时恰好买了30g蓝山尝鲜，有熟苹果的味道和强烈的回甘，但要论性价比会觉得不值~~
+- 科纳 Kona：知名度不如蓝山，但也昂贵的咖啡之一。与蓝山一样，它也应该被视作铁皮卡的一个品牌，只是靠着夏威夷科纳地区独特的热带雨林气候和火山土壤而具有独特的风味。人工的采摘和加工而不是工业化大规模生产也提高了成本，同时也造成了其产量非常稀少，因而大部分市面上所卖的都是“科纳拼配”，即只含有10%的科纳。这两者的价格合理性的确值得质疑，随着其他咖啡种的发展，别的产区一样能得到高品质的咖啡 。~~其实在写这篇时手头正好有30g蓝山，有熟苹果的味道和强烈的回甘，但要论性价比会觉得不值~~
 
 #### 象豆 Maragogipe
 
 铁皮卡的自然突变种，1870年在巴西马拉戈日皮（Maragogipe）被发现，植株，叶子，豆体都非常的大，但产量很低，因此种植不多。也正因其稀有，反而又引起大家的兴趣。
 
-#### Harra Rwanda
+#### SL14 & SL34
 
-#### Mibirizi
+SL是20世纪30年代由肯尼亚的 Scott Agricultural Laboratories 选育出的咖啡种（如今的National Agricultural Laboratories, NARL，由英殖民政府在1922年建立）。SL14 是 1936 年从一棵标记为 Drought Resistant II （D.R. II） 的植株中选出的，因此有着抗旱的特性，除此外还有耐寒的和高产的特点，在肯尼亚和乌干达都有很重要的地位。D.R. II 的原始记录已经丢失，
 
-#### Nyasaland
-
-#### Pache
-
-#### Pop3303/21
-
-#### SL14
-
-#### SL34
+SL34是从肯尼亚卡比特的 Loresho 庄园的一株咖啡树选出的，因为 Scott Labs的研究经常是和当地的私人庄园主合作进行的。这株植株被标记为“French Mission”，根据传闻是由法国传教士从留尼旺岛（波旁岛）带来，因此 “French Mission” 一直被认为是波旁的另一个名字。但是根据基因测序 SL34 是铁皮卡衍生种，因此SL34从“French Mission”的来源可能并不正确。SL34 适应高海拔和雨水充足的地区，有着绝佳的品质。
 
 ### 波旁及其衍生种 Bourbon-Typica Group (Bourbon-related) 
 
@@ -80,19 +68,9 @@ https://varieties.worldcoffeeresearch.org/info/catalog/download。
 
 波旁的自然突变种，20世纪中叶在萨尔瓦多的咖啡农帕卡斯的庄园被发现。与巴西的卡杜拉和哥斯达黎加的薇拉莎奇相似，帕卡斯因单基因的突变导致矮化，这样有助于种植更密集从而提高产量。味道与波旁相似，甜感稍微逊色，产量比波旁高。1960年 ISIC（ Instituto Salvadoreño de Investigaciones del Café） 开始采用系谱法育种，同在1974年被 IHCAFE 引入洪都拉斯。
 
-#### Bourbon Mayaguez 139
-
-#### Bourbon Mayaguez 71
-
-#### Jackson 2/1257
-
-#### KP423
-
 #### SL28
 
-#### Tekisic
-
-#### Venecia
+SL28是非洲最知名和收到好评的品种，1931年 Scott Labs 的一名官员在 Tanganyika （今坦桑尼亚）发现了一种抗旱，抗病，抗虫的品种，带回种子后证实了它的抗旱性，1935年在 Tanganyika Drought Resistant 的一棵植株种选育出 SL28，并传播到乌干达和非洲其他地区。该品种适合种植在中高海拔地区，并有着抗旱特性，但容易患一些咖啡主流疾病。
 
 ### 铁皮卡与波旁的杂交即其衍生种 Bourbon-Typica Group (Typica- and Bourbon-related)
 
@@ -110,9 +88,13 @@ https://varieties.worldcoffeeresearch.org/info/catalog/download。
 
 在 1949 年由 IAC 开始培育的新世界与黄果卡杜拉的杂交品种，起初叫做 H-2077，直到1972年才释出，并在巴西广泛种植。卡杜艾有着很高的产量，但在移植到中美洲后产量似乎有所下降，在哥斯达黎加和洪都拉斯的研究都发现卡杜艾和卡杜拉的产量没有显著差距，不过依旧得到了广泛的种植。
 
-### Ethiopian Landrace
+### 埃塞俄比亚传统品种 Ethiopian Landrace
 
-#### Geisha (Panama)
+#### 巴拿马瑰夏 Geisha (Panama) *Gesha*
+
+如今风头最盛的品种，Geisha 和 Gesha 两个词都被广泛使用，由于埃塞俄比亚土著语言与英文的翻译问题，最初的英文记录标注为在瑰夏山（Geisha Mountain）发现，接着数十年来咖啡研究人员都使用了这个拼写。而埃塞俄比亚地区并没有瑰夏山这个地方，只有 Gesha 这一地区。也有人谈及到最初推广该品种采用 Geisha （艺妓）这一名字是因为考虑到异国风情和性暗示能吸引到顾客，从咖啡文化来看应该抵制这一命名，因此也有很多咖啡从业人员希望能更正命名。
+
+20世纪30年代在埃塞俄比亚被发现，被带到坦桑尼亚的 Lyamungu 研究所，在1953年又被引入到中美洲 CATIE （Centro Agronómico Tropical de Investigación y Enseñanza）并被标注为 T2722，在60年代因为发现了其抗锈叶病，被Don Pachi引入到巴拿马，由于枝叶易碎，咖啡农的种植意愿不高。
 
 #### Java
 
@@ -122,6 +104,10 @@ https://varieties.worldcoffeeresearch.org/info/catalog/download。
 
 #### Catimor129
 
+另外则有一份较为完备的阿拉比卡目录如下
+
+https://varieties.worldcoffeeresearch.org/info/catalog/download。
+
 ## 参考资料
 
 [A Botanists' Guide to Specialty Coffee](https://sca.coffee/research/botany?page=resources&d=a-botanists-guide-to-specialty-coffee)
@@ -129,3 +115,5 @@ https://varieties.worldcoffeeresearch.org/info/catalog/download。
 [History of Typica and Bourbon](https://varieties.worldcoffeeresearch.org/info/coffee/about-varieties/bourbon-and-typica)
 
 [100% KONA COFFEE - WHAT MAKES IT SO UNIQUE?](http://www.kona-coffee-council.com/page-692163)
+
+[Stop Calling It “Geisha” Already](https://sprudge.com/stop-calling-it-geisha-already-136137.html)
