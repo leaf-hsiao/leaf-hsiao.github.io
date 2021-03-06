@@ -11,7 +11,7 @@ categories: 浅谈咖啡
 
 ![Coffee variety family tree timeline](/images/coffee/VFamily_timeline-3_large.webp)
 
-可见咖啡之多，本文只对主流品种稍做介绍，若想详细了解咖啡豆种的发源，尤其是根据不同产区的细分，则可以去阅读 James 的[《世界咖啡地图》](https://book.douban.com/subject/33455203/)。
+可见咖啡之多，本文只对主流品种稍做介绍，若想详细了解咖啡豆种的发源，尤其是根据不同产区的细分，则可以去阅读 James 的[《世界咖啡地图》](https://book.douban.com/subject/33455203/)。此外一些植物学名词可能使用不当，敬请谅解。
 
 <!-- more -->
 
@@ -68,6 +68,10 @@ SL34是从肯尼亚卡比特的 Loresho 庄园的一株咖啡树选出的，因�
 
 波旁的自然突变种，20世纪中叶在萨尔瓦多的咖啡农帕卡斯的庄园被发现。与巴西的卡杜拉和哥斯达黎加的薇拉莎奇相似，帕卡斯因单基因的突变导致矮化，这样有助于种植更密集从而提高产量。味道与波旁相似，甜感稍微逊色，产量比波旁高。1960年 ISIC（ Instituto Salvadoreño de Investigaciones del Café） 开始采用系谱法育种，同在1974年被 IHCAFE 引入洪都拉斯。
 
+#### 萨尔瓦多波旁 Tekisic *Improved Bourbon*
+
+由 ISIC 选育的，成熟期短，并比波旁有着更高的产量，生长在高海拔地区，有着优秀的品质，但是不耐包括叶锈病在内的主流咖啡疾病。
+
 #### SL28
 
 SL28是非洲最知名和收到好评的品种，1931年 Scott Labs 的一名官员在 Tanganyika （今坦桑尼亚）发现了一种抗旱，抗病，抗虫的品种，带回种子后证实了它的抗旱性，1935年在 Tanganyika Drought Resistant 的一棵植株种选育出 SL28，并传播到乌干达和非洲其他地区。该品种适合种植在中高海拔地区，并有着抗旱特性，但容易患一些咖啡主流疾病。
@@ -94,19 +98,27 @@ SL28是非洲最知名和收到好评的品种，1931年 Scott Labs 的一名官
 
 如今风头最盛的品种，Geisha 和 Gesha 两个词都被广泛使用，由于埃塞俄比亚土著语言与英文的翻译问题，最初的英文记录标注为在瑰夏山（Geisha Mountain）发现，接着数十年来咖啡研究人员都使用了这个拼写。而埃塞俄比亚地区并没有瑰夏山这个地方，只有 Gesha 这一地区。也有人谈及到最初推广该品种采用 Geisha （艺妓）这一名字是因为考虑到异国风情和性暗示能吸引到顾客，从咖啡文化来看应该抵制这一命名，因此也有很多咖啡从业人员希望能更正命名。
 
-20世纪30年代在埃塞俄比亚被发现，被带到坦桑尼亚的 Lyamungu 研究所，在1953年又被引入到中美洲 CATIE （Centro Agronómico Tropical de Investigación y Enseñanza）并被标注为 T2722，在60年代因为发现了其抗锈叶病，被Don Pachi引入到巴拿马，由于枝叶易碎，咖啡农的种植意愿不高。
+20世纪30年代在埃塞俄比亚被发现，被带到坦桑尼亚的 Lyamungu 研究所，在1953年又被引入到哥斯达黎加 CATIE （Centro Agronómico Tropical de Investigación y Enseñanza）并被标注为 T2722，在60年代因为发现了其抗锈叶病，被 Don Pachi 引入到巴拿马，由于枝叶易碎，咖啡农的种植意愿不高。直到 2004 年翡翠庄园将瑰夏带到了 BoP（Best of Panama）上一炮而红，连续拿下05，06，07的冠军，导致之后比赛单独设立瑰夏组。巴拿马瑰夏有着茉莉花和蜜桃的香味，柔和的口感。
 
-#### Java
+有许多同样起源于 Gesha 地区的品种也称作瑰夏，不过 T2722 的后裔是独一无二的。因此也有人认为应该将巴拿马瑰夏叫做 Geisha， 而埃塞俄比亚地区的瑰夏叫做 Gesha 以作区分。
 
-### Introgressed
+#### 爪哇 Java
 
-#### Anacafe 14
+19世纪由荷兰人从埃塞俄比亚引入爪哇岛，一度被认为是铁皮卡的衍生种，基因显示他是一种名叫 Abysinia 的原生种。20世纪中叶，被带到喀麦隆，在喀麦隆发现了能耐受 CBD（Coffee Berry Disease），经过20年培育，在20世纪晚期投入生产。1991年由 CIRAD（Centre de Coopération Internationale en Recherche Agronomique pour le Développement ）引入哥斯达黎加，尽管中美洲还未曾发现过 CBD，依旧担心可能会有。2016年巴拿马成为中美洲第一个官方承认 Java 的国家。Java 也被视为瑰夏的一种有趣的替代品，同样的高品质，且更耐受 CBD 和叶锈病。
+
+### 渐渗杂交 Introgressed
+
+> 渐渗杂交(Introgressive hybridization)一词最早是由Anderson和Hubricht在1938年通过植物杂交研究提出，指两物种的杂交后代与亲本之一或双亲反复回交，把某一亲本的性状带至另一亲本。
+
+在咖啡中主要指阿拉比卡从罗布斯塔种获取抗病的特性，也有少部分使用了利比里亚种。20世纪20年代东帝汶岛上的阿拉比卡和罗布斯塔通过有性生殖得到了帝汶杂交种。这种含有罗布斯塔基因的品种有着抗叶锈病的特点，研究人员便利用它开始创造新的抗锈叶病品种。
+
+#### 
 
 #### Catimor129
 
-另外则有一份较为完备的阿拉比卡目录如下
+主要的品种介绍完毕，更完备的阿拉比卡目录如下
 
-https://varieties.worldcoffeeresearch.org/info/catalog/download。
+https://varieties.worldcoffeeresearch.org/info/catalog/download
 
 ## 参考资料
 
