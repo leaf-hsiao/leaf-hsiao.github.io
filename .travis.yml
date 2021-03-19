@@ -1,4 +1,5 @@
 os: linux
+dist: xenial
 language: node_js
 node_js:
   - 12
@@ -9,8 +10,9 @@ branches:
 script:
   - hexo generate
 deploy:
+  strategy: git
   provider: pages
-  skip_cleanup: true
+  cleanup: false
   token: $GH_TOKEN
   keep_history: true
   target_branch: master

@@ -11,5 +11,3 @@
 **Theme modified from:** [Landscape](https://github.com/hexojs/hexo-theme-landscape)
 
 **Comment systems:** [Disqus](https://disqus.com/)
-
-**Image optimization:** [Imgbot](https://imgbot.net/)
