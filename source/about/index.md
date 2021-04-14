@@ -1,6 +1,7 @@
 ---
 layout: blank
 title: about
+comments: false
 ---
 <div style="text-align:center;">
 <h2>Tags</h2>
