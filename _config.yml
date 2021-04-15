@@ -8,7 +8,7 @@ subtitle:
 description: Leaf's blog
 keywords:
 author: Leaf
-language: en
+language: zh-CN
 
 
 # URL
@@ -44,13 +44,19 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
+
 highlight:
-  enable: true
-  line_number: true
+  enable: false
   auto_detect: false
+  line_number: true
   tab_replace: ''
   wrap: true
   hljs: false
+prismjs:
+  enable: true
+  preprocess: false
+  line_number: true
+  tab_replace: ''
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -89,7 +95,7 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next
 
-disqus_shortname: cateaf
+# disqus_shortname: cateaf
 
 sitemap:
     path: sitemap.xml
@@ -111,3 +117,9 @@ lazyload:
   onlypost: false # optional
   loadingImg: # optional eg ./images/loading.gif
   isSPA: false # optional
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html

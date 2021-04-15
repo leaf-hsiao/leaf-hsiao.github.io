@@ -1,5 +1,7 @@
 os: linux
 dist: xenial
+before_install:
+  - sudo apt-get -y pandoc
 language: node_js
 node_js:
   - 12
