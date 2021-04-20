@@ -2,7 +2,7 @@
 title: Gene Selection
 date: 2017-06-21 13:57:09
 tags: math
-categories:
+mathjax: true
 ---
 
 *毕业典礼还是完美的睡过去了（叹气，毕业之后成为又丧又废的NEET。*

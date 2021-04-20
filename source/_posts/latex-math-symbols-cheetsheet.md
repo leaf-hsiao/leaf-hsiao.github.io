@@ -3,6 +3,7 @@ title: $\LaTeX$ Math Symbols Cheetsheet
 date: 2016-08-31 10:06:25
 tags: LaTeX
 categories: Cheetsheet
+mathjax: true
 ---
 
 一些基本的$\LaTeX$字符和运算符，供快速查阅使用

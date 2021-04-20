@@ -5,6 +5,7 @@ tags:
   - mathematic modelling
 categories:
 date: 2016-08-31 12:04:12
+mathjax: true
 ---
 
 _1年前老博客上的文章了，刚好在这次国赛前找到了，修正一些数据后重新发布_
