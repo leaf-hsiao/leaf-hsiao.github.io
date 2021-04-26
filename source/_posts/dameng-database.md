@@ -17,7 +17,7 @@ categories: Database
 
 单独申请了一块盘`/dev/vdf`，分区格式化后将其挂载到 `/dm` 下
 
-```sh
+```shell
 fdisk /dev/vdf
 mkfx -t ext4 /dev/vdf1
 mkdir /dm
@@ -394,4 +394,3 @@ chmod 777 odbcinst.ini
 su - dmdba
 isql dm8
 ```
-
