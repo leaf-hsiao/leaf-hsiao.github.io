@@ -8,6 +8,6 @@
 
 **Static site generator:** [Hexo](https://hexo.io/)
 
-**Theme modified from:** [Landscape](https://github.com/hexojs/hexo-theme-landscape)
+**Theme:** [NexT](https://theme-next.js.org/)
 
 **Comment systems:** [Disqus](https://disqus.com/)
