@@ -34,7 +34,7 @@ Porchetta Sandwich，典型的德州BBQ风味。尝试了一下冷萃。
 
 hmm
 
-# [Anderson's Coffee Co.](https://andersonscoffee.com)
+## [Anderson's Coffee Co.](https://andersonscoffee.com)
 
 *1601 W 38th St, Austin, TX 78701*
 
@@ -48,7 +48,7 @@ hmm
 
 表达了喜欢浅烘之后又顺道还给了我写了另外两家店的地址。
 
-#[Houndstooth Coffee](https://www.houndstoothcoffee.com)
+## [Houndstooth Coffee](https://www.houndstoothcoffee.com)
 
 *4200 N Lamar Blvd 120, Austin, TX 78756*
 
@@ -66,7 +66,7 @@ EK43和Acaia这种标配，以及久违的见到了聪明杯。
 
 两刀一杯，质量也不错。意式看起来也不错，但是没有尝试了。
 
-# [Cuvée Coffee Bar](http://cuveecoffee.com)
+## [Cuvée Coffee Bar](http://cuveecoffee.com)
 
 *2000 E 6th St, Austin, TX 78702*
 
@@ -80,7 +80,7 @@ EK43和Acaia这种标配，以及久违的见到了聪明杯。
 
 店员又和我说了一家must go的也在不远处。
 
-# [Fleet Coffee](www.fleetcoffee.com)
+## [Fleet Coffee](www.fleetcoffee.com)
 
 *2427 Webberville Rd, Austin, TX 78702*
 
@@ -88,7 +88,7 @@ EK43和Acaia这种标配，以及久违的见到了聪明杯。
 
 ![](/images/austin/IMG_3799.JPG)
 
-点了一杯肯尼亚6刀，豆子由[madcap](https://madcapcoffee.com),[wrecking ball](www.wreckingballcoffee.com),[sweet bloom](https://sweetbloomcoffee.com)三家提供，质量非常高了，均价18刀/12oz左右。（又是飓风阻止了我在新进货的那一天去选豆子😭
+点了一杯肯尼亚6刀，豆子由[madcap](https://madcapcoffee.com),[wrecking ball](https://www.wreckingballcoffee.com),[sweet bloom](https://sweetbloomcoffee.com)三家提供，质量非常高了，均价18刀/12oz左右。（又是飓风阻止了我在新进货的那一天去选豆子😭
 
 ![](/images/austin/IMG_3798.JPG)
 
