@@ -34,7 +34,7 @@
 <meta property="og:description" content="在测试服务器上部署了一个达梦单点服务，做一下简要的记录">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-04-14T15:40:06.000Z">
-<meta property="article:modified_time" content="2021-04-20T15:02:33.895Z">
+<meta property="article:modified_time" content="2021-04-26T14:04:29.807Z">
 <meta property="article:author" content="Leaf">
 <meta property="article:tag" content="database">
 <meta name="twitter:card" content="summary">
@@ -201,25 +201,6 @@
   <p class="site-author-name" itemprop="name">Leaf</p>
   <div class="site-description" itemprop="description">Leaf's blog</div>
 </div>
-<div class="site-state-wrap site-overview-item animated">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">19</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">4</span>
-        <span class="site-state-item-name">分类</span>
-      </div>
-      <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">7</span>
-        <span class="site-state-item-name">标签</span>
-      </div>
-  </nav>
-</div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
         <a href="https://github.com/leaf-hsiao" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;leaf-hsiao" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
@@ -334,7 +315,7 @@
 <h3 id="安装前准备">安装前准备</h3>
 <h4 id="配置安装目录">配置安装目录</h4>
 <p>单独申请了一块盘<code>/dev/vdf</code>，分区格式化后将其挂载到 <code>/dm</code> 下</p>
-<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">fdisk &#x2F;dev&#x2F;vdf
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">fdisk &#x2F;dev&#x2F;vdf
 mkfx -t ext4 &#x2F;dev&#x2F;vdf1
 mkdir &#x2F;dm
 mount &#x2F;dev&#x2F;vdf1 &#x2F;dm</code></pre>

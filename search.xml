@@ -284,14 +284,14 @@
 <p><img data-src="/images/austin/IMG_3313.JPG" /></p>
 <p><img data-src="/images/austin/IMG_3314.JPG" /></p>
 <p>hmm</p>
-<h1 id="andersons-coffee-co."><a href="https://andersonscoffee.com">Anderson's Coffee Co.</a></h1>
+<h2 id="andersons-coffee-co."><a href="https://andersonscoffee.com">Anderson's Coffee Co.</a></h2>
 <p><em>1601 W 38th St, Austin, TX 78701</em></p>
 <p>一家在本地开了快50年的烘焙商，一进门就是浓郁的咖啡香，前台的小哥说旁边的咖啡厅用的就是他们的豆子，喝咖啡的话可以去。主打中烘和深烘，店主偏爱用梅丽塔的单孔滤杯。</p>
 <p><img data-src="/images/austin/IMG_3348.JPG" /></p>
 <p>店里是卖豆子和设备的，有三桶咖啡摆在吧台上，每天用不一样的豆子，直接用bonavita的滴滤机做的，一刀一杯的售价性价比还是很高的（大概就是方便顾客尝尝豆子的的风味。虽然小哥极力推荐我第二天来喝苏门答腊，但是我鸽了，说好的临走前过来拎一袋豆子也被飓风阻止了。</p>
 <p><img data-src="/images/austin/IMG_3349.JPG" /></p>
 <p>表达了喜欢浅烘之后又顺道还给了我写了另外两家店的地址。</p>
-<p>#<a href="https://www.houndstoothcoffee.com">Houndstooth Coffee</a></p>
+<h2 id="houndstooth-coffee"><a href="https://www.houndstoothcoffee.com">Houndstooth Coffee</a></h2>
 <p><em>4200 N Lamar Blvd 120, Austin, TX 78756</em></p>
 <p>推荐的第一家就在Anderson旁边，是一家连锁店，奥斯汀和达拉斯都有分店。</p>
 <p><img data-src="/images/austin/IMG_3382.JPG" /></p>
@@ -300,18 +300,18 @@
 <p>热咖啡同样是机子做的，冷萃之外还有一款叫做Japanese iced coffee的，用蛋糕杯萃取下面用冰块接着。</p>
 <p><img data-src="/images/austin/IMG_3383.JPG" /></p>
 <p>两刀一杯，质量也不错。意式看起来也不错，但是没有尝试了。</p>
-<h1 id="cuvée-coffee-bar"><a href="http://cuveecoffee.com">Cuvée Coffee Bar</a></h1>
+<h2 id="cuvée-coffee-bar"><a href="http://cuveecoffee.com">Cuvée Coffee Bar</a></h2>
 <p><em>2000 E 6th St, Austin, TX 78702</em></p>
 <p>第二家店比较偏远拖了很久才去，用的机器自动注水（他们都这么懒的吗，店员说有利于保证出品的稳定性。</p>
 <p><img data-src="/images/austin/IMG_3719.JPG" /></p>
 <p>可惜了没有时间继续尝试了赶时间就打包拎走了。还不错顺带就拎了推荐的一包豆子，感觉生命又少了1秒。</p>
 <p><img data-src="/images/austin/IMG_3718.JPG" /></p>
 <p>店员又和我说了一家must go的也在不远处。</p>
-<h1 id="fleet-coffee"><a href="www.fleetcoffee.com">Fleet Coffee</a></h1>
+<h2 id="fleet-coffee"><a href="www.fleetcoffee.com">Fleet Coffee</a></h2>
 <p><em>2427 Webberville Rd, Austin, TX 78702</em></p>
 <p>和Cuvee挨得比较近，同样也是机器注水，只不过在Kalita之外还有Chemex可以选，价格mkt。</p>
 <p><img data-src="/images/austin/IMG_3799.JPG" /></p>
-<p>点了一杯肯尼亚6刀，豆子由<a href="https://madcapcoffee.com">madcap</a>,<a href="www.wreckingballcoffee.com">wrecking ball</a>,<a href="https://sweetbloomcoffee.com">sweet bloom</a>三家提供，质量非常高了，均价18刀/12oz左右。（又是飓风阻止了我在新进货的那一天去选豆子😭</p>
+<p>点了一杯肯尼亚6刀，豆子由<a href="https://madcapcoffee.com">madcap</a>,<a href="https://www.wreckingballcoffee.com">wrecking ball</a>,<a href="https://sweetbloomcoffee.com">sweet bloom</a>三家提供，质量非常高了，均价18刀/12oz左右。（又是飓风阻止了我在新进货的那一天去选豆子😭</p>
 <p><img data-src="/images/austin/IMG_3798.JPG" /></p>
 <p>坐在窗边把手机玩到快没电准备开溜（奥斯汀的太阳要是隔着玻璃坐在空调里观赏还是很美的，走之前又要了一杯冰咖啡，可能是在奥斯汀喝过最满意的了。</p>
 <p><img data-src="/images/austin/IMG_3807.JPG" /></p>
@@ -421,7 +421,7 @@
 <h3 id="安装前准备">安装前准备</h3>
 <h4 id="配置安装目录">配置安装目录</h4>
 <p>单独申请了一块盘<code>/dev/vdf</code>，分区格式化后将其挂载到 <code>/dm</code> 下</p>
-<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">fdisk &#x2F;dev&#x2F;vdf
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">fdisk &#x2F;dev&#x2F;vdf
 mkfx -t ext4 &#x2F;dev&#x2F;vdf1
 mkdir &#x2F;dm
 mount &#x2F;dev&#x2F;vdf1 &#x2F;dm</code></pre>
