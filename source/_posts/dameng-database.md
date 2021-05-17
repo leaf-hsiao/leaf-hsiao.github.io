@@ -19,7 +19,7 @@ categories: Database
 
 ```shell
 fdisk /dev/vdf
-mkfx -t ext4 /dev/vdf1
+mkfs.ext4 /dev/vdf1
 mkdir /dm
 mount /dev/vdf1 /dm
 ```
@@ -28,7 +28,7 @@ mount /dev/vdf1 /dm
 
 ```shell
 vi /etc/fstab
-/dev/vdf1	/dmk	ext4	defaults	0	0
+/dev/vdf1	/dm	ext4	defaults	0	0
 mount -a
 ```
 
