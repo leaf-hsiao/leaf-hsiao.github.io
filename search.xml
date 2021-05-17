@@ -422,12 +422,12 @@
 <h4 id="配置安装目录">配置安装目录</h4>
 <p>单独申请了一块盘<code>/dev/vdf</code>，分区格式化后将其挂载到 <code>/dm</code> 下</p>
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">fdisk &#x2F;dev&#x2F;vdf
-mkfx -t ext4 &#x2F;dev&#x2F;vdf1
+mkfs.ext4 &#x2F;dev&#x2F;vdf1
 mkdir &#x2F;dm
 mount &#x2F;dev&#x2F;vdf1 &#x2F;dm</code></pre>
 <p>设置永久挂载</p>
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">vi &#x2F;etc&#x2F;fstab
-&#x2F;dev&#x2F;vdf1	&#x2F;dmk	ext4	defaults	0	0
+&#x2F;dev&#x2F;vdf1	&#x2F;dm	ext4	defaults	0	0
 mount -a</code></pre>
 <h4 id="操作系统设置">操作系统设置</h4>
 <h5 id="禁用-selinux">禁用 SELINUX</h5>
