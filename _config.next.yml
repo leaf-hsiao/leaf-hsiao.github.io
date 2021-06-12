@@ -67,6 +67,7 @@ favicon:
 creative_commons:
   license: by-nc-sa
   sidebar: true
+  size: big
   post: true
   language:
 
