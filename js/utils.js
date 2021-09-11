@@ -31,41 +31,6 @@ if (typeof DOMTokenList.prototype.replace !== 'function') {
 
 NexT.utils = {
 
-  /**
-   * Wrap images with fancybox.
-   */
-  wrapImageWithFancyBox: function() {
-    document.querySelectorAll('.post-body :not(a) > img, .post-body > img').forEach(element => {
-      const $image = $(element);
-      const imageLink = $image.attr('data-src') || $image.attr('src');
-      const $imageWrapLink = $image.wrap(`<a class="fancybox fancybox.image" href="${imageLink}" itemscope itemtype="http://schema.org/ImageObject" itemprop="url"></a>`).parent('a');
-      if ($image.is('.post-gallery img')) {
-        $imageWrapLink.attr('data-fancybox', 'gallery').attr('rel', 'gallery');
-      } else if ($image.is('.group-picture img')) {
-        $imageWrapLink.attr('data-fancybox', 'group').attr('rel', 'group');
-      } else {
-        $imageWrapLink.attr('data-fancybox', 'default').attr('rel', 'default');
-      }
-
-      const imageTitle = $image.attr('title') || $image.attr('alt');
-      if (imageTitle) {
-        $imageWrapLink.append(`<p class="image-caption">${imageTitle}</p>`);
-        // Make sure img title tag will show correctly in fancybox
-        $imageWrapLink.attr('title', imageTitle).attr('data-caption', imageTitle);
-      }
-    });
-
-    $.fancybox.defaults.hash = false;
-    $('.fancybox').fancybox({
-      loop   : true,
-      helpers: {
-        overlay: {
-          locked: false
-        }
-      }
-    });
-  },
-
   registerExtURL: function() {
     document.querySelectorAll('span.exturl').forEach(element => {
       const link = document.createElement('a');
@@ -181,7 +146,7 @@ NexT.utils = {
       }
       if (!Array.isArray(NexT.utils.sections)) return;
       let index = NexT.utils.sections.findIndex(element => {
-        return element && element.getBoundingClientRect().top > 0;
+        return element && element.getBoundingClientRect().top > 10;
       });
       if (index === -1) {
         index = NexT.utils.sections.length - 1;
@@ -275,7 +240,10 @@ NexT.utils = {
           targets  : document.scrollingElement,
           duration : 500,
           easing   : 'linear',
-          scrollTop: offset + 10
+          scrollTop: offset,
+          complete : () => {
+            history.pushState(null, document.title, element.href);
+          }
         });
       });
       return target;
