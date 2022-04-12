@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)">
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 5.4.2">
 
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
@@ -20,11 +19,12 @@
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"cateaf.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.8.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":true,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="本文不讨论 PCM 和 DSD 的优劣，也不讨论 ASIO, WASAPI, Direct Sound 哪个更好，仅对尝试用 fb2k 播放 dsd 做个配置记录。">
+<script class="next-config" data-name="main" type="application/json">{"hostname":"cateaf.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.11.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":true,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="本文不讨论 PCM 和 DSD 的优劣，也不讨论 ASIO, WASAPI, Direct Sound 哪个更好，仅对尝试用 fb2k 播放 dsd 做个配置记录。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何用 Foobar2000 播放 Dsd">
 <meta property="og:url" content="https://cateaf.com/2021/11/26/how-to-set-fb2k-to-play-dsd/index.html">
@@ -34,7 +34,7 @@
 <meta property="og:image" content="https://cateaf.com/images/dx3pro+/dx3pro+.jpg">
 <meta property="og:image" content="https://cateaf.com/images/dx3pro+/driver.jpg">
 <meta property="article:published_time" content="2021-11-26T20:48:23.000Z">
-<meta property="article:modified_time" content="2021-12-20T14:19:58.495Z">
+<meta property="article:modified_time" content="2022-04-12T13:55:42.274Z">
 <meta property="article:author" content="Leaf">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cateaf.com/images/dx3pro+/dx3pro+.jpg">
@@ -49,6 +49,7 @@
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>如何用 Foobar2000 播放 Dsd | Cateaf</title>
   
+
 
 
 
@@ -92,11 +93,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu">
-        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
-        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
-        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
-        <li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -216,11 +213,16 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/logo.jpg">
       <meta itemprop="name" content="Leaf">
-      <meta itemprop="description" content="Leaf's blog">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Cateaf">
+      <meta itemprop="description" content="Leaf's blog">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="如何用 Foobar2000 播放 Dsd | Cateaf">
+      <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -266,7 +268,7 @@
 <span id="more"></span>
 <p>双十一叠上淘宝的折扣以及 Amex 的满减入了<a target="_blank" rel="noopener" href="https://www.topping.audio/productinfo/711796.html">拓品 DX3 Pro+</a> 。相中了这款甜品级的台机倒只是因为偶然间看到了 <a target="_blank" rel="noopener" href="https://www.audiosciencereview.com/forum/index.php?threads/topping-dx3-pro-review-dac-headphone-amp.27148/">Audio Science Review</a> 给出的推荐。正好苦于 iPhone 的蓝牙不支持 ALAC，正好把以前的 AQ DragonFly 拿去听 Apple Music。光纤和同轴输入支持顺道也解决了 Xbox 的音频输出方案，不用再依赖显示器那孱弱的数模转换能力。</p>
 <figure>
-<img data-src="/images/dx3pro+/dx3pro+.jpg" alt="挺香的" /><figcaption aria-hidden="true">挺香的</figcaption>
+<img data-src="/images/dx3pro+/dx3pro+.jpg" alt="" /><figcaption>挺香的</figcaption>
 </figure>
 <p>扯远了，之前用 DragonFly 时 fb2k 的 output 用的 WASAPI，DX3 Pro + 支持 DSD，便想尝试一下，同时官方给 Win10 使用了定制的 <a target="_blank" rel="noopener" href="https://thesycon.de/eng/usb_audiodriver.shtml">ASIO 驱动</a>，尝试配置一下，坑还挺多的。</p>
 <p><img data-src="/images/dx3pro+/driver.jpg" /></p>
@@ -373,7 +375,7 @@ autoproxy_output::check_dsd_stream(false) &#x3D;&gt; DSD stream contains 4 chunk
 
 <div class="copyright">
   &copy; 2016 – 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fas fa-paw"></i>
   </span>
@@ -387,9 +389,9 @@ autoproxy_output::check_dsd_stream(false) &#x3D;&gt; DSD stream contains 4 chunk
 
   
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/components/prism-core.min.js" integrity="sha256-vlRYHThwdq55dA+n1BKQRzzLwFtH9VINdSI68+5JhpU=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha256-cl5LNmPvcRcGFaQFjwEKIfs51AX7wBkvoByH6LTxQCs=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha256-K837BwIyiXo5k/9fCYgqUyA14bN4/Ve9P2SIT0KmZD0=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js" integrity="sha256-c9n/9oG7sBeCouNZfRg5tO8VCCQXGPLiDPJNaF5Qgic=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha256-RtKI23ujTCOg3jNK74NK61WGNYbtBWcqh6UKebC2AQo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha256-K837BwIyiXo5k/9fCYgqUyA14bN4/Ve9P2SIT0KmZD0=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>

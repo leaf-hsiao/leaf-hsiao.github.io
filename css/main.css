@@ -45,10 +45,10 @@
     --btn-default-hover-bg: #666;
     --btn-default-hover-color: #ccc;
     --btn-default-hover-border-color: #666;
-    --highlight-background: #1d1f21;
-    --highlight-foreground: #c5c8c6;
-    --highlight-gutter-background: #2d2f31;
-    --highlight-gutter-foreground: #b4b7b5;
+    --highlight-background: #23241f;
+    --highlight-foreground: #f8f8f2;
+    --highlight-gutter-background: #383934;
+    --highlight-gutter-foreground: #e2e2dc;
     color-scheme: dark;
   }
   img {
@@ -708,6 +708,9 @@ figure.highlight .code pre {
   padding-left: 10px;
   width: 100%;
 }
+figure.highlight .marked {
+  background: rgba(0,0,0,0.3);
+}
 pre .caption,
 pre figcaption {
   margin-bottom: 10px;
@@ -1121,6 +1124,7 @@ pre code {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 5;
 }
 @media (max-width: 413px) {
   .post-body .tabs ul.nav-tabs,
@@ -2858,7 +2862,12 @@ hr {
 }
 @media (max-width: 767px) {
   .site-nav {
-    padding: 10px 10px 0;
+    padding: 0 10px 0;
+  }
+}
+@media (max-width: 767px) {
+  .main-menu {
+    padding-top: 10px;
   }
 }
 .menu {
@@ -2911,7 +2920,7 @@ hr {
 .posts-expand .post-eof {
   display: none;
 }
-.posts-expand .post-block:not(:first-child) {
+.posts-expand .post-block:not(:first-of-type) {
   margin-top: 120px;
 }
 .posts-expand .post-header {
@@ -3024,7 +3033,7 @@ hr {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #ff0daa;
+  background: #ff42ff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
