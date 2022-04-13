@@ -32,7 +32,7 @@
 <meta property="og:description" content="MySQL里的 Stored Procedure 有点意思">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-02-27T11:04:46.000Z">
-<meta property="article:modified_time" content="2022-04-12T14:08:52.908Z">
+<meta property="article:modified_time" content="2022-04-13T16:09:25.578Z">
 <meta property="article:author" content="Leaf">
 <meta name="twitter:card" content="summary">
 
@@ -273,7 +273,9 @@ BEGIN
 END</code></pre>
 <p>然后通过 call 调用</p>
 <pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">CALL initTable(&#39;tb&#39;, &#39;anothertb&#39;)</code></pre>
-<p>但是在同一个procedure里对一张表进行多次update的话则会出现 can't lock table 的报错。可以利用 transaction 解决。而transaction在mysql语法中有点特殊，不是<code>BEGIN TRAN/COMMIT TRAN</code>这种形式。</p>
+<p>但是在同一个procedure里对一张表进行多次update的话则会出现 can't lock
+table 的报错。可以利用 transaction
+解决。而transaction在mysql语法中有点特殊，不是<code>BEGIN TRAN/COMMIT TRAN</code>这种形式。</p>
 <p>假设要update同一张表两次：</p>
 <pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">DROP PROCEDURE IF EXISTS updateTable
 CREATE PROCEDURE updateTable(IN tb VARCHAR(5))

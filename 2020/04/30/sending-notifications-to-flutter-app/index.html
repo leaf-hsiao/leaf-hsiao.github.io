@@ -33,7 +33,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://firebase.google.com/docs/functions/images/notify.png">
 <meta property="article:published_time" content="2020-04-30T22:24:57.000Z">
-<meta property="article:modified_time" content="2022-04-12T14:08:52.912Z">
+<meta property="article:modified_time" content="2022-04-13T16:09:25.578Z">
 <meta property="article:author" content="Leaf">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://firebase.google.com/docs/functions/images/notify.png">
@@ -149,7 +149,8 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#cloud-functions"><span class="nav-number">1.</span> <span class="nav-text">Cloud Functions</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#setting-triggers"><span class="nav-number">1.1.</span> <span class="nav-text">Setting Triggers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#parse-data"><span class="nav-number">1.2.</span> <span class="nav-text">Parse Data</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sending-message-via-firebase-cloud-messaging"><span class="nav-number">1.3.</span> <span class="nav-text">Sending Message via Firebase Cloud Messaging</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#firebase-messaging"><span class="nav-number">2.</span> <span class="nav-text">Firebase Messaging</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#cloud-functions"><span class="nav-number">1.</span> <span class="nav-text">Cloud Functions</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#setting-triggers"><span class="nav-number">1.1.</span> <span class="nav-text">Setting Triggers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#parse-data"><span class="nav-number">1.2.</span> <span class="nav-text">Parse Data</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sending-message-via-firebase-cloud-messaging"><span class="nav-number">1.3.</span> <span class="nav-text">Sending Message
+via Firebase Cloud Messaging</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#firebase-messaging"><span class="nav-number">2.</span> <span class="nav-text">Firebase Messaging</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -273,37 +274,57 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>In this semester, our team tried to develop an mobile APP using Flutter. One user story is that when user are not using the APP, he/she should be notified when new friend request or new message coming</p>
-<p>Since we are using firebase as our backend service, cloud functions can be used to monitor the database, and send notifications when triggered</p>
+        <p>In this semester, our team tried to develop an mobile APP using
+Flutter. One user story is that when user are not using the APP, he/she
+should be notified when new friend request or new message coming</p>
+<p>Since we are using firebase as our backend service, cloud functions
+can be used to monitor the database, and send notifications when
+triggered</p>
 <span id="more"></span>
-<p><a target="_blank" rel="noopener" href="https://firebase.google.com/docs/functions/use-cases">This document</a> provides a simple example:</p>
+<p><a target="_blank" rel="noopener" href="https://firebase.google.com/docs/functions/use-cases">This
+document</a> provides a simple example:</p>
 <figure>
-<img data-src="https://firebase.google.com/docs/functions/images/notify.png" alt="" /><figcaption>img</figcaption>
+<img data-src="https://firebase.google.com/docs/functions/images/notify.png"
+alt="img" />
+<figcaption aria-hidden="true">img</figcaption>
 </figure>
 <blockquote>
 <ol type="1">
-<li>The function triggers on writes to the Realtime Database path where followers are stored.</li>
+<li>The function triggers on writes to the Realtime Database path where
+followers are stored.</li>
 <li>The function composes a message to send via FCM.</li>
 <li>FCM sends the notification message to the user's device.</li>
 </ol>
 </blockquote>
 <h2 id="cloud-functions">Cloud Functions</h2>
 <h3 id="setting-triggers">Setting Triggers</h3>
-<p>Interactions between users is stored at <code>/users/&#123;userId&#125;/interactions/&#123;interactionID&#125;</code>in Cloud Firestore. Firebase SDK provide 4 triggers <code>onCreate</code>,<code>onUpdate</code>,<code>onDelete</code>,<code>onWrite</code></p>
-<p>In our case, we want to send a notification when user generate an interaction. So the function running on Node.js 8 should specify the document path and event type:</p>
+<p>Interactions between users is stored at
+<code>/users/&#123;userId&#125;/interactions/&#123;interactionID&#125;</code>in Cloud
+Firestore. Firebase SDK provide 4 triggers
+<code>onCreate</code>,<code>onUpdate</code>,<code>onDelete</code>,<code>onWrite</code></p>
+<p>In our case, we want to send a notification when user generate an
+interaction. So the function running on Node.js 8 should specify the
+document path and event type:</p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">const functions &#x3D; require(&#39;firebase-functions&#39;);
 
 exports.notificationFCM &#x3D; functions.firestore
   .document(&#39;&#x2F;users&#x2F;&#123;userId&#125;&#x2F;interactions&#x2F;&#123;interactionID&#125;&#39;)
   .onCreate(async (snapshot, context) &#x3D;&gt; &#123; &#x2F;* ... *&#x2F; &#125;);</code></pre>
 <h3 id="parse-data">Parse Data</h3>
-<p>Based on the data we need, we can set the <a target="_blank" rel="noopener" href="https://firebase.google.com/docs/cloud-messaging/concept-options">FCM messages</a> Notification messages will be displayed to end-user devices, data messages can be handled by client app and token is device registration token generated by FCM SDK in client app</p>
+<p>Based on the data we need, we can set the <a
+target="_blank" rel="noopener" href="https://firebase.google.com/docs/cloud-messaging/concept-options">FCM
+messages</a> Notification messages will be displayed to end-user
+devices, data messages can be handled by client app and token is device
+registration token generated by FCM SDK in client app</p>
 <p>For given platform, token can be got as follows</p>
 <ul>
-<li>iOS (Swift) — <a target="_blank" rel="noopener" href="https://firebase.google.com/docs/reference/swift/firebasemessaging/api/reference/Classes/Messaging#/c:objc(cs)FIRMessaging(im)retrieveFCMTokenForSenderID:completion:"><code>retrieveFCMTokenForSenderID:completion:</code></a></li>
-<li>Android — <a target="_blank" rel="noopener" href="https://firebase.google.com/docs/reference/android/com/google/firebase/iid/FirebaseInstanceId#getToken(java.lang.String,%20java.lang.String)"><code>getToken()</code></a></li>
+<li>iOS (Swift) — <a
+target="_blank" rel="noopener" href="https://firebase.google.com/docs/reference/swift/firebasemessaging/api/reference/Classes/Messaging#/c:objc(cs)FIRMessaging(im)retrieveFCMTokenForSenderID:completion:"><code>retrieveFCMTokenForSenderID:completion:</code></a></li>
+<li>Android — <a
+target="_blank" rel="noopener" href="https://firebase.google.com/docs/reference/android/com/google/firebase/iid/FirebaseInstanceId#getToken(java.lang.String,%20java.lang.String)"><code>getToken()</code></a></li>
 </ul>
-<p>Users can have multiple devices, however, for convenience, just assume that token is stored as a string under the user profile</p>
+<p>Users can have multiple devices, however, for convenience, just
+assume that token is stored as a string under the user profile</p>
 <p>The content of interaction is a JSON like data passed by snapshot</p>
 <pre class="line-numbers language-json" data-language="json"><code class="language-json">&#123; metaData: &#123;&#125;,
   readed: false,
@@ -335,8 +356,10 @@ exports.notificationFCM &#x3D; functions.firestore
             &#125;;
         &#125;);
     &#125;);</code></pre>
-<h3 id="sending-message-via-firebase-cloud-messaging">Sending Message via Firebase Cloud Messaging</h3>
-<p>This is very straight forward, sending the message to target device, then receiving response or error code</p>
+<h3 id="sending-message-via-firebase-cloud-messaging">Sending Message
+via Firebase Cloud Messaging</h3>
+<p>This is very straight forward, sending the message to target device,
+then receiving response or error code</p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">const functions &#x3D; require(&#39;firebase-functions&#39;);
 
 exports.notificationFCM &#x3D; functions.firestore
@@ -369,10 +392,18 @@ exports.notificationFCM &#x3D; functions.firestore
         &#125;);
     &#125;);
 </code></pre>
-<p>The cloud work is completed, next step is to make your device receive notifications</p>
+<p>The cloud work is completed, next step is to make your device receive
+notifications</p>
 <h2 id="firebase-messaging">Firebase Messaging</h2>
-<p><a target="_blank" rel="noopener" href="https://pub.dev/packages/firebase_messaging">Firebase Messaging</a> is a flutter plugin for FCM, to use this, just update a dependency in the <code>pubspec.yaml</code>file</p>
-<p>The <a target="_blank" rel="noopener" href="https://pub.dev/packages/firebase_messaging#-readme-tab-">README</a> file introduced how to integrate Firebase with your Android and IOS project, as we are using Cloud Storage and Firebase Auth. these part is already done yet. Then import the plugin and instantiate it in the Dart code</p>
+<p><a target="_blank" rel="noopener" href="https://pub.dev/packages/firebase_messaging">Firebase
+Messaging</a> is a flutter plugin for FCM, to use this, just update a
+dependency in the <code>pubspec.yaml</code>file</p>
+<p>The <a
+target="_blank" rel="noopener" href="https://pub.dev/packages/firebase_messaging#-readme-tab-">README</a>
+file introduced how to integrate Firebase with your Android and IOS
+project, as we are using Cloud Storage and Firebase Auth. these part is
+already done yet. Then import the plugin and instantiate it in the Dart
+code</p>
 <pre class="line-numbers language-dart" data-language="dart"><code class="language-dart">import &#39;package:firebase_messaging&#x2F;firebase_messaging.dart&#39;;
 final FirebaseMessaging _firebaseMessaging &#x3D; FirebaseMessaging();</code></pre>
 <p>BTW, The device token can be accessed by doing so</p>

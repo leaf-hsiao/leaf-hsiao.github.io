@@ -36,7 +36,7 @@
 <meta property="og:image" content="https://cateaf.com/images/graduation/selec.png">
 <meta property="og:image" content="https://cateaf.com/images/graduation/manage.png">
 <meta property="article:published_time" content="2017-06-21T13:57:09.000Z">
-<meta property="article:modified_time" content="2022-04-12T14:08:52.908Z">
+<meta property="article:modified_time" content="2022-04-13T16:09:25.578Z">
 <meta property="article:author" content="Leaf">
 <meta property="article:tag" content="math">
 <meta name="twitter:card" content="summary">
@@ -269,7 +269,8 @@
     
     <div class="post-body" itemprop="articleBody">
         <p><em>毕业典礼还是完美的睡过去了（叹气，毕业之后成为又丧又废的NEET。</em></p>
-<p>这半年主要都在折腾毕设，课题还是十分有趣的说。<del>虽然被自己搞得杂乱不堪</del> 有种自己的大学变成了37,990,696 字节的感觉。</p>
+<p>这半年主要都在折腾毕设，课题还是十分有趣的说。<del>虽然被自己搞得杂乱不堪</del>
+有种自己的大学变成了37,990,696 字节的感觉。</p>
 <p><img data-src="/images/graduation/thesis.png" /></p>
 <span id="more"></span>
 <p>十分糟糕的心情，毕业开始丧。听着更加丧的歌总结一下毕设。</p>
@@ -286,44 +287,115 @@
 <li><p>降低噪音，提高分类精度;</p></li>
 <li><p>能取得更多可解释的特征，来帮助识别和监测目标疾病或功能类型。</p></li>
 </ul>
-<p>因此各种聚类，分类和预测技术已经被用来分析，分类和了解基因表达数据，如 Fisher 判别分析 ，人工神经网络 ，以及支持向量机等。通过基于表达谱分类识别算法，再利用分类器构建预测分类模型。</p>
+<p>因此各种聚类，分类和预测技术已经被用来分析，分类和了解基因表达数据，如
+Fisher 判别分析 ，人工神经网络
+，以及支持向量机等。通过基于表达谱分类识别算法，再利用分类器构建预测分类模型。</p>
 <p>因此设计本系统的目的在于提供一个可视化界面供研究人员直观的操控海量基因数据，选择不同的特征选择算法，直接获取结果。</p>
 <h1 id="图与脑洞">图与脑洞</h1>
 <p>实在过于懒惰UI直接用R实现<del>赞美bootstrap</del>，然后拖延症导致很多脑洞没实现，导师强烈要求（划掉）加上用户管理以及存储功能，其实本来只打算完成一个简单的基因选择的功能和结果可视化对比。</p>
 <p>继续懒惰的一个一个模块堆好了界面。</p>
 <p><del>无意义其实可以跳过</del></p>
 <figure>
-<img data-src="/images/graduation/import.png" alt="" /><figcaption>数据上传</figcaption>
+<img data-src="/images/graduation/import.png" alt="数据上传" />
+<figcaption aria-hidden="true">数据上传</figcaption>
 </figure>
 <figure>
-<img data-src="/images/graduation/selec.png" alt="" /><figcaption>基因选择</figcaption>
+<img data-src="/images/graduation/selec.png" alt="基因选择" />
+<figcaption aria-hidden="true">基因选择</figcaption>
 </figure>
 <figure>
-<img data-src="/images/graduation/manage.png" alt="" /><figcaption>模块管理</figcaption>
+<img data-src="/images/graduation/manage.png" alt="模块管理" />
+<figcaption aria-hidden="true">模块管理</figcaption>
 </figure>
 <h1 id="有点意义的笔记">有点意义的笔记</h1>
 <h2 id="算法概述">算法概述</h2>
 <h3 id="mrmr">mRMR</h3>
-<p>令<span class="math inline">\(S​\)</span>表示选定基因的子集，<span class="math inline">\(\Omega​\)</span>是所有可用基因的集合;最小冗余可以通过计算得到<span class="math inline">\(\min _{S\subset \Omega }\dfrac {1}{\left|S\right| ^{2}}\sum_{i,j\in S}I(g_i, g_j) ​\)</span></p>
-<p>其中<span class="math inline">\(I(g_i, g_j)​\)</span>是 <span class="math inline">\(i​\)</span>个 和 <span class="math inline">\(j​\)</span>个 基因之间的互信息即测量这两个相互依赖的变量。两个离散随机变量<span class="math inline">\(g_i​\)</span>和<span class="math inline">\(g_j​\)</span>的互信息可以被定义为<span class="math inline">\(\sum_{m\in g_i}\sum_{n\in g_j}p(m,n )log\dfrac{p(m,n)}{p(m)p(n)}​\)</span></p>
-<p>其中<span class="math inline">\(p(m, n)\)</span>是<span class="math inline">\(g_i\)</span>和<span class="math inline">\(g_j\)</span>的联合概率分布函数，<span class="math inline">\(p(m)\)</span>和<span class="math inline">\(p(n)\)</span>分别是<span class="math inline">\(g_i\)</span>和<span class="math inline">\(g_j\)</span>的边际概率分布函数。 <span class="math inline">\(|S|\)</span> 是<span class="math inline">\(S\)</span>中基因数量，通常使用互信息<span class="math inline">\(I(T, g_j)\)</span>来计算从基因$ g_i<span class="math inline">\(到类\)</span> T = {t1,t2} <span class="math inline">\(的区分能力，其中\)</span>t_1<span class="math inline">\(和\)</span>t_2<span class="math inline">\(表示健康和肿瘤类别。因此，最大相关性可以通过以下公式计算\)</span><em>{S}</em>{i,jS}I(T, g_i)$</p>
-<p>mRMR 特征选择标准可以得到如下差异形式：<span class="math inline">\(\max_{S\subset \Omega }\{\sum_{i\in S}I(T, g_i)-[\dfrac{1}{\left|S\right|}\sum_{i,j\in S}I(g_i, g_j)]\}\)</span></p>
+<p>令<span class="math inline">\(S​\)</span>表示选定基因的子集，<span
+class="math inline">\(\Omega​\)</span>是所有可用基因的集合;最小冗余可以通过计算得到<span
+class="math inline">\(\min _{S\subset \Omega }\dfrac {1}{\left|S\right|
+^{2}}\sum_{i,j\in S}I(g_i, g_j) ​\)</span></p>
+<p>其中<span class="math inline">\(I(g_i, g_j)​\)</span>是 <span
+class="math inline">\(i​\)</span>个 和 <span
+class="math inline">\(j​\)</span>个
+基因之间的互信息即测量这两个相互依赖的变量。两个离散随机变量<span
+class="math inline">\(g_i​\)</span>和<span
+class="math inline">\(g_j​\)</span>的互信息可以被定义为<span
+class="math inline">\(\sum_{m\in g_i}\sum_{n\in g_j}p(m,n
+)log\dfrac{p(m,n)}{p(m)p(n)}​\)</span></p>
+<p>其中<span class="math inline">\(p(m, n)\)</span>是<span
+class="math inline">\(g_i\)</span>和<span
+class="math inline">\(g_j\)</span>的联合概率分布函数，<span
+class="math inline">\(p(m)\)</span>和<span
+class="math inline">\(p(n)\)</span>分别是<span
+class="math inline">\(g_i\)</span>和<span
+class="math inline">\(g_j\)</span>的边际概率分布函数。 <span
+class="math inline">\(|S|\)</span> 是<span
+class="math inline">\(S\)</span>中基因数量，通常使用互信息<span
+class="math inline">\(I(T, g_j)\)</span>来计算从基因$ g_i<span
+class="math inline">\(到类\)</span> T = {t1,t2} <span
+class="math inline">\(的区分能力，其中\)</span>t_1<span
+class="math inline">\(和\)</span>t_2<span
+class="math inline">\(表示健康和肿瘤类别。因此，最大相关性可以通过以下公式计算\)</span><em>{S}</em>{i,jS}I(T,
+g_i)$</p>
+<p>mRMR 特征选择标准可以得到如下差异形式：<span
+class="math inline">\(\max_{S\subset \Omega }\{\sum_{i\in S}I(T,
+g_i)-[\dfrac{1}{\left|S\right|}\sum_{i,j\in S}I(g_i,
+g_j)]\}\)</span></p>
 <h3 id="relieff">ReliefF</h3>
-<p>设训练数据集为 <span class="math inline">\(D\)</span> ，样本抽取次数为 <span class="math inline">\(m\)</span> ，特征权重的阈值 <span class="math inline">\(\delta\)</span> ,最近邻样本个数 <span class="math inline">\(k\)</span> ，输出为各个特性的特征权重 <span class="math inline">\(T\)</span> 。 设所有特征权重为 0 ， <span class="math inline">\(T​\)</span> 为空集。从 <span class="math inline">\(D​\)</span> 中随机选择一个样本 <span class="math inline">\(R​\)</span> ；再从 <span class="math inline">\(R​\)</span> 的同类样本集中找到 <span class="math inline">\(R​\)</span> 的 <span class="math inline">\(k​\)</span> 个最近邻 <span class="math inline">\(H_j(j=1,2,...,k)​\)</span> , 再从每一个不同类的样本集中找出 <span class="math inline">\(k​\)</span> 个 最近邻 <span class="math inline">\(M_j(C)​\)</span> 。循环 <span class="math inline">\(m​\)</span> 次后开始从 <span class="math inline">\(A=1​\)</span> 到 <span class="math inline">\(N​\)</span> 计算特征<span class="math inline">\(W(A)=W(A)-\sum^{k}_{j=1}diff(A,R,H_j)/(mk)+\sum_{C \in class(R)}[\dfrac{p(C)}{1-p(Class(R))}\sum^k_{j=1}diff(A,R,M_j(C))]/(mk)​\)</span></p>
+<p>设训练数据集为 <span class="math inline">\(D\)</span>
+，样本抽取次数为 <span class="math inline">\(m\)</span> ，特征权重的阈值
+<span class="math inline">\(\delta\)</span> ,最近邻样本个数 <span
+class="math inline">\(k\)</span> ，输出为各个特性的特征权重 <span
+class="math inline">\(T\)</span> 。 设所有特征权重为 0 ， <span
+class="math inline">\(T​\)</span> 为空集。从 <span
+class="math inline">\(D​\)</span> 中随机选择一个样本 <span
+class="math inline">\(R​\)</span> ；再从 <span
+class="math inline">\(R​\)</span> 的同类样本集中找到 <span
+class="math inline">\(R​\)</span> 的 <span
+class="math inline">\(k​\)</span> 个最近邻 <span
+class="math inline">\(H_j(j=1,2,...,k)​\)</span> ,
+再从每一个不同类的样本集中找出 <span class="math inline">\(k​\)</span> 个
+最近邻 <span class="math inline">\(M_j(C)​\)</span> 。循环 <span
+class="math inline">\(m​\)</span> 次后开始从 <span
+class="math inline">\(A=1​\)</span> 到 <span
+class="math inline">\(N​\)</span> 计算特征<span
+class="math inline">\(W(A)=W(A)-\sum^{k}_{j=1}diff(A,R,H_j)/(mk)+\sum_{C
+\in
+class(R)}[\dfrac{p(C)}{1-p(Class(R))}\sum^k_{j=1}diff(A,R,M_j(C))]/(mk)​\)</span></p>
 <h3 id="fisher-score">Fisher Score</h3>
-<p>给定 <span class="math inline">\(m\)</span> 个特征， 将输入的矩阵 <span class="math inline">\(\mathbf{X} \in \mathbb R^{d \times n}\)</span> 缩小到 <span class="math inline">\(\mathbf{Z} \in \mathbb R^{m \times n}\)</span> ，则 Fisher Score 如下计算<span class="math inline">\(F( \mathbf{Z})=tr\{(\mathbf{\widetilde{S}}_b)\}(\mathbf{\widetilde{S}}_t + \gamma \mathbf{I})^{-1}\)</span></p>
-<p>其中 <span class="math inline">\(\gamma\)</span> 是一个正规参数, <span class="math inline">\(\widetilde{S}_b\)</span> 和 <span class="math inline">\(\widetilde{S}_t\)</span> 如以下给出 <span class="math display">\[
+<p>给定 <span class="math inline">\(m\)</span> 个特征， 将输入的矩阵
+<span class="math inline">\(\mathbf{X} \in \mathbb R^{d \times
+n}\)</span> 缩小到 <span class="math inline">\(\mathbf{Z} \in \mathbb
+R^{m \times n}\)</span> ，则 Fisher Score 如下计算<span
+class="math inline">\(F(
+\mathbf{Z})=tr\{(\mathbf{\widetilde{S}}_b)\}(\mathbf{\widetilde{S}}_t +
+\gamma \mathbf{I})^{-1}\)</span></p>
+<p>其中 <span class="math inline">\(\gamma\)</span> 是一个正规参数,
+<span class="math inline">\(\widetilde{S}_b\)</span> 和 <span
+class="math inline">\(\widetilde{S}_t\)</span> 如以下给出 <span
+class="math display">\[
 \widetilde{S}_b=\sum^c_{k=1}(\widetilde{\mu}_k-\widetilde{\mu})(\widetilde{\mu}_k-\widetilde{\mu})^T
 \]</span> <span class="math display">\[
 \widetilde{S}_t=\sum^n_{i=1}(z_i-\widetilde{\mu})^T
 \]</span></p>
 <h2 id="不存在的前端">不存在的前端</h2>
 <blockquote>
-<p>Shiny is a new package from RStudio that makes it incredibly easy to build interactive web applications with R.</p>
+<p>Shiny is a new package from RStudio that makes it incredibly easy to
+build interactive web applications with R.</p>
 </blockquote>
-<p>可以说是非常便利了。只需要看官方的<a target="_blank" rel="noopener" href="http://shiny.rstudio.com/tutorial/">tutorial</a>，再参考一下<a target="_blank" rel="noopener" href="http://shiny.rstudio.com/gallery/">gallery</a>里的范例，从此不用切图<del>所以说前端就是伪需求</del>。此外<a target="_blank" rel="noopener" href="http://rstudio.github.io/shinydashboard/">shinydashboard</a> 、<a target="_blank" rel="noopener" href="http://rstudio.github.io/shinythemes/">shinythemes</a> 、<a target="_blank" rel="noopener" href="https://github.com/daattali/shinyjs/blob/master/README.md">shinyjs</a> 、<a target="_blank" rel="noopener" href="http://www.htmlwidgets.org/">htmlwidgets</a>能够继续扩展。</p>
+<p>可以说是非常便利了。只需要看官方的<a
+target="_blank" rel="noopener" href="http://shiny.rstudio.com/tutorial/">tutorial</a>，再参考一下<a
+target="_blank" rel="noopener" href="http://shiny.rstudio.com/gallery/">gallery</a>里的范例，从此不用切图<del>所以说前端就是伪需求</del>。此外<a
+target="_blank" rel="noopener" href="http://rstudio.github.io/shinydashboard/">shinydashboard</a> 、<a
+target="_blank" rel="noopener" href="http://rstudio.github.io/shinythemes/">shinythemes</a> 、<a
+target="_blank" rel="noopener" href="https://github.com/daattali/shinyjs/blob/master/README.md">shinyjs</a>
+、<a
+target="_blank" rel="noopener" href="http://www.htmlwidgets.org/">htmlwidgets</a>能够继续扩展。</p>
 <h2 id="不存在的服务端">不存在的服务端</h2>
-<p>三种基因选择方法分别调用了<a target="_blank" rel="noopener" href="https://cran.r-project.org/web/packages/mRMRe/index.html">mRMRe</a>、<a target="_blank" rel="noopener" href="https://cran.r-project.org/web/packages/CORElearn/index.html">CORElearn</a>、<a target="_blank" rel="noopener" href="https://cran.r-project.org/web/packages/MASS/index.html">MASS</a>三个package实现。然而，其实没什么好写的不如直接看官方pdf。</p>
+<p>三种基因选择方法分别调用了<a
+target="_blank" rel="noopener" href="https://cran.r-project.org/web/packages/mRMRe/index.html">mRMRe</a>、<a
+target="_blank" rel="noopener" href="https://cran.r-project.org/web/packages/CORElearn/index.html">CORElearn</a>、<a
+target="_blank" rel="noopener" href="https://cran.r-project.org/web/packages/MASS/index.html">MASS</a>三个package实现。然而，其实没什么好写的不如直接看官方pdf。</p>
 <p><em>越写越不想写就这样吧，反正我也不知道我写了什么东西</em></p>
 
     </div>
