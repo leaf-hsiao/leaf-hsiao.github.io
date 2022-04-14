@@ -3851,6 +3851,107 @@ final FirebaseMessaging _firebaseMessaging &#x3D; FirebaseMessaging();</code></p
 ]]></content>
   </entry>
   <entry>
+    <title>改为由Github Actions部署</title>
+    <url>/2022/04/12/switching-to-github-actions/</url>
+    <content><![CDATA[<p><a href="https://travis-ci.com/">Travis CI</a>
+去年开始收费后就就一直想着迁移到 <a
+href="https://docs.github.com/en/actions">GitHub
+Actions</a>来部署，然而几乎一年未更新内容，就一直搁置着（归根结底就是懒了），最近想起这茬事就顺道给迁移了</p>
+<p>一开始想直接套个 <a
+href="https://github.com/marketplace?type=actions">marketplace</a>
+里现成的<a
+href="https://github.com/sma11black/hexo-action">hexo-action</a>，但因为不支持
+<a
+href="https://pandoc.org/">Pandoc</a>（使用了hexo-rendering-pandoc），只能手动创建一个
+workflow</p>
+<span id="more"></span>
+<p>Github Actions 由 yml
+文件控制，存在<code>.github/workflow</code>目录下，其运行的逻辑如官方文档所说</p>
+<blockquote>
+<p>You can configure a GitHub Actions <em>workflow</em> to be triggered
+when an <em>event</em> occurs in your repository, such as a pull request
+being opened or an issue being created. Your workflow contains one or
+more <em>jobs</em> which can run in sequential order or in parallel.
+Each job will run inside its own virtual machine <em>runner</em>, or
+inside a container, and has one or more <em>steps</em> that either run a
+script that you define or run an <em>action</em>, which is a reusable
+extension that can simplify your workflow.</p>
+</blockquote>
+<p>新建一个名为 Deployment 的
+workflow，由于博客的源文件单独放在了一个仓库中，而平时的修改都在 draft
+分支上进行，因此设置当 master 分支接收到 pull request 时触发此
+workflow，<code>workflow_dispatch</code>用于手动在 Github 中执行
+workflow 以便调试</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">name: Deployment
+
+# Controls when the workflow will run
+on:
+  pull_request:
+    branches:
+      - master
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:</code></pre>
+<p>接着创建一个在 ubuntu-latest 上运行，名称为 build 的
+job，详细的步骤在steps下设定</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"># A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called &quot;build&quot;
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:</code></pre>
+<p>首先确认在 <code>$GITHUB_WORKSPACE</code>
+下并安装node.js，<code>node-version</code> 指定版本或者使用 nvm lts
+写法，cache 根据需求选择 <code>npm</code> 或者 <code>yarn</code> 等</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"># Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+- name: Checkout
+  uses: actions&#x2F;checkout@v3
+- name: Install node.js and modules
+  uses: actions&#x2F;setup-node@v3
+  with:
+    node-version: &#39;lts&#x2F;*&#39;
+    cache: &#39;npm&#39;
+- run: npm install</code></pre>
+<p>接着安装 pandoc，pandoc 官方文档中给出的 Github Actions
+安装方式是依赖于 docker 的，无法直接在 node.js
+中调用，因此选择手动安装，版本号由下载目录决定，<code>$RUNNER_TOOL_CACHE</code>为
+Github 默认环境变量，包含 GitHub 托管运行器预安装工具的目录路径</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">- name: Install pandoc
+  run: curl -s -L https:&#x2F;&#x2F;github.com&#x2F;jgm&#x2F;pandoc&#x2F;releases&#x2F;download&#x2F;2.18&#x2F;pandoc-2.18-linux-amd64.tar.gz | tar xvzf - -C $RUNNER_TOOL_CACHE&#x2F;</code></pre>
+<p>将 pandoc 加入 PATH 中，执行 build，生成静态文件</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">- name: Build
+  run: |
+    # add pandoc to PATH
+    export PATH&#x3D;&quot;$PATH:$RUNNER_TOOL_CACHE&#x2F;pandoc-2.18&#x2F;bin&quot;
+    npm run build</code></pre>
+<p>使用 <a
+href="https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-create-ssh-deploy-key">actions-gh-pages</a>
+将生成的静态文件推送到指定仓库和分支上，如果在同一仓库中可以直接使用
+github_token （已在环境变量中），跨仓库可使用 deploy_key （SSH）或者
+personal_token（HTTPS），需在GitHub设置中配置，具体参考 <a
+href="https://github.com/peaceiris/actions-gh-pages#options">Options</a></p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"># Deploy hexo blog website.
+- name: Deploy
+  uses: peaceiris&#x2F;actions-gh-pages@v3
+  with:
+    deploy_key: $&#123;&#123; secrets.DEPLOY_KEY &#125;&#125;
+    publish_dir: .&#x2F;public
+    external_repository: leaf-hsiao&#x2F;leaf-hsiao.github.io
+    publish_branch: master</code></pre>
+<p>最后按惯例在 readme 中加入徽章（</p>
+<h2 id="参考资料">参考资料</h2>
+<p><a
+href="https://docs.github.com/cn/actions/migrating-to-github-actions/migrating-from-travis-ci-to-github-actions#caching-dependencies">从
+Travis CI 迁移到 GitHub Actions</a></p>
+<p><a
+href="https://hexo.io/docs/github-pages.html">https://hexo.io/docs/github-pages.html</a></p>
+<p><a
+href="https://xiaopc.org/2019/08/29/github-actions-%E6%B5%8B%E8%AF%95-%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2-hexo/">Github
+Actions 测试 - 自动部署 Hexo</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>改为由Travis CI部署</title>
     <url>/2020/02/23/switching-to-travisci/</url>
     <content><![CDATA[<p>突然想起来用 <a href="https://travis-ci.com/">Travis CI</a>
