@@ -2525,6 +2525,84 @@ autoproxy_output::check_dsd_stream(false) &#x3D;&gt; DSD stream contains 4 chunk
 ]]></content>
   </entry>
   <entry>
+    <title>家庭药品管理辅助</title>
+    <url>/2022/04/25/keep-track-of-my-medicines/</url>
+    <content><![CDATA[<p>北京新一轮疫情下，被散播了一波库存焦虑，补充了食材，又检查了一下自己的药箱，发现了一堆过期药品和护肤品🙃</p>
+<p>食材的管理及处理方案已有诸如<a
+href="https://cook.yunyoujun.cn/">隔离食用手册</a>等攻略，而且由于保存期限的不确定性，只能做个大致估计，而药品（以及护肤品）这类有明确保质期的更适合进行系统的管理。再者就是在沪的几位朋友因为智齿，牙髓炎无法就医，而对于普通人而言，我们甚至记不清布洛芬、甲硝锉是
+OTC 吗，家庭药箱是不是存了应急药品？<a
+href="https://airtable.com/">Airtable</a>
+在管理我的咖啡库存和萃取方案有着多年良好的体验，依旧考虑使用它来追踪管理我的药品、补剂、护肤品等</p>
+<span id="more"></span>
+<h2 id="使用-airtable-来做药品管理">使用 Airtable 来做药品管理</h2>
+<p>国内缺少这一方面的官方文档，因此主要参考美国食品药品监督管理局 <a
+href="https://www.fda.gov/">FDA</a> 发布的 <a
+href="https://www.fda.gov/drugs/resources-you-drugs/my-medicine-record">My
+Medicine Record</a>， 美国卫生及公共服务部营养补剂办公室 <a
+href="https://ods.od.nih.gov/">ODS</a> 发布的 <a
+href="https://ods.od.nih.gov/pubs/DietarySupplementandMedicineRecord.pdf">My
+Dietary Supplement and Medicine Record</a> 以及 <a
+href="https://www.aarp.org/">AARP</a> 联合 <a
+href="https://sosrx.com/">SoSRx</a> 发布的 <a
+href="https://www.aarp.org/health/drugs-supplements/info-2007/my_personal_medication_record.html">My
+Personal Medication Record</a></p>
+<p>出于隐私考虑，直接任选一个 pdf
+文档填写打印下来最为妥当，可以就诊时带给你的医生，而如果用来做一些日常药品，营养补剂，护肤品的管理的话在线表格可能更为方便些</p>
+<h3 id="药品表">药品表</h3>
+<p>所有的药品、补剂、护肤品都可以存在这张表中（或者根据大类分不同表格）</p>
+<ul>
+<li><p><strong>id：</strong>Autonumber，primary field
+不允许重名，直接使用自增数字，或者可以考虑使用公式拼接名称和生产日期，一般也不会冲突</p></li>
+<li><p><strong>名称：</strong>Single line text，记录药物名/商品名
+如：对乙酰氨基酚片/泰诺，维A酸乳膏/迪维，草酸艾斯西肽普兰片/来士普</p></li>
+<li><p><strong>分类：</strong>Single select，药品类型 如：Rx 处方药，OTC
+非处方药，Dietary supplements 保健品（维生素、钙片等）</p></li>
+<li><p><strong>形态：</strong>Single line text，药品形态 如：pill,
+tablet, capsule, liquid, injection, suppository, cream, lotion, eye or
+ear drops 等，包括颜色，外观等</p></li>
+<li><p><strong>生产日期：</strong>Date</p></li>
+<li><p><strong>过期日期：</strong>Date，一般都是标注的生产日期和保质期的，由于
+Airtable 里 Duration
+的最粗粒度是按小时计的，换算成小时的难度和计算过期日还是后者方便点</p></li>
+</ul>
+<h3 id="使用记录表">使用记录表</h3>
+<p>建议是按一个疗程来记录，护肤品可以按瓶记录</p>
+<ul>
+<li><p><strong>id：</strong>Autonumber，图省事依旧使用自增数字</p></li>
+<li><p><strong>名称：</strong>Link to another
+record，链接到药品表中的名称 aka 一个外键</p></li>
+<li><p><strong>用法：</strong>Single line
+text，用法用量以及服用时间和频率，遵医嘱或者参考药物说明书，由于服用方法差异，一定要做好记录<del>某个疗程后发现自己多了一半药🤦‍♂️</del></p></li>
+<li><p><strong>开瓶日期：</strong>Date，开始使用的日期</p></li>
+<li><p><strong>保鲜日期：</strong>Date，不能使用的日期，这两条主要是针对护肤品，一般按标签会有6m/12m之类的保鲜期，从开瓶日开始计算，因此可能会早于过期日之前到期</p></li>
+<li><p><strong>使用记录：</strong>Long
+Text，一个疗程内的所有服药记录直接记录，用分号分隔，便于检查是否疗程结束，是否遗漏</p></li>
+</ul>
+<p>在使用时还可以根据需求创建不同视图，如邻近过期/已过期提醒，以及同类产品的到期日和数量汇总来做采购提醒，以免出现突然断药等情况</p>
+<h2 id="准备家庭药箱">准备家庭药箱</h2>
+<p>关于家庭药箱应该放些什么的文章已有很多，本人也不是医学相关专业，因此不做赘述，个人的药箱内容主要做了以下参考</p>
+<ul>
+<li><a
+href="http://www.chealth.org.cn/mon/healthLife/article/MN176000003.html">中国公众健康网-家庭用药指南</a></li>
+<li><a
+href="https://www.nmpa.gov.cn/xxgk/kpzhsh/kpzhshyp/20171026113101406.html">国家药品监督局-怎样配备家庭药箱</a></li>
+<li><a
+href="https://www.nmpa.gov.cn/xxgk/kpzhsh/kpzhshyp/20171026113201132.html">国家药品监督局-怎样管理家庭药箱</a></li>
+<li><a href="https://dxy.com/article/59222">家庭常备药，这 10
+种就够了！</a></li>
+</ul>
+<p>除了药品的及时补充，注意过期日，适当保存也是很重要的</p>
+<h2 id="当遇到问题的时候">当遇到问题的时候</h2>
+<ul>
+<li>及时联系医生，如果因为疫情或者别的原因无法去门诊，也可以考虑线上问诊（大部分三甲医院都有自己的互联网医院）</li>
+<li>中国药品监管 APP
+以及国家药品监督局官网都提供了药品、医疗器械、化妆品的数据查询</li>
+<li>《默沙东诊疗手册大众版》，《腾讯医典》可供参考</li>
+</ul>
+<p>最后还是希望疫情不要影响到正常生活（去继续囤可乐了</p>
+]]></content>
+  </entry>
+  <entry>
     <title>$\LaTeX$ Math Symbols Cheetsheet</title>
     <url>/2016/08/31/latex-math-symbols-cheetsheet/</url>
     <content><![CDATA[<p>一些基本的<span
