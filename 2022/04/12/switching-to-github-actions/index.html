@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.2.0">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
@@ -18,10 +18,10 @@
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css" integrity="sha256-Z1K5uhUaJXA7Ll0XrZ/0JhX4lAtZFpT6jkKrEDT0drU=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"cateaf.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.14.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":true,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"cateaf.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="Travis CI 去年开始收费后就就一直想着迁移到 GitHub Actions来部署，然而几乎一年未更新内容，就一直搁置着（归根结底就是懒了），最近想起这茬事就顺道给迁移了 一开始想直接套个 marketplace 里现成的hexo-action，但因为不支持 Pandoc（使用了hexo-rendering-pandoc），只能手动创建一个 workflow">
 <meta property="og:type" content="article">
@@ -31,7 +31,7 @@
 <meta property="og:description" content="Travis CI 去年开始收费后就就一直想着迁移到 GitHub Actions来部署，然而几乎一年未更新内容，就一直搁置着（归根结底就是懒了），最近想起这茬事就顺道给迁移了 一开始想直接套个 marketplace 里现成的hexo-action，但因为不支持 Pandoc（使用了hexo-rendering-pandoc），只能手动创建一个 workflow">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-04-12T22:43:42.000Z">
-<meta property="article:modified_time" content="2023-01-11T15:26:09.511Z">
+<meta property="article:modified_time" content="2024-06-03T02:48:42.507Z">
 <meta property="article:author" content="Leaf">
 <meta name="twitter:card" content="summary">
 
@@ -51,9 +51,7 @@
 
 
 
-  <script async defer data-website-id="" src=""></script>
 
-  <script defer data-domain="" src=""></script>
 
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
@@ -247,8 +245,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-        <p><a target="_blank" rel="noopener" href="https://travis-ci.com/">Travis CI</a>
+    <div class="post-body" itemprop="articleBody"><p><a target="_blank" rel="noopener" href="https://travis-ci.com/">Travis CI</a>
 去年开始收费后就就一直想着迁移到 <a
 target="_blank" rel="noopener" href="https://docs.github.com/en/actions">GitHub
 Actions</a>来部署，然而几乎一年未更新内容，就一直搁置着（归根结底就是懒了），最近想起这茬事就顺道给迁移了</p>
@@ -277,63 +274,28 @@ workflow，由于博客的源文件单独放在了一个仓库中，而平时的
 分支上进行，因此设置当 master 分支接收到 pull request 时触发此
 workflow，<code>workflow_dispatch</code>用于手动在 Github 中执行
 workflow 以便调试</p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">name: Deployment
-
-# Controls when the workflow will run
-on:
-  pull_request:
-    branches:
-      - master
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:</code></pre>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">Deployment</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Controls when the workflow will run</span></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line">  <span class="attr">pull_request:</span></span><br><span class="line">    <span class="attr">branches:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">master</span></span><br><span class="line">  <span class="comment"># Allows you to run this workflow manually from the Actions tab</span></span><br><span class="line">  <span class="attr">workflow_dispatch:</span></span><br></pre></td></tr></table></figure>
 <p>接着创建一个在 ubuntu-latest 上运行，名称为 build 的
 job，详细的步骤在steps下设定</p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"># A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
-  # This workflow contains a single job called &quot;build&quot;
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:</code></pre>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># A workflow run is made up of one or more jobs that can run sequentially or in parallel</span></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="comment"># This workflow contains a single job called &quot;build&quot;</span></span><br><span class="line">  <span class="attr">build:</span></span><br><span class="line">    <span class="comment"># The type of runner that the job will run on</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line">    <span class="comment"># Steps represent a sequence of tasks that will be executed as part of the job</span></span><br><span class="line">    <span class="attr">steps:</span></span><br></pre></td></tr></table></figure>
 <p>首先确认在 <code>$GITHUB_WORKSPACE</code>
 下并安装node.js，<code>node-version</code> 指定版本或者使用 nvm lts
 写法，cache 根据需求选择 <code>npm</code> 或者 <code>yarn</code> 等</p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"># Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-- name: Checkout
-  uses: actions&#x2F;checkout@v3
-- name: Install node.js and modules
-  uses: actions&#x2F;setup-node@v3
-  with:
-    node-version: &#39;lts&#x2F;*&#39;
-    cache: &#39;npm&#39;
-- run: npm install</code></pre>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Checkout</span></span><br><span class="line">  <span class="attr">uses:</span> <span class="string">actions/checkout@v3</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Install</span> <span class="string">node.js</span> <span class="string">and</span> <span class="string">modules</span></span><br><span class="line">  <span class="attr">uses:</span> <span class="string">actions/setup-node@v3</span></span><br><span class="line">  <span class="attr">with:</span></span><br><span class="line">    <span class="attr">node-version:</span> <span class="string">&#x27;lts/*&#x27;</span></span><br><span class="line">    <span class="attr">cache:</span> <span class="string">&#x27;npm&#x27;</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">run:</span> <span class="string">npm</span> <span class="string">install</span></span><br></pre></td></tr></table></figure>
 <p>接着安装 pandoc，pandoc 官方文档中给出的 Github Actions
 安装方式是依赖于 docker 的，无法直接在 node.js
 中调用，因此选择手动安装，版本号由下载目录决定，<code>$RUNNER_TOOL_CACHE</code>为
 Github 默认环境变量，包含 GitHub 托管运行器预安装工具的目录路径</p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">- name: Install pandoc
-  run: curl -s -L https:&#x2F;&#x2F;github.com&#x2F;jgm&#x2F;pandoc&#x2F;releases&#x2F;download&#x2F;2.18&#x2F;pandoc-2.18-linux-amd64.tar.gz | tar xvzf - -C $RUNNER_TOOL_CACHE&#x2F;</code></pre>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Install</span> <span class="string">pandoc</span></span><br><span class="line">  <span class="attr">run:</span> <span class="string">curl</span> <span class="string">-s</span> <span class="string">-L</span> <span class="string">https://github.com/jgm/pandoc/releases/download/2.18/pandoc-2.18-linux-amd64.tar.gz</span> <span class="string">|</span> <span class="string">tar</span> <span class="string">xvzf</span> <span class="bullet">-</span> <span class="string">-C</span> <span class="string">$RUNNER_TOOL_CACHE/</span></span><br></pre></td></tr></table></figure>
 <p>将 pandoc 加入 PATH 中，执行 build，生成静态文件</p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">- name: Build
-  run: |
-    # add pandoc to PATH
-    export PATH&#x3D;&quot;$PATH:$RUNNER_TOOL_CACHE&#x2F;pandoc-2.18&#x2F;bin&quot;
-    npm run build</code></pre>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Build</span></span><br><span class="line">  <span class="attr">run:</span> <span class="string">|</span></span><br><span class="line"><span class="string">    # add pandoc to PATH</span></span><br><span class="line"><span class="string">    export PATH=&quot;$PATH:$RUNNER_TOOL_CACHE/pandoc-2.18/bin&quot;</span></span><br><span class="line"><span class="string">    npm run build</span></span><br></pre></td></tr></table></figure>
 <p>使用 <a
 target="_blank" rel="noopener" href="https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-create-ssh-deploy-key">actions-gh-pages</a>
 将生成的静态文件推送到指定仓库和分支上，如果在同一仓库中可以直接使用
 github_token （已在环境变量中），跨仓库可使用 deploy_key （SSH）或者
 personal_token（HTTPS），需在GitHub设置中配置，具体参考 <a
 target="_blank" rel="noopener" href="https://github.com/peaceiris/actions-gh-pages#options">Options</a></p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"># Deploy hexo blog website.
-- name: Deploy
-  uses: peaceiris&#x2F;actions-gh-pages@v3
-  with:
-    deploy_key: $&#123;&#123; secrets.DEPLOY_KEY &#125;&#125;
-    publish_dir: .&#x2F;public
-    external_repository: leaf-hsiao&#x2F;leaf-hsiao.github.io
-    publish_branch: master</code></pre>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deploy hexo blog website.</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Deploy</span></span><br><span class="line">  <span class="attr">uses:</span> <span class="string">peaceiris/actions-gh-pages@v3</span></span><br><span class="line">  <span class="attr">with:</span></span><br><span class="line">    <span class="attr">deploy_key:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.DEPLOY_KEY</span> <span class="string">&#125;&#125;</span></span><br><span class="line">    <span class="attr">publish_dir:</span> <span class="string">./public</span></span><br><span class="line">    <span class="attr">external_repository:</span> <span class="string">leaf-hsiao/leaf-hsiao.github.io</span></span><br><span class="line">    <span class="attr">publish_branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 <p>最后按惯例在 readme 中加入徽章（</p>
 <h2 id="参考资料">参考资料</h2>
 <p><a
@@ -364,7 +326,7 @@ Actions 测试 - 自动部署 Hexo</a></p>
       <a href="https://cateaf.com/2022/04/12/switching-to-github-actions/" title="改为由Github Actions部署">https://cateaf.com/2022/04/12/switching-to-github-actions/</a>
   </li>
   <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
   </li>
 </ul>
 </div>
@@ -375,12 +337,12 @@ Actions 测试 - 自动部署 Hexo</a></p>
           <div class="post-nav">
             <div class="post-nav-item">
                 <a href="/2021/11/26/how-to-set-fb2k-to-play-dsd/" rel="prev" title="如何用 Foobar2000 播放 Dsd">
-                  <i class="fa fa-chevron-left"></i> 如何用 Foobar2000 播放 Dsd
+                  <i class="fa fa-angle-left"></i> 如何用 Foobar2000 播放 Dsd
                 </a>
             </div>
             <div class="post-nav-item">
                 <a href="/2022/12/20/covid-19-recovery/" rel="next" title="COVID-19 康复个人记录">
-                  COVID-19 康复个人记录 <i class="fa fa-chevron-right"></i>
+                  COVID-19 康复个人记录 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
@@ -404,15 +366,14 @@ Actions 测试 - 自动部署 Hexo</a></p>
   <footer class="footer">
     <div class="footer-inner">
 
-
-<div class="copyright">
-  &copy; 2016 – 
-  <span itemprop="copyrightYear">2023</span>
-  <span class="with-love">
-    <i class="fas fa-paw"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Leaf</span>
-</div>
+  <div class="copyright">
+    &copy; 2016 – 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fas fa-paw"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Leaf</span>
+  </div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
   </div>
 
@@ -438,16 +399,15 @@ Actions 测试 - 自动部署 Hexo</a></p>
 
   
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js" integrity="sha256-4mJNT2bMXxcc1GCJaxBmMPdmah5ji0Ldnd79DKd1hoM=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha256-AjM0J5XIbiB590BrznLEgZGLnOQWrt62s3BEq65Q/I0=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha256-9cmf7tcLdXpKsPi/2AWE93PbZpTp4M4tqzFk+lWomjU=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
-<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.1/dist/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
 <script src="/js/third-party/search/local-search.js"></script>
+
+
 
 
 

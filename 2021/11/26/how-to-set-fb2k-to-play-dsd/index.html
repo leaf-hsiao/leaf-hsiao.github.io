@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.2.0">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
@@ -18,10 +18,10 @@
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css" integrity="sha256-Z1K5uhUaJXA7Ll0XrZ/0JhX4lAtZFpT6jkKrEDT0drU=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"cateaf.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.14.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":true,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"cateaf.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="本文不讨论 PCM 和 DSD 的优劣，也不讨论 ASIO, WASAPI, Direct Sound 哪个更好，仅对尝试用 fb2k 播放 dsd 做个配置记录。">
 <meta property="og:type" content="article">
@@ -33,7 +33,7 @@
 <meta property="og:image" content="https://cateaf.com/images/dx3pro+/dx3pro+.jpg">
 <meta property="og:image" content="https://cateaf.com/images/dx3pro+/driver.jpg">
 <meta property="article:published_time" content="2021-11-26T20:48:23.000Z">
-<meta property="article:modified_time" content="2023-01-11T15:26:09.511Z">
+<meta property="article:modified_time" content="2024-06-03T02:48:42.503Z">
 <meta property="article:author" content="Leaf">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cateaf.com/images/dx3pro+/dx3pro+.jpg">
@@ -54,9 +54,7 @@
 
 
 
-  <script async defer data-website-id="" src=""></script>
 
-  <script defer data-domain="" src=""></script>
 
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
@@ -249,8 +247,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-        <p>本文不讨论 PCM 和 DSD 的优劣，也不讨论 ASIO, WASAPI, Direct Sound
+    <div class="post-body" itemprop="articleBody"><p>本文不讨论 PCM 和 DSD 的优劣，也不讨论 ASIO, WASAPI, Direct Sound
 哪个更好，仅对尝试用 fb2k 播放 dsd 做个配置记录。</p>
 <span id="more"></span>
 <p>双十一叠上淘宝的折扣以及 Amex 的满减入了<a
@@ -347,13 +344,7 @@ DSD to DoP as well and works with other players.</p>
 foo_input_sacd 和 foo_out_asio+dsd
 的方式更简单易用，况且看起来后续的维护升级更有保障。缺憾的话~<del>不支持
 VU meter</del>~</p>
-<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">autoproxy_output::check_dsd_stream(true) &#x3D;&gt; DSD stream contains 1 chunks and 4704 samples
-autoproxy_output::process_samples() &#x3D;&gt; Switch to DSD playback
-autoproxy_output::process_samples() &#x3D;&gt; Input stream [channels: 2, samplerate: 2822400, channel_config: 0x00000003]
-autoproxy_output::process_samples() &#x3D;&gt; Output stream [channels: 2, samplerate: 2822400, channel_config: 0x00000003]
-autoproxy_output::process_samples(channels &#x3D; 2, sample_rate &#x3D; 2822400, channel_config &#x3D; 0x00000003)
-autoproxy_output::volume_adjust(samplerate &#x3D; 2822400, latency &#x3D; 0.000, volume &#x3D; 0.000)
-autoproxy_output::check_dsd_stream(false) &#x3D;&gt; DSD stream contains 4 chunks and 18816 samples</code></pre>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">autoproxy_output::check_dsd_stream(<span class="literal">true</span>) =&gt; DSD stream contains 1 chunks and 4704 samples</span><br><span class="line">autoproxy_output::process_samples() =&gt; Switch to DSD playback</span><br><span class="line">autoproxy_output::process_samples() =&gt; Input stream [channels: 2, samplerate: 2822400, channel_config: 0x00000003]</span><br><span class="line">autoproxy_output::process_samples() =&gt; Output stream [channels: 2, samplerate: 2822400, channel_config: 0x00000003]</span><br><span class="line">autoproxy_output::process_samples(channels = 2, sample_rate = 2822400, channel_config = 0x00000003)</span><br><span class="line">autoproxy_output::volume_adjust(samplerate = 2822400, latency = 0.000, volume = 0.000)</span><br><span class="line">autoproxy_output::check_dsd_stream(<span class="literal">false</span>) =&gt; DSD stream contains 4 chunks and 18816 samples</span><br></pre></td></tr></table></figure>
 <p>姑且就这么先听着🙄</p>
 
     </div>
@@ -375,7 +366,7 @@ autoproxy_output::check_dsd_stream(false) &#x3D;&gt; DSD stream contains 4 chunk
       <a href="https://cateaf.com/2021/11/26/how-to-set-fb2k-to-play-dsd/" title="如何用 Foobar2000 播放 Dsd">https://cateaf.com/2021/11/26/how-to-set-fb2k-to-play-dsd/</a>
   </li>
   <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
   </li>
 </ul>
 </div>
@@ -386,12 +377,12 @@ autoproxy_output::check_dsd_stream(false) &#x3D;&gt; DSD stream contains 4 chunk
           <div class="post-nav">
             <div class="post-nav-item">
                 <a href="/2021/08/08/coffee-flavor-characteristics/" rel="prev" title="咖啡风味">
-                  <i class="fa fa-chevron-left"></i> 咖啡风味
+                  <i class="fa fa-angle-left"></i> 咖啡风味
                 </a>
             </div>
             <div class="post-nav-item">
                 <a href="/2022/04/12/switching-to-github-actions/" rel="next" title="改为由Github Actions部署">
-                  改为由Github Actions部署 <i class="fa fa-chevron-right"></i>
+                  改为由Github Actions部署 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
@@ -415,15 +406,14 @@ autoproxy_output::check_dsd_stream(false) &#x3D;&gt; DSD stream contains 4 chunk
   <footer class="footer">
     <div class="footer-inner">
 
-
-<div class="copyright">
-  &copy; 2016 – 
-  <span itemprop="copyrightYear">2023</span>
-  <span class="with-love">
-    <i class="fas fa-paw"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Leaf</span>
-</div>
+  <div class="copyright">
+    &copy; 2016 – 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fas fa-paw"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Leaf</span>
+  </div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
   </div>
 
@@ -449,16 +439,15 @@ autoproxy_output::check_dsd_stream(false) &#x3D;&gt; DSD stream contains 4 chunk
 
   
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js" integrity="sha256-4mJNT2bMXxcc1GCJaxBmMPdmah5ji0Ldnd79DKd1hoM=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha256-AjM0J5XIbiB590BrznLEgZGLnOQWrt62s3BEq65Q/I0=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha256-9cmf7tcLdXpKsPi/2AWE93PbZpTp4M4tqzFk+lWomjU=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
-<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.1/dist/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
 <script src="/js/third-party/search/local-search.js"></script>
+
+
 
 
 

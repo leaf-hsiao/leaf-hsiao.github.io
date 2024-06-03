@@ -15,157 +15,13 @@ GitHub真香，不要问为什么 继续使用Hexo，这是坠吼滴。 <img dat
 <span id="more"></span></p>
 <h2 id="analysis-of-algorithms">Analysis of algorithms</h2>
 <p><span class="math inline">\(O(n)\)</span></p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">for(int i &#x3D; 0; i &lt; n; i++)&#123;&#x2F;&#x2F;O(n)
-    f();&#x2F;&#x2F;O(1)
-&#125;
-
-&#x2F;&#x2F;O(n)
-for (int i &#x3D; 0; i &lt; n; i++) &#123;
-&#125;
-for (int i &#x3D; 5; i &lt; n; i++) &#123;
-&#125;
-
-&#x2F;&#x2F;O(n)
-for (int i &#x3D; 5; i &lt; n; i+&#x3D;7) &#123;
-&#125;
-
-for i &lt;- 1 to sqrt(n) &#x2F;&#x2F;O(sqrt(n))
-
-for i &lt;- sqrt(n) to n &#x2F;&#x2F;O(n)
-    
-for i &lt;- n to n&#x2F;2 &#x2F;&#x2F;O(n)
-
-for i &lt;- n to n step n&#x2F;2 &#x2F;&#x2F;O(1)
-
-1 &lt; logn &lt; sqrt(n) &lt; n &lt; n^2
-
-for (int i &#x3D; 1; i &lt; n; i *&#x3D; 3) &#123; &#125; &#x2F;&#x2F;O(logn)
-for (int i &#x3D; 1; i &lt; n; i &#x3D; i * 3 + 8) &#123; &#125;&#x2F;&#x2F;O(logn)
-for (int i &#x3D; 1; i &lt; n; i *&#x3D; 2) &#123; &#x2F;&#x2F; 1, 2, 4, 8, ….  log2(n) 
-&#125;
-for (int i &#x3D; 1; i &lt; n; i *&#x3D; 3) &#123; &#x2F;&#x2F; 1, 3, 9, 27, ….  log3(n)
-&#125;
-for (int i &#x3D; 1; i &lt; sqrt(n); i *&#x3D; 3 &#123;&#125;  &#x2F;&#x2F;O(log sqrt(n))
-
-&#x2F;&#x2F;O(n*n) &#x3D; O(n^2)
-for (int i &#x3D; 0; i &lt; n; i++)  &#x2F;&#x2F;O(n)
-  for (int j &#x3D; 0; j &lt; n; j++) &#123; &#x2F;&#x2F;O(n)
-  &#125;
-&#125;
-
-&#x2F;&#x2F;O(n+n) &#x3D; O(n)
-for (int i &#x3D; 0; i &lt; n; i++)  &#x2F;&#x2F;O(n)
-&#125;
-for (int j &#x3D; 0; j &lt; n; j++) &#123; &#x2F;&#x2F;O(n)
-&#125;
-
-&#x2F;&#x2F;sum(1...n)&#x3D;O(n^2)
-for (int i &#x3D; 0; i &lt;&#x3D; n; i++)  &#x2F;&#x2F;O(n)
-  for (int j &#x3D; 0; j &lt;&#x3D; i; j++) &#123; &#x2F;&#x2F; 1 + 2 + 3 + … + n-1 + n 
-  &#125;
-&#125;
-
-&#x2F;&#x2F;O(n*sqrt(n))
-for (int i &#x3D; 0; i &lt;&#x3D; n; i++) &#123; &#x2F;&#x2F;O(n)
-  for (int j &#x3D; 0; j &lt; sqrt(n); j++) &#123; &#x2F;&#x2F;O(sqrt(n))
-  &#125;
-&#125;
-
-for (int i &#x3D; 0; i &lt;&#x3D; n; i++) &#123;  &#x2F;&#x2F;O(n)
-  for (int j &#x3D; 0; j &lt; n-sqrt(n); j++) &#123; 
-  &#125;
-&#125;
-
-&#x2F;&#x2F;O(n log2n)
-for (int i &#x3D; 0; i &lt; n; i++) &#123; &#x2F;&#x2F; O(n)
- for (int j &#x3D; 1; j &lt; n; j *&#x3D; 2) &#123; &#x2F;&#x2F; O(log2n)
- &#125;
-&#125;
-
-&#x2F;&#x2F;n(1+1&#x2F;2+1&#x2F;4+1&#x2F;8+...)
-&#x2F;&#x2F;\sum(1&#x2F;2^i)&#x3D;1
-&#x2F;&#x2F;O(n)
-for (int i &#x3D; 1; i &lt;&#x3D; n; i *&#x3D; 2) &#123; &#x2F;&#x2F; O(log2n)
- for (int j &#x3D; 1; j &lt; i; j++) &#123; &#x2F;&#x2F; O(1 + 2 + 4 + 8 + …. + n)
- &#125;
-&#125;
-
-&#x2F;&#x2F;O(n+m) if n ≈ m  O(2n) &#x3D; O(n)
-for (int i &#x3D; 0; i &lt; n; i++) &#123;  &#x2F;&#x2F;O(n)
-&#125;
-for (int j &#x3D; 0; j &lt; m; j++) &#123;  &#x2F;&#x2F;O(m)
-    cout &lt;&lt; i * j;	&#x2F;&#x2F;O(1)
-&#125;
-
-for (int i &#x3D; 1; i &lt; n; i *&#x3D; 2)	&#x2F;&#x2F;O(log n)
-  for (int j &#x3D; 1; j &lt; n; j++)	&#x2F;&#x2F;O(n)
-    System.out.println(i*j);
-
-for (int j &#x3D; 1; j &lt; n; j++)	&#x2F;&#x2F;O(n)
-  for (int i &#x3D; 1; i &lt; n; i *&#x3D; 2)	&#x2F;&#x2F;O(log n)
-    System.out.println(i*j);
-
-for (int i &#x3D; 0; i &lt; n; i++)  &#x2F;&#x2F;O(n)
-  for (int j &#x3D; i; j &lt; n; j++)	&#x2F;&#x2F; n + (n-1) + (n-2) + … 1
-    print(“x”);
-
-sum ← 912851;  &#x2F;&#x2F;O(1)
-for i ← 1 to n		
-   for j← 3 to i		&#x2F;&#x2F;   0 + 0 + 1 + 2 + 3 +  … n-3 &#x3D; O(n^2)
-      sum ← sum + i*j;
-   end
-end
-
-int f(int n) &#123; 
-  if (n &lt;&#x3D; 0)&#x2F;&#x2F;O(1)
-    return 1;
-  return n * f(n-1);
-&#125;
-f(5)&#x3D;5*f(4)&#x3D;5*4*f(3)...</code></pre>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">&#x2F;&#x2F;Fibo
-int fibo(int n) &#123; &#x2F;&#x2F;O(n)
-  int a &#x3D; 1, b &#x3D; 1, c;
-  for (int i &#x3D; 0; i &lt; n; i++) &#123;
-     c &#x3D; a + b;
-     a &#x3D; b;
-     b &#x3D; c;
-  &#125;
-   return c;
-&#125;
-
-int fibo2(int n) &#123; &#x2F;&#x2F;O(2^n)
-   if ( n &lt;&#x3D; 2)
-      return 1;
-   return fibo2(n-1) + fibo2(n-2);
-&#125;</code></pre>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)&#123;<span class="comment">//O(n)</span></span><br><span class="line">    <span class="built_in">f</span>();<span class="comment">//O(1)</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//O(n)</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">5</span>; i &lt; n; i++) &#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//O(n)</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">5</span>; i &lt; n; i+=<span class="number">7</span>) &#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i &lt;- <span class="number">1</span> <span class="function">to <span class="title">sqrt</span><span class="params">(n)</span> <span class="comment">//O(sqrt(n))</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"><span class="keyword">for</span> i &lt;- <span class="title">sqrt</span><span class="params">(n)</span> to n <span class="comment">//O(n)</span></span></span><br><span class="line"><span class="function">    </span></span><br><span class="line"><span class="function"><span class="keyword">for</span> i &lt;- n to n/2 <span class="comment">//O(n)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"><span class="keyword">for</span> i &lt;- n to n step n/2 <span class="comment">//O(1)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">1 &lt; logn &lt; <span class="title">sqrt</span><span class="params">(n)</span> &lt; n &lt; n^2</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"><span class="title">for</span> <span class="params">(<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i *= <span class="number">3</span>)</span> </span>&#123; &#125; <span class="comment">//O(logn)</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i = i * <span class="number">3</span> + <span class="number">8</span>) &#123; &#125;<span class="comment">//O(logn)</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i *= <span class="number">2</span>) &#123; <span class="comment">// 1, 2, 4, 8, ….  log2(n) </span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i *= <span class="number">3</span>) &#123; <span class="comment">// 1, 3, 9, 27, ….  log3(n)</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; <span class="built_in">sqrt</span>(n); i *= <span class="number">3</span> &#123;&#125;  <span class="comment">//O(log sqrt(n))</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//O(n*n) = O(n^2)</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)  <span class="comment">//O(n)</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; n; j++) &#123; <span class="comment">//O(n)</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//O(n+n) = O(n)</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)  <span class="comment">//O(n)</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; n; j++) &#123; <span class="comment">//O(n)</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//sum(1...n)=O(n^2)</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;= n; i++)  <span class="comment">//O(n)</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt;= i; j++) &#123; <span class="comment">// 1 + 2 + 3 + … + n-1 + n </span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//O(n*sqrt(n))</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;= n; i++) &#123; <span class="comment">//O(n)</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; <span class="built_in">sqrt</span>(n); j++) &#123; <span class="comment">//O(sqrt(n))</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;= n; i++) &#123;  <span class="comment">//O(n)</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; n-<span class="built_in">sqrt</span>(n); j++) &#123; </span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//O(n log2n)</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123; <span class="comment">// O(n)</span></span><br><span class="line"> <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt; n; j *= <span class="number">2</span>) &#123; <span class="comment">// O(log2n)</span></span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//n(1+1/2+1/4+1/8+...)</span></span><br><span class="line"><span class="comment">//\sum(1/2^i)=1</span></span><br><span class="line"><span class="comment">//O(n)</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i *= <span class="number">2</span>) &#123; <span class="comment">// O(log2n)</span></span><br><span class="line"> <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt; i; j++) &#123; <span class="comment">// O(1 + 2 + 4 + 8 + …. + n)</span></span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//O(n+m) if n ≈ m  O(2n) = O(n)</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;  <span class="comment">//O(n)</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; m; j++) &#123;  <span class="comment">//O(m)</span></span><br><span class="line">    cout &lt;&lt; i * j;  <span class="comment">//O(1)</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i *= <span class="number">2</span>)  <span class="comment">//O(log n)</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt; n; j++)  <span class="comment">//O(n)</span></span><br><span class="line">    System.out.<span class="built_in">println</span>(i*j);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt; n; j++)  <span class="comment">//O(n)</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i *= <span class="number">2</span>)  <span class="comment">//O(log n)</span></span><br><span class="line">    System.out.<span class="built_in">println</span>(i*j);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)  <span class="comment">//O(n)</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> j = i; j &lt; n; j++)  <span class="comment">// n + (n-1) + (n-2) + … 1</span></span><br><span class="line">    <span class="built_in">print</span>(“x”);</span><br><span class="line"></span><br><span class="line">sum ← <span class="number">912851</span>;  <span class="comment">//O(1)</span></span><br><span class="line"><span class="keyword">for</span> i ← <span class="number">1</span> to n    </span><br><span class="line">   <span class="keyword">for</span> j← <span class="number">3</span> to i    <span class="comment">//   0 + 0 + 1 + 2 + 3 +  … n-3 = O(n^2)</span></span><br><span class="line">      sum ← sum + i*j;</span><br><span class="line">   end</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="built_in">f</span>(<span class="type">int</span> n) &#123; </span><br><span class="line">  <span class="keyword">if</span> (n &lt;= <span class="number">0</span>)<span class="comment">//O(1)</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">return</span> n * <span class="built_in">f</span>(n<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">f</span>(<span class="number">5</span>)=<span class="number">5</span>*<span class="built_in">f</span>(<span class="number">4</span>)=<span class="number">5</span>*<span class="number">4</span>*<span class="built_in">f</span>(<span class="number">3</span>)...</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Fibo</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">fibo</span><span class="params">(<span class="type">int</span> n)</span> </span>&#123; <span class="comment">//O(n)</span></span><br><span class="line">  <span class="type">int</span> a = <span class="number">1</span>, b = <span class="number">1</span>, c;</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">     c = a + b;</span><br><span class="line">     a = b;</span><br><span class="line">     b = c;</span><br><span class="line">  &#125;</span><br><span class="line">   <span class="keyword">return</span> c;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">fibo2</span><span class="params">(<span class="type">int</span> n)</span> </span>&#123; <span class="comment">//O(2^n)</span></span><br><span class="line">   <span class="keyword">if</span> ( n &lt;= <span class="number">2</span>)</span><br><span class="line">      <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">   <span class="keyword">return</span> <span class="built_in">fibo2</span>(n<span class="number">-1</span>) + <span class="built_in">fibo2</span>(n<span class="number">-2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="sorting">Sorting</h2>
 <h3 id="selection-sort">Selection Sort</h3>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">void selectionSort(int x[], int n) &#123; &#x2F;&#x2F;O(n2)
-	for (int j &#x3D; n - 1; j &gt; 0; j--) &#123;
-		int pos &#x3D; 0;
-	  	for (int i &#x3D; 1; i &lt;&#x3D; j; i++) &#123;
-	    	if (x[i] &gt; x[pos])
-	      		pos &#x3D; i;
-	  	&#125;
-		if (j !&#x3D; pos)
-	    	swap(x[pos], x[j]);
-	&#125;
-&#125;</code></pre>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">selectionSort</span><span class="params">(<span class="type">int</span> x[], <span class="type">int</span> n)</span> </span>&#123; <span class="comment">//O(n2)</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> j = n - <span class="number">1</span>; j &gt; <span class="number">0</span>; j--) &#123;</span><br><span class="line">    <span class="type">int</span> pos = <span class="number">0</span>;</span><br><span class="line">    	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= j; i++) &#123;</span><br><span class="line">      	<span class="keyword">if</span> (x[i] &gt; x[pos])</span><br><span class="line">        		pos = i;</span><br><span class="line">    	&#125;</span><br><span class="line">    <span class="keyword">if</span> (j != pos)</span><br><span class="line">      	<span class="built_in">swap</span>(x[pos], x[j]);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="insertion-sort">Insertion Sort</h3>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">void InsertionSort(int x[], int n) &#123;
-	for (int i &#x3D; 1; i &lt; n; i++) &#123;
-		int temp &#x3D; x[i];
-		for (int j &#x3D; i - 1; j &gt;&#x3D; 0; j--)
-	    	if (x[j] &gt; temp)
-	        	x[j+1] &#x3D; x[j];
-	     	else &#123;
-	         	x[j+1] &#x3D; temp;
-	        	 break;
-	       	&#125;
-	     &#125;
-	     x[0] &#x3D; temp; &#x2F;&#x2F;TODO: BAD edge case here
-	&#125;
-&#125;</code></pre>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">InsertionSort</span><span class="params">(<span class="type">int</span> x[], <span class="type">int</span> n)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i++) &#123;</span><br><span class="line">    <span class="type">int</span> temp = x[i];</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> j = i - <span class="number">1</span>; j &gt;= <span class="number">0</span>; j--)</span><br><span class="line">      	<span class="keyword">if</span> (x[j] &gt; temp)</span><br><span class="line">          	x[j+<span class="number">1</span>] = x[j];</span><br><span class="line">       	<span class="keyword">else</span> &#123;</span><br><span class="line">           	x[j+<span class="number">1</span>] = temp;</span><br><span class="line">          	 <span class="keyword">break</span>;</span><br><span class="line">         	&#125;</span><br><span class="line">       &#125;</span><br><span class="line">       x[<span class="number">0</span>] = temp; <span class="comment">//<span class="doctag">TODO:</span> BAD edge case here</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>worst case 1 + 2 + … + (n - 1) = <span
 class="math inline">\(O(n^2)\)</span></p>
 <p>best case 1 + 1 + … + 1 = <span
@@ -184,103 +40,25 @@ class="math inline">\(\Omega(n)\)</span></p>
 <li>pivot ← x[right]</li>
 </ol></li>
 </ol>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">quicksort(int[] x, int left, int right) &#123;
-	if (right - left &lt; 2)
-		return;
-	int pivot &#x3D; (x[left] + x[right])&#x2F;2;
-	int i &#x3D; left, j &#x3D; right;
-	
-	while (i &lt; j) &#123;        &#x2F;&#x2F;O(n)
-        while (x[i] &lt; pivot)
-        	i++;
-	    while (x[j] &gt;&#x3D; pivot)
-	        j--;
-	    if (i &lt; j) &#123;
-	    	swap(x[i], x[j]);
-	    &#125;
-	 &#125;
-	 &#x2F;&#x2F;i &#x3D;&#x3D; j
-	 quicksort(x, left, i-1 );  &#x2F;&#x2F; logn
-	 quicksort(x, i, right );
-&#125;
-
-quicksort(x, 0, x.length-1);</code></pre>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="built_in">quicksort</span>(<span class="type">int</span>[] x, <span class="type">int</span> left, <span class="type">int</span> right) &#123;</span><br><span class="line">  <span class="keyword">if</span> (right - left &lt; <span class="number">2</span>)</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  <span class="type">int</span> pivot = (x[left] + x[right])/<span class="number">2</span>;</span><br><span class="line">  <span class="type">int</span> i = left, j = right;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">while</span> (i &lt; j) &#123;        <span class="comment">//O(n)</span></span><br><span class="line">        <span class="keyword">while</span> (x[i] &lt; pivot)</span><br><span class="line">          i++;</span><br><span class="line">      <span class="keyword">while</span> (x[j] &gt;= pivot)</span><br><span class="line">          j--;</span><br><span class="line">      <span class="keyword">if</span> (i &lt; j) &#123;</span><br><span class="line">      	<span class="built_in">swap</span>(x[i], x[j]);</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="comment">//i == j</span></span><br><span class="line">   <span class="built_in">quicksort</span>(x, left, i<span class="number">-1</span> );  <span class="comment">// logn</span></span><br><span class="line">   <span class="built_in">quicksort</span>(x, i, right );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">quicksort</span>(x, <span class="number">0</span>, x.length<span class="number">-1</span>);</span><br></pre></td></tr></table></figure>
 <p>Worst case (pathological) <span
 class="math inline">\(O(n^2)\)</span></p>
 <h3 id="heap-sort">Heap Sort</h3>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">makeheap(x)     
-	for i ← n&#x2F;2 to 0
-	    makesubheap(x, i)
-	end
-
-makesubheap(x, i)
-	if x[2i+1] &gt; x[2i+2]
-	    if x[i] &lt; x[2i+1]
-	    	swap(x[i], x[2i+1])
-	    	makesubheap(x, 2i+1)
-	    end
-	    else
-	    if x[i] &lt; x[2i+2]
-	        swap(x[i], x[2i+2])
-	    	makesubheap(x, 2i+2)
-	    end
-	end
-
-heapsort(x)
-	makeheap(x)
-	for i ← n-1 to 1
-	    swap(x[0], x[i])
-	    makesubheap(x, i-1)
-	end
-end
-&#x2F;&#x2F;makeheap &#x3D; (n&#x2F;2-1) log n + rebuild heap (n-1) log n &#x3D; O(n log n)</code></pre>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="built_in">makeheap</span>(x)     </span><br><span class="line">  <span class="keyword">for</span> i ← n/<span class="number">2</span> to <span class="number">0</span></span><br><span class="line">      <span class="built_in">makesubheap</span>(x, i)</span><br><span class="line">  <span class="function">end</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"><span class="title">makesubheap</span><span class="params">(x, i)</span></span></span><br><span class="line"><span class="function">  <span class="keyword">if</span> x[2i+1] &gt; x[2i+2]</span></span><br><span class="line"><span class="function">      <span class="keyword">if</span> x[i] &lt; x[2i+1]</span></span><br><span class="line"><span class="function">      	<span class="title">swap</span><span class="params">(x[i], x[<span class="number">2</span>i+<span class="number">1</span>])</span></span></span><br><span class="line"><span class="function">      	<span class="title">makesubheap</span><span class="params">(x, <span class="number">2</span>i+<span class="number">1</span>)</span></span></span><br><span class="line"><span class="function">      end</span></span><br><span class="line"><span class="function">      <span class="keyword">else</span></span></span><br><span class="line"><span class="function">      <span class="keyword">if</span> x[i] &lt; x[2i+2]</span></span><br><span class="line"><span class="function">          <span class="title">swap</span><span class="params">(x[i], x[<span class="number">2</span>i+<span class="number">2</span>])</span></span></span><br><span class="line"><span class="function">      	<span class="title">makesubheap</span><span class="params">(x, <span class="number">2</span>i+<span class="number">2</span>)</span></span></span><br><span class="line"><span class="function">      end</span></span><br><span class="line"><span class="function">  end</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"><span class="title">heapsort</span><span class="params">(x)</span></span></span><br><span class="line"><span class="function">  <span class="title">makeheap</span><span class="params">(x)</span></span></span><br><span class="line"><span class="function">  <span class="keyword">for</span> i ← n-1 to 1</span></span><br><span class="line"><span class="function">      <span class="title">swap</span><span class="params">(x[<span class="number">0</span>], x[i])</span></span></span><br><span class="line"><span class="function">      <span class="title">makesubheap</span><span class="params">(x, i<span class="number">-1</span>)</span></span></span><br><span class="line"><span class="function">  end</span></span><br><span class="line"><span class="function">end</span></span><br><span class="line"><span class="function"><span class="comment">//makeheap = (n/2-1) log n + rebuild heap (n-1) log n = O(n log n)</span></span></span><br></pre></td></tr></table></figure>
 <h3 id="merge-sort">Merge Sort</h3>
 <p>work each time: n</p>
 <p>number of iterations log n</p>
 <p>O(n log n)</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">&#x2F;&#x2F; merge lists a,b of size n into list c of size 2n
-merge(a, b, c) &#123;
-  i ← 0 &#x2F;&#x2F; position in a
-  j ← 0 &#x2F;&#x2F; position in b
-  k ← 0 &#x2F;&#x2F; position in c
-  while i &lt; n and j &lt; n
-      if a[i] &lt; b[j]
-             c[k] ← a[i]
-             i ← i + 1
-      else
-             c[k] ← b[j]
-             j ← j + 1
-      end
-      k ← k + 1
-  end
-&#125;</code></pre>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">// merge lists a,b of size n into list c of size 2n</span></span><br><span class="line"><span class="built_in">merge</span>(a, b, c) &#123;</span><br><span class="line">  i ← <span class="number">0</span> <span class="comment">// position in a</span></span><br><span class="line">  j ← <span class="number">0</span> <span class="comment">// position in b</span></span><br><span class="line">  k ← <span class="number">0</span> <span class="comment">// position in c</span></span><br><span class="line">  <span class="keyword">while</span> i &lt; n <span class="keyword">and</span> j &lt; n</span><br><span class="line">      <span class="keyword">if</span> a[i] &lt; b[j]</span><br><span class="line">             c[k] ← a[i]</span><br><span class="line">             i ← i + <span class="number">1</span></span><br><span class="line">      <span class="keyword">else</span></span><br><span class="line">             c[k] ← b[j]</span><br><span class="line">             j ← j + <span class="number">1</span></span><br><span class="line">      end</span><br><span class="line">      k ← k + <span class="number">1</span></span><br><span class="line">  end</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="shuffling">Shuffling</h2>
-<p><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">Fisher-Yates(x) &#x2F;&#x2F; O(N)
-    for i← x.length-1 to 0
-        pick ← random(0, i)
-        swap(x[i], x[pick])
-    end
-end</code></pre></p>
+<p><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">Fisher-<span class="built_in">Yates</span>(x) <span class="comment">// O(N)</span></span><br><span class="line">    <span class="keyword">for</span> i← x.length<span class="number">-1</span> to <span class="number">0</span></span><br><span class="line">        pick ← <span class="built_in">random</span>(<span class="number">0</span>, i)</span><br><span class="line">        <span class="built_in">swap</span>(x[i], x[pick])</span><br><span class="line">    end</span><br><span class="line">end</span><br></pre></td></tr></table></figure></p>
 <h2 id="searching">Searching</h2>
 <h3 id="linear-search">Linear Search</h3>
 <p>search(x, target)</p>
 <p><span class="math inline">\(O(n),\Omega(1), avg = n/2\)</span></p>
 <h3 id="binary-search">Binary Search</h3>
 <p>sort:O(n log n)</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">binarySearch(x, target)
-  L ← 0
-  R ← x.length-1
-  while (L &lt; R)
-      mid ← (L + R) &#x2F; 2
-      if x[mid] &gt; target
-        R ← mid - 1
-      else if x[mid] &lt; target
-        L ← mid + 1
-      else
-        return mid
-  end
-  return NOTFOUND
-end</code></pre>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="built_in">binarySearch</span>(x, target)</span><br><span class="line">  L ← <span class="number">0</span></span><br><span class="line">  R ← x.length<span class="number">-1</span></span><br><span class="line">  <span class="keyword">while</span> (L &lt; R)</span><br><span class="line">      mid ← (L + R) / <span class="number">2</span></span><br><span class="line">      <span class="keyword">if</span> x[mid] &gt; target</span><br><span class="line">        R ← mid - <span class="number">1</span></span><br><span class="line">      <span class="keyword">else</span> <span class="keyword">if</span> x[mid] &lt; target</span><br><span class="line">        L ← mid + <span class="number">1</span></span><br><span class="line">      <span class="keyword">else</span></span><br><span class="line">        <span class="keyword">return</span> mid</span><br><span class="line">  end</span><br><span class="line">  <span class="keyword">return</span> NOTFOUND</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 <h3 id="golden-mean-search">Golden Mean Search</h3>
 <p>L = 0</p>
 <p>R = 19</p>
@@ -297,297 +75,34 @@ end</code></pre>
 <p>R = .293</p>
 <h2 id="number-theoretic-algorithms">Number Theoretic Algorithms</h2>
 <h3 id="gcd">gcd</h3>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">gcd(a,b)
-    if b &#x3D;&#x3D; 0
-        return a
-    end
-    return gcd(b, a mod b)
-end</code></pre>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="built_in">gcd</span>(a,b)</span><br><span class="line">    <span class="keyword">if</span> b == <span class="number">0</span></span><br><span class="line">        <span class="keyword">return</span> a</span><br><span class="line">    end</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">gcd</span>(b, a mod b)</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 <p><span class="math inline">\(O(logn),\Omega(1)\)</span></p>
 <h3 id="lcm">lcm</h3>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">&#x2F;&#x2F;O(log n)
-lcm(a,b) &#x3D; a * b &#x2F; gcd(a,b)  &#x2F;&#x2F; 1 + log(n)</code></pre>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//O(log n)</span></span><br><span class="line"><span class="built_in">lcm</span>(a,b) = a * b / <span class="built_in">gcd</span>(a,b)  <span class="comment">// 1 + log(n)</span></span><br></pre></td></tr></table></figure>
 <h3 id="powermod">powermod</h3>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">&#x2F;&#x2F;raise x to the power n
-bruteforcepower(x, n)
-    prod ← 1
-    for x ← 1 to n
-        prod ← prod * x
-    end
-    return prod
-end
-
-&#x2F;&#x2F;O(log n)
-&#x2F;&#x2F;raise x to the power n
-power(x, n)
-  prod ← 1
-  while n &gt; 0
-    if (n mod 2 !&#x3D; 0)
-      prod ← prod * x
-    end 
-    x ← x * x
-    n ← n &#x2F; 2
-  end
-  return prod
-end
-
-&#x2F;&#x2F;xn mod m
-powermod(x, n, m)
-  prod ← 1
-  while n &gt; 0
-    if (n mod 2 !&#x3D; 0)
-      prod ← prod * x mod m
-    end
-    x ← x * x mod m
-    n ← n &#x2F; 2
-  end
-  return prod
-end</code></pre>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">//raise x to the power n</span></span><br><span class="line"><span class="built_in">bruteforcepower</span>(x, n)</span><br><span class="line">    prod ← <span class="number">1</span></span><br><span class="line">    <span class="keyword">for</span> x ← <span class="number">1</span> to n</span><br><span class="line">        prod ← prod * x</span><br><span class="line">    end</span><br><span class="line">    <span class="keyword">return</span> prod</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line"><span class="comment">//O(log n)</span></span><br><span class="line"><span class="comment">//raise x to the power n</span></span><br><span class="line"><span class="built_in">power</span>(x, n)</span><br><span class="line">  prod ← <span class="number">1</span></span><br><span class="line">  <span class="keyword">while</span> n &gt; <span class="number">0</span></span><br><span class="line">    <span class="keyword">if</span> (n mod <span class="number">2</span> != <span class="number">0</span>)</span><br><span class="line">      prod ← prod * x</span><br><span class="line">    end </span><br><span class="line">    x ← x * x</span><br><span class="line">    n ← n / <span class="number">2</span></span><br><span class="line">  end</span><br><span class="line">  <span class="keyword">return</span> prod</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line"><span class="comment">//xn mod m</span></span><br><span class="line"><span class="built_in">powermod</span>(x, n, m)</span><br><span class="line">  prod ← <span class="number">1</span></span><br><span class="line">  <span class="keyword">while</span> n &gt; <span class="number">0</span></span><br><span class="line">    <span class="keyword">if</span> (n mod <span class="number">2</span> != <span class="number">0</span>)</span><br><span class="line">      prod ← prod * x mod m</span><br><span class="line">    end</span><br><span class="line">    x ← x * x mod m</span><br><span class="line">    n ← n / <span class="number">2</span></span><br><span class="line">  end</span><br><span class="line">  <span class="keyword">return</span> prod</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 <h2 id="fermat">Fermat</h2>
 <p>if a^p-1 mod p == 1⇒ p is probably prime</p>
 <p>if a^p-1 mod p != 1⇒ p is definitely NOT prime</p>
 <h2 id="miller-rabin">Miller-Rabin</h2>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">MillerRabin(n, k)
-  WitnessLoop: for i ← 1 to k &#x2F;&#x2F; k trials
-    a← random[2, n − 2]
-    x ← a^d mod n
-   if x &#x3D; 1 or x &#x3D; n − 1 then
-      continue WitnessLoop
-   for j ← 1 to s − 1
-      x ← x2 mod n
-      if x &#x3D; 1 then
-         return false composite  (Carmichael?)
-      if x &#x3D; n − 1 then
-         continue WitnessLoop
-    end
-   return false (composite)
-return probably prime
-</code></pre>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="built_in">MillerRabin</span>(n, k)</span><br><span class="line">  WitnessLoop: <span class="keyword">for</span> i ← <span class="number">1</span> to k <span class="comment">// k trials</span></span><br><span class="line">    a← random[<span class="number">2</span>, n − <span class="number">2</span>]</span><br><span class="line">    x ← a^d mod n</span><br><span class="line">   <span class="keyword">if</span> x = <span class="number">1</span> <span class="keyword">or</span> x = n − <span class="number">1</span> then</span><br><span class="line">      <span class="keyword">continue</span> WitnessLoop</span><br><span class="line">   <span class="keyword">for</span> j ← <span class="number">1</span> to s − <span class="number">1</span></span><br><span class="line">      x ← x2 mod n</span><br><span class="line">      <span class="keyword">if</span> x = <span class="number">1</span> then</span><br><span class="line">         <span class="keyword">return</span> <span class="literal">false</span> <span class="built_in">composite</span>  (Carmichael?)</span><br><span class="line">      <span class="keyword">if</span> x = n − <span class="number">1</span> then</span><br><span class="line">         <span class="keyword">continue</span> WitnessLoop</span><br><span class="line">    end</span><br><span class="line">   <span class="keyword">return</span> <span class="built_in">false</span> (composite)</span><br><span class="line"><span class="keyword">return</span> probably prime</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h3 id="brute-force-trial-division">brute force trial division</h3>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;O(n)		Ω(1)
-bool isPrime(int n) &#123;
-  for (int i &#x3D; 2; i &lt; n&#x2F;2; i++) &#123;
-    if (n % i &#x3D;&#x3D; 0)
-      return false;
-  &#125;
-  return true;
-&#125;
-
-&#x2F;&#x2F;O(√n)		Ω(1)
-bool isPrime(int n) &#123;
-  for (int i &#x3D; 2; i &lt;&#x3D; sqrt(n); i++) &#123;
-    if (n % i &#x3D;&#x3D; 0)
-      return false;
-  &#125;
-  return true;
-&#125;</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//O(n)    Ω(1)</span><br><span class="line">bool isPrime(int n) &#123;</span><br><span class="line">  for (int i = 2; i &lt; n/2; i++) &#123;</span><br><span class="line">    if (n % i == 0)</span><br><span class="line">      return false;</span><br><span class="line">  &#125;</span><br><span class="line">  return true;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//O(√n)    Ω(1)</span><br><span class="line">bool isPrime(int n) &#123;</span><br><span class="line">  for (int i = 2; i &lt;= sqrt(n); i++) &#123;</span><br><span class="line">    if (n % i == 0)</span><br><span class="line">      return false;</span><br><span class="line">  &#125;</span><br><span class="line">  return true;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="eratosthenes-sieve">Eratosthenes' Sieve</h3>
-<pre class="line-numbers language-none"><code class="language-none">ImprovedEratosthenes(n)
-for i ← 2 to n
-	isPrime[i] ← true
-end
-for i ← 4 to n step 2
-	isPrime[i] ← false
-end
-for i ← 3 to n step 2
-	if isPrime[i]
-		for j ← i*i to n step 2i
-			isPrime[j] ← false
-		end
-	end
-end</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ImprovedEratosthenes(n)</span><br><span class="line">for i ← 2 to n</span><br><span class="line">  isPrime[i] ← true</span><br><span class="line">end</span><br><span class="line">for i ← 4 to n step 2</span><br><span class="line">  isPrime[i] ← false</span><br><span class="line">end</span><br><span class="line">for i ← 3 to n step 2</span><br><span class="line">  if isPrime[i]</span><br><span class="line">    for j ← i*i to n step 2i</span><br><span class="line">      isPrime[j] ← false</span><br><span class="line">    end</span><br><span class="line">  end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 <h2 id="growarray">GrowArray</h2>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">class GrowArray &#123;
-private:
-    int* data;
-    int len;
-    int capacity;
-    void grow()&#123;
-        int* old &#x3D; data;
-        data &#x3D; new int[2*capacity + 1];
-        for (int i &#x3D; 0; i &lt; len; i++) &#x2F;&#x2F; memcpy(data, old, len* sizeof(int))
-            data[i] &#x3D; old[i];
-        delete old;
-        capacity &#x3D; 2 * capacity;
-    &#125;
-public:
-    GrowArray() &#123; data &#x3D; nullptr; len &#x3D; 0; capacity &#x3D; 0;&#125;
-    void addEnd(int v) &#123; &#x2F;&#x2F; O(1)
-        if (len &gt;&#x3D; capacity)
-            grow();
-        data[len++] &#x3D; v;
-        cout&lt;&lt;v&lt;&lt;endl;
-    &#125;
-&#125;;
- 
-int main() &#123;
-const int n &#x3D; 1000000;
-GrowArray a;
-for (int i &#x3D; 0; i &lt; n; i++)
-    a.addEnd(i);
-&#125;</code></pre>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">GrowArray</span> &#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="type">int</span>* data;</span><br><span class="line">    <span class="type">int</span> len;</span><br><span class="line">    <span class="type">int</span> capacity;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">grow</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="type">int</span>* old = data;</span><br><span class="line">        data = <span class="keyword">new</span> <span class="type">int</span>[<span class="number">2</span>*capacity + <span class="number">1</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; len; i++) <span class="comment">// memcpy(data, old, len* sizeof(int))</span></span><br><span class="line">            data[i] = old[i];</span><br><span class="line">        <span class="keyword">delete</span> old;</span><br><span class="line">        capacity = <span class="number">2</span> * capacity;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">GrowArray</span>() &#123; data = <span class="literal">nullptr</span>; len = <span class="number">0</span>; capacity = <span class="number">0</span>;&#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">addEnd</span><span class="params">(<span class="type">int</span> v)</span> </span>&#123; <span class="comment">// O(1)</span></span><br><span class="line">        <span class="keyword">if</span> (len &gt;= capacity)</span><br><span class="line">            <span class="built_in">grow</span>();</span><br><span class="line">        data[len++] = v;</span><br><span class="line">        cout&lt;&lt;v&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> n = <span class="number">1000000</span>;</span><br><span class="line">GrowArray a;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">    a.<span class="built_in">addEnd</span>(i);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="linkedlist">Linkedlist</h2>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">class LinkedList &#123;
-private:
-    class Node &#123;
-        int val;
-        Node* next;
-        Node* prev;
-    &#125;;
-    Node* head;
-    Node* tail;
-public:
-    LinkedList() : head(nullptr), tail(nullptr) &#123;&#125; &#x2F;&#x2F; O(1)
-    ~LinkedList() &#123; &#x2F;&#x2F; O(1)
-        while (head !&#x3D; nullptr) &#123;
-            Node* temp &#x3D; head;
-            head &#x3D; head-&gt;next;
-            delete temp;
-        &#125;
-    &#125;
-    void addFirst(int v) &#123; &#x2F;&#x2F; O(1)
-        head &#x3D; new Node &#123;v, head, nullptr&#125;;
-        if (tail &#x3D;&#x3D; null)
-            tail &#x3D; head;
-        else
-            head-&gt;next-&gt;prev &#x3D; head;
-    &#125;
-    void addLast(int v) &#123;
-        tail &#x3D; new Node(v, nullptr, tail);
-        if (head &#x3D;&#x3D; nullptr)
-            head &#x3D; tail;
-        else
-            tail-&gt;prev-&gt;next &#x3D; tail;
-    &#125;
-    void removeFirst() &#123;
-        Node* temp &#x3D; head;
-        head &#x3D; head-&gt;next;
-        delete temp;
-    &#125;
-&#125;
-</code></pre>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">LinkedList</span> &#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="keyword">class</span> <span class="title class_">Node</span> &#123;</span><br><span class="line">        <span class="type">int</span> val;</span><br><span class="line">        Node* next;</span><br><span class="line">        Node* prev;</span><br><span class="line">    &#125;;</span><br><span class="line">    Node* head;</span><br><span class="line">    Node* tail;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">LinkedList</span>() : <span class="built_in">head</span>(<span class="literal">nullptr</span>), <span class="built_in">tail</span>(<span class="literal">nullptr</span>) &#123;&#125; <span class="comment">// O(1)</span></span><br><span class="line">    ~<span class="built_in">LinkedList</span>() &#123; <span class="comment">// O(1)</span></span><br><span class="line">        <span class="keyword">while</span> (head != <span class="literal">nullptr</span>) &#123;</span><br><span class="line">            Node* temp = head;</span><br><span class="line">            head = head-&gt;next;</span><br><span class="line">            <span class="keyword">delete</span> temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">addFirst</span><span class="params">(<span class="type">int</span> v)</span> </span>&#123; <span class="comment">// O(1)</span></span><br><span class="line">        head = <span class="keyword">new</span> Node &#123;v, head, <span class="literal">nullptr</span>&#125;;</span><br><span class="line">        <span class="keyword">if</span> (tail == null)</span><br><span class="line">            tail = head;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            head-&gt;next-&gt;prev = head;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">addLast</span><span class="params">(<span class="type">int</span> v)</span> </span>&#123;</span><br><span class="line">        tail = <span class="keyword">new</span> <span class="built_in">Node</span>(v, <span class="literal">nullptr</span>, tail);</span><br><span class="line">        <span class="keyword">if</span> (head == <span class="literal">nullptr</span>)</span><br><span class="line">            head = tail;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            tail-&gt;prev-&gt;next = tail;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">removeFirst</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Node* temp = head;</span><br><span class="line">        head = head-&gt;next;</span><br><span class="line">        <span class="keyword">delete</span> temp;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h3 id="stack">Stack</h3>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">class Stack &#123;
-private:
-    LinkedList impl; &#x2F;&#x2F;  addFirst O(1), addLast O(n), removeFirst O(1), removeLast O(n)
-    GrowArray impl; &#x2F;&#x2F;  addFirst O(n) addLast O(1), removeFirst O(n), removeLast O(1)
-public:
-    void push(int v) &#123; impl.addFirst(v); &#125;
-    int pop() &#123; return impl.removeFirst()&#125;
-    bool isEmpty() const &#123;&#125;
-    int size( const &#123;&#125;)
-&#125;;
-</code></pre>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Stack</span> &#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    LinkedList impl; <span class="comment">//  addFirst O(1), addLast O(n), removeFirst O(1), removeLast O(n)</span></span><br><span class="line">    GrowArray impl; <span class="comment">//  addFirst O(n) addLast O(1), removeFirst O(n), removeLast O(1)</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">push</span><span class="params">(<span class="type">int</span> v)</span> </span>&#123; impl.<span class="built_in">addFirst</span>(v); &#125;</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">pop</span><span class="params">()</span> </span>&#123; <span class="keyword">return</span> impl.<span class="built_in">removeFirst</span>()&#125;</span><br><span class="line">    <span class="type">bool</span> <span class="built_in">isEmpty</span>() <span class="type">const</span> &#123;&#125;</span><br><span class="line">    <span class="type">int</span> <span class="built_in">size</span>( <span class="type">const</span> &#123;&#125;)</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h3 id="queue">Queue</h3>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">class Queue &#123;
-private:
-    linkedList 2 templ; &#x2F;&#x2F;  has head and tail
-public:
-    void enqueue(int v) &#123;impl.addLast(v)&#125; &#x2F;&#x2F;  O(1)
-    int dequeue() &#123; impl.removeFirst()&#125; &#x2F;&#x2F;  O(1)
-    bool isEmpty() const &#123; return impl,isEmpty();&#125;
-&#125;</code></pre>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Queue</span> &#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    linkedList <span class="number">2</span> templ; <span class="comment">//  has head and tail</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">enqueue</span><span class="params">(<span class="type">int</span> v)</span> </span>&#123;impl.<span class="built_in">addLast</span>(v)&#125; <span class="comment">//  O(1)</span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">dequeue</span><span class="params">()</span> </span>&#123; impl.<span class="built_in">removeFirst</span>()&#125; <span class="comment">//  O(1)</span></span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">isEmpty</span><span class="params">()</span> <span class="type">const</span> </span>&#123; <span class="keyword">return</span> impl,<span class="built_in">isEmpty</span>();&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="trees">Trees</h2>
 <h3 id="binary-tree">Binary tree</h3>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">class BinaryTree &#123;
-private:
-  class Node &#123;
-  public:
-    int val;
-    Node* parent;
-    Node* left;                &#x2F;&#x2F; int* a,b; a is pointer to int, b is just int
-    Node* right;
-    Node(int v, Node* L, Node* r) : val(v), left(L), right(R) &#123;&#125;
-  &#125;;
-  Node * root;
-public:
-  void add(int v) &#123;
-    if (root &#x3D;&#x3D; nullptr) &#123;
-      root &#x3D; new Node(v, nullptr, nullptr);
-      return;
-    &#125;
-  … &#125;
-
-inorder(node n)
-    if n &#x3D;&#x3D; null
-        return
-	inorder(n.left)
-    print (val)
-    inorder(n.right)
-end
-
-preorder(node n)
-    if n &#x3D;&#x3D; null
-        return
-    print (val)
-	preorder(n.left)
-    preorder(n.right)
-end
-
-postorder(node n)
-    if n &#x3D;&#x3D; null
-        return
-	postorder(n.left)
-    postorder(n.right)
-    print (val)
-end</code></pre>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">BinaryTree</span> &#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">  <span class="keyword">class</span> <span class="title class_">Node</span> &#123;</span><br><span class="line">  <span class="keyword">public</span>:</span><br><span class="line">    <span class="type">int</span> val;</span><br><span class="line">    Node* parent;</span><br><span class="line">    Node* left;                <span class="comment">// int* a,b; a is pointer to int, b is just int</span></span><br><span class="line">    Node* right;</span><br><span class="line">    <span class="built_in">Node</span>(<span class="type">int</span> v, Node* L, Node* r) : <span class="built_in">val</span>(v), <span class="built_in">left</span>(L), <span class="built_in">right</span>(R) &#123;&#125;</span><br><span class="line">  &#125;;</span><br><span class="line">  Node * root;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">  <span class="function"><span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span> v)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (root == <span class="literal">nullptr</span>) &#123;</span><br><span class="line">      root = <span class="keyword">new</span> <span class="built_in">Node</span>(v, <span class="literal">nullptr</span>, <span class="literal">nullptr</span>);</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  … &#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">inorder</span>(node n)</span><br><span class="line">    <span class="keyword">if</span> n == null</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">  <span class="built_in">inorder</span>(n.left)</span><br><span class="line">    <span class="built_in">print</span> (val)</span><br><span class="line">    <span class="built_in">inorder</span>(n.right)</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line"><span class="built_in">preorder</span>(node n)</span><br><span class="line">    <span class="keyword">if</span> n == null</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    <span class="built_in">print</span> (val)</span><br><span class="line">  <span class="built_in">preorder</span>(n.left)</span><br><span class="line">    <span class="built_in">preorder</span>(n.right)</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line"><span class="built_in">postorder</span>(node n)</span><br><span class="line">    <span class="keyword">if</span> n == null</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">  <span class="built_in">postorder</span>(n.left)</span><br><span class="line">    <span class="built_in">postorder</span>(n.right)</span><br><span class="line">    <span class="built_in">print</span> (val)</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 <h3 id="trie">Trie</h3>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">class Trie &#123;
-private:
-    class Node&#123;
-    public:
-        Node* next[26];
-        bool isWord;
-        Node() : isWord(false) &#123;
-            for(int i &#x3D; 0; i &lt; 26; i++)&#123;
-                next[i] &#x3D; nullptr;
-            &#125;
-        &#125;
-    &#125;;
-    Node* root;
-
-public:
-    Trie() : root(new Node()) &#123;&#125;
-    ~Trie() &#123;
-        deleteNode(root);
-    &#125;
-    void deleteNode(Node* p)&#123;
-        for(int i &#x3D; 0; i &lt; 26; i++)&#123;
-            if(p-&gt;next[i]) deleteNode(p-&gt;next[i]);
-        &#125;
-        delete p;
-    &#125;
-
-    void insert(string word) &#123;
-        Node* temp &#x3D; root;
-        for(char c : word)&#123;
-            int index &#x3D; c - &#39;a&#39;;
-            if(temp-&gt;next[index] &#x3D;&#x3D; nullptr) temp-&gt;next[index] &#x3D; new Node();
-            temp &#x3D; temp-&gt;next[index];
-        &#125;
-        temp-&gt;isWord &#x3D; true;
-    &#125;
-
-    bool search(string word) &#123;
-        Node* temp &#x3D; root;
-        for(char c : word)&#123;
-            int index &#x3D; c - &#39;a&#39;;
-            if(temp-&gt;next[index] &#x3D;&#x3D; nullptr) return false;
-            temp &#x3D; temp-&gt;next[index];
-        &#125;
-        return temp-&gt;isWord;
-    &#125;
-
-    bool startsWith(string prefix) &#123;
-        Node* temp &#x3D; root;
-        for(char c : prefix)&#123;
-            int index &#x3D; c - &#39;a&#39;;
-            if(temp-&gt;next[index] &#x3D;&#x3D; nullptr) return false;
-            temp &#x3D; temp-&gt;next[index];
-        &#125;
-        return true;
-    &#125;
-&#125;;</code></pre>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Trie</span> &#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="keyword">class</span> <span class="title class_">Node</span>&#123;</span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        Node* next[<span class="number">26</span>];</span><br><span class="line">        <span class="type">bool</span> isWord;</span><br><span class="line">        <span class="built_in">Node</span>() : <span class="built_in">isWord</span>(<span class="literal">false</span>) &#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">26</span>; i++)&#123;</span><br><span class="line">                next[i] = <span class="literal">nullptr</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    Node* root;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">Trie</span>() : <span class="built_in">root</span>(<span class="keyword">new</span> <span class="built_in">Node</span>()) &#123;&#125;</span><br><span class="line">    ~<span class="built_in">Trie</span>() &#123;</span><br><span class="line">        <span class="built_in">deleteNode</span>(root);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">deleteNode</span><span class="params">(Node* p)</span></span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">26</span>; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;next[i]) <span class="built_in">deleteNode</span>(p-&gt;next[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">delete</span> p;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">insert</span><span class="params">(string word)</span> </span>&#123;</span><br><span class="line">        Node* temp = root;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">char</span> c : word)&#123;</span><br><span class="line">            <span class="type">int</span> index = c - <span class="string">&#x27;a&#x27;</span>;</span><br><span class="line">            <span class="keyword">if</span>(temp-&gt;next[index] == <span class="literal">nullptr</span>) temp-&gt;next[index] = <span class="keyword">new</span> <span class="built_in">Node</span>();</span><br><span class="line">            temp = temp-&gt;next[index];</span><br><span class="line">        &#125;</span><br><span class="line">        temp-&gt;isWord = <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">search</span><span class="params">(string word)</span> </span>&#123;</span><br><span class="line">        Node* temp = root;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">char</span> c : word)&#123;</span><br><span class="line">            <span class="type">int</span> index = c - <span class="string">&#x27;a&#x27;</span>;</span><br><span class="line">            <span class="keyword">if</span>(temp-&gt;next[index] == <span class="literal">nullptr</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">            temp = temp-&gt;next[index];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> temp-&gt;isWord;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">startsWith</span><span class="params">(string prefix)</span> </span>&#123;</span><br><span class="line">        Node* temp = root;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">char</span> c : prefix)&#123;</span><br><span class="line">            <span class="type">int</span> index = c - <span class="string">&#x27;a&#x27;</span>;</span><br><span class="line">            <span class="keyword">if</span>(temp-&gt;next[index] == <span class="literal">nullptr</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">            temp = temp-&gt;next[index];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <h2 id="hashing">Hashing</h2>
 <h3 id="hash-functions">Hash functions</h3>
 <h3 id="linear-probing">Linear probing</h3>
@@ -595,265 +110,34 @@ public:
 <p>Linear probing is a strategy for resolving collisions, by placing the
 new key into the closest following empty cell.</p>
 </blockquote>
-<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">add(k)
-    if 2*used &gt;&#x3D; capacity
-        grow()
-    pos ← hash(k)
-    while table[pos] !&#x3D; EMPTY
-        pos++
-        if pos &gt;&#x3D; table.length
-            pos &#x3D; 0
-        end
-    end
-    used++
-    table[pos] ← k
-end
-
-find(k)
-	pos ← hash(k)
-	while table[pos] !&#x3D; EMPTY
-		if table[pos] &#x3D;&#x3D; k
-			return true
-		end
-		pos++
-		if pos &gt;&#x3D; table.length
-			pos &#x3D; 0
-		end
-	end
-	return false
-end
-
-bool ← remove(k)
-	pos ← hash(k)
-	while table[pos] !&#x3D; 0
-		if table[pos] &#x3D;&#x3D; k
-			table[pos] ← 0
-				&#x2F;&#x2F; redo everyone potential
-				&#x2F;&#x2F; until next 0
-			return
-		end
-		pos++
-		if pos &gt;&#x3D; table.length
-			pos &#x3D; 0
-		end
-	end
-	return false
-end</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">add(k)</span><br><span class="line">    if 2*used &gt;= capacity</span><br><span class="line">        grow()</span><br><span class="line">    pos ← hash(k)</span><br><span class="line">    while table[pos] != EMPTY</span><br><span class="line">        pos++</span><br><span class="line">        if pos &gt;= table.length</span><br><span class="line">            pos = 0</span><br><span class="line">        end</span><br><span class="line">    end</span><br><span class="line">    used++</span><br><span class="line">    table[pos] ← k</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">find(k)</span><br><span class="line">  pos ← hash(k)</span><br><span class="line">  while table[pos] != EMPTY</span><br><span class="line">    if table[pos] == k</span><br><span class="line">      return true</span><br><span class="line">    end</span><br><span class="line">    pos++</span><br><span class="line">    if pos &gt;= table.length</span><br><span class="line">      pos = 0</span><br><span class="line">    end</span><br><span class="line">  end</span><br><span class="line">  return false</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">bool ← remove(k)</span><br><span class="line">  pos ← hash(k)</span><br><span class="line">  while table[pos] != 0</span><br><span class="line">    if table[pos] == k</span><br><span class="line">      table[pos] ← 0</span><br><span class="line">        // redo everyone potential</span><br><span class="line">        // until next 0</span><br><span class="line">      return</span><br><span class="line">    end</span><br><span class="line">    pos++</span><br><span class="line">    if pos &gt;= table.length</span><br><span class="line">      pos = 0</span><br><span class="line">    end</span><br><span class="line">  end</span><br><span class="line">  return false</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 <h3 id="quadratic-probing">Quadratic probing*</h3>
 <h3 id="linear-chaining">Linear chaining</h3>
-<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">LinearChaining.add(k)
-	pos ← hash(k)
-	p ← table[pos].head
-	while p !&#x3D; null
-		if p.k &#x3D;&#x3D; k
-			return
-		p &#x3D; p.next
-	end
-	table[pos].addStart(k)
-end
-
-LinearChaning.find(k)
-	pos ← hash(k)
-	p ← table[pos].head
-	while p!&#x3D; null
-		if p.k &#x3D;&#x3D; k
-			return true
-		p &#x3D; p.next
-	end
-	return false
-end		</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">LinearChaining.add(k)</span><br><span class="line">  pos ← hash(k)</span><br><span class="line">  p ← table[pos].head</span><br><span class="line">  while p != null</span><br><span class="line">    if p.k == k</span><br><span class="line">      return</span><br><span class="line">    p = p.next</span><br><span class="line">  end</span><br><span class="line">  table[pos].addStart(k)</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">LinearChaning.find(k)</span><br><span class="line">  pos ← hash(k)</span><br><span class="line">  p ← table[pos].head</span><br><span class="line">  while p!= null</span><br><span class="line">    if p.k == k</span><br><span class="line">      return true</span><br><span class="line">    p = p.next</span><br><span class="line">  end</span><br><span class="line">  return false</span><br><span class="line">end    </span><br></pre></td></tr></table></figure>
 <h3 id="perfect-hashing">Perfect hashing</h3>
 <h2 id="matrices">Matrices</h2>
 <h3 id="representation-rectangular-diagonal-tridiagonal">Representation
 (rectangular, diagonal, tridiagonal)</h3>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">class Matrix&#123;
-private:
-    int row,cols;
-    double* m;
-public:
-    Matrix(int rows, int cols, double val) : rows(rows), cols(cols)&#123;
-        for (int i &#x3D; 0; i &lt; row * cols; i++)
-            m[i] &#x3D; val;
-    &#125;
-    ~Matrix()&#123;
-        delete []m
-    &#125;
-&#125;</code></pre>
-<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">\\Lower Triangular Matrix
-get(i, j)
-	if(j &gt; i)
-		return 0
-	return m[i*(i+1)&#x2F;2+j]
-
-\\Diagonal Matrix
-get(i, j)
-	if(i &#x3D;&#x3D; j)
-		return m[i]
-	return 0
-	
-\\TriDiagonal Matrix
-get(i, j)
-	if(abs(j-i) &gt; 1)
-		return 0;
-	return m[2i+j]</code></pre>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Matrix</span>&#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="type">int</span> row,cols;</span><br><span class="line">    <span class="type">double</span>* m;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">Matrix</span>(<span class="type">int</span> rows, <span class="type">int</span> cols, <span class="type">double</span> val) : <span class="built_in">rows</span>(rows), <span class="built_in">cols</span>(cols)&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; row * cols; i++)</span><br><span class="line">            m[i] = val;</span><br><span class="line">    &#125;</span><br><span class="line">    ~<span class="built_in">Matrix</span>()&#123;</span><br><span class="line">        <span class="keyword">delete</span> []m</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">\\Lower Triangular Matrix</span><br><span class="line">get(i, j)</span><br><span class="line">  if(j &gt; i)</span><br><span class="line">    return 0</span><br><span class="line">  return m[i*(i+1)/2+j]</span><br><span class="line"></span><br><span class="line">\\Diagonal Matrix</span><br><span class="line">get(i, j)</span><br><span class="line">  if(i == j)</span><br><span class="line">    return m[i]</span><br><span class="line">  return 0</span><br><span class="line">  </span><br><span class="line">\\TriDiagonal Matrix</span><br><span class="line">get(i, j)</span><br><span class="line">  if(abs(j-i) &gt; 1)</span><br><span class="line">    return 0;</span><br><span class="line">  return m[2i+j]</span><br></pre></td></tr></table></figure>
 <h3 id="addition">Addition</h3>
-<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">addition(a, b)
-	if a.rows !&#x3D; b.rows OR a.cols !&#x3D; b.cols
-		ERROR
-	end
-	for i ← 0 to rows*cols
-		ans[i] &#x3D; a[i] + b[i]
-	end
-	return ans
-end</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">addition(a, b)</span><br><span class="line">  if a.rows != b.rows OR a.cols != b.cols</span><br><span class="line">    ERROR</span><br><span class="line">  end</span><br><span class="line">  for i ← 0 to rows*cols</span><br><span class="line">    ans[i] = a[i] + b[i]</span><br><span class="line">  end</span><br><span class="line">  return ans</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 <h3 id="multiplication">Multiplication</h3>
-<pre class="line-numbers language-ps" data-language="ps"><code class="language-ps">mult(a, b)
-	if a.cols !&#x3D; b.rows
-		ERROR
-	end
-	for k ← 0 to a.rows-1
-		for i  ←  0 to b.cols - 1
-			sum ← 0
-			for j ← 0 to a.cols - 1
-				sum ← sum + a(k,j)*b(j,i)
-			end
-			ans(k,i) ← sum
-		end
-	end
-end</code></pre>
+<figure class="highlight ps"><table><tr><td class="code"><pre><span class="line">mult(a, b)</span><br><span class="line">  <span class="keyword">if</span> a.cols != b.rows</span><br><span class="line">    ERROR</span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line">  <span class="keyword">for</span> k ← <span class="number">0</span> to a.rows<span class="literal">-1</span></span><br><span class="line">    <span class="keyword">for</span> i  ←  <span class="number">0</span> to b.cols - <span class="number">1</span></span><br><span class="line">      sum ← <span class="number">0</span></span><br><span class="line">      <span class="keyword">for</span> j ← <span class="number">0</span> to a.cols - <span class="number">1</span></span><br><span class="line">        sum ← sum + a(k,j)*b(j,i)</span><br><span class="line">      <span class="keyword">end</span></span><br><span class="line">      ans(k,i) ← sum</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
 <h3
 id="solving-systems-gauss-jordan-elimination-partial-pivoting">Solving
 systems (Gauss-Jordan Elimination, partial pivoting)</h3>
-<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">partialPivot(A,i)
-	max ← A(i,i)
-	maxpos ← i
-	for j ← i+1 to rows-1
-		if A(j,i) &gt; max
-			max ← A(j,i)
-			maxpos ← j
-		end
-	end
-	&#x2F;&#x2F;swap rows
-GaussianElimination(A,i)
-	for i ← 0 to rows-2
-		partialPivot(A,i)
-		for j ← i+1 to rows-1
-			s ← - A(j,i)&#x2F;A(i,i)
-			A(j,i) ← 0
-			for k ← i+1 to cols - 1
-				A(j,k) +&#x3D; s * m(i,j)
-			end
-		end
-	end</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">partialPivot(A,i)</span><br><span class="line">  max ← A(i,i)</span><br><span class="line">  maxpos ← i</span><br><span class="line">  for j ← i+1 to rows-1</span><br><span class="line">    if A(j,i) &gt; max</span><br><span class="line">      max ← A(j,i)</span><br><span class="line">      maxpos ← j</span><br><span class="line">    end</span><br><span class="line">  end</span><br><span class="line">  //swap rows</span><br><span class="line">GaussianElimination(A,i)</span><br><span class="line">  for i ← 0 to rows-2</span><br><span class="line">    partialPivot(A,i)</span><br><span class="line">    for j ← i+1 to rows-1</span><br><span class="line">      s ← - A(j,i)/A(i,i)</span><br><span class="line">      A(j,i) ← 0</span><br><span class="line">      for k ← i+1 to cols - 1</span><br><span class="line">        A(j,k) += s * m(i,j)</span><br><span class="line">      end</span><br><span class="line">    end</span><br><span class="line">  end</span><br></pre></td></tr></table></figure>
 <h3 id="gram-schmidt-orthogonalization">Gram-Schmidt
 orthogonalization</h3>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">void subtractProj(int i, int j)&#123;
-    double dot &#x3D; 0;
-    for (int k &#x3D; 0; k &lt; rows; k++)
-        dot +&#x3D; (*this)(k,i) * (*this)(k,j);
-    &#x2F;&#x2F;&lt;u.v&gt;
-    for (int k &#x3D; 0; k &lt; rows; k++)
-        (*this)(k,j) -&#x3D; dot * (*this)(k,j);
-&#125;
-gramschmidt()&#123;
-    int n &#x3D; cols;
-    double mag &#x3D; 0;
-    for (int i &#x3D; 0; i &lt; n; i++)
-        mag +&#x3D; (*this)(i,0) * (*this)(i,0);
-    mag &#x3D; 1 &#x2F; sqrt(mag);
-    for (int i &#x3D; 0; i &lt; n; i++)
-        (*this)(i,0) *&#x3D; mag;
-    for(int j &#x3D; 1; j &lt; n; j++)&#123;
-        for (int i &#x3D; 0; i &lt; j; i++)
-            subtractProj(i,j);
-        double mag &#x3D; 0;
-        for (int i &#x3D; 0; i &lt; n; i++)
-            mag +&#x3D; (*this)(i,j) * (*this)(i,j);
-        mag &#x3D; 1&#x2F;sqrt(mag);
-        for (int i &#x3D; 0; i &lt; n; i++)
-            (*this)(i,j) *&#x3D; mag;
-    &#125;
-    return *this;  
-&#125;</code></pre>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">subtractProj</span><span class="params">(<span class="type">int</span> i, <span class="type">int</span> j)</span></span>&#123;</span><br><span class="line">    <span class="type">double</span> dot = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> k = <span class="number">0</span>; k &lt; rows; k++)</span><br><span class="line">        dot += (*<span class="keyword">this</span>)(k,i) * (*<span class="keyword">this</span>)(k,j);</span><br><span class="line">    <span class="comment">//&lt;u.v&gt;</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> k = <span class="number">0</span>; k &lt; rows; k++)</span><br><span class="line">        (*<span class="keyword">this</span>)(k,j) -= dot * (*<span class="keyword">this</span>)(k,j);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">gramschmidt</span>()&#123;</span><br><span class="line">    <span class="type">int</span> n = cols;</span><br><span class="line">    <span class="type">double</span> mag = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">        mag += (*<span class="keyword">this</span>)(i,<span class="number">0</span>) * (*<span class="keyword">this</span>)(i,<span class="number">0</span>);</span><br><span class="line">    mag = <span class="number">1</span> / <span class="built_in">sqrt</span>(mag);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">        (*<span class="keyword">this</span>)(i,<span class="number">0</span>) *= mag;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">1</span>; j &lt; n; j++)&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; j; i++)</span><br><span class="line">            <span class="built_in">subtractProj</span>(i,j);</span><br><span class="line">        <span class="type">double</span> mag = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">            mag += (*<span class="keyword">this</span>)(i,j) * (*<span class="keyword">this</span>)(i,j);</span><br><span class="line">        mag = <span class="number">1</span>/<span class="built_in">sqrt</span>(mag);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">            (*<span class="keyword">this</span>)(i,j) *= mag;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> *<span class="keyword">this</span>;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="strings">Strings</h2>
 <h3 id="boyer-moore">Boyer-Moore</h3>
-<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">void boyerMoore(const char s[], const char target[])&#123;
-    int jump[256];
-    int n &#x3D; strlen(s);
-    int len &#x3D; strlen(target);
-    for (int i &#x3D; 0; i &lt; 256; i++)
-        jump[i] &#x3D; len;
-    for (int i &#x3D; 0; i &lt; len; i++)
-        jump[target[i]] &#x3D; len - 1 - i;
-    for (int i &#x3D; len - 1; i&lt;n;)&#123;
-        int offset &#x3D; jump[s[i]];
-        if(offset &gt; 0)
-            i +&#x3D; offset;
-        else&#123;
-            for (int j &#x3D; i - len +1, k &#x3D; 0; j &lt; i; j++, k++)
-                if(target[k] !&#x3D; s[j])
-                    goto notfound;
-            cout &lt;&lt; &quot;Found: &quot; &lt; i-len +1&lt;&lt;endl;
-        notfound:
-            i+&#x3D;len;
-        &#125;
-&#125;
-    
-for i &#x3D;0 to 255
-    table[i] &#x3D; len
-for i &#x3D; 0 to len
-    table[target[i]] &#x3D; len - i - 1
-i &#x3D; len-1
-while (i &lt; n)
-    jump ← table[search[i]]
-    if (jump &#x3D;&#x3D; 0) &#123; &#x2F;&#x2F; possible match
-        &#x2F;&#x2F; compare the word letter by letter
-
-    &#125;
-    i ← i + jump
-end</code></pre>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">boyerMoore</span><span class="params">(<span class="type">const</span> <span class="type">char</span> s[], <span class="type">const</span> <span class="type">char</span> target[])</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> jump[<span class="number">256</span>];</span><br><span class="line">    <span class="type">int</span> n = <span class="built_in">strlen</span>(s);</span><br><span class="line">    <span class="type">int</span> len = <span class="built_in">strlen</span>(target);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">256</span>; i++)</span><br><span class="line">        jump[i] = len;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; len; i++)</span><br><span class="line">        jump[target[i]] = len - <span class="number">1</span> - i;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = len - <span class="number">1</span>; i&lt;n;)&#123;</span><br><span class="line">        <span class="type">int</span> offset = jump[s[i]];</span><br><span class="line">        <span class="keyword">if</span>(offset &gt; <span class="number">0</span>)</span><br><span class="line">            i += offset;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j = i - len +<span class="number">1</span>, k = <span class="number">0</span>; j &lt; i; j++, k++)</span><br><span class="line">                <span class="keyword">if</span>(target[k] != s[j])</span><br><span class="line">                    <span class="keyword">goto</span> notfound;</span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;Found: &quot;</span> &lt; i-len +<span class="number">1</span>&lt;&lt;endl;</span><br><span class="line">        notfound:</span><br><span class="line">            i+=len;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">    </span><br><span class="line"><span class="keyword">for</span> i =<span class="number">0</span> to <span class="number">255</span></span><br><span class="line">    table[i] = len</span><br><span class="line"><span class="keyword">for</span> i = <span class="number">0</span> to len</span><br><span class="line">    table[target[i]] = len - i - <span class="number">1</span></span><br><span class="line">i = len<span class="number">-1</span></span><br><span class="line"><span class="keyword">while</span> (i &lt; n)</span><br><span class="line">    jump ← table[search[i]]</span><br><span class="line">    <span class="keyword">if</span> (jump == <span class="number">0</span>) &#123; <span class="comment">// possible match</span></span><br><span class="line">        <span class="comment">// compare the word letter by letter</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    i ← i + jump</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 <h3 id="finite-state">Finite State*</h3>
-<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class FiniteStateMachine &#123;
-private:
-	int currentState;
-	int next[NUMSTATES][256];
-public:
-	FiniteStateMachine() : currentState(0) &#123;
-		for (int i &#x3D; 0; i &lt; 256; i++)
-			next[0][i] &#x3D; 1;
-		for (int i &#x3D; &#39;a&#39;; i &lt;&#x3D; &#39;z&#39;; i++)
-			next[0][i] &#x3D; 0;
-		for (int i &#x3D; &#39;A&#39;; i &lt;&#x3D; &#39;Z&#39;; i++)
-			next[0][i] &#x3D; 0;
-		
-
-	&#125;
-	void exec(const char inp[]) &#123;
-		for (int i &#x3D; 0; inp[i] !&#x3D; &#39;\0&#39;; i++) &#123;
-			currentState &#x3D; next[currentState][inp[i]];
-			if (currentState &#x3D;&#x3D; 1)
-				return; &#x2F;&#x2F; get out when we reach the end state
-	&#125;
-&#125;;</code></pre>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">FiniteStateMachine</span> &#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">  <span class="type">int</span> currentState;</span><br><span class="line">  <span class="type">int</span> next[NUMSTATES][<span class="number">256</span>];</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">  <span class="built_in">FiniteStateMachine</span>() : <span class="built_in">currentState</span>(<span class="number">0</span>) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">256</span>; i++)</span><br><span class="line">      next[<span class="number">0</span>][i] = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="string">&#x27;a&#x27;</span>; i &lt;= <span class="string">&#x27;z&#x27;</span>; i++)</span><br><span class="line">      next[<span class="number">0</span>][i] = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="string">&#x27;A&#x27;</span>; i &lt;= <span class="string">&#x27;Z&#x27;</span>; i++)</span><br><span class="line">      next[<span class="number">0</span>][i] = <span class="number">0</span>;</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="type">void</span> <span class="title">exec</span><span class="params">(<span class="type">const</span> <span class="type">char</span> inp[])</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; inp[i] != <span class="string">&#x27;\0&#x27;</span>; i++) &#123;</span><br><span class="line">      currentState = next[currentState][inp[i]];</span><br><span class="line">      <span class="keyword">if</span> (currentState == <span class="number">1</span>)</span><br><span class="line">        <span class="keyword">return</span>; <span class="comment">// get out when we reach the end state</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <h3 id="lcs">LCS</h3>
-<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">int LCS(string s, string t)&#123;
-    int m &#x3D; s.size();
-    int n &#x3D; t.size();
-    int dp[m+1][n+1];
-    for(int i &#x3D; 0; i &lt; m + 1; i++)&#123;
-        for(int j &#x3D; 0; j &lt; n + 1; j++)&#123;
-            if(i&#x3D;&#x3D;0||j&#x3D;&#x3D;0)&#123;
-                d[i][j]&#x3D;0;
-            &#125;
-            else if(s[i-1]&#x3D;&#x3D;t[j-1])&#123;
-                dp[i][j] &#x3D; dp[i-1][j-1] + 1;
-            &#125;else&#123;
-                dp[i][j] &#x3D; max(dp[i-1][j],dp[i][j-1]);
-            &#125;
-        &#125;
-    &#125;
-    return dp[m][n];
-&#125;</code></pre>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">LCS</span><span class="params">(string s, string t)</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> m = s.<span class="built_in">size</span>();</span><br><span class="line">    <span class="type">int</span> n = t.<span class="built_in">size</span>();</span><br><span class="line">    <span class="type">int</span> dp[m+<span class="number">1</span>][n+<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; m + <span class="number">1</span>; i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>; j &lt; n + <span class="number">1</span>; j++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(i==<span class="number">0</span>||j==<span class="number">0</span>)&#123;</span><br><span class="line">                d[i][j]=<span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(s[i<span class="number">-1</span>]==t[j<span class="number">-1</span>])&#123;</span><br><span class="line">                dp[i][j] = dp[i<span class="number">-1</span>][j<span class="number">-1</span>] + <span class="number">1</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                dp[i][j] = <span class="built_in">max</span>(dp[i<span class="number">-1</span>][j],dp[i][j<span class="number">-1</span>]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> dp[m][n];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="graphs">Graphs</h2>
 <h3 id="representation-list-or-matrix">Representation: list or
 matrix</h3>
@@ -874,8 +158,7 @@ alt="img" />
 <p>Storage: O(E) Ω(V)</p>
 <p>is vertex k adjacent to vertex m? O(V) Ω(1)</p>
 <p>find all vertices adjacent to vertex k? O(V) Ω(1)</p>
-<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">isAdjacent(from,to)   &#x2F;&#x2F;O(V)
-allAdjacent(from) &#x2F;&#x2F;O(V), Ω(1) </code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">isAdjacent(from,to)   //O(V)</span><br><span class="line">allAdjacent(from) //O(V), Ω(1) </span><br></pre></td></tr></table></figure>
 <figure>
 <img data-src="https://docs.google.com/drawings/d/s_S39ZP6f8cbZoeQk9bNpbQ/image?w=201&amp;h=178&amp;rev=49&amp;ac=1&amp;parent=1QRQ5hBbBiKXkq0xePaM74Dbq7uui8nGUhUarYntk3wY"
 alt="img" />
@@ -884,191 +167,32 @@ alt="img" />
 <p>Space complexity: O(E) = O(V2) Ω(V2) = Θ(V2)</p>
 <p>is vertex k adjacent to vertex m? O(1)</p>
 <p>find all vertices adjacent to k? O(V)</p>
-<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">isAdjacent(from,to)   &#x2F;&#x2F;O(1)
-if from &lt; to
-        return isAdajacent(to, from)
-return m[from][to]
-end
-
-allAdjacent(from) &#x2F;&#x2F;O(V), Ω(V)  ⇒ θ(V)</code></pre>
-<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class MatrixGraph &#123;
-  private double [] w;
-  private int V;
-  public boolean isAdjacent(int i, int j) &#123; return !isInf(w[i * V + j]); &#125; &#x2F;&#x2F;O(1)
-  public boolean[] adjacent(int v) &#123; … &#125; &#x2F;&#x2F; O(V) Ω(V)
-&#125;
-
-class EdgeListGraph &#123;
-  private static class Edge &#123;
-     int to;
-     double w;
-  &#125;
-  private LinkedList&lt;Edge&gt;[] v;
-  public boolean isAdjacent(int i, int j) &#123; … &#125; &#x2F;&#x2F;O(V)    Ω(1)
-  public boolean[] adjacent(int i) &#123; … &#125; &#x2F;&#x2F; O(V)        Ω(1)
-&#125;
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">isAdjacent(from,to)   //O(1)</span><br><span class="line">if from &lt; to</span><br><span class="line">        return isAdajacent(to, from)</span><br><span class="line">return m[from][to]</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">allAdjacent(from) //O(V), Ω(V)  ⇒ θ(V)</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MatrixGraph</span> &#123;</span><br><span class="line">  <span class="keyword">private</span> <span class="type">double</span> [] w;</span><br><span class="line">  <span class="keyword">private</span> <span class="type">int</span> V;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> boolean <span class="title">isAdjacent</span><span class="params">(<span class="type">int</span> i, <span class="type">int</span> j)</span> </span>&#123; <span class="keyword">return</span> !<span class="built_in">isInf</span>(w[i * V + j]); &#125; <span class="comment">//O(1)</span></span><br><span class="line">  <span class="keyword">public</span> boolean[] <span class="built_in">adjacent</span>(<span class="type">int</span> v) &#123; … &#125; <span class="comment">// O(V) Ω(V)</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">EdgeListGraph</span> &#123;</span><br><span class="line">  <span class="keyword">private</span> <span class="type">static</span> <span class="keyword">class</span> <span class="title class_">Edge</span> &#123;</span><br><span class="line">     <span class="type">int</span> to;</span><br><span class="line">     <span class="type">double</span> w;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">private</span> LinkedList&lt;Edge&gt;[] v;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> boolean <span class="title">isAdjacent</span><span class="params">(<span class="type">int</span> i, <span class="type">int</span> j)</span> </span>&#123; … &#125; <span class="comment">//O(V)    Ω(1)</span></span><br><span class="line">  <span class="keyword">public</span> boolean[] <span class="built_in">adjacent</span>(<span class="type">int</span> i) &#123; … &#125; <span class="comment">// O(V)        Ω(1)</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h3 id="dfs">DFS</h3>
 <p>O(V2) worst case (matrix representation, ALWAYS)</p>
 <p>Ω(1) best case (with initial vertex not connected to anyone,
 list)</p>
 <p>Ω(V) best case (with initial vertex not connected to anyone,
 matrix)</p>
-<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">g.DFS2(v,visited) &#x2F;&#x2F;O(V^2) Ω(1) with list impl
-	visited[v] ← true
-	print v
-	foreach v2 in adjacent(v)&#x2F;&#x2F; for matrix O(v), for linkedlist O(v)  Ω(1)
-		if NOT visited[v2]
-			g.DFS2(v2, visited)
-		end
-	end
-end
-g.DFS(v)
-	visited ← [false, false, ...,] &#x2F;&#x2F;O(v)
-	g.DFS2(v,visited)
-end
-
-&#x2F;&#x2F;iteratively
-g.DFS(v)
-	visited ← [false, false, ...,] &#x2F;&#x2F;O(v)
-	stack ← empty
-	stack.push(v)
-	visited[v] ← true
-	while NOT stack.empty()
-		v ← stack.pop();
-		print v
-		foreach v2 in adjacent(v)
-			if NOT visited[v2]
-				stack.push(v2)
-				visited[v2] ← true
-			end
-		end
-	end
-end</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">g.DFS2(v,visited) //O(V^2) Ω(1) with list impl</span><br><span class="line">  visited[v] ← true</span><br><span class="line">  print v</span><br><span class="line">  foreach v2 in adjacent(v)// for matrix O(v), for linkedlist O(v)  Ω(1)</span><br><span class="line">    if NOT visited[v2]</span><br><span class="line">      g.DFS2(v2, visited)</span><br><span class="line">    end</span><br><span class="line">  end</span><br><span class="line">end</span><br><span class="line">g.DFS(v)</span><br><span class="line">  visited ← [false, false, ...,] //O(v)</span><br><span class="line">  g.DFS2(v,visited)</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">//iteratively</span><br><span class="line">g.DFS(v)</span><br><span class="line">  visited ← [false, false, ...,] //O(v)</span><br><span class="line">  stack ← empty</span><br><span class="line">  stack.push(v)</span><br><span class="line">  visited[v] ← true</span><br><span class="line">  while NOT stack.empty()</span><br><span class="line">    v ← stack.pop();</span><br><span class="line">    print v</span><br><span class="line">    foreach v2 in adjacent(v)</span><br><span class="line">      if NOT visited[v2]</span><br><span class="line">        stack.push(v2)</span><br><span class="line">        visited[v2] ← true</span><br><span class="line">      end</span><br><span class="line">    end</span><br><span class="line">  end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 <h3 id="bfs">BFS</h3>
-<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">g.BFS(v)
-	visited ← [false, false, ...,] &#x2F;&#x2F;O(v)
-	queue ← empty
-	queue.enqueue(v)
-	visited[v] ← true
-	while NOT queue.empty()
-		v ← queue.dequeue();
-		print v
-		foreach v2 in adjacent(v)
-			if NOT visited[v2]
-				queue.enqueue(v2)
-				visited[v2] ← true
-			end
-		end
-	end
-end</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">g.BFS(v)</span><br><span class="line">  visited ← [false, false, ...,] //O(v)</span><br><span class="line">  queue ← empty</span><br><span class="line">  queue.enqueue(v)</span><br><span class="line">  visited[v] ← true</span><br><span class="line">  while NOT queue.empty()</span><br><span class="line">    v ← queue.dequeue();</span><br><span class="line">    print v</span><br><span class="line">    foreach v2 in adjacent(v)</span><br><span class="line">      if NOT visited[v2]</span><br><span class="line">        queue.enqueue(v2)</span><br><span class="line">        visited[v2] ← true</span><br><span class="line">      end</span><br><span class="line">    end</span><br><span class="line">  end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 <h3 id="isconnected">IsConnected</h3>
-<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">bool ← g.isConnected() &#x2F;&#x2F;O(V^2)
-	visited ← g.DFS(r)
-	for i ← 0 to V
-		if NOT visited[i]
-			return false
-	end
-	return true
-end</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bool ← g.isConnected() //O(V^2)</span><br><span class="line">  visited ← g.DFS(r)</span><br><span class="line">  for i ← 0 to V</span><br><span class="line">    if NOT visited[i]</span><br><span class="line">      return false</span><br><span class="line">  end</span><br><span class="line">  return true</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 <h3 id="bellman-fordove">Bellman-Ford//O(VE)</h3>
-<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">BellmanFord(start, end)
-	cost ← [∞, ∞, ...]
-	cost[start] ← 0
-	for v ← 0 to V-1
-		for each edge e from v
-			if cost[v2] &gt; cost[v] + adjacent[v2]
-			cost[v2] ← cost[v] + adjacent[v2]
-			add to the list to recompute costs from v2
-		end
-	end
-end</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">BellmanFord(start, end)</span><br><span class="line">  cost ← [∞, ∞, ...]</span><br><span class="line">  cost[start] ← 0</span><br><span class="line">  for v ← 0 to V-1</span><br><span class="line">    for each edge e from v</span><br><span class="line">      if cost[v2] &gt; cost[v] + adjacent[v2]</span><br><span class="line">      cost[v2] ← cost[v] + adjacent[v2]</span><br><span class="line">      add to the list to recompute costs from v2</span><br><span class="line">    end</span><br><span class="line">  end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 <h3 id="floyd-warshallov3">Floyd-Warshall//O(V^3)</h3>
-<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">dist ← |V| × |V| array of minimum distances initialized to ∞
-
-for each vertex v
-	dist[v][v] ← 0
-for each edge (u,v)
-	dist[u][v] ← w(u,v) &#x2F;&#x2F;the weight of the edge (u,v)
-for k from 1 to V
-	for i from 1 to V
-		for j from 1 to V
-			if dist[i][j] &gt; dist[i][k] + dist[k][j]
-				dist[i][j] ← dist[i][k] + dist[k][j]
-			end
-		end
-	end
-end</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dist ← |V| × |V| array of minimum distances initialized to ∞</span><br><span class="line"></span><br><span class="line">for each vertex v</span><br><span class="line">  dist[v][v] ← 0</span><br><span class="line">for each edge (u,v)</span><br><span class="line">  dist[u][v] ← w(u,v) //the weight of the edge (u,v)</span><br><span class="line">for k from 1 to V</span><br><span class="line">  for i from 1 to V</span><br><span class="line">    for j from 1 to V</span><br><span class="line">      if dist[i][j] &gt; dist[i][k] + dist[k][j]</span><br><span class="line">        dist[i][j] ← dist[i][k] + dist[k][j]</span><br><span class="line">      end</span><br><span class="line">    end</span><br><span class="line">  end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 <h3 id="primov2">Prim//O(V^2)</h3>
-<pre class="line-numbers language-pseudocode" data-language="pseudocode"><code class="language-pseudocode">Prim(v)
-	visited ← new Vector(V, false)
-	visited[v] ← true
-	for i ← 1 to V-1
-		for all edges out of the visited set(V,2V,3V, ...) to V-1
-			min ← ∞
-			if isAdjacent(v,a) and NOT visited[a]
-				if getWeight(v,a) &lt; min
-					min ← getWeight(v,a)
-					minA ← a
-				end
-			end
-		end
-		visited[minA] ← trme
-		v ← minA
-	end
-end</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Prim(v)</span><br><span class="line">  visited ← new Vector(V, false)</span><br><span class="line">  visited[v] ← true</span><br><span class="line">  for i ← 1 to V-1</span><br><span class="line">    for all edges out of the visited set(V,2V,3V, ...) to V-1</span><br><span class="line">      min ← ∞</span><br><span class="line">      if isAdjacent(v,a) and NOT visited[a]</span><br><span class="line">        if getWeight(v,a) &lt; min</span><br><span class="line">          min ← getWeight(v,a)</span><br><span class="line">          minA ← a</span><br><span class="line">        end</span><br><span class="line">      end</span><br><span class="line">    end</span><br><span class="line">    visited[minA] ← trme</span><br><span class="line">    v ← minA</span><br><span class="line">  end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 <h3 id="kruskaloe-log-e">Kruskal//O(E log E)</h3>
 <p>https://en.wikipedia.org/wiki/Kruskal%27s_algorithm</p>
 <h3 id="tsp">TSP*</h3>
 <h2 id="backtracking">Backtracking</h2>
 <h3 id="basic">Basic</h3>
 <h3 id="heaps">Heap's</h3>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">#include &lt;iostream&gt;
-using namespace std;
-
-class Permute &#123;
-private:
-	int* p;
-	int N;
-public:
-	Permute(int x[], int N) : p(x), N(N) &#123;
-		&#x2F;&#x2F;generate(N-1);
-		heaps(N-1);
-	&#125;
-	void generate(int n) &#123;
-		if (n &#x3D;&#x3D; 0) &#123;
-			doit();
-			return; &#x2F;&#x2F; What Sedgewick forgot!!!!
-		&#125;
-		for (int c &#x3D; 0; c &lt;&#x3D; n; c++) &#123;
-			swap(p[c], p[n]);
-			generate(n-1);
-			swap(p[c], p[n]);
-		&#125;
-	&#125;
-	void heaps(int n) &#123;
-		if (n &#x3D;&#x3D; 0) &#123;
-			doit();
-			return; &#x2F;&#x2F; What Sedgewick forgot!!!!
-		&#125;
-		for (int c &#x3D; 0; c &lt;&#x3D; n; c++) &#123;
-			generate(n-1);
-			swap(n % 2 ? p[0] : p[c] , p[n]);
-		&#125;
-	&#125;
-
-	void doit() const &#123;
-		for (int i &#x3D; 0; i &lt; N; i++)
-			cout &lt;&lt; p[i];
-		cout &lt;&lt; &#39;\n&#39;;
-	&#125;
-&#125;;
-
-
-int main() &#123;
-  int x[] &#x3D; &#123;1, 2, 3, 4&#125;;
-	Permute perm(x, 4);
-&#125;</code></pre>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Permute</span> &#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">  <span class="type">int</span>* p;</span><br><span class="line">  <span class="type">int</span> N;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">  <span class="built_in">Permute</span>(<span class="type">int</span> x[], <span class="type">int</span> N) : <span class="built_in">p</span>(x), <span class="built_in">N</span>(N) &#123;</span><br><span class="line">    <span class="comment">//generate(N-1);</span></span><br><span class="line">    <span class="built_in">heaps</span>(N<span class="number">-1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="type">void</span> <span class="title">generate</span><span class="params">(<span class="type">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (n == <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="built_in">doit</span>();</span><br><span class="line">      <span class="keyword">return</span>; <span class="comment">// What Sedgewick forgot!!!!</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> c = <span class="number">0</span>; c &lt;= n; c++) &#123;</span><br><span class="line">      <span class="built_in">swap</span>(p[c], p[n]);</span><br><span class="line">      <span class="built_in">generate</span>(n<span class="number">-1</span>);</span><br><span class="line">      <span class="built_in">swap</span>(p[c], p[n]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="type">void</span> <span class="title">heaps</span><span class="params">(<span class="type">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (n == <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="built_in">doit</span>();</span><br><span class="line">      <span class="keyword">return</span>; <span class="comment">// What Sedgewick forgot!!!!</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> c = <span class="number">0</span>; c &lt;= n; c++) &#123;</span><br><span class="line">      <span class="built_in">generate</span>(n<span class="number">-1</span>);</span><br><span class="line">      <span class="built_in">swap</span>(n % <span class="number">2</span> ? p[<span class="number">0</span>] : p[c] , p[n]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="type">void</span> <span class="title">doit</span><span class="params">()</span> <span class="type">const</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; N; i++)</span><br><span class="line">      cout &lt;&lt; p[i];</span><br><span class="line">    cout &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="type">int</span> x[] = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>&#125;;</span><br><span class="line">  <span class="function">Permute <span class="title">perm</span><span class="params">(x, <span class="number">4</span>)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>Cheetsheet</category>
@@ -2193,240 +1317,6 @@ class="math inline">\(\LaTeX\)</span>模板</p>
       </tags>
   </entry>
   <entry>
-    <title>达梦数据库的安装与使用</title>
-    <url>/2021/04/14/dameng-database/</url>
-    <content><![CDATA[<p>在测试服务器上部署了一个达梦单点服务，做一下简要的记录</p>
-<span id="more"></span>
-<h2 id="dm8-安装">DM8 安装</h2>
-<h3 id="安装前准备">安装前准备</h3>
-<h4 id="配置安装目录">配置安装目录</h4>
-<p>单独申请了一块盘<code>/dev/vdf</code>，分区格式化后将其挂载到
-<code>/dm</code> 下</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">fdisk &#x2F;dev&#x2F;vdf
-mkfs.ext4 &#x2F;dev&#x2F;vdf1
-mkdir &#x2F;dm
-mount &#x2F;dev&#x2F;vdf1 &#x2F;dm</code></pre>
-<p>设置永久挂载</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">vi &#x2F;etc&#x2F;fstab
-&#x2F;dev&#x2F;vdf1	&#x2F;dm	ext4	defaults	0	0
-mount -a</code></pre>
-<h4 id="操作系统设置">操作系统设置</h4>
-<h5 id="禁用-selinux">禁用 SELINUX</h5>
-<p>使用 setenforce 临时关闭</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">getenforce # 查看 SELINUX 状态，如果不是 disabled 状态使用 senenforce 设置
-setenforce 0</code></pre>
-<p>也可以修改 config 文件禁用</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">vi &#x2F;etc&#x2F;selinux&#x2F;config
-# 如果不是 disabled 状态则修改为disabled
-SELINUX&#x3D;disabled
-reboot</code></pre>
-<h5 id="关闭防火墙">关闭防火墙</h5>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">systemctl status firewalld # 查看防火墙状态
-systemctl stop firewalld
-systemctl disable firewalld</code></pre>
-<h5 id="设置文件最大打开数目">设置文件最大打开数目</h5>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ulimit -n 65536</code></pre>
-<p>修改 config 文件则永久生效</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">vi &#x2F;etc&#x2F;security&#x2F;limits.conf
-dmdba		soft	nofile	65536
-dmdba		hard	nofile	65536
-dmdba		soft	nproc	10240
-dmdba		hard	nproc	10240
-dmdba		soft	data	unlimited
-dmdba		hard	data	unlimited
-dmdba		soft	fsize	unlimited
-dmdba		hard	fsize	unlimited</code></pre>
-<h5 id="用户权限配置">用户权限配置</h5>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">groupadd dinstall
-useradd -g dinstall dmdba
-chown -R dmdba:dinstall &#x2F;dm</code></pre>
-<h5 id="其他设置">其他设置</h5>
-<p>关闭 CUPS, Postfix, rpcbind 服务</p>
-<h4 id="上传安装包">上传安装包</h4>
-<p>一共有<code>DMInstall.bin</code>，<code>dm.key</code>和<code>DmJdbcDriver16.jar</code>三个文件</p>
-<p>使用sftp上传到<code>/dm/software</code>下</p>
-<h3 id="软件安装">软件安装</h3>
-<p>切换到 dmdba执行安装</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">su - dmdba
-cd &#x2F;dm&#x2F;software&#x2F;
-chmod 755 *
-.&#x2F;DMInstall.bin -i</code></pre>
-<p>再此遇到了<code>Bash script and /bin/bash^M: bad interpreter: No such file or directory</code>的报错，可能是由于安装脚本在
-Windows 下修改过导致，将换行符由 CRLF 转为 LF 可解决</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">sed -i -e &#39;s&#x2F;\r$&#x2F;&#x2F;&#39; DMInstall.bin</code></pre>
-<p>接着按提示导入
-key，设置时区，设置目录为<code>/dm/dmdba/dmdbms</code></p>
-<p>再切回 root 用户执行脚本</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">su - root
-&#x2F;dm&#x2F;dmdba&#x2F;dmdbms&#x2F;script&#x2F;root&#x2F;root_installer.sh</code></pre>
-<p>配置好环境变量</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">vi ~&#x2F;.bash_profile
-export DM_HOME&#x3D;&quot;&#x2F;dmsoft&#x2F;dmdbms&quot;
-export PATH&#x3D;$DM_HOME&#x2F;bin:$PATH
-source ~&#x2F;.bash_profile</code></pre>
-<h3 id="单点配置">单点配置</h3>
-<h4 id="初始化数据库">初始化数据库</h4>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">su - dmdba
-cd &#x2F;dm
-mkdir dmdata dmarch dmbak
-cd dmdba&#x2F;dmdbms&#x2F;bin</code></pre>
-<p>通过 dminit 来设置参数</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">.&#x2F;dminit help # 查看参数说明，按照要求设置参数
-
-.&#x2F;dminit PATH&#x3D;&#x2F;dm&#x2F;dmdata DB_NAME&#x3D;DMDB INSTANCE_NAME&#x3D;DBSERVER PORT_NUM&#x3D;5238 LOG_SIZE&#x3D;300 EXTENT_SIZE&#x3D;16 SYSDBA_PWD&#x3D;[password] SYSAUDITOR_PWD&#x3D;[password]</code></pre>
-<h4 id="启用-dm-数据库服务">启用 DM 数据库服务</h4>
-<p>切到 root 用户</p>
-<p>将服务注册到操作系统</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">cd &#x2F;dm&#x2F;dmdba&#x2F;dmdbms&#x2F;script&#x2F;root
-.&#x2F;dm_service_installer.sh -t dmserver -dm_ini &#x2F;dm&#x2F;dmdata&#x2F;DMDB&#x2F;dm.ini -p DBSERVER</code></pre>
-<p>使用 systemctl 管理服务</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">systemctl enable DmServiceDBSERVER.service
-systemctl start DmServiceDBSERVER.service</code></pre>
-<h2 id="数据库维护与管理">数据库维护与管理</h2>
-<h3 id="表与用户创建">表与用户创建</h3>
-<p>登录数据库</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">cd &#x2F;dm&#x2F;dmdba&#x2F;dmdbms&#x2F;bin
-.&#x2F;disql SYSDBA&#x2F;[password]@localhost:5238</code></pre>
-<p>创建表空间 DMTBS，文件存储在
-<code>/dm/dmdata</code>中，分为两个数据文件 DMTBS01.DBF 和
-DMTBS02.DBF，每个文件初始大小为 64M，每次自动扩展 2M，单个数据文件最大
-10G</p>
-<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; CREATE TABLESPCE &quot;DMTBS&quot; DATAFILE &#39;&#x2F;dm&#x2F;dmdata&#x2F;DMTBS01.DBF&#39; SIZE 64 AUTOEXTEND ON NEXT 2 MAXSIZE 10240, &#39;&#x2F;dm&#x2F;dmdata&#x2F;DMTBS02.DBF&#39; SIZE 64 AUTOEXTEND ON NEXT 2 MAXSIZE 10240 CACHE &#x3D; NORMAL;</code></pre>
-<p>创建用户 DMTEST，密码 [password]，默认表空间为 DMTBS</p>
-<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; CREATE USER &quot;DMTEST&quot; IDENTIFIED BY [password] DEFAULT TABLESPACE &quot;DMTBS&quot;</code></pre>
-<p>创建角色 TESTROLE，具有创建表，创建视图，创建索引的权限</p>
-<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; CREATE ROLE TESTROLE;
-SQL&gt; GRANT CREATE TABLE, CREATE VIEW, CREATE INDEX TO TESTROLE;</code></pre>
-<p>将角色 RESOURCE，TESTROLE 赋给 DMTEST 用户，并赋予 DMTEST 查询
-DBA_TABLESPACES 的权限</p>
-<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; GRANT RESOURCE, TESTROLE TO DMTEST;
-SQL&gt; GRANT SELECT ON DBA_TABLESPACES TO DMTEST;</code></pre>
-<p>在 DMTEST 用户下创建 EMP 表和 DEPT 表。</p>
-<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; CREATE TABLE EMP (
-    EMP_ID INT NOT NULL,
-    EMP_NAME VARCHAR(20),
-    EMAIL VARCHAR(50),
-    PHONE_NUM VARCHAR(20),
-    HIRE_DATE DATE,
-    JOB_ID VARCHAR(10),
-    MANAGER_ID INT,
-    SALARY INT,
-    DEPT_ID INT
-);
-SQL&gt; CREATE TABLE DEPT (
-    DEPT_ID INT NOT NULL,
-    DEPT_NAME VARCHAR(30),
-    LOCATION_ID INT,
-    LOCATION_ADDR VARCHAR(30)
-);</code></pre>
-<h3 id="使用-sql-脚本">使用 sql 脚本</h3>
-<p>假设有脚本<code>/dm/script1.sql</code></p>
-<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">INSERT INTO EMP (EMP_ID, EMP_NAME) VALUES (1, &#39;NAME&#39;);
-INSERT INTO EMP (EMP_ID, EMP_NAME, EMAIL) VALUES (2, &#39;NAME&#39;, &#39;a@b&#39;);
-INSERT INTO DEPT (DEPT_ID, DEPT_NAME) VALUES (1, &#39;DEPTNAME&#39;);</code></pre>
-<p>连接到数据库后可直接调用该脚本</p>
-<pre class="line-numbers language-none"><code class="language-none">SQL&gt; start &#x2F;dm&#x2F;script1.sql</code></pre>
-<h3 id="创建视图">创建视图</h3>
-<p>创建视图 VIEW_HIREDATE 存放 HIRE_DATE 为 2006-01-01 至 2009-01-01
-的条目</p>
-<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; CREATE VIEW VIEW_HIREDATE AS SELECT * FROM EMP WHERE HIRE_DATE BETWEEN &#39;2006-01-01&#39; AND &#39;2009-01-01&#39;;</code></pre>
-<p>创建视图 VIEW_SALARY 查询平均 SALARY 大于 12000 的 DEPT</p>
-<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; CREATE VIEW VIEW_SALARY AS SELECT * FROM DEPT WHERE DEPT_ID IN (
-    SELECT DEPT_ID
-    FROM EMP
-    GROUP BY DEPT_ID
-    HAVING AVG(SALARY) &gt; 12000
-);</code></pre>
-<h3 id="创建索引">创建索引</h3>
-<p>在列 EMP_NAME 添加索引 IND_EMP_NAME</p>
-<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">-- 创建索引表空间
-SQL&gt; CREATE TABLESPACE INDEX1 DATAFILE &#39;&#x2F;dm&#x2F;dmdata&#x2F;DMDB&#x2F;index1_01.dbf&#39; size 64 autoextend on next 10 mamxsize 2000;
--- 创建索引
-SQL&gt; CREATE INDEX IND_EMP_NAME ON EMP(EMP_NAME) TABLESPACE INDEX1;</code></pre>
-<h3 id="数据库备份">数据库备份</h3>
-<h4 id="物理备份">物理备份</h4>
-<h5 id="冷备">冷备</h5>
-<p>使用 DMRMAN 进行冷备， DMAP 服务为打开状态， 并关闭数据库实例</p>
-<p>默认备份方式为完全备份</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"># 关闭数据库实例
-systemctl stop DmServiceDBSERVER.service
-cd &#x2F;dm&#x2F;dmdba&#x2F;dmdbms&#x2F;bin
-.&#x2F;dmrman
-# 完全备份
-RMAN&gt; backup database &#39;&#x2F;dm&#x2F;dmdata&#x2F;DMDB&#x2F;dm.ini&#39; full backupset &#39;&#x2F;dm&#x2F;dmbak&#x2F;DMDB_bak&#39;
-# 增量备份
-RMAN&gt; backup database &#39;&#x2F;dm&#x2F;dmdata&#x2F;DMDB&#x2F;dm.ini&#39; increment with backupdir &#39;&#x2F;dm&#x2F;dmbak&#39; backupset &#39;&#x2F;dm&#x2F;dmbak&#x2F;DMDB_bak&#39;
-# 查看备份信息
-RMAN&gt; show backupset &#39;&#x2F;dm&#x2F;dmbak&#x2F;DMDB_bak&#39;
-RMAN&gt; show backupset &#39;&#x2F;dm&#x2F;dmbak&#x2F;DMDB_bak&#39; info meta</code></pre>
-<h5 id="热备">热备</h5>
-<p>使用 SQL 进行备份，DMAP
-服务和数据库实例都是打开状态，为了保证备份数据的一致性，需要配置并开启本地归档</p>
-<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">-- 打开归档
-SQL&gt; ALTER DATABASE MOUNT;
-SQL&gt; ALTER DATABASE ADD ARCHIVELOG &#39;type&#x3D;local,dest&#x3D;&#x2F;dm&#x2F;dmarch,file_size&#x3D;64,space_limit&#x3D;0&#39;;
--- 如果需要修改归档配置则可使用 ALTER DATABASE MODIFY ARCHIVELOG
-SQL&gt; ALTER DATABSE ARCHIVELOG;
-SQL&gt; ALTER DATABASE OPEN;
--- 检查归档状态
-SQL&gt; SELECT name, status$, arch_mode FROM v$database;
-
--- 完全备份
-SQL&gt; backup database full backupset &#39;&#x2F;dm&#x2F;dmbak&#x2F;DMDB_bak2&#39;;
-
--- 增量备份
-SQL&gt; backup database increment backupset &#39;&#x2F;dm&#x2F;dmbak&#x2F;incr_DMDB_bak2&#39;;</code></pre>
-<h5 id="自动备份作业">自动备份作业</h5>
-<p>首先启动代理</p>
-<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; SP_INIT_JOB_SYS(1);</code></pre>
-<p>可借助管理工具直接在 GUI 上编辑生成作业</p>
-<p>创建 JOB1，每周日晚 22:00 对数据库做完全备份</p>
-<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; call SP_CREATE_JOB(&#39;JOB1&#39;,1,0,&#39;&#39;,0,0,&#39;&#39;,0,&#39;周日全备&#39;);
-SQL&gt; call SP_JOB_CONFIG_START(&#39;JOB1&#39;);
-SQL&gt; call SP_ADD_JOB_STEP(&#39;JOB1&#39;, &#39;全备&#39;, 5, &#39;01000&#x2F;dm&#x2F;dmbak&#39;, 1, 2, 0, 0, NULL, 0);
-SQL&gt; call SP_ADD_JOB_SCHEDULE(&#39;JOB1&#39;, &#39;周日执行&#39;, 1, 2, 1, 1, 0, &#39;22:00:00&#39;, NULL, &#39;2021-04-20 02:34:52&#39;, NULL, &#39;&#39;);
-SQL&gt; call SP_JOB_CONFIG_COMMIT(&#39;JOB1&#39;);</code></pre>
-<p>创建 JOB2，每周一到周六 22：00 对数据库做增量备份</p>
-<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">SQL&gt; call SP_CREATE_JOB(&#39;JOB2&#39;,1,0,&#39;&#39;,0,0,&#39;&#39;,0,&#39;平时增备&#39;);
-SQL&gt; call SP_JOB_CONFIG_START(&#39;JOB2&#39;);
-SQL&gt; call SP_ADD_JOB_STEP(&#39;JOB2&#39;, &#39;增备&#39;, 5, &#39;01000&#x2F;dm&#x2F;dmbak|&#x2F;dm&#x2F;dmbak&#39;, 1, 2, 0, 0, NULL, 0);
-SQL&gt; call SP_ADD_JOB_SCHEDULE(&#39;JOB1&#39;, &#39;周一到周六执行&#39;, 1, 2, 1, 126, 0, &#39;22:00:00&#39;, NULL, &#39;2021-04-20 02:34:52&#39;, NULL, &#39;&#39;);
-SQL&gt; call SP_JOB_CONFIG_COMMIT(&#39;JOB2&#39;);</code></pre>
-<h4 id="逻辑备份">逻辑备份</h4>
-<p>使用 dexp 对数据库执行逻辑导出</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">cd &#x2F;dm&#x2F;dmdba&#x2F;dmdbms&#x2F;bin
-.&#x2F;dexp SYSDBA&#x2F;[password]@localhost:5238 FILE&#x3D;dmdb_full.dmp LOG&#x3D;dmdb_full.log DIRECTORY&#x3D;&#x2F;dm&#x2F;dmbak FULL&#x3D;y</code></pre>
-<p>使用 dimp 导入</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">.&#x2F;dimp SYSDBA&#x2F;[password]@localhost:5238 FILE&#x3D;&#x2F;dm&#x2F;dmbak&#x2F;dmdb_full.dmp LOG&#x3D;&#x2F;dm&#x2F;dmbak&#x2F;dimp.log</code></pre>
-<h2 id="配置-odbc">配置 ODBC</h2>
-<p>编译好 ODBC 后，配置 odbc.ini 和 odbcinst.ini</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"># odbc.ini
-[dm8]
-DESCRIPTION &#x3D; DM ODBC DSND
-DRIVER &#x3D; DM8 ODBC DRIVER
-SERVER &#x3D; localhost
-UID &#x3D; SYSDA
-PWD &#x3D; [password]
-TCP_PORT &#x3D; 5238
-
-# odbcinst.ini
-[DM8 ODBC DRIVER]
-DESCRIPTION &#x3D; ODBC DRIVER FOR DM8
-DRIVER &#x3D; &#x2F;dm&#x2F;dmdba&#x2F;dmdbms&#x2F;bin&#x2F;libdodbc.so</code></pre>
-<p>修改文件属性即可连接</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">chmod 777 odbc.ini
-chmod 777 odbcinst.ini
-su - dmdba
-isql dm8</code></pre>
-]]></content>
-      <categories>
-        <category>Database</category>
-      </categories>
-      <tags>
-        <tag>database</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Gene Selection</title>
     <url>/2017/06/21/gene-selection/</url>
     <content><![CDATA[<p><em>毕业典礼还是完美的睡过去了（叹气，毕业之后成为又丧又废的NEET。</em></p>
@@ -2687,13 +1577,7 @@ DSD to DoP as well and works with other players.</p>
 foo_input_sacd 和 foo_out_asio+dsd
 的方式更简单易用，况且看起来后续的维护升级更有保障。缺憾的话~<del>不支持
 VU meter</del>~</p>
-<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">autoproxy_output::check_dsd_stream(true) &#x3D;&gt; DSD stream contains 1 chunks and 4704 samples
-autoproxy_output::process_samples() &#x3D;&gt; Switch to DSD playback
-autoproxy_output::process_samples() &#x3D;&gt; Input stream [channels: 2, samplerate: 2822400, channel_config: 0x00000003]
-autoproxy_output::process_samples() &#x3D;&gt; Output stream [channels: 2, samplerate: 2822400, channel_config: 0x00000003]
-autoproxy_output::process_samples(channels &#x3D; 2, sample_rate &#x3D; 2822400, channel_config &#x3D; 0x00000003)
-autoproxy_output::volume_adjust(samplerate &#x3D; 2822400, latency &#x3D; 0.000, volume &#x3D; 0.000)
-autoproxy_output::check_dsd_stream(false) &#x3D;&gt; DSD stream contains 4 chunks and 18816 samples</code></pre>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">autoproxy_output::check_dsd_stream(<span class="literal">true</span>) =&gt; DSD stream contains 1 chunks and 4704 samples</span><br><span class="line">autoproxy_output::process_samples() =&gt; Switch to DSD playback</span><br><span class="line">autoproxy_output::process_samples() =&gt; Input stream [channels: 2, samplerate: 2822400, channel_config: 0x00000003]</span><br><span class="line">autoproxy_output::process_samples() =&gt; Output stream [channels: 2, samplerate: 2822400, channel_config: 0x00000003]</span><br><span class="line">autoproxy_output::process_samples(channels = 2, sample_rate = 2822400, channel_config = 0x00000003)</span><br><span class="line">autoproxy_output::volume_adjust(samplerate = 2822400, latency = 0.000, volume = 0.000)</span><br><span class="line">autoproxy_output::check_dsd_stream(<span class="literal">false</span>) =&gt; DSD stream contains 4 chunks and 18816 samples</span><br></pre></td></tr></table></figure>
 <p>姑且就这么先听着🙄</p>
 ]]></content>
   </entry>
@@ -3674,34 +2558,14 @@ class="math inline">\(\frac{abc}{xyz}\)</span></td>
     <content><![CDATA[<p>MySQL里的 Stored Procedure 有点意思</p>
 <span id="more"></span>
 <p>由于大量的使用了表名作为参数，因此用concat函数来拼接，基本的框架就是</p>
-<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">DROP PROCEDURE IF EXISTS initTable
-CREATE PROCEDURE initTable(IN tb1 VARCHAR(5), IN tb2 VARCHAR(5))
-BEGIN
-	SET @sqlstmt &#x3D; CONCAT(&#39;SELECT * FROM&#39;, tb1, &#39; &#39;, tb2, &#39; LIMIT 10&#39;);
-	PREPARE stmt FROM @sqlstmt
-	EXECUTE stmt
-END</code></pre>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">PROCEDURE</span> IF <span class="keyword">EXISTS</span> initTable</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">PROCEDURE</span> initTable(<span class="keyword">IN</span> tb1 <span class="type">VARCHAR</span>(<span class="number">5</span>), <span class="keyword">IN</span> tb2 <span class="type">VARCHAR</span>(<span class="number">5</span>))</span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line">  <span class="keyword">SET</span> <span class="variable">@sqlstmt</span> <span class="operator">=</span> CONCAT(<span class="string">&#x27;SELECT * FROM&#x27;</span>, tb1, <span class="string">&#x27; &#x27;</span>, tb2, <span class="string">&#x27; LIMIT 10&#x27;</span>);</span><br><span class="line">  <span class="keyword">PREPARE</span> stmt <span class="keyword">FROM</span> <span class="variable">@sqlstmt</span></span><br><span class="line">  <span class="keyword">EXECUTE</span> stmt</span><br><span class="line"><span class="keyword">END</span></span><br></pre></td></tr></table></figure>
 <p>然后通过 call 调用</p>
-<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">CALL initTable(&#39;tb&#39;, &#39;anothertb&#39;)</code></pre>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CALL</span> initTable(<span class="string">&#x27;tb&#x27;</span>, <span class="string">&#x27;anothertb&#x27;</span>)</span><br></pre></td></tr></table></figure>
 <p>但是在同一个procedure里对一张表进行多次update的话则会出现 can't lock
 table 的报错。可以利用 transaction
 解决。而transaction在mysql语法中有点特殊，不是<code>BEGIN TRAN/COMMIT TRAN</code>这种形式。</p>
 <p>假设要update同一张表两次：</p>
-<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">DROP PROCEDURE IF EXISTS updateTable
-CREATE PROCEDURE updateTable(IN tb VARCHAR(5))
-BEGIN
-	START TRANSACTION
-	SET @sqlstmt &#x3D; CONCAT(&#39;update &#39;, tb,&#39; SET A &#x3D; 1&#39;);
-	PREPARE stmt FROM @sqlstmt
-	EXECUTE stmt
-	COMMIT
-	
-	START TRANSACTION
-	SET @sqlstmt &#x3D; CONCAT(&#39;update &#39;, tb,&#39; SET B &#x3D; 2&#39;);
-	PREPARE stmt FROM @sqlstmt
-	EXECUTE stmt
-	COMMIT
-END</code></pre>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">PROCEDURE</span> IF <span class="keyword">EXISTS</span> updateTable</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">PROCEDURE</span> updateTable(<span class="keyword">IN</span> tb <span class="type">VARCHAR</span>(<span class="number">5</span>))</span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line">  <span class="keyword">START</span> TRANSACTION</span><br><span class="line">  <span class="keyword">SET</span> <span class="variable">@sqlstmt</span> <span class="operator">=</span> CONCAT(<span class="string">&#x27;update &#x27;</span>, tb,<span class="string">&#x27; SET A = 1&#x27;</span>);</span><br><span class="line">  <span class="keyword">PREPARE</span> stmt <span class="keyword">FROM</span> <span class="variable">@sqlstmt</span></span><br><span class="line">  <span class="keyword">EXECUTE</span> stmt</span><br><span class="line">  <span class="keyword">COMMIT</span></span><br><span class="line">  </span><br><span class="line">  <span class="keyword">START</span> TRANSACTION</span><br><span class="line">  <span class="keyword">SET</span> <span class="variable">@sqlstmt</span> <span class="operator">=</span> CONCAT(<span class="string">&#x27;update &#x27;</span>, tb,<span class="string">&#x27; SET B = 2&#x27;</span>);</span><br><span class="line">  <span class="keyword">PREPARE</span> stmt <span class="keyword">FROM</span> <span class="variable">@sqlstmt</span></span><br><span class="line">  <span class="keyword">EXECUTE</span> stmt</span><br><span class="line">  <span class="keyword">COMMIT</span></span><br><span class="line"><span class="keyword">END</span></span><br></pre></td></tr></table></figure>
 <p>（一开始还以为mysql不支持transaction</p>
 ]]></content>
   </entry>
@@ -3777,11 +2641,9 @@ title="SSH" /></p>
 <h2 id="安装-docker">安装 Docker</h2>
 <p>图省事直接使用 <a
 href="get.docker.com"><code>get.docker.com</code></a> 提供的脚本安装</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ curl -fsSL https:&#x2F;&#x2F;get.docker.com -o get-docker.sh
-$ sudo sh get-docker.sh</code></pre>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">curl -fsSL https://get.docker.com -o get-docker.sh</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo sh get-docker.sh</span></span><br></pre></td></tr></table></figure>
 <p>国内用户可以选用阿里云或者 Azure 的镜像</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ sudo sh get-docker.sh --mirror Aliyun
-$ sudo sh get-docker.sh --mirror AzureChinaCloud</code></pre>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo sh get-docker.sh --mirror Aliyun</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo sh get-docker.sh --mirror AzureChinaCloud</span></span><br></pre></td></tr></table></figure>
 <h3 id="以非-root-用户管理-docker-可选">以非 root 用户管理 Docker
 （可选）</h3>
 <blockquote>
@@ -3797,17 +2659,13 @@ accessible by members of the <code>docker</code> group.</p>
 <p>创建 <code>docker</code> 组，并把 <code>pi</code>
 用户加入用户组，并切换到 <code>docker</code> 登录，再测试是否能无需
 <code>sudo</code> 运行 <code>docker</code></p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ sudo groupadd docker
-$ sudo usermod -aG docker $USER
-$ newgrp docker
-$ docker run  --rm  hello-world</code></pre>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo groupadd docker</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo usermod -aG docker <span class="variable">$USER</span></span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">newgrp docker</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">docker run  --<span class="built_in">rm</span>  hello-world</span></span><br></pre></td></tr></table></figure>
 <h3 id="启动-docker-daemon">启动 Docker daemon</h3>
 <p>使用 <code>systemctl</code> 来手动启动 Docker daemon</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ sudo systemctl start docker</code></pre>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo systemctl start docker</span></span><br></pre></td></tr></table></figure>
 <p>在 Debian 和 Ubuntu 上，Docker
 服务已经默认设置为开机启动了，在其他发行版则需执行如下命令</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ sudo systemctl enable docker.service
-$ sudo systemctl enable containerd.service</code></pre>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo systemctl <span class="built_in">enable</span> docker.service</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo systemctl <span class="built_in">enable</span> containerd.service</span></span><br></pre></td></tr></table></figure>
 <h2 id="安装-openwrt">安装 OpenWrt</h2>
 <p>推荐直接采用 <a
 href="https://github.com/SuLingGG/OpenWrt-Rpi-Docker">OpenWrt-Rpi-Docker</a>
@@ -3815,33 +2673,28 @@ href="https://github.com/SuLingGG/OpenWrt-Rpi-Docker">OpenWrt-Rpi-Docker</a>
 旁路网关</a>安装</p>
 <h3 id="配置-macvlan-网络">配置 <code>macvlan</code> 网络</h3>
 <p>打开网卡混杂模式</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ sudo ip link set eth0 promisc on</code></pre>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">sudo ip <span class="built_in">link</span> <span class="built_in">set</span> eth0 promisc on</span></span><br></pre></td></tr></table></figure>
 <p>并在 <code>/etc/rc.local</code> 中添加
 <code>ip link set eth0 promisc on</code> ，以便重启也能生效</p>
 <p>创建 <code>macvlan</code> ，依据之前查到的树莓派的 IP，修改对应的
 <code>subnet</code> 和 <code>gateway</code> 地址（以
 <code>192.168.1.x</code> 为例，则两个地址分别修改为
 <code>192.168.1.0/24</code>和<code>192.168.1.1</code>）</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ docker network create -d macvlan \
-  --subnet&#x3D;172.16.86.0&#x2F;24 \
-  --gateway&#x3D;172.16.86.1 \
-  -o parent&#x3D;eth0 macnet</code></pre>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">docker network create -d macvlan \</span></span><br><span class="line"><span class="language-bash">  --subnet=172.16.86.0/24 \</span></span><br><span class="line"><span class="language-bash">  --gateway=172.16.86.1 \</span></span><br><span class="line"><span class="language-bash">  -o parent=eth0 macnet</span></span><br></pre></td></tr></table></figure>
 <h3 id="创建容器">创建容器</h3>
 <p>从 <a href="https://hub.docker.com/r/sulinggg/openwrt">Docker
 仓库</a>拉取对应版本的 OpenWrt，也可以从阿里云拉取</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ docker pull sulinggg&#x2F;openwrt:rpi1
-# docker pull registry.cn-shanghai.aliyuncs.com&#x2F;suling&#x2F;openwrt:rpi1</code></pre>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">docker pull sulinggg/openwrt:rpi1</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">docker pull registry.cn-shanghai.aliyuncs.com/suling/openwrt:rpi1</span></span><br></pre></td></tr></table></figure>
 <p>创建并启动容器（注意镜像名，如果是阿里云拉取的则需修改为
 <code>registry.cn-shanghai.aliyuncs.com/suling/openwrt:rpi1</code>）</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ docker run --restart always --name openwrt -d --network macnet --privileged sulinggg&#x2F;openwrt:rpi1 &#x2F;sbin&#x2F;init</code></pre>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">docker run --restart always --name openwrt -d --network macnet --privileged sulinggg/openwrt:rpi1 /sbin/init</span></span><br></pre></td></tr></table></figure>
 <h3 id="修改配置">修改配置</h3>
 <p>进入容器修改网络配置文件</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ docker exec -it openwrt bash
-$ vi &#x2F;etc&#x2F;config&#x2F;network</code></pre>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">docker <span class="built_in">exec</span> -it openwrt bash</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">vi /etc/config/network</span></span><br></pre></td></tr></table></figure>
 <p>将 Lan 口<code>ipaddr</code>修改为树莓派所在网段的任一不重复 IP
 （即<code>192.168.1.x</code>）<code>gateway</code>和 <code>dns</code>
 设置为路由器地址，然后重启网络</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;etc&#x2F;init.d&#x2F;network restart</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/etc/init.d/network restart</span><br></pre></td></tr></table></figure>
 <h2 id="配置-openwrt">配置 OpenWrt</h2>
 <p>在浏览器中输入之前设置 Lan
 口<code>ipaddr</code>即可进入控制面板，默认用户为 root，密码
@@ -3907,11 +2760,7 @@ Firestore. Firebase SDK provide 4 triggers
 <p>In our case, we want to send a notification when user generate an
 interaction. So the function running on Node.js 8 should specify the
 document path and event type:</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">const functions &#x3D; require(&#39;firebase-functions&#39;);
-
-exports.notificationFCM &#x3D; functions.firestore
-  .document(&#39;&#x2F;users&#x2F;&#123;userId&#125;&#x2F;interactions&#x2F;&#123;interactionID&#125;&#39;)
-  .onCreate(async (snapshot, context) &#x3D;&gt; &#123; &#x2F;* ... *&#x2F; &#125;);</code></pre>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> functions = <span class="built_in">require</span>(<span class="string">&#x27;firebase-functions&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">exports</span>.<span class="property">notificationFCM</span> = functions.<span class="property">firestore</span></span><br><span class="line">  .<span class="title function_">document</span>(<span class="string">&#x27;/users/&#123;userId&#125;/interactions/&#123;interactionID&#125;&#x27;</span>)</span><br><span class="line">  .<span class="title function_">onCreate</span>(<span class="keyword">async</span> (snapshot, context) =&gt; &#123; <span class="comment">/* ... */</span> &#125;);</span><br></pre></td></tr></table></figure>
 <h3 id="parse-data">Parse Data</h3>
 <p>Based on the data we need, we can set the <a
 href="https://firebase.google.com/docs/cloud-messaging/concept-options">FCM
@@ -3928,72 +2777,14 @@ href="https://firebase.google.com/docs/reference/android/com/google/firebase/iid
 <p>Users can have multiple devices, however, for convenience, just
 assume that token is stored as a string under the user profile</p>
 <p>The content of interaction is a JSON like data passed by snapshot</p>
-<pre class="line-numbers language-json" data-language="json"><code class="language-json">&#123; metaData: &#123;&#125;,
-  readed: false,
-  time: 1588268043715,
-  title: &#39;Friend Request from Leaf&#39;,
-  type: &#39;request&#39;,
-  userMeta: 
-   &#123; displayName: &#39;Leaf&#39;,
-     photoURL: &#39;&#39;,
-     uid: &#39;&#39; &#125; 
- &#125;</code></pre>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span> metaData<span class="punctuation">:</span> <span class="punctuation">&#123;</span><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  readed<span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">  time<span class="punctuation">:</span> <span class="number">1588268043715</span><span class="punctuation">,</span></span><br><span class="line">  title<span class="punctuation">:</span> &#x27;Friend Request from Leaf&#x27;<span class="punctuation">,</span></span><br><span class="line">  type<span class="punctuation">:</span> &#x27;request&#x27;<span class="punctuation">,</span></span><br><span class="line">  userMeta<span class="punctuation">:</span> </span><br><span class="line">   <span class="punctuation">&#123;</span> displayName<span class="punctuation">:</span> &#x27;Leaf&#x27;<span class="punctuation">,</span></span><br><span class="line">     photoURL<span class="punctuation">:</span> &#x27;&#x27;<span class="punctuation">,</span></span><br><span class="line">     uid<span class="punctuation">:</span> &#x27;&#x27; <span class="punctuation">&#125;</span> </span><br><span class="line"> <span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
 <p>Once getting token and notification data, we can set the message</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">const functions &#x3D; require(&#39;firebase-functions&#39;);
-
-exports.notificationFCM &#x3D; functions.firestore
-    .document(&#39;&#x2F;users&#x2F;&#123;userId&#125;&#x2F;interactions&#x2F;&#123;interactionID&#125;&#39;)
-    .onCreate(async (snapshot, context) &#x3D;&gt; &#123;
-        const interaction &#x3D; snapshot.data();
-        admin.firestore().collection(&#39;users&#39;).doc(context.params.userId).get().then((doc) &#x3D;&gt; &#123;
-          const deviceToken &#x3D; doc.get(&#39;deviceToken&#39;);
-            var payload &#x3D; &#123;
-              notification: &#123;
-                title: interaction.title,
-              &#125;,
-              data: &#123;
-                click_action: &#39;FLUTTER_NOTIFICATION_CLICK&#39;
-              &#125;,
-              token: deviceToken
-            &#125;;
-        &#125;);
-    &#125;);</code></pre>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> functions = <span class="built_in">require</span>(<span class="string">&#x27;firebase-functions&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">exports</span>.<span class="property">notificationFCM</span> = functions.<span class="property">firestore</span></span><br><span class="line">    .<span class="title function_">document</span>(<span class="string">&#x27;/users/&#123;userId&#125;/interactions/&#123;interactionID&#125;&#x27;</span>)</span><br><span class="line">    .<span class="title function_">onCreate</span>(<span class="keyword">async</span> (snapshot, context) =&gt; &#123;</span><br><span class="line">        <span class="keyword">const</span> interaction = snapshot.<span class="title function_">data</span>();</span><br><span class="line">        admin.<span class="title function_">firestore</span>().<span class="title function_">collection</span>(<span class="string">&#x27;users&#x27;</span>).<span class="title function_">doc</span>(context.<span class="property">params</span>.<span class="property">userId</span>).<span class="title function_">get</span>().<span class="title function_">then</span>(<span class="function">(<span class="params">doc</span>) =&gt;</span> &#123;</span><br><span class="line">          <span class="keyword">const</span> deviceToken = doc.<span class="title function_">get</span>(<span class="string">&#x27;deviceToken&#x27;</span>);</span><br><span class="line">            <span class="keyword">var</span> payload = &#123;</span><br><span class="line">              <span class="attr">notification</span>: &#123;</span><br><span class="line">                <span class="attr">title</span>: interaction.<span class="property">title</span>,</span><br><span class="line">              &#125;,</span><br><span class="line">              <span class="attr">data</span>: &#123;</span><br><span class="line">                <span class="attr">click_action</span>: <span class="string">&#x27;FLUTTER_NOTIFICATION_CLICK&#x27;</span></span><br><span class="line">              &#125;,</span><br><span class="line">              <span class="attr">token</span>: deviceToken</span><br><span class="line">            &#125;;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure>
 <h3 id="sending-message-via-firebase-cloud-messaging">Sending Message
 via Firebase Cloud Messaging</h3>
 <p>This is very straight forward, sending the message to target device,
 then receiving response or error code</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">const functions &#x3D; require(&#39;firebase-functions&#39;);
-
-exports.notificationFCM &#x3D; functions.firestore
-    .document(&#39;&#x2F;users&#x2F;&#123;userId&#125;&#x2F;interactions&#x2F;&#123;interactionID&#125;&#39;)
-    .onCreate(async (snapshot, context) &#x3D;&gt; &#123;
-        console.log(snapshot.data());
-        const interaction &#x3D; snapshot.data();
-        admin.firestore().collection(&#39;users&#39;).doc(context.params.userId).get().then((doc) &#x3D;&gt; &#123;
-          const deviceToken &#x3D; doc.get(&#39;deviceToken&#39;);
-          console.log(deviceToken)
-            var payload &#x3D; &#123;
-              notification: &#123;
-                title: interaction.title,
-              &#125;,
-              data: &#123;
-                click_action: &#39;FLUTTER_NOTIFICATION_CLICK&#39;
-              &#125;,
-              token: deviceToken
-            &#125;;
-            &#x2F;&#x2F; Send a message to the device corresponding to the provided
-            &#x2F;&#x2F; registration token.
-            admin.messaging().send(payload)
-              .then((response) &#x3D;&gt; &#123;
-                &#x2F;&#x2F; Response is a message ID string.
-                console.log(&#39;Successfully sent message:&#39;, response);
-              &#125;)
-              .catch((error) &#x3D;&gt; &#123;
-                console.log(&#39;Error sending message:&#39;, error);
-              &#125;);
-        &#125;);
-    &#125;);
-</code></pre>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> functions = <span class="built_in">require</span>(<span class="string">&#x27;firebase-functions&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">exports</span>.<span class="property">notificationFCM</span> = functions.<span class="property">firestore</span></span><br><span class="line">    .<span class="title function_">document</span>(<span class="string">&#x27;/users/&#123;userId&#125;/interactions/&#123;interactionID&#125;&#x27;</span>)</span><br><span class="line">    .<span class="title function_">onCreate</span>(<span class="keyword">async</span> (snapshot, context) =&gt; &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(snapshot.<span class="title function_">data</span>());</span><br><span class="line">        <span class="keyword">const</span> interaction = snapshot.<span class="title function_">data</span>();</span><br><span class="line">        admin.<span class="title function_">firestore</span>().<span class="title function_">collection</span>(<span class="string">&#x27;users&#x27;</span>).<span class="title function_">doc</span>(context.<span class="property">params</span>.<span class="property">userId</span>).<span class="title function_">get</span>().<span class="title function_">then</span>(<span class="function">(<span class="params">doc</span>) =&gt;</span> &#123;</span><br><span class="line">          <span class="keyword">const</span> deviceToken = doc.<span class="title function_">get</span>(<span class="string">&#x27;deviceToken&#x27;</span>);</span><br><span class="line">          <span class="variable language_">console</span>.<span class="title function_">log</span>(deviceToken)</span><br><span class="line">            <span class="keyword">var</span> payload = &#123;</span><br><span class="line">              <span class="attr">notification</span>: &#123;</span><br><span class="line">                <span class="attr">title</span>: interaction.<span class="property">title</span>,</span><br><span class="line">              &#125;,</span><br><span class="line">              <span class="attr">data</span>: &#123;</span><br><span class="line">                <span class="attr">click_action</span>: <span class="string">&#x27;FLUTTER_NOTIFICATION_CLICK&#x27;</span></span><br><span class="line">              &#125;,</span><br><span class="line">              <span class="attr">token</span>: deviceToken</span><br><span class="line">            &#125;;</span><br><span class="line">            <span class="comment">// Send a message to the device corresponding to the provided</span></span><br><span class="line">            <span class="comment">// registration token.</span></span><br><span class="line">            admin.<span class="title function_">messaging</span>().<span class="title function_">send</span>(payload)</span><br><span class="line">              .<span class="title function_">then</span>(<span class="function">(<span class="params">response</span>) =&gt;</span> &#123;</span><br><span class="line">                <span class="comment">// Response is a message ID string.</span></span><br><span class="line">                <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Successfully sent message:&#x27;</span>, response);</span><br><span class="line">              &#125;)</span><br><span class="line">              .<span class="title function_">catch</span>(<span class="function">(<span class="params">error</span>) =&gt;</span> &#123;</span><br><span class="line">                <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Error sending message:&#x27;</span>, error);</span><br><span class="line">              &#125;);</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>The cloud work is completed, next step is to make your device receive
 notifications</p>
 <h2 id="firebase-messaging">Firebase Messaging</h2>
@@ -4006,12 +2797,9 @@ file introduced how to integrate Firebase with your Android and IOS
 project, as we are using Cloud Storage and Firebase Auth. these part is
 already done yet. Then import the plugin and instantiate it in the Dart
 code</p>
-<pre class="line-numbers language-dart" data-language="dart"><code class="language-dart">import &#39;package:firebase_messaging&#x2F;firebase_messaging.dart&#39;;
-final FirebaseMessaging _firebaseMessaging &#x3D; FirebaseMessaging();</code></pre>
+<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">&#x27;package:firebase_messaging/firebase_messaging.dart&#x27;</span>;</span><br><span class="line"><span class="keyword">final</span> FirebaseMessaging _firebaseMessaging = FirebaseMessaging();</span><br></pre></td></tr></table></figure>
 <p>BTW, The device token can be accessed by doing so</p>
-<pre class="line-numbers language-dart" data-language="dart"><code class="language-dart">_firebaseMessaging.getToken().then((token) &#123;
-  print(token);
-&#125;);</code></pre>
+<figure class="highlight dart"><table><tr><td class="code"><pre><span class="line">_firebaseMessaging.getToken().then((token) &#123;</span><br><span class="line">  <span class="built_in">print</span>(token);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>Project</category>
@@ -4055,63 +2843,28 @@ workflow，由于博客的源文件单独放在了一个仓库中，而平时的
 分支上进行，因此设置当 master 分支接收到 pull request 时触发此
 workflow，<code>workflow_dispatch</code>用于手动在 Github 中执行
 workflow 以便调试</p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">name: Deployment
-
-# Controls when the workflow will run
-on:
-  pull_request:
-    branches:
-      - master
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:</code></pre>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">Deployment</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Controls when the workflow will run</span></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line">  <span class="attr">pull_request:</span></span><br><span class="line">    <span class="attr">branches:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">master</span></span><br><span class="line">  <span class="comment"># Allows you to run this workflow manually from the Actions tab</span></span><br><span class="line">  <span class="attr">workflow_dispatch:</span></span><br></pre></td></tr></table></figure>
 <p>接着创建一个在 ubuntu-latest 上运行，名称为 build 的
 job，详细的步骤在steps下设定</p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"># A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
-  # This workflow contains a single job called &quot;build&quot;
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:</code></pre>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># A workflow run is made up of one or more jobs that can run sequentially or in parallel</span></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="comment"># This workflow contains a single job called &quot;build&quot;</span></span><br><span class="line">  <span class="attr">build:</span></span><br><span class="line">    <span class="comment"># The type of runner that the job will run on</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line">    <span class="comment"># Steps represent a sequence of tasks that will be executed as part of the job</span></span><br><span class="line">    <span class="attr">steps:</span></span><br></pre></td></tr></table></figure>
 <p>首先确认在 <code>$GITHUB_WORKSPACE</code>
 下并安装node.js，<code>node-version</code> 指定版本或者使用 nvm lts
 写法，cache 根据需求选择 <code>npm</code> 或者 <code>yarn</code> 等</p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"># Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-- name: Checkout
-  uses: actions&#x2F;checkout@v3
-- name: Install node.js and modules
-  uses: actions&#x2F;setup-node@v3
-  with:
-    node-version: &#39;lts&#x2F;*&#39;
-    cache: &#39;npm&#39;
-- run: npm install</code></pre>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Checkout</span></span><br><span class="line">  <span class="attr">uses:</span> <span class="string">actions/checkout@v3</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Install</span> <span class="string">node.js</span> <span class="string">and</span> <span class="string">modules</span></span><br><span class="line">  <span class="attr">uses:</span> <span class="string">actions/setup-node@v3</span></span><br><span class="line">  <span class="attr">with:</span></span><br><span class="line">    <span class="attr">node-version:</span> <span class="string">&#x27;lts/*&#x27;</span></span><br><span class="line">    <span class="attr">cache:</span> <span class="string">&#x27;npm&#x27;</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">run:</span> <span class="string">npm</span> <span class="string">install</span></span><br></pre></td></tr></table></figure>
 <p>接着安装 pandoc，pandoc 官方文档中给出的 Github Actions
 安装方式是依赖于 docker 的，无法直接在 node.js
 中调用，因此选择手动安装，版本号由下载目录决定，<code>$RUNNER_TOOL_CACHE</code>为
 Github 默认环境变量，包含 GitHub 托管运行器预安装工具的目录路径</p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">- name: Install pandoc
-  run: curl -s -L https:&#x2F;&#x2F;github.com&#x2F;jgm&#x2F;pandoc&#x2F;releases&#x2F;download&#x2F;2.18&#x2F;pandoc-2.18-linux-amd64.tar.gz | tar xvzf - -C $RUNNER_TOOL_CACHE&#x2F;</code></pre>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Install</span> <span class="string">pandoc</span></span><br><span class="line">  <span class="attr">run:</span> <span class="string">curl</span> <span class="string">-s</span> <span class="string">-L</span> <span class="string">https://github.com/jgm/pandoc/releases/download/2.18/pandoc-2.18-linux-amd64.tar.gz</span> <span class="string">|</span> <span class="string">tar</span> <span class="string">xvzf</span> <span class="bullet">-</span> <span class="string">-C</span> <span class="string">$RUNNER_TOOL_CACHE/</span></span><br></pre></td></tr></table></figure>
 <p>将 pandoc 加入 PATH 中，执行 build，生成静态文件</p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">- name: Build
-  run: |
-    # add pandoc to PATH
-    export PATH&#x3D;&quot;$PATH:$RUNNER_TOOL_CACHE&#x2F;pandoc-2.18&#x2F;bin&quot;
-    npm run build</code></pre>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Build</span></span><br><span class="line">  <span class="attr">run:</span> <span class="string">|</span></span><br><span class="line"><span class="string">    # add pandoc to PATH</span></span><br><span class="line"><span class="string">    export PATH=&quot;$PATH:$RUNNER_TOOL_CACHE/pandoc-2.18/bin&quot;</span></span><br><span class="line"><span class="string">    npm run build</span></span><br></pre></td></tr></table></figure>
 <p>使用 <a
 href="https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-create-ssh-deploy-key">actions-gh-pages</a>
 将生成的静态文件推送到指定仓库和分支上，如果在同一仓库中可以直接使用
 github_token （已在环境变量中），跨仓库可使用 deploy_key （SSH）或者
 personal_token（HTTPS），需在GitHub设置中配置，具体参考 <a
 href="https://github.com/peaceiris/actions-gh-pages#options">Options</a></p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"># Deploy hexo blog website.
-- name: Deploy
-  uses: peaceiris&#x2F;actions-gh-pages@v3
-  with:
-    deploy_key: $&#123;&#123; secrets.DEPLOY_KEY &#125;&#125;
-    publish_dir: .&#x2F;public
-    external_repository: leaf-hsiao&#x2F;leaf-hsiao.github.io
-    publish_branch: master</code></pre>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deploy hexo blog website.</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Deploy</span></span><br><span class="line">  <span class="attr">uses:</span> <span class="string">peaceiris/actions-gh-pages@v3</span></span><br><span class="line">  <span class="attr">with:</span></span><br><span class="line">    <span class="attr">deploy_key:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.DEPLOY_KEY</span> <span class="string">&#125;&#125;</span></span><br><span class="line">    <span class="attr">publish_dir:</span> <span class="string">./public</span></span><br><span class="line">    <span class="attr">external_repository:</span> <span class="string">leaf-hsiao/leaf-hsiao.github.io</span></span><br><span class="line">    <span class="attr">publish_branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 <p>最后按惯例在 readme 中加入徽章（</p>
 <h2 id="参考资料">参考资料</h2>
 <p><a
@@ -4141,24 +2894,7 @@ Pages，只需要简单的配置一下即可。</p>
 <p>Hexo提供了<a
 href="https://hexo.io/docs/github-pages">设置指南</a>以及<code>.travis.yml</code>的配置例子，当设置好后每次提交源文件到master分支
 TravisCI会自动生成页面并且部署到gh-pages分支上。</p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">sudo: false
-language: node_js
-node_js:
-  - 10 # use nodejs v10 LTS
-cache: npm
-branches:
-  only:
-    - master # build master branch only
-script:
-  - hexo generate # generate static files
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GH_TOKEN
-  keep-history: true
-  on:
-    branch: master
-  local-dir: public</code></pre>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">sudo:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">node_js</span></span><br><span class="line"><span class="attr">node_js:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="number">10</span> <span class="comment"># use nodejs v10 LTS</span></span><br><span class="line"><span class="attr">cache:</span> <span class="string">npm</span></span><br><span class="line"><span class="attr">branches:</span></span><br><span class="line">  <span class="attr">only:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">master</span> <span class="comment"># build master branch only</span></span><br><span class="line"><span class="attr">script:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">hexo</span> <span class="string">generate</span> <span class="comment"># generate static files</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">provider:</span> <span class="string">pages</span></span><br><span class="line">  <span class="attr">skip-cleanup:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">github-token:</span> <span class="string">$GH_TOKEN</span></span><br><span class="line">  <span class="attr">keep-history:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">on:</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br><span class="line">  <span class="attr">local-dir:</span> <span class="string">public</span></span><br></pre></td></tr></table></figure>
 <p>需要注意的是该方法不适用于仓库名为<code>&lt;user&gt;.github.io</code>这种格式的仓库，因为GitHub
 必须从master分支生成 user和organization的页面而不是gh-pages。</p>
 <blockquote>
@@ -4177,25 +2913,7 @@ cleanup)</p>
 href="https://blog.travis-ci.com/2018-11-19-required-linux-infrastructure-migration">已被弃用</a>，<code>github_token</code>已经被替换为<code>token</code>等部分
 dpl v2的属性又已经被支持</p>
 <p>在基于目前的新文档的建议下，最后的<code>.travis.yml</code>设置如下</p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">os: linux
-language: node_js
-node_js:
-  - 10
-cache: npm
-branches:
-  only:
-    - source # store source code of hexo in source branch
-script:
-  - hexo generate
-deploy:
-  provider: pages
-  skip_cleanup: true
-  token: $GH_TOKEN
-  keep_history: true
-  target_branch: master
-  on:
-    branch: source
-  local_dir: public</code></pre>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">os:</span> <span class="string">linux</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">node_js</span></span><br><span class="line"><span class="attr">node_js:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="number">10</span></span><br><span class="line"><span class="attr">cache:</span> <span class="string">npm</span></span><br><span class="line"><span class="attr">branches:</span></span><br><span class="line">  <span class="attr">only:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">source</span> <span class="comment"># store source code of hexo in source branch</span></span><br><span class="line"><span class="attr">script:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">hexo</span> <span class="string">generate</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">provider:</span> <span class="string">pages</span></span><br><span class="line">  <span class="attr">skip_cleanup:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">token:</span> <span class="string">$GH_TOKEN</span></span><br><span class="line">  <span class="attr">keep_history:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">target_branch:</span> <span class="string">master</span></span><br><span class="line">  <span class="attr">on:</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">source</span></span><br><span class="line">  <span class="attr">local_dir:</span> <span class="string">public</span></span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
