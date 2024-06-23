@@ -5,7 +5,8 @@
     <url>/2016/06/05/a-new-beginning/</url>
     <content><![CDATA[<p>原博的资料丢了，2年了啊，摔(╯‵□′)╯︵┻━┻ I'am angry.
 考虑历史的行程，重新搞了个新博客。 <del>Bitbucket Yes。</del>
-GitHub真香，不要问为什么 继续使用Hexo，这是坠吼滴。 <img data-src="/images/girigiri.gif" /></p>
+GitHub真香，不要问为什么 继续使用Hexo，这是坠吼滴。 <img
+src="/images/girigiri.gif" /></p>
 ]]></content>
   </entry>
   <entry>
@@ -142,7 +143,8 @@ orthogonalization</h3>
 <h3 id="representation-list-or-matrix">Representation: list or
 matrix</h3>
 <figure>
-<img data-src="https://docs.google.com/drawings/d/sWyhI6FrcgmwhtdawJFsCZg/image?w=624&amp;h=107&amp;rev=90&amp;ac=1&amp;parent=1QRQ5hBbBiKXkq0xePaM74Dbq7uui8nGUhUarYntk3wY"
+<img
+src="https://docs.google.com/drawings/d/sWyhI6FrcgmwhtdawJFsCZg/image?w=624&amp;h=107&amp;rev=90&amp;ac=1&amp;parent=1QRQ5hBbBiKXkq0xePaM74Dbq7uui8nGUhUarYntk3wY"
 alt="img" />
 <figcaption aria-hidden="true">img</figcaption>
 </figure>
@@ -151,7 +153,8 @@ class="math inline">\(V^2\)</span>) Ω(1)</p>
 <p>find out the set of vertices connected to v is O(E)</p>
 <p>Storage: O(E) Ω(1)</p>
 <figure>
-<img data-src="https://docs.google.com/drawings/d/szZxUtrrzDPlGnxXMe6Hl3Q/image?w=199&amp;h=284&amp;rev=37&amp;ac=1&amp;parent=1QRQ5hBbBiKXkq0xePaM74Dbq7uui8nGUhUarYntk3wY"
+<img
+src="https://docs.google.com/drawings/d/szZxUtrrzDPlGnxXMe6Hl3Q/image?w=199&amp;h=284&amp;rev=37&amp;ac=1&amp;parent=1QRQ5hBbBiKXkq0xePaM74Dbq7uui8nGUhUarYntk3wY"
 alt="img" />
 <figcaption aria-hidden="true">img</figcaption>
 </figure>
@@ -160,7 +163,8 @@ alt="img" />
 <p>find all vertices adjacent to vertex k? O(V) Ω(1)</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">isAdjacent(from,to)   //O(V)</span><br><span class="line">allAdjacent(from) //O(V), Ω(1) </span><br></pre></td></tr></table></figure>
 <figure>
-<img data-src="https://docs.google.com/drawings/d/s_S39ZP6f8cbZoeQk9bNpbQ/image?w=201&amp;h=178&amp;rev=49&amp;ac=1&amp;parent=1QRQ5hBbBiKXkq0xePaM74Dbq7uui8nGUhUarYntk3wY"
+<img
+src="https://docs.google.com/drawings/d/s_S39ZP6f8cbZoeQk9bNpbQ/image?w=201&amp;h=178&amp;rev=49&amp;ac=1&amp;parent=1QRQ5hBbBiKXkq0xePaM74Dbq7uui8nGUhUarYntk3wY"
 alt="img" />
 <figcaption aria-hidden="true">img</figcaption>
 </figure>
@@ -216,8 +220,9 @@ Optimizer的缩写—-交互式的线性和通用优化求解器。它是一套�
 <ol type="1">
 <li>在官网上找到合适的版本<a
 href="http://www.lindo.com/index.php?option=com_content&amp;view=article&amp;id=35&amp;Itemid=20">List</a>
-<img data-src="http://7rf2em.com1.z0.glb.clouddn.com/blogsoft-1.png" />
-填写好信息 <img data-src="http://7rf2em.com1.z0.glb.clouddn.com/blogsoft-2.png" />
+<img src="http://7rf2em.com1.z0.glb.clouddn.com/blogsoft-1.png" />
+填写好信息 <img
+src="http://7rf2em.com1.z0.glb.clouddn.com/blogsoft-2.png" />
 在邮箱里可以收到下载地址
 或者直接在此下载（我只下了Lingo15的64位Linux版和Windows版，需要其他版本的只能自己去下了）
 <a
@@ -227,11 +232,14 @@ href="http://www.lindo.com/downloads/LINGO-WINDOWS-64x86-15.0.zip">Windos64</a><
 <li>首次运行选择Demo，即免费试用版，然后会有提示教育用途可以申请完整的lingo
 licence。确认之后会在lingo的安装目录下生成一个userinfo.txt</li>
 <li>将该文件以附件的形式发送给sales@lindo.com。<em>所以建议使用edu邮箱</em>
-<img data-src="http://7rf2em.com1.z0.glb.clouddn.com/blogsoft-3.png" />
-在72小时内会收到回复（我只等了1个小时） <img data-src="http://7rf2em.com1.z0.glb.clouddn.com/blogsoft-4.png" />
+<img src="http://7rf2em.com1.z0.glb.clouddn.com/blogsoft-3.png" />
+在72小时内会收到回复（我只等了1个小时） <img
+src="http://7rf2em.com1.z0.glb.clouddn.com/blogsoft-4.png" />
 就有了一个为期6个月的educational research license key。</li>
-<li>输入license <img data-src="http://7rf2em.com1.z0.glb.clouddn.com/blogsoft-5.png" />
-就可以使用正版的lingo了 <img data-src="http://7rf2em.com1.z0.glb.clouddn.com/blogsoft-6.png" /></li>
+<li>输入license <img
+src="http://7rf2em.com1.z0.glb.clouddn.com/blogsoft-5.png" />
+就可以使用正版的lingo了 <img
+src="http://7rf2em.com1.z0.glb.clouddn.com/blogsoft-6.png" /></li>
 <li>刚刚发邮件确认了这个key到期了可以再申请（所以学生期间可以无限用咯）</li>
 </ol>
 <p><em>补充：demo的license是1年，edu申请的是半年但是后者功能没有任何限制，变量个数等都是unlimited</em></p>
@@ -248,7 +256,7 @@ MATLAB 这种技术计算语言。</p>
 href="https://cn.mathworks.com/downloads/web_downloads/select_platform">Download</a>
 <em>由于官网速度以及流量问题，还是推荐去pt站下载吧</em> 在<a
 href="https://cn.mathworks.com/programs/trials/trial_request.html">MathWorks</a>上可以申请30天的封装试用版的试用。
-<img data-src="http://7rf2em.com1.z0.glb.clouddn.com/blogsoft-7.png" />
+<img src="http://7rf2em.com1.z0.glb.clouddn.com/blogsoft-7.png" />
 要是像我一样有正版强迫症也可以叫美国同学帮你弄教育版或者自己去<a
 href="http://www.fakenamegenerator.com/advanced.php">生成美国人信息</a>，再<a
 href="https://eims.maricopa.edu/MAW/MAW.html">注册edu</a><em>没有验证过可行性</em></p>
@@ -432,7 +440,7 @@ Huang接手负责开发。所以随意选择啦。。。 PS: WinEdt也拿到了�
     <url>/2017/09/03/audioquest-dragonfly-configuration/</url>
     <content><![CDATA[<p>被种草AudioQuest很久了，再加上等了一整年七彩虹也没放出USB-DAC的驱动，估摸着可能永久性鸽了，还是买了个DragonFly
 Black试了试，在iPhone上尝试了一下效果提升了一耳朵，然后又被安利了JitterBug，感觉可以购买AudioQuest全家桶了。</p>
-<p><img data-src="/images/audioquest/aq1.jpg" /></p>
+<p><img src="/images/audioquest/aq1.jpg" /></p>
 <span id="more"></span>
 <h1 id="jitterbug">JitterBug</h1>
 <blockquote>
@@ -442,7 +450,7 @@ USB ports.</p>
 </blockquote>
 <p>使用方式就是在你的DAC和电脑中间加入一个JitterBug，如果你的设备有多个USB口的话可以再接入一个JitterBug，音质能有进一步改善（当然也请不要再接入第三个JitterBug了，并不是越多越好。</p>
 <p>如果有其他设备连接电脑可以通过空余的JitterBug接入</p>
-<p><img data-src="/images/audioquest/jitterbug.png" /></p>
+<p><img src="/images/audioquest/jitterbug.png" /></p>
 <p>如果将将移动设备接入到支持USB输入口的播放器上时也可以在中间接入JitterBug，如果使用的是储存卡或者U盘之类的，也建议接入JitterBug。</p>
 <p>PS：JitterBug不会耗电</p>
 <h1 id="dragonfly-black">DragonFly Black</h1>
@@ -479,11 +487,11 @@ to USB 3 Camera Adapter</a>转换，比起<a
 href="https://www.apple.com/shop/product/MD821AM/A/lightning-to-usb-camera-adapter">2.0</a>听感要好很多，稳定性也更好。</p>
 <h3 id="windows下的使用">Windows下的使用</h3>
 <p>将DragonFly设为默认播放设备</p>
-<p><img data-src="/images/audioquest/capture1.png" /></p>
+<p><img src="/images/audioquest/capture1.png" /></p>
 <p>关闭所有音效</p>
-<p><img data-src="/images/audioquest/capture2.png" /></p>
+<p><img src="/images/audioquest/capture2.png" /></p>
 <p>选择24bit/44100.0 Hz采样率，并勾选两个独占模式</p>
-<p><img data-src="/images/audioquest/capture3.png" /></p>
+<p><img src="/images/audioquest/capture3.png" /></p>
 <p>关于采样率直接的复制一下官方说明</p>
 <blockquote>
 <p>CDs操作系統的採樣率是 44100.0 Hz。壓縮的 MP3和AAC
@@ -520,9 +528,9 @@ Setup Guide</a>中给出了ITunes和JRiver的详细设置方案。</p>
 <h4 id="itunes">ITunes</h4>
 <p>在导入设置里导入使用选择AIFF或者Apple
 Lossless，设置为自动，勾选开启纠错功能。</p>
-<p><img data-src="/images/audioquest/capture4.png" /></p>
+<p><img src="/images/audioquest/capture4.png" /></p>
 <p>不要开启均衡器</p>
-<p><img data-src="/images/audioquest/capture5.png" /></p>
+<p><img src="/images/audioquest/capture5.png" /></p>
 <p>Enjoy ITunes.</p>
 <h4 id="foobar2000">Foobar2000</h4>
 <p>比起体验极其糟糕的ITunes，个人还是偏爱Foobar2000</p>
@@ -530,10 +538,10 @@ Lossless，设置为自动，勾选开启纠错功能。</p>
 href="https://www.foobar2000.org/components/view/foo_out_wasapi">WASAPI
 output</a>支持</p>
 <p>Output Device选择WASAPI，format使用24bit</p>
-<p><img data-src="/images/audioquest/capture6.png" /></p>
+<p><img src="/images/audioquest/capture6.png" /></p>
 <p>然后再根据个人喜好调♂教DSP</p>
 <p>最后</p>
-<p><img data-src="/images/audioquest/aq2.jpg" /></p>
+<p><img src="/images/audioquest/aq2.jpg" /></p>
 ]]></content>
   </entry>
   <entry>
@@ -549,9 +557,9 @@ but should work for macOS/Linux.</p>
 <p>啊好想吃猫鱼（叹气。</p>
 <span id="more"></span>
 <p><em>screenshots:</em></p>
-<p><img data-src="/images/catfish/catfish1.png" /></p>
-<p><img data-src="/images/catfish/catfish2.png" /></p>
-<p><img data-src="/images/catfish/catfish3.png" /></p>
+<p><img src="/images/catfish/catfish1.png" /></p>
+<p><img src="/images/catfish/catfish2.png" /></p>
+<p><img src="/images/catfish/catfish3.png" /></p>
 <p>样式主要参照自己的博客。</p>
 <p>无衬线字体，衬线字体和等宽字体分别采用思源黑体，思源宋体， mononoki
 。</p>
@@ -587,7 +595,7 @@ considered, the aldehyde release decreased and the levels of
 </blockquote>
 <p>即使风味是一种客观的存在，依旧受到各种因素的影响，风味的给出称作为风味描述，则是一个依赖于品鉴者的主观判断的结论。如果是第一次看见咖啡上的风味描述，不免产生“玄学”感。</p>
 <figure>
-<img data-src="/images/coffee/flavor.png" alt="一些风味描述" />
+<img src="/images/coffee/flavor.png" alt="一些风味描述" />
 <figcaption aria-hidden="true">一些风味描述</figcaption>
 </figure>
 <span id="more"></span>
@@ -605,7 +613,7 @@ href="https://worldcoffeeresearch.org/work/sensory-lexicon/">感官词典</a>，
 SCA 也改进了<a
 href="https://store.sca.coffee/products/the-coffee-tasters-flavor-wheel-poster">风味轮</a>，这些都是在描述风味时用于参考的工具。</p>
 <figure>
-<img data-src="/images/coffee/sensory-lexicon.png"
+<img src="/images/coffee/sensory-lexicon.png"
 alt="sample lexicon entry" />
 <figcaption aria-hidden="true">sample lexicon entry</figcaption>
 </figure>
@@ -619,17 +627,17 @@ Cupping Protocols</a> 中将香气分为了 Fragrance
 （咖啡粉的香味，通常称为干香） 和 Aroma （咖啡液的香味，通常称为湿香）而
 CoE 则只称为 Aroma ，再分为 Dry Crust Break 三个部分。</p>
 <figure>
-<img data-src="/images/coffee/scaa-cupping-form.png"
+<img src="/images/coffee/scaa-cupping-form.png"
 alt="SCAA Cupping Form" />
 <figcaption aria-hidden="true">SCAA Cupping Form</figcaption>
 </figure>
 <figure>
-<img data-src="/images/coffee/coe-cupping-form.png" alt="CoE Cupping Form" />
+<img src="/images/coffee/coe-cupping-form.png" alt="CoE Cupping Form" />
 <figcaption aria-hidden="true">CoE Cupping Form</figcaption>
 </figure>
 <p>香气主要由鼻前嗅觉和鼻后嗅觉（包括口腔后部与鼻腔相连的部分）感知。干香，以及直接用鼻子去闻的湿香都是鼻前香，而由口腔和鼻后嗅觉感知的香气往往更为强烈，因此杯测时会选择啜吸，便于咖啡雾化后进入鼻腔。</p>
 <figure>
-<img data-src="/images/coffee/aroma.jpg" alt="烘焙香气表" />
+<img src="/images/coffee/aroma.jpg" alt="烘焙香气表" />
 <figcaption aria-hidden="true">烘焙香气表</figcaption>
 </figure>
 <p>参考旦部幸博的这张烘焙香气表，来自生豆的多种物质，经由烘焙时的美拉德反应，再通过巧妙的萃取手法溶到水中，其中有乙醛和呋喃这一类挥发性强的物质，也有吲哚和香兰素这些挥发性稍弱的物质。从磨成粉后释放出来逐渐消散，而萃取在水中的芳香物质也因挥发性的不同不断的变化，因此咖啡很容易变质。</p>
@@ -709,56 +717,56 @@ href="http://epicerieaustin.com">Epicerie Cafe &amp; Grocery</a></h1>
 <p>之前听说店里用的blue bottle
 coffee，因此在空闲时间第一家溜过去。可能是因为消息来源已经是13年的了，取代了blue
 bottle是店里的咖啡。</p>
-<p><img data-src="/images/austin/IMG_3309.JPG" /></p>
-<p><img data-src="/images/austin/IMG_3311.JPG" /></p>
+<p><img src="/images/austin/IMG_3309.JPG" /></p>
+<p><img src="/images/austin/IMG_3311.JPG" /></p>
 <p>主食有Salads，Starters，Sandwich等，旁边的小黑板上写着咖啡和酒。尝试了
 Porchetta Sandwich，典型的德州BBQ风味。尝试了一下冷萃。</p>
-<p><img data-src="/images/austin/IMG_3312.JPG" /></p>
-<p><img data-src="/images/austin/IMG_3310.JPG" /></p>
+<p><img src="/images/austin/IMG_3312.JPG" /></p>
+<p><img src="/images/austin/IMG_3310.JPG" /></p>
 <p>可以说是非常的焦苦了，相比较下主食的质量非常高（价格也是。旁边的柜子上摆着糖浆和啤酒。感觉上像是非常适合吃brunch的地方。</p>
-<p><img data-src="/images/austin/IMG_3313.JPG" /></p>
-<p><img data-src="/images/austin/IMG_3314.JPG" /></p>
+<p><img src="/images/austin/IMG_3313.JPG" /></p>
+<p><img src="/images/austin/IMG_3314.JPG" /></p>
 <p>hmm</p>
 <h2 id="andersons-coffee-co."><a
 href="https://andersonscoffee.com">Anderson's Coffee Co.</a></h2>
 <p><em>1601 W 38th St, Austin, TX 78701</em></p>
 <p>一家在本地开了快50年的烘焙商，一进门就是浓郁的咖啡香，前台的小哥说旁边的咖啡厅用的就是他们的豆子，喝咖啡的话可以去。主打中烘和深烘，店主偏爱用梅丽塔的单孔滤杯。</p>
-<p><img data-src="/images/austin/IMG_3348.JPG" /></p>
+<p><img src="/images/austin/IMG_3348.JPG" /></p>
 <p>店里是卖豆子和设备的，有三桶咖啡摆在吧台上，每天用不一样的豆子，直接用bonavita的滴滤机做的，一刀一杯的售价性价比还是很高的（大概就是方便顾客尝尝豆子的的风味。虽然小哥极力推荐我第二天来喝苏门答腊，但是我鸽了，说好的临走前过来拎一袋豆子也被飓风阻止了。</p>
-<p><img data-src="/images/austin/IMG_3349.JPG" /></p>
+<p><img src="/images/austin/IMG_3349.JPG" /></p>
 <p>表达了喜欢浅烘之后又顺道还给了我写了另外两家店的地址。</p>
 <h2 id="houndstooth-coffee"><a
 href="https://www.houndstoothcoffee.com">Houndstooth Coffee</a></h2>
 <p><em>4200 N Lamar Blvd 120, Austin, TX 78756</em></p>
 <p>推荐的第一家就在Anderson旁边，是一家连锁店，奥斯汀和达拉斯都有分店。</p>
-<p><img data-src="/images/austin/IMG_3382.JPG" /></p>
+<p><img src="/images/austin/IMG_3382.JPG" /></p>
 <p>EK43和Acaia这种标配，以及久违的见到了聪明杯。</p>
-<p><img data-src="/images/austin/IMG_3384.JPG" /></p>
+<p><img src="/images/austin/IMG_3384.JPG" /></p>
 <p>热咖啡同样是机子做的，冷萃之外还有一款叫做Japanese iced
 coffee的，用蛋糕杯萃取下面用冰块接着。</p>
-<p><img data-src="/images/austin/IMG_3383.JPG" /></p>
+<p><img src="/images/austin/IMG_3383.JPG" /></p>
 <p>两刀一杯，质量也不错。意式看起来也不错，但是没有尝试了。</p>
 <h2 id="cuvée-coffee-bar"><a href="http://cuveecoffee.com">Cuvée Coffee
 Bar</a></h2>
 <p><em>2000 E 6th St, Austin, TX 78702</em></p>
 <p>第二家店比较偏远拖了很久才去，用的机器自动注水（他们都这么懒的吗，店员说有利于保证出品的稳定性。</p>
-<p><img data-src="/images/austin/IMG_3719.JPG" /></p>
+<p><img src="/images/austin/IMG_3719.JPG" /></p>
 <p>可惜了没有时间继续尝试了赶时间就打包拎走了。还不错顺带就拎了推荐的一包豆子，感觉生命又少了1秒。</p>
-<p><img data-src="/images/austin/IMG_3718.JPG" /></p>
+<p><img src="/images/austin/IMG_3718.JPG" /></p>
 <p>店员又和我说了一家must go的也在不远处。</p>
 <h2 id="fleet-coffee"><a href="www.fleetcoffee.com">Fleet
 Coffee</a></h2>
 <p><em>2427 Webberville Rd, Austin, TX 78702</em></p>
 <p>和Cuvee挨得比较近，同样也是机器注水，只不过在Kalita之外还有Chemex可以选，价格mkt。</p>
-<p><img data-src="/images/austin/IMG_3799.JPG" /></p>
+<p><img src="/images/austin/IMG_3799.JPG" /></p>
 <p>点了一杯肯尼亚6刀，豆子由<a
 href="https://madcapcoffee.com">madcap</a>,<a
 href="https://www.wreckingballcoffee.com">wrecking ball</a>,<a
 href="https://sweetbloomcoffee.com">sweet
 bloom</a>三家提供，质量非常高了，均价18刀/12oz左右。（又是飓风阻止了我在新进货的那一天去选豆子😭</p>
-<p><img data-src="/images/austin/IMG_3798.JPG" /></p>
+<p><img src="/images/austin/IMG_3798.JPG" /></p>
 <p>坐在窗边把手机玩到快没电准备开溜（奥斯汀的太阳要是隔着玻璃坐在空调里观赏还是很美的，走之前又要了一杯冰咖啡，可能是在奥斯汀喝过最满意的了。</p>
-<p><img data-src="/images/austin/IMG_3807.JPG" /></p>
+<p><img src="/images/austin/IMG_3807.JPG" /></p>
 <p>柑橘，茉莉花香，可能对大部分人而言口感偏淡了，但是在夏天来一杯恰到好处😋</p>
 <hr />
 <p>第二天就飓风来了，然后赶回国，豆子也没机会去买了，还有标注的几家还没去（只能期待下一次有机会再去了。</p>
@@ -895,7 +903,7 @@ href="https://blog.coffeemart.com.tw/%E9%97%9C%E6%96%BC%E5%92%96%E5%95%A1%E8%B1%
 href="https://shop.squaremilecoffee.com/products/coffee-variety-family-tree-timeline">Coffee
 variety family tree timeline</a>（平方英里有海报售）。</p>
 <figure>
-<img data-src="/images/coffee/VFamily_timeline-3_large.webp"
+<img src="/images/coffee/VFamily_timeline-3_large.webp"
 alt="Coffee variety family tree timeline" />
 <figcaption aria-hidden="true">Coffee variety family tree
 timeline</figcaption>
@@ -926,7 +934,7 @@ href="https://sca.coffee/research/botany?page=resources&amp;d=a-botanists-guide-
 Botanists' Guide to Specialty Coffee</a>
 提供了一个张较为明晰的图谱。</p>
 <figure>
-<img data-src="/images/coffee/CoffeeVarieties-full.jpg"
+<img src="/images/coffee/CoffeeVarieties-full.jpg"
 alt="Common Coffee Cultivars and their Origins" />
 <figcaption aria-hidden="true">Common Coffee Cultivars and their
 Origins</figcaption>
@@ -1138,23 +1146,23 @@ href="https://www.webmd.com">WebMD</a>
 HIIT
 ~<del>不要命了属于是</del>~，到晚上手表开始提醒心率过高了，一开始以为是运动导致的，但是过了两小时还没平缓下来，吓得连忙起床又连着测了几次心电图，此时ECG已经不提示窦性心律了，连着测了三次也排除了测量误差，心想稳wan了le。</p>
 <figure>
-<img data-src="/images/covid-19/alarm.jpg" alt="心率告警" />
+<img src="/images/covid-19/alarm.jpg" alt="心率告警" />
 <figcaption aria-hidden="true">心率告警</figcaption>
 </figure>
 <figure>
-<img data-src="/images/covid-19/ecg.jpg" alt="ECG" />
+<img src="/images/covid-19/ecg.jpg" alt="ECG" />
 <figcaption aria-hidden="true">ECG</figcaption>
 </figure>
 <p>由于身体并没有什么不适感，没有吃药就躺下继续睡，之后便是一夜没睡好，到后半夜头痛炸裂+身体发烫。</p>
 <p>差不多到 4 点左右才低于 100，也差不多这时候才勉强睡着</p>
 <figure>
-<img data-src="/images/covid-19/hr.jpg" alt="ECG" />
+<img src="/images/covid-19/hr.jpg" alt="ECG" />
 <figcaption aria-hidden="true">ECG</figcaption>
 </figure>
 <h2 id="d1">D1</h2>
 <p>早上起来直接抓着抗原开测，果然阳了。这时测体温38，吃面包时感觉生理性恶心，又用水吞服了一粒善存，喝咖啡时候发现嗅觉略微迟钝，抓着陈皮和香叶试了试，确认的确味道淡了许多。</p>
 <figure>
-<img data-src="/images/covid-19/covid-19-test.jpg" alt="抗原" />
+<img src="/images/covid-19/covid-19-test.jpg" alt="抗原" />
 <figcaption aria-hidden="true">抗原</figcaption>
 </figure>
 <p>测了个体温，到 39
@@ -1234,7 +1242,7 @@ palpitations)</li>
 <p>从隔离房间搬离的活动量让我持续 5 小时的心率都在
 100+，呼吸上来看也是在上升，但仍在安全范围内<del>下一代手表一定换，看不到血氧心里实在没底</del></p>
 <figure>
-<img data-src="/images/covid-19/breath.jpg" alt="呼吸" />
+<img src="/images/covid-19/breath.jpg" alt="呼吸" />
 <figcaption aria-hidden="true">呼吸</figcaption>
 </figure>
 <h2 id="d10">D10</h2>
@@ -1322,7 +1330,7 @@ class="math inline">\(\LaTeX\)</span>模板</p>
     <content><![CDATA[<p><em>毕业典礼还是完美的睡过去了（叹气，毕业之后成为又丧又废的NEET。</em></p>
 <p>这半年主要都在折腾毕设，课题还是十分有趣的说。<del>虽然被自己搞得杂乱不堪</del>
 有种自己的大学变成了37,990,696 字节的感觉。</p>
-<p><img data-src="/images/graduation/thesis.png" /></p>
+<p><img src="/images/graduation/thesis.png" /></p>
 <span id="more"></span>
 <p>十分糟糕的心情，毕业开始丧。听着更加丧的歌总结一下毕设。</p>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&amp;id=407918&amp;auto=1&amp;height=32">
@@ -1347,15 +1355,15 @@ Fisher 判别分析 ，人工神经网络
 <p>继续懒惰的一个一个模块堆好了界面。</p>
 <p><del>无意义其实可以跳过</del></p>
 <figure>
-<img data-src="/images/graduation/import.png" alt="数据上传" />
+<img src="/images/graduation/import.png" alt="数据上传" />
 <figcaption aria-hidden="true">数据上传</figcaption>
 </figure>
 <figure>
-<img data-src="/images/graduation/selec.png" alt="基因选择" />
+<img src="/images/graduation/selec.png" alt="基因选择" />
 <figcaption aria-hidden="true">基因选择</figcaption>
 </figure>
 <figure>
-<img data-src="/images/graduation/manage.png" alt="模块管理" />
+<img src="/images/graduation/manage.png" alt="模块管理" />
 <figcaption aria-hidden="true">模块管理</figcaption>
 </figure>
 <h1 id="有点意义的笔记">有点意义的笔记</h1>
@@ -1491,14 +1499,14 @@ ALAC，正好把以前的 AQ DragonFly 拿去听 Apple
 Music。光纤和同轴输入支持顺道也解决了 Xbox
 的音频输出方案，不用再依赖显示器那孱弱的数模转换能力。</p>
 <figure>
-<img data-src="/images/dx3pro+/dx3pro+.jpg" alt="挺香的" />
+<img src="/images/dx3pro+/dx3pro+.jpg" alt="挺香的" />
 <figcaption aria-hidden="true">挺香的</figcaption>
 </figure>
 <p>扯远了，之前用 DragonFly 时 fb2k 的 output 用的 WASAPI，DX3 Pro +
 支持 DSD，便想尝试一下，同时官方给 Win10 使用了定制的 <a
 href="https://thesycon.de/eng/usb_audiodriver.shtml">ASIO
 驱动</a>，尝试配置一下，坑还挺多的。</p>
-<p><img data-src="/images/dx3pro+/driver.jpg" /></p>
+<p><img src="/images/dx3pro+/driver.jpg" /></p>
 <p>官网随着驱动打包的是 ASIOProxy 0.7.2以及 fb2k 的两个组件
 foo_output_asio 2.1.2 和 foo_input_sacd 0.7.8，但是 <a
 href="https://sourceforge.net/projects/sacddecoder/files/foo_dsd_asio/">ASIOProxy</a>
@@ -2574,24 +2582,25 @@ table 的报错。可以利用 transaction
     <content><![CDATA[<p>新奥尔良地处路易斯安那，充满着南国风情，去之前留在Trip
 Ideas里的tag有Food, Art, Music,
 Nightlife，体验过后每一点都不会让人失望。三月中旬去的天气正好，既不炎热也不潮湿，<del>五月去佛罗里达那会儿一下飞机甚至能感受到水汽扑面</del>。有机会的话还是很想去这里小住一段时间，悠悠闲闲的体验当地安逸的生活。当然南方的食物才是这趟旅行最不亏的，非常的具有特色。</p>
-<p><img data-src="/images/neworleans/IMG_6972.JPG" /></p>
+<p><img src="/images/neworleans/IMG_6972.JPG" /></p>
 <span id="more"></span>
 <p>住在Before I Die Home，是第一面<a
 href="https://beforeidieproject.com/story">Before I Die
 Wall</a>曾经所在的地方。一开始并没有注意到这个小彩蛋，房东在客厅放了一本<a
 href="https://www.amazon.com/Before-I-Die-Candy-Chang/dp/1250020840">Before
 I Die</a>看完之后才发现背后的故事很有趣。</p>
-<p><img data-src="/images/neworleans/IMG_6892.jpg" /> <img data-src="/images/neworleans/IMG_6894.jpg" /></p>
+<p><img src="/images/neworleans/IMG_6892.jpg" /> <img
+src="/images/neworleans/IMG_6894.jpg" /></p>
 <p>步行十来分钟便可到French Quarter，French
 Quater可以算是整个新奥尔良的核心地带了，街道上有马车行驶，到晚上整片区域都充斥着酒吧的喧闹和Jazz，很适合慢悠悠的在街上游荡吃吃喝喝。</p>
-<p><img data-src="/images/neworleans/IMG_6911.jpg" /></p>
+<p><img src="/images/neworleans/IMG_6911.jpg" /></p>
 <p>而新奥尔良的食物绝对的令人称赞，最出名的有Po' Boys 和 Gumbo。Po'
 Boys是路易斯安那的传统三明治，一般夹着炸海鲜，也有鸡肉牛肉的。Gumbo是路易斯安那的<a
 href="https://legis.la.gov/Legis/Law.aspx?d=285562">official state
 cuisine</a>,
 wikipedia上是翻译成秋葵浓汤，实际上口感更像咖喱一样，浇在饭上食用。秋葵实际上也不算是必需品，各种配料的都有，像芹菜，牡蛎，短尾鳄，兔肉，松鼠肉，香肠，各种各样的搭配都可以尝试。</p>
 <p>最后夹杂私货安利一家店，这家的烤兔兔非常好吃了，他家也有路易斯安那的另一道名菜Jambalaya，什锦饭。使用白饭和各种香料肉类烹煮而成，比起炒饭更为粘稠。</p>
-<p><img data-src="/images/neworleans/IMG_6900.jpg" /></p>
+<p><img src="/images/neworleans/IMG_6900.jpg" /></p>
 <p>在城市的另一端，杜兰大学的对面，是和French
 Quarter风格完全相反的Audubon
 Park，漂亮的房子，美丽的湖景，还有满公园的鸭子，干净而且安静。此外还有二战纪念馆和墓园也值得一去。</p>
@@ -2608,7 +2617,8 @@ Festival，毕竟Jazz是这个城市最大的亮点。</p>
     <content><![CDATA[<p>Xbox 到手后，光速开通了 XGP ，白嫖是如此的快乐，再看看 Steam
 库里正价购买的命运2，瞬间觉得亏了一个亿。随即遇到的问题便是主机加速，租房且有室友的情况下不方便改变现有网络结构，单独买个加速盒又觉得性价比太低，突然想起买来即吃灰的树莓派，正好能用上</p>
 <span id="more"></span>
-<p><img data-src="/images/raspberrypi/Drawing_of_Raspberry_Pi_model_B_rev2.svg"
+<p><img
+src="/images/raspberrypi/Drawing_of_Raspberry_Pi_model_B_rev2.svg"
 title="树莓派 Model B"
 alt="Drawing_of_Raspberry_Pi_model_B_rev2" />(https://commons.wikimedia.org/wiki/File:Drawing_of_Raspberry_Pi_model_B_rev2.svg)</p>
 <p>手上这台是 Raspberry Pi 1 Model B 只有百兆口，两个 USB 2.0
@@ -2635,7 +2645,7 @@ up a Raspberry Pi headless</a></p>
 连接上去。默认用户为 pi 密码为 raspberry
 ，按照提示修改好密码，随后可以进行下一步，也可以先按自己的使用习惯
 配置好源，安装 Oh My Zsh 等</p>
-<p><img data-src="/images/raspberrypi/raspberry_pi_ssh.png"
+<p><img src="/images/raspberrypi/raspberry_pi_ssh.png"
 title="SSH" /></p>
 <h2 id="安装-docker">安装 Docker</h2>
 <p>图省事直接使用 <a
@@ -2738,7 +2748,7 @@ triggered</p>
 <p><a href="https://firebase.google.com/docs/functions/use-cases">This
 document</a> provides a simple example:</p>
 <figure>
-<img data-src="https://firebase.google.com/docs/functions/images/notify.png"
+<img src="https://firebase.google.com/docs/functions/images/notify.png"
 alt="img" />
 <figcaption aria-hidden="true">img</figcaption>
 </figure>
@@ -2926,54 +2936,54 @@ Map里把点标记上就准备走人了。</p>
 <span id="more"></span>
 <p>在素万那普落地签后，让机场前台的小姐姐帮忙叫了Uber直接到Khao San
 Rd，炒饭炒粉什么的都塞点当作中餐晚餐了，廉价航空不提供免费食物也挺尴尬。</p>
-<p><img data-src="/images/thailand/IMG_8441.JPG" /></p>
+<p><img src="/images/thailand/IMG_8441.JPG" /></p>
 <p>晚上就坐在Red Sky Bar上俯瞰全城，位于55楼的Red
 Sky也是路易威登城市指南上推荐的，比较中心的地理位置，能俯瞰一下曼谷。食物没有尝试，酒水的味道其实很一般，不过因为是空中酒吧还是值得一去的。反正是吹风的（笑</p>
-<p><img data-src="/images/thailand/IMG_8467.JPG" /></p>
+<p><img src="/images/thailand/IMG_8467.JPG" /></p>
 <p>晚上在居民区吃了路边摊烧烤，味道还是很奇特的第二天早上就往Ko
 Samet赶去，因为是直接淘宝订的，其实也没什么特别的，在海上飙飙船，滑翔伞潜水什么的都尝试了，第一次去可以试试，第二次去也许可以考虑在沙滩边日光浴一天？比起芭提雅已经很不商业化了，物价的话还是整体偏高，尤其沉迷于菠萝椰子马杀鸡无法自拔。整体环境不错，大海特有的潮湿不太习惯。</p>
 <p>次日的下午回的曼谷，在市区闲逛了一晚后飞向清迈。</p>
-<p><img data-src="/images/thailand/IMG_8680.JPG" /></p>
+<p><img src="/images/thailand/IMG_8680.JPG" /></p>
 <p>到清迈决定慢下节奏好好玩了，房东是山东人，还是很友好的推荐了一些去处。在清迈大概就是不断地啃菠萝啃椰子啃榴莲。</p>
 <p>食物的话其实好吃的几家店都已经上了大众点评的首页，不过还是特别推荐<strong>Regina
 Chiang Mai Coffee House</strong>的</p>
-<p><img data-src="/images/thailand/IMG_8849.JPG" /></p>
-<p><img data-src="/images/thailand/IMG_8858.JPG" /></p>
+<p><img src="/images/thailand/IMG_8849.JPG" /></p>
+<p><img src="/images/thailand/IMG_8858.JPG" /></p>
 <p>不仔细瞧应该是不会注意到这家店的，门面内是卖一些礼品的，穿过房子餐桌露天摆在河边，看到河岸边上躺满的🐱
 决定就在这里吃晚餐了。</p>
-<p><img data-src="/images/thailand/IMG_8835.JPG" /></p>
-<p><img data-src="/images/thailand/IMG_8842.JPG" /></p>
-<p><img data-src="/images/thailand/IMG_8844.JPG" /></p>
+<p><img src="/images/thailand/IMG_8835.JPG" /></p>
+<p><img src="/images/thailand/IMG_8842.JPG" /></p>
+<p><img src="/images/thailand/IMG_8844.JPG" /></p>
 <p>很美味的泰北菜，罗勒叶的味道习惯了会觉得很好吃的，菜的分量虽然不是很多，味道是可以给五星的。猫到腿上就赖着不走了，就餐的时候抱着一只猫简直太棒。</p>
 <p>比起周末的占满整个古城摆摊的集市，可能古城外的夜市更具有吸引力些，说是夜市其实更像菜市场一些，能看到当地人买菜，还有学生在买吃的。</p>
-<p><img data-src="/images/thailand/IMG_8866.JPG" /></p>
+<p><img src="/images/thailand/IMG_8866.JPG" /></p>
 <p>冻椰子，榴莲，果汁，烧烤，还有一些各种各样的小吃，如果不是能撑死大概会选择一家一家吃过去的。</p>
-<p><img data-src="/images/thailand/IMG_8871.JPG" /></p>
-<p><img data-src="/images/thailand/IMG_8874.JPG" /></p>
+<p><img src="/images/thailand/IMG_8871.JPG" /></p>
+<p><img src="/images/thailand/IMG_8874.JPG" /></p>
 <p>古城北面的凤飞飞猪脚饭味道也很棒（毕竟网红店233333</p>
-<p><img data-src="/images/thailand/IMG_8923.JPG" /></p>
+<p><img src="/images/thailand/IMG_8923.JPG" /></p>
 <p>整体来说泰北菜没有想像的不对胃口，而且国内的泰国菜普遍是南部口味，在清迈可以说是吃得爽极了，基本上没有踩到雷区，还有<strong>The
 Good View Bar &amp;
 Restaurant</strong>之类的餐厅也不错，地图上还有马的许多店子没去，打算下次再去扫一波。</p>
 <p>咖啡的话除了第一天在古城中心轴上一家店喝到了难以描述的肯尼亚之外，好印象还是有的。<em>其实也的确是因为时间不够没去很多家店了</em></p>
 <p>在清迈大学旁边的<strong>Taste
 cafe</strong>试了试本地豆，虽然之前没有听过泰国产区，但是店里只有这一支本地豆便试了试，比较干净，比较明亮的酸。</p>
-<p><img data-src="/images/thailand/IMG_8906.JPG" /></p>
+<p><img src="/images/thailand/IMG_8906.JPG" /></p>
 <p>店内都是大学生在做小组project，和店员用英文也能够顺畅的交流，用的Kalita扇形滤杯单点注水，磨豆机在仓库里没有看见，倒是特意把豆子拿给我看了看。</p>
-<p><img data-src="/images/thailand/IMG_8908.JPG" /></p>
-<p><img data-src="/images/thailand/IMG_8910.JPG" /></p>
+<p><img src="/images/thailand/IMG_8908.JPG" /></p>
+<p><img src="/images/thailand/IMG_8910.JPG" /></p>
 <p>然后继续往北到宁曼路，之前了解到<strong>Ristr8to
 Lab</strong>的老板在澳洲学艺，也拿过拉花冠军，EK43单独摆着但是不用，单品豆也仅供销售，由于语言障碍，想着要不试试Espresso也没能成功点单。</p>
-<p><img data-src="/images/thailand/IMG_8918.JPG" /></p>
+<p><img src="/images/thailand/IMG_8918.JPG" /></p>
 <p>在古城里倒是发现一家位于北部叫<strong>Ponganes
 Espresso</strong>的店意外的不错，在门口看到摆着一台Ditting就想应该不会差。</p>
-<p><img data-src="/images/thailand/IMG_8970.JPG" /></p>
+<p><img src="/images/thailand/IMG_8970.JPG" /></p>
 <p>品种也很多，本来想带包回来的，但是价格还是偏贵的，咖啡的价格倒是属于比较便宜的一类。</p>
-<p><img data-src="/images/thailand/IMG_8957.JPG" /></p>
-<p><img data-src="/images/thailand/IMG_8971.JPG" /></p>
+<p><img src="/images/thailand/IMG_8957.JPG" /></p>
+<p><img src="/images/thailand/IMG_8971.JPG" /></p>
 <p>当然有瑰夏就不犹豫了，虽然服务态度差到极致了，但是味道大概和服务态度是成反比的。（反正我从来都不在意服务态度这种东西2333333</p>
-<p><img data-src="/images/thailand/IMG_8965.JPG" /></p>
-<p><img data-src="/images/thailand/IMG_8969.JPG" /></p>
+<p><img src="/images/thailand/IMG_8965.JPG" /></p>
+<p><img src="/images/thailand/IMG_8969.JPG" /></p>
 <p>大概是因为这种慢慢悠悠吃吃喝喝的玩法，本来想去的拜县也没时间去了，大象营和丛林穿越还是花了一个白天去玩的，因为大象营是选的丛林附近的，没有按照Lonely
 Planet的推荐来，大概就成了此次旅行最后悔的地方吧。之后是了解了像这种驯象师手里拿的铁钩的基本都是在虐待动物，表演的大象里都有那种脑部凹陷的大象了。顺道不打广告的推荐一下<strong>Elephant
 Nature Park</strong>，<strong>Ran-Tong</strong>，<strong>Anantara Hotels
@@ -2990,7 +3000,7 @@ Planet清迈上推荐的TOP3，希望下一次去能看到更自然的大象吧�
     <title>奇迹之旅 - 漫游尼罗河畔</title>
     <url>/2024/06/10/wandering-amidst-the-wonders-of-the-nile/</url>
     <content><![CDATA[<p>最近埃及旅行突然火起来了，便趁着五一假期决定也去玩一趟。有汇率下降的原因，但更重要的，也是从各种小说电影游戏中，接触了诸多埃及历史与神话，像是拉美西斯二世与奈菲尔塔利，克娄巴特拉，九柱神，木乃伊等，早想亲眼去见证一下法老的国度。</p>
-<p><img data-src="/images/egypt/2024-06-10-1551.jpg" /></p>
+<p><img src="/images/egypt/2024-06-10-1551.jpg" /></p>
 <p>这次的行程便是沿着尼罗河，体验上下埃及的奇观。 <span id="more"></span></p>
 <h2 id="关于埃及">关于埃及</h2>
 <p>埃及，一个 93%
@@ -3038,18 +3048,30 @@ Pyramid of Giza</a>) 于四千五百多年前在尼罗河西岸建成，分别�
 <p>在大金字塔的南面，靠近哈夫拉山谷神庙的地方坐落着狮身人面像。在希腊神话中，例如著名的《俄狄浦斯王》中，狮身人面像被描述为长着女人的头、狮子的身体、鸟的翅膀的怪物，会杀死任何不能回答它的谜语的人。然而在埃及，它是王权的象征，展示着仁慈与守护，它的脸与国王极其相似，穿戴着
 nemes（法老头上戴着的布头巾）。“sphinx”一词的来源已不可考据了，它可能来源于埃及语“Shesep
 Ankh”，意思是“living image”，用来指对神或法老的描绘。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240502_212649_A27E2C18.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_032953_C7154AB6.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_145820_89C5AB92.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240503_142306_08954555.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240502_212456_8C4F6A84.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240503_150433_0A07EFDA.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_150548_F4281F95.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_151056_D6BF06EB.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240502_212649_A27E2C18.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_032953_C7154AB6.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_145820_89C5AB92.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240503_142306_08954555.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240502_212456_8C4F6A84.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240503_150433_0A07EFDA.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_150548_F4281F95.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_151056_D6BF06EB.jpg" /></div></div></div>
 <p>而在晚上，恰好遇到电音节，在金字塔前亮起灯光开始蹦迪。有种从古代回归现代文明的即视感。</p>
 <h3 id="开罗古城">开罗古城</h3>
 <p>开罗被誉为千塔之城（City of a Thousand Minarets），<a
 href="https://www.britannica.com/art/minaret-architecture">Minaret</a>
 即宣礼塔，自从伊斯兰教传入埃及，历代穆斯林统治者在开罗留下了令人惊叹的前现代风格的伊斯兰建筑、艺术和文化遗产，城中到处可见。在古老的街区中徒步，可以欣赏璀璨的历史遗迹。</p>
-<p><img data-src="/images/egypt/20240503_220427_FD953F0A.jpg" /></p>
+<p><img src="/images/egypt/20240503_220427_FD953F0A.jpg" /></p>
 <h4 id="汗哈利利市场">汗哈利利市场</h4>
 <p>开罗标志性的中世纪集市，迷宫般的商铺和小巷，是埃及乃至整个中东地区最古老的市场之一。公元
 1382
 年来自巴勒斯坦希伯伦的马穆鲁克王子贾拉基斯·哈利利建立了该区。哈利利在大马士革去世后，马穆鲁克苏丹将其改造成商贸中心，并增强了该地区的马穆鲁克建筑元素。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240503_014014_D5D39F5A.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240503_014619_86CB7A50.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_014806_79E28B9C.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_021630_FD30954D.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240503_015118_FD2EA45E.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_020508_1903BB3A.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240503_014014_D5D39F5A.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240503_014619_86CB7A50.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_014806_79E28B9C.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_021630_FD30954D.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240503_015118_FD2EA45E.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_020508_1903BB3A.jpg" /></div></div></div>
 <p>市场上有各种珠宝、香料、手工艺品和纪念品，基本都没有明码标价。耐心砍价倒也能买到许多有趣的纪念品。</p>
 <h4 id="莫伊兹街">莫伊兹街</h4>
 <p>毗邻开罗著名的汗哈利利集市的是莫伊兹 (Al-Muizz)
@@ -3057,26 +3079,38 @@ href="https://www.britannica.com/art/minaret-architecture">Minaret</a>
 href="https://baike.baidu.com/item/%E5%93%88%E5%9F%BA%E5%A7%86%E6%B8%85%E7%9C%9F%E5%AF%BA/3243611">哈基姆清真寺</a>，推荐步行穿过莫伊兹街去往双塔。这是埃及第四古老的清真寺，法蒂玛风格建筑，990
 年由法蒂玛王朝第五任哈里发阿齐兹始建，1013 年其子哈基姆执政时建成。</p>
 <figure>
-<img data-src="/images/egypt/20240503_211300_071F4BE4.jpg"
+<img src="/images/egypt/20240503_211300_071F4BE4.jpg"
 alt="哈基姆清真寺" />
 <figcaption aria-hidden="true">哈基姆清真寺</figcaption>
 </figure>
 <p>这条街横跨开罗的两座古老城门，北边的富图门 (Bab al-Futuh)
 和南边的扎维亚门 (Bab
 Zueweila)。这里有法蒂玛时期直至穆罕默德·阿里王朝的建筑。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240503_213124_631A4EF2.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_212136_D584E55F.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_213351_F0AFE57A.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240503_211643_45DFA200.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_213302_7C0BB0DE.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240503_214530_BCDCC829.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_214509_B0261B2F.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_212621_3DF6229E.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240503_213114_C9F74EB9.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_213143_CE36AB93.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240503_213124_631A4EF2.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_212136_D584E55F.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_213351_F0AFE57A.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240503_211643_45DFA200.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_213302_7C0BB0DE.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240503_214530_BCDCC829.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_214509_B0261B2F.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_212621_3DF6229E.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240503_213114_C9F74EB9.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_213143_CE36AB93.jpg" /></div></div></div>
 <p>走到南边到达扎维亚门。扎维亚门是开罗现存的三个中世纪城门之一，这座城门建于
 11 世纪法蒂玛王朝统治时期，是城市的南部入口。两座尖塔是 15
 世纪由马穆鲁克苏丹建造，他还建造了与城门左侧相连的清真寺。马穆鲁克苏丹每年都要来这观看朝觐期间前往麦加的朝圣者队伍。</p>
 <p>扎维亚门也是开罗主要的公共处决场所。罪犯、不诚实的商人和权力斗争失败的马穆鲁克会在这遭受斩首、绞刑或是钉在大门上。而他们的头颅装饰着门上的尖钉。这里也是马穆鲁克统治的终结，最后一位马穆鲁克苏丹
 Tumanbay 在 1517 年被奥斯曼人吊死在这里。</p>
 <figure>
-<img data-src="/images/egypt/20240503_215323_24F5BDAB.jpg"
+<img src="/images/egypt/20240503_215323_24F5BDAB.jpg"
 alt="扎维亚门双塔" />
 <figcaption aria-hidden="true">扎维亚门双塔</figcaption>
 </figure>
 <p>如今这里已经成为著名的观景地，登上塔顶，可以俯瞰开罗，欣赏这座千塔之城。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240503_221524_671DA1C3.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240503_220233_156BFA37.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_221142_B488E5D1.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_220957_BE6264CE.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240503_221524_671DA1C3.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240503_220233_156BFA37.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_221142_B488E5D1.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_220957_BE6264CE.jpg" /></div></div></div>
 <h4 id="垃圾城和洞穴教堂">垃圾城和洞穴教堂</h4>
 <p>曼什亚特·纳赛尔 (Manshiyat Naser)
 被称为“垃圾城”，位于开罗旧城中心，穆卡塔姆 (Moqattam)
@@ -3087,22 +3121,39 @@ alt="扎维亚门双塔" />
 <p>作为外来者，在参观时，应当对社区保持应有的尊重。</p>
 </div>
 <p>在打车时，司机也再三确认了目的地，并表达如果担心安全问题可以取消行程，但整个行程下来除了卫生环境，还是相当安全的。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240503_171854_2660306C.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_172124_3918D8CE.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_172410_B6B1AC28.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240503_172642_DF0B4556.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_172038_0524F4EC.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_172516_3B206892.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240503_171854_2660306C.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_172124_3918D8CE.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_172410_B6B1AC28.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240503_172642_DF0B4556.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_172038_0524F4EC.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_172516_3B206892.jpg" /></div></div></div>
 <p>扎布林人是埃及的基督徒，即科普特基督徒 (Coptic
 Christian)。从穆卡塔姆山坡往上，抵达<a
 href="https://zeitun-eg.org/zeitun-cn/MokattamChurch01-cn.html">莫卡塔姆洞穴教堂</a>（Cave
 Church）也被称为皮匠圣西门教堂（Church Of Saint Samaan The
 Tanner），是中东最大的教堂，能容纳上万名信徒。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240503_170536_CB3D1107.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240503_170933_18A58BCE.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_163348_75E13DB9.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240503_163446_B958691A.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_164330_6275990C.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_170748_3114393D.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240503_170536_CB3D1107.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240503_170933_18A58BCE.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_163348_75E13DB9.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240503_163446_B958691A.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_164330_6275990C.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_170748_3114393D.jpg" /></div></div></div>
 <p>正好赶上做礼拜，被拉了进去，安静的坐在后排观看。和垃圾城中的场景一对比，心情久久不能平复。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240503_165949_BB10AC74.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240503_165611_396F6B57.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_165800_FCEBFFB2.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240503_165441_6D2A6329.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_165422_9C9E2C1C.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240503_165949_BB10AC74.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240503_165611_396F6B57.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_165800_FCEBFFB2.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240503_165441_6D2A6329.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_165422_9C9E2C1C.jpg" /></div></div></div>
 <h2 id="阿斯旺与阿布辛贝">阿斯旺与阿布辛贝</h2>
 <p>在开罗的行程结束后，乘坐卧铺火车前往阿斯旺，抵达埃及的南部。</p>
-<p><img data-src="/images/egypt/20240503_233419_8309F84B.jpg" /></p>
+<p><img src="/images/egypt/20240503_233419_8309F84B.jpg" /></p>
 <p>与开罗不同，阿斯旺放眼望去是湛蓝的尼罗河和郁郁葱葱的绿植，整个城市显得格外宁静。热带沙漠气候也使得温度高达了
 40℃ 以上。</p>
 <p>选择了岛上的酒店，出站后打车到码头，有酒店的船接送。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240504_155250_43DA2EF6.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240504_153942_CA8C024D.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240504_154418_D307B1D6.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240504_153450_A181BBAA.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240504_155250_43DA2EF6.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240504_153942_CA8C024D.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240504_154418_D307B1D6.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240504_153450_A181BBAA.jpg" /></div></div></div>
 <h3 id="菲莱神庙">菲莱神庙</h3>
 <p>菲莱神庙 (Temples of Philae)
 原本位于菲莱岛上，主神庙是托勒密时期的建筑，为了纪念古埃及女神伊希斯、她的丈夫奥西里斯和儿子荷鲁斯。菲莱岛如今已被淹没，随着
@@ -3110,28 +3161,46 @@ Tanner），是中东最大的教堂，能容纳上万名信徒。</p>
 年阿斯旺大坝的建设。联合国教科文组织与埃及政府合作将其转移到旁边的阿吉尔基亚
 (Agilkia) 岛上，搬迁工作于 1980 年完成。只能乘船抵达。</p>
 <figure>
-<img data-src="/images/egypt/20240504_184728_034BA535.jpg" alt="菲莱神庙" />
+<img src="/images/egypt/20240504_184728_034BA535.jpg" alt="菲莱神庙" />
 <figcaption aria-hidden="true">菲莱神庙</figcaption>
 </figure>
 <p>西侧的诞生屋 (The Birth
 House)，是为了纪念伊希斯之子荷鲁斯的诞生。室内的浮雕描述着荷鲁斯的童年，荷鲁斯以三角洲沼泽的猎鹰形象出现，而伊希斯在喂育他。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240504_190417_8E8D78DE.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240504_190744_6F45A29D.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240504_190417_8E8D78DE.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240504_190744_6F45A29D.jpg" /></div></div></div>
 <p>伊西斯神庙圣所，在神庙深处，墙上有详细的浮雕，描绘了国王为伊希斯举行仪式的情景。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240504_191557_E4B9401A.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240504_191041_2356A4F7.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240504_191557_E4B9401A.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240504_191041_2356A4F7.jpg" /></div></div></div>
 <p>图拉真亭 (The Kiosk of
 Trajan)，未完工的寺庙，建筑内部展示了罗马皇帝图拉真向众神献祭的场景。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240504_191819_F84BF789.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240504_192317_14602C3F.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240504_191819_F84BF789.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240504_192317_14602C3F.jpg" /></div></div></div>
 <h3 id="老瀑布酒店">老瀑布酒店</h3>
 <p>有着百年历史的豪华酒店，丘吉尔、戴安娜等人都曾入住过。当然还有阿加莎·克里斯蒂，并在这里创作了著名的《尼罗河上的惨案》。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240504_220930_CBCB1C61.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240504_211056_A0758D10.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240504_220906_B792ABCC.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240504_222949_102429E9.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240504_220930_CBCB1C61.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240504_211056_A0758D10.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240504_220906_B792ABCC.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240504_222949_102429E9.jpg" /></div></div></div>
 <p>酒店也提供阿加莎套房 room tour</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240504_221813_A65DEDDB.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240504_221940_FE8B96E0.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240504_222413_3B0CF9DD.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240504_223530_1A58F7EE.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240504_221435_A43F822A.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240504_222614_82B0EB9C.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240504_221813_A65DEDDB.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240504_221940_FE8B96E0.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240504_222413_3B0CF9DD.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240504_223530_1A58F7EE.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240504_221435_A43F822A.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240504_222614_82B0EB9C.jpg" /></div></div></div>
 <h3 id="尼罗河日落">尼罗河日落</h3>
 <p>乘坐<a
 href="https://www.merriam-webster.com/dictionary/felucca">费卢卡</a>
 (Felucca)
 在尼罗河上欣赏日落，这是一种埃及传统三桅帆船，木制船，由风帆驱动。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240504_235000_8736E1AF.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240505_002239_98871568.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240505_000851_C51EE407.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240505_000351_953932E7.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240505_001007_99A48628.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240505_001450_03A9EEF9.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240505_235521_8DBBB0F2.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240506_002049_B5C784F3.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240504_235000_8736E1AF.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240505_002239_98871568.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240505_000851_C51EE407.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240505_000351_953932E7.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240505_001007_99A48628.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240505_001450_03A9EEF9.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240505_235521_8DBBB0F2.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240506_002049_B5C784F3.jpg" /></div></div></div>
 <h3 id="阿布辛贝神庙">阿布辛贝神庙</h3>
 <p>阿斯旺以南约 200 公里处坐落着拉美西斯二世建造的阿布辛贝神庙 (Great
 Temple of Abu
@@ -3142,21 +3211,22 @@ Simbel)，拉美西斯二世以这种方式宣示他对埃及和努比亚的统�
 米的高地，以免受阿斯旺高坝修建所引起洪水的影响。</p>
 </blockquote>
 <p>大约 2-3 小时车程，穿过撒哈拉沙漠抵达阿布辛贝</p>
-<p><img data-src="/images/egypt/20240505_152625_66E7B1E5.jpg" /></p>
+<p><img src="/images/egypt/20240505_152625_66E7B1E5.jpg" /></p>
 <p>阿布辛贝神庙入口处有四尊 20 米高的拉美西斯二世巨型坐像</p>
-<p><img data-src="/images/egypt/20240505_171606_B5DFFAC6.jpg" /></p>
+<p><img src="/images/egypt/20240505_171606_B5DFFAC6.jpg" /></p>
 <p>大厅里面矗立着对称的国王雕像，墙壁上描述着他的军事行动，天花板上装饰着飞翔的秃鹫。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240505_172738_EEA9E026.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240505_173901_9389AF33.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240505_172738_EEA9E026.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240505_173901_9389AF33.jpg" /></div></div></div>
 <p>每年 2 月 22 日和 10 月 22 日，太阳升起节 (Solar Alignment Festival)
 期间，当太阳升起时，光线会穿过大约 60
 米的神庙的走廊，到达最里面的圣所，照亮拉美西斯、阿蒙和拉的脸。而卜塔，由于他与地下世界的关系，会部分处于阴影中。</p>
-<p><img data-src="/images/egypt/20240505_172913_D22BD6EB.jpg" /></p>
+<p><img src="/images/egypt/20240505_172913_D22BD6EB.jpg" /></p>
 <p>小神庙 (Small Temple)
 在不远处，这里供奉着爱与音乐女神哈索尔以及拉美西斯二世的妻子奈菲尔塔丽王后。正面装饰着六个
 10 米高的国王和王后的巨像。</p>
-<p><img data-src="/images/egypt/20240505_175401_D5F9891B.jpg" /></p>
+<p><img src="/images/egypt/20240505_175401_D5F9891B.jpg" /></p>
 <p>里面的柱子装饰着哈索尔的面部。</p>
-<p><img data-src="/images/egypt/20240505_175224_9504623D.jpg" /></p>
+<p><img src="/images/egypt/20240505_175224_9504623D.jpg" /></p>
 <h2 id="卢克索">卢克索</h2>
 <p>结束阿布辛贝的行程后，又乘坐火车北上前往卢克索。</p>
 <blockquote>
@@ -3164,7 +3234,7 @@ Simbel)，拉美西斯二世以这种方式宣示他对埃及和努比亚的统�
 </blockquote>
 <p>尼罗河将城市分为东西两岸，轮渡是主要的交通方式。</p>
 <figure>
-<img data-src="/images/egypt/20240506_120934_AE1FED44.jpg" alt="公共轮渡" />
+<img src="/images/egypt/20240506_120934_AE1FED44.jpg" alt="公共轮渡" />
 <figcaption aria-hidden="true">公共轮渡</figcaption>
 </figure>
 <h3 id="东岸">东岸</h3>
@@ -3177,17 +3247,18 @@ href="https://www.worldhistory.org/Pi-Ramesses/">培尔—拉美西斯</a>的的
 (Criosphinx)，多数头已经没了，根据讲解员说已被掠夺者带到了欧洲。（几乎在所有文物遗失的地点，讲解员都会来一段
 Where is it? - in
 Europe!）在电影《尼罗河惨案》中也谈及了公羊象征着生殖崇拜。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240506_185012_3F5D3BB1.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240506_185117_21024E88.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240506_185012_3F5D3BB1.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240506_185117_21024E88.jpg" /></div></div></div>
 <p>穿过甬道，到达第一塔门
 (Pylon)，由于战争，这部分并没有建造完，不过这也恰好反应了神庙建造的过程。在挖掘遗迹时，石块上被刻上了名字和年份，能看到
 1872 年美第奇的痕迹。</p>
 <figure>
-<img data-src="/images/egypt/20240506_185519_7D978664.jpg" alt="Medici" />
+<img src="/images/egypt/20240506_185519_7D978664.jpg" alt="Medici" />
 <figcaption aria-hidden="true">Medici</figcaption>
 </figure>
 <p>8 米多高的是拉美西斯二世和奈菲尔塔利</p>
 <figure>
-<img data-src="/images/egypt/20240506_190942_40DEED00.jpg"
+<img src="/images/egypt/20240506_190942_40DEED00.jpg"
 alt="拉美西斯二世和奈菲尔塔利" />
 <figcaption aria-hidden="true">拉美西斯二世和奈菲尔塔利</figcaption>
 </figure>
@@ -3195,17 +3266,21 @@ alt="拉美西斯二世和奈菲尔塔利" />
 <p>第二塔门通向 The Great Hypostyle Hall。这里共有 134
 根纸莎草石柱，包括中央一排 12 根高达 20
 米的石柱，国王会在这里举行加冕仪式，以证明其统治权。上面的颜色直到现在依旧漂亮至极。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240506_191145_BA4A7FFB.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240506_191555_E84BFE2F.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240506_202939_561BDBD2.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240506_191540_8816043B.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240506_191145_BA4A7FFB.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240506_191555_E84BFE2F.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240506_202939_561BDBD2.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240506_191540_8816043B.jpg" /></div></div></div>
 <h5 id="方尖碑">方尖碑</h5>
 <p>哈特谢普苏特 (Hatshepsut ) 女王以及她的父亲图特摩斯一世 (Thutmose I)
 的方尖碑</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240506_191329_099EB709.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240506_191728_3CA25BD8.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240506_191329_099EB709.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240506_191728_3CA25BD8.jpg" /></div></div></div>
 <h5 id="圣湖和圣甲虫">圣湖和圣甲虫</h5>
 <p>圣湖（the Sacred
 Lake）是用于举行特殊仪式的地方，国王和王后会在祭祀前在此沐浴。由阿蒙霍特普三世
 (Amenhotep III)
 下令建造的圣甲虫就在湖的前方，按照指示顺时针围着圣甲虫转了七圈，倒是忘记拍照了。</p>
-<p><img data-src="/images/egypt/20240506_195010_94CDA2E8.jpg" /></p>
+<p><img src="/images/egypt/20240506_195010_94CDA2E8.jpg" /></p>
 <h4 id="卢克索神庙">卢克索神庙</h4>
 <p>同样在东岸的还有卢克索神庙 (Luxor Temple) ，古埃及人相信它是“the
 Place of the First Occasion”或“Creation”，标志着太阳神阿蒙 -
@@ -3214,45 +3289,95 @@ Place of the First Occasion”或“Creation”，标志着太阳神阿蒙 -
 <p>卡纳克神庙和卢克索神庙由 Sphinxes 大道相连，全长
 2700m，平行于尼罗河，道路上布置着 1060 尊雕像，包括 Ram
 Statue、Criosphinx、Androsphinx。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240506_213003_F67A2B6C.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240506_213041_BBC7A23F.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240506_213003_F67A2B6C.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240506_213041_BBC7A23F.jpg" /></div></div></div>
 <p>神庙的核心部分和庭院是由阿蒙霍特普三世建造的，拉美西斯二世也对设计产生了巨大的影响，他在前面增加了一个巨大的塔门，讲述拉美西斯二世与赫梯在卡迭石战争的胜利。两侧是两座高耸的方尖碑
 (其中东侧的仍在原地，而西侧的于 1830 年代被搬迁到巴黎协和广场)
 和不同姿态的拉美西斯巨大雕像，在塔门后的庭院还有这更多的拉美西斯二世雕像。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240506_212546_49D00BAD.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240506_213158_96D5BF0F.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240506_213729_111B43C3.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240506_212546_49D00BAD.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240506_213158_96D5BF0F.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240506_213729_111B43C3.jpg" /></div></div></div>
 <h5 id="colonnade-hall-the-court-of-amenhotep-iii">Colonnade Hall &amp;
 The Court of Amenhotep III</h5>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240506_214649_BD014EC3.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240506_214751_EF235D5C.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240506_215536_D495AE58.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240506_215748_1C0456C0.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240506_214649_BD014EC3.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240506_214751_EF235D5C.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240506_215536_D495AE58.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240506_215748_1C0456C0.jpg" /></div></div></div>
 <p>在 4 世纪初叶，其中一个室被用于罗马帝国的崇拜。6
 世纪时拉美西斯二世庭院中建造了一座教堂，后来为为了纪念穆斯林学者阿布·哈格建造了一座清真寺。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240506_221839_6001AA32.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240506_222037_08B6FF8B.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240506_221839_6001AA32.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240506_222037_08B6FF8B.jpg" /></div></div></div>
 <h4 id="卢克索日落">卢克索日落</h4>
 <p>尼罗河上的日落怎么也看不腻，在卢克索没有乘坐帆船了，从神庙出来就在岸边欣赏日落。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240507_001343_A8211240.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240507_001924_405EE32E.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240507_002815_7D5FE41D.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240507_002848_84D8F1F7.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240507_001343_A8211240.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240507_001924_405EE32E.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240507_002815_7D5FE41D.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240507_002848_84D8F1F7.jpg" /></div></div></div>
 <h4 id="卢克索博物馆">卢克索博物馆</h4>
 <p>在卢克索博物馆 (Luxor Museum)
 内，有着图坦卡蒙陵墓出土的精美文物。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240508_005343_C8A7FCDB.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240508_005403_95ED5F8A.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240508_005559_01719F8C.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240508_005617_4D3EFF50.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240508_005747_8BC47C63.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240508_011013_593A5426.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240508_011124_EA3CEC82.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240508_011210_3A4DFD82.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240508_005343_C8A7FCDB.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240508_005403_95ED5F8A.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240508_005559_01719F8C.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240508_005617_4D3EFF50.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240508_005747_8BC47C63.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240508_011013_593A5426.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240508_011124_EA3CEC82.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240508_011210_3A4DFD82.jpg" /></div></div></div>
 <h3 id="西岸">西岸</h3>
 <h4 id="热气球">热气球</h4>
 <p>与日落相对的，要看卢克索的日出，因而报了热气球的首飞。较为可惜的是因为气候问题，起飞许可过了许久才下来，错过了日出，不过景色依旧很美。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240507_121827_9DBA93A4.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240507_123217_68E72454.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240507_124524_0A273393.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240507_123811_10BABED0.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240507_123440_62F866DB.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240507_121827_9DBA93A4.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240507_123217_68E72454.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240507_124524_0A273393.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240507_123811_10BABED0.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240507_123440_62F866DB.jpg" /></div></div></div>
 <h4 id="帝王谷">帝王谷</h4>
 <p>显眼的金字塔容易成为盗墓者的目标，因而后来的国王选择埋葬在帝王谷隐蔽的岩石陵墓中，整个帝王谷有六十多座陵墓。</p>
 <p>一张票可以选择 3
 个墓室参观，还有一些需要单独购买门票的墓室。门票中的选择了 KV8
 麦伦普塔赫 KV16 拉美西斯一世 KV11 拉美西斯三世，并额外购买了 KV9
 拉美西斯五世/六世。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240507_145251_8225CBE5.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240507_145339_4A6A5846.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240507_145609_BF71C402.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240507_151815_8EC19D9B.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240507_151844_AF5CB3C6.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240507_152022_E8CFFFA2.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240507_153050_A4132857.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240507_153309_75DF0FC7.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240507_153338_B53E5220.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240507_153415_45706136.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240507_145251_8225CBE5.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240507_145339_4A6A5846.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240507_145609_BF71C402.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240507_151815_8EC19D9B.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240507_151844_AF5CB3C6.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240507_152022_E8CFFFA2.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240507_153050_A4132857.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240507_153309_75DF0FC7.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240507_153338_B53E5220.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240507_153415_45706136.jpg" /></div></div></div>
 <h4 id="哈布城">哈布城</h4>
 <p>哈布城 (Medinet Habu)
 是拉美西斯三世的陵庙，装饰精美、保存完好。巨大且坚固的入口大门和塔楼仍保持着原来的高度。所有的浮雕都刻得很深，颜色保留的完好，叙述了伟大的战士法老拉美西斯三世成功地保卫埃及。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240507_161259_BEA6EB4B.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240507_161528_C59D980E.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240507_161758_2E26988B.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240507_164802_030E16AF.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240507_162342_ABD5D63F.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240507_170141_478309F4.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240507_165207_A339C0D7.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240507_165928_80483599.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240507_161259_BEA6EB4B.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240507_161528_C59D980E.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240507_161758_2E26988B.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240507_164802_030E16AF.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240507_162342_ABD5D63F.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240507_170141_478309F4.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240507_165207_A339C0D7.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240507_165928_80483599.jpg" /></div></div></div>
 <h2 id="finally">Finally</h2>
 <p>在来之前还很担心遇到骗子，实际上骗子的确有，但遇到的大部分埃及人民都是非常的热情好客的，甚至还被请到家中坐。走在路上遇到时，尤其是小朋友，会热情的
 say hello，经常会被拦着帮拍照。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240506_173221_E0A037FC.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240503_222510_B95DDFAF.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_224536_3F2C1ADF.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_230954_70A42838.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240504_010342_08DC987B.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240506_220946_FA2B2F1C.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240506_175624_B35D2256.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240506_181847_C1605DF0.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240506_211809_C7402AD9.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240507_205354_3FCD0A1D.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240506_173221_E0A037FC.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240503_222510_B95DDFAF.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_224536_3F2C1ADF.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_230954_70A42838.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240504_010342_08DC987B.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240506_220946_FA2B2F1C.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240506_175624_B35D2256.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240506_181847_C1605DF0.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240506_211809_C7402AD9.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240507_205354_3FCD0A1D.jpg" /></div></div></div>
 <p>除了有趣的人之外，另一大惊喜就是随处能遇见的猫。</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240502_233538_34169395.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_013619_BD90FF94.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/egypt/20240503_021840_67BC89DD.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240503_213552_5B17DB1B.jpg" /></div><div class="group-picture-column"><img data-src="/images/egypt/20240505_015322_3F2A8C0A.jpg" /></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/egypt/20240502_233538_34169395.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_013619_BD90FF94.jpg" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/egypt/20240503_021840_67BC89DD.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240503_213552_5B17DB1B.jpg" /></div><div class="group-picture-column"><img
+src="/images/egypt/20240505_015322_3F2A8C0A.jpg" /></div></div></div>
 <h2 id="ref">Ref</h2>
 <p><a href="https://www.experienceegypt.eg/zh/">埃及旅游局 (ETA)</a></p>
 <p><a
