@@ -1325,7 +1325,7 @@ pre code {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #c774ff;
+  background: #17c9ff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2854,19 +2854,4 @@ header.header {
 }
 .sub-menu .menu-item {
   display: inline-block;
-}
-.exif-container {
-  position: relative;
-}
-.exif-container .exif-metabar {
-  background: rgba(0,0,0,0.5);
-  bottom: 0;
-  padding: 0.5em 0;
-  position: absolute;
-  width: 100%;
-}
-.exif-container .exif-metabar span {
-  color: #fff;
-  font-style: italic;
-  margin: 0 1em;
 }
