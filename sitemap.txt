@@ -1,8 +1,4 @@
 https://cateaf.com/links/index.html
-https://cateaf.com/2021/02/28/coffee-varieties/
-https://cateaf.com/2022/12/20/covid-19-recovery/
-https://cateaf.com/2016/08/30/cumcm-thesis-template/
-https://cateaf.com/2017/06/21/gene-selection/
 https://cateaf.com/2017/03/02/hnu-thesis-template/
 https://cateaf.com/2021/11/26/how-to-set-fb2k-to-play-dsd/
 https://cateaf.com/2016/08/31/latex-math-symbols-cheetsheet/
@@ -25,6 +21,10 @@ https://cateaf.com/2017/07/23/catfish/
 https://cateaf.com/2021/08/08/coffee-flavor-characteristics/
 https://cateaf.com/2017/08/29/coffee-in-austin/
 https://cateaf.com/2021/02/15/coffee-processing/
+https://cateaf.com/2021/02/28/coffee-varieties/
+https://cateaf.com/2022/12/20/covid-19-recovery/
+https://cateaf.com/2016/08/30/cumcm-thesis-template/
+https://cateaf.com/2017/06/21/gene-selection/
 https://cateaf.com/404.html
 https://cateaf.com/
 https://cateaf.com/tags/note/

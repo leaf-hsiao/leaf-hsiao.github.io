@@ -11,42 +11,6 @@
   </url>
   
   <url>
-    <loc>https://cateaf.com/2021/02/28/coffee-varieties/</loc>
-    
-    <lastmod>2025-01-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cateaf.com/2022/12/20/covid-19-recovery/</loc>
-    
-    <lastmod>2025-01-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cateaf.com/2016/08/30/cumcm-thesis-template/</loc>
-    
-    <lastmod>2025-01-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cateaf.com/2017/06/21/gene-selection/</loc>
-    
-    <lastmod>2025-01-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://cateaf.com/2017/03/02/hnu-thesis-template/</loc>
     
     <lastmod>2025-01-01</lastmod>
@@ -237,6 +201,42 @@
   
   <url>
     <loc>https://cateaf.com/2021/02/15/coffee-processing/</loc>
+    
+    <lastmod>2025-01-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cateaf.com/2021/02/28/coffee-varieties/</loc>
+    
+    <lastmod>2025-01-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cateaf.com/2022/12/20/covid-19-recovery/</loc>
+    
+    <lastmod>2025-01-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cateaf.com/2016/08/30/cumcm-thesis-template/</loc>
+    
+    <lastmod>2025-01-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cateaf.com/2017/06/21/gene-selection/</loc>
     
     <lastmod>2025-01-01</lastmod>
     
