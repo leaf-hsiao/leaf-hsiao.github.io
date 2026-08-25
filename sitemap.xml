@@ -11,87 +11,6 @@
   </url>
   
   <url>
-    <loc>https://cateaf.com/2020/02/27/mysql-stored-procedure/</loc>
-    
-    <lastmod>2026-08-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cateaf.com/2019/05/23/new-orleans/</loc>
-    
-    <lastmod>2026-08-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cateaf.com/2024/11/25/one-day-in-kathmandu/</loc>
-    
-    <lastmod>2026-08-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cateaf.com/2021/07/07/raspberry-pi-as-a-router/</loc>
-    
-    <lastmod>2026-08-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cateaf.com/2020/04/30/sending-notifications-to-flutter-app/</loc>
-    
-    <lastmod>2026-08-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cateaf.com/2018/09/29/stopping-using-qiniu/</loc>
-    
-    <lastmod>2026-08-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cateaf.com/2020/02/23/switching-to-travisci/</loc>
-    
-    <lastmod>2026-08-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cateaf.com/2022/04/12/switching-to-github-actions/</loc>
-    
-    <lastmod>2026-08-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cateaf.com/2017/05/06/thailand-tours/</loc>
-    
-    <lastmod>2026-08-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://cateaf.com/2024/06/10/wandering-amidst-the-wonders-of-the-nile/</loc>
     
     <lastmod>2026-08-25</lastmod>
@@ -102,15 +21,6 @@
   
   <url>
     <loc>https://cateaf.com/about/index.html</loc>
-    
-    <lastmod>2026-08-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cateaf.com/2016/06/05/a-new-beginning/</loc>
     
     <lastmod>2026-08-25</lastmod>
     
@@ -236,6 +146,15 @@
   </url>
   
   <url>
+    <loc>https://cateaf.com/2026/08/25/java-between-ruins-and-volcanoes/</loc>
+    
+    <lastmod>2026-08-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://cateaf.com/2016/08/31/latex-math-symbols-cheetsheet/</loc>
     
     <lastmod>2026-08-25</lastmod>
@@ -245,7 +164,88 @@
   </url>
   
   <url>
-    <loc>https://cateaf.com/2026/08/25/java-between-ruins-and-volcanoes/</loc>
+    <loc>https://cateaf.com/2019/05/23/new-orleans/</loc>
+    
+    <lastmod>2026-08-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cateaf.com/2020/02/27/mysql-stored-procedure/</loc>
+    
+    <lastmod>2026-08-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cateaf.com/2021/07/07/raspberry-pi-as-a-router/</loc>
+    
+    <lastmod>2026-08-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cateaf.com/2024/11/25/one-day-in-kathmandu/</loc>
+    
+    <lastmod>2026-08-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cateaf.com/2018/09/29/stopping-using-qiniu/</loc>
+    
+    <lastmod>2026-08-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cateaf.com/2022/04/12/switching-to-github-actions/</loc>
+    
+    <lastmod>2026-08-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cateaf.com/2017/05/06/thailand-tours/</loc>
+    
+    <lastmod>2026-08-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cateaf.com/2020/02/23/switching-to-travisci/</loc>
+    
+    <lastmod>2026-08-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cateaf.com/2020/04/30/sending-notifications-to-flutter-app/</loc>
+    
+    <lastmod>2026-08-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cateaf.com/2016/06/05/a-new-beginning/</loc>
     
     <lastmod>2026-08-25</lastmod>
     
