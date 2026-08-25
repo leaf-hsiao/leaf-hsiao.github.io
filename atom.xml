@@ -11,7 +11,22 @@
   <rights>All rights reserved 2026, Leaf</rights>
   <subtitle>Leaf's blog</subtitle>
   <title>Cateaf</title>
-  <updated>2026-08-25T14:57:45.432Z</updated>
+  <updated>2026-08-25T15:01:03.509Z</updated>
+  <entry>
+    <author>
+      <name>Leaf</name>
+    </author>
+    <category term="tour" scheme="https://cateaf.com/tags/tour/"/>
+    <id>https://cateaf.com/2026/08/25/java-between-ruins-and-volcanoes/</id>
+    <link href="https://cateaf.com/2026/08/25/java-between-ruins-and-volcanoes/"/>
+    <published>2026-08-25T22:54:58.000Z</published>
+    <summary>
+      <![CDATA[<p>印尼有一万七千多座岛屿，而爪哇，几乎浓缩了这个国家全部的历史重量。</p>
+<p>这里是印尼的政治、经济和文化中心。首都雅加达在这里，千年古迹婆罗浮屠和普兰巴南在这里，活火山布罗莫和默拉皮也在这里。它拥挤、炎热、充满矛盾，却也有一种其他地方很难见到的层次感：印度教与佛教的古代文明、伊斯兰化的中世纪、荷兰殖民的近代，以及一个正在急速现代化的当代东南亚大国，全部叠在同一片土地上。</p>]]>
+    </summary>
+    <title>爪哇：古迹与火山之间</title>
+    <updated>2026-08-25T15:01:03.509Z</updated>
+  </entry>
   <entry>
     <author>
       <name>Leaf</name>
@@ -25,7 +40,7 @@
 <p><img src="/images/nepal/8265C4DF.jpg" /></p>]]>
     </summary>
     <title>加都一日游</title>
-    <updated>2026-08-25T14:57:45.432Z</updated>
+    <updated>2026-08-25T15:01:03.510Z</updated>
   </entry>
   <entry>
     <author>
@@ -41,7 +56,7 @@
 <p>这次的行程便是沿着尼罗河，体验上下埃及的奇观。]]>
     </summary>
     <title>奇迹之旅 - 漫游尼罗河畔</title>
-    <updated>2026-08-25T14:57:45.432Z</updated>
+    <updated>2026-08-25T15:01:03.510Z</updated>
   </entry>
   <entry>
     <author>
@@ -57,7 +72,7 @@ href="https://www.webmd.com">WebMD</a>
 <p><strong>本文为个人经历记录，不具有医疗参考价值</strong></p>]]>
     </summary>
     <title>COVID-19 康复个人记录</title>
-    <updated>2026-08-25T14:57:45.432Z</updated>
+    <updated>2026-08-25T15:01:03.509Z</updated>
   </entry>
   <entry>
     <author>
@@ -80,7 +95,7 @@ href="https://pandoc.org/">Pandoc</a>（使用了hexo-rendering-pandoc），只�
 workflow</p>]]>
     </summary>
     <title>改为由Github Actions部署</title>
-    <updated>2026-08-25T14:57:45.432Z</updated>
+    <updated>2026-08-25T15:01:03.510Z</updated>
   </entry>
   <entry>
     <author>
@@ -94,7 +109,7 @@ workflow</p>]]>
 哪个更好，仅对尝试用 fb2k 播放 dsd 做个配置记录。</p>]]>
     </summary>
     <title>如何用 Foobar2000 播放 Dsd</title>
-    <updated>2026-08-25T14:57:45.432Z</updated>
+    <updated>2026-08-25T15:01:03.509Z</updated>
   </entry>
   <entry>
     <author>
@@ -127,7 +142,7 @@ considered, the aldehyde release decreased and the levels of
 </figure>]]>
     </summary>
     <title>咖啡风味</title>
-    <updated>2026-08-25T14:57:45.432Z</updated>
+    <updated>2026-08-25T15:01:03.509Z</updated>
   </entry>
   <entry>
     <author>
@@ -144,7 +159,7 @@ considered, the aldehyde release decreased and the levels of
 库里正价购买的命运2，瞬间觉得亏了一个亿。随即遇到的问题便是主机加速，租房且有室友的情况下不方便改变现有网络结构，单独买个加速盒又觉得性价比太低，突然想起买来即吃灰的树莓派，正好能用上</p>]]>
     </summary>
     <title>将树莓派改造成路由</title>
-    <updated>2026-08-25T14:57:45.432Z</updated>
+    <updated>2026-08-25T15:01:03.510Z</updated>
   </entry>
   <entry>
     <author>
@@ -171,7 +186,7 @@ James 的<a
 href="https://book.douban.com/subject/33455203/">《世界咖啡地图》</a>。此外一些植物学名词可能使用不当，敬请谅解。</p>]]>
     </summary>
     <title>咖啡豆种</title>
-    <updated>2026-08-25T14:57:45.432Z</updated>
+    <updated>2026-08-25T15:01:03.509Z</updated>
   </entry>
   <entry>
     <author>
@@ -193,7 +208,7 @@ Coffee</em></a>一类的休闲书。大多是些入门读物，用来介绍一�
 href="http://www.dianping.com/shop/H5rDaUajR13pXuDb">默咖啡</a>默老板帮助。</p>]]>
     </summary>
     <title>咖啡精制法</title>
-    <updated>2026-08-25T14:57:45.432Z</updated>
+    <updated>2026-08-25T15:01:03.509Z</updated>
   </entry>
   <entry>
     <author>
@@ -212,7 +227,7 @@ can be used to monitor the database, and send notifications when
 triggered</p>]]>
     </summary>
     <title>Sending Notifications to Flutter App</title>
-    <updated>2026-08-25T14:57:45.432Z</updated>
+    <updated>2026-08-25T15:01:03.510Z</updated>
   </entry>
   <entry>
     <author>
@@ -225,7 +240,7 @@ triggered</p>]]>
       <![CDATA[<p>MySQL里的 Stored Procedure 有点意思</p>]]>
     </summary>
     <title>MySQL Stored Procedure</title>
-    <updated>2026-08-25T14:57:45.432Z</updated>
+    <updated>2026-08-25T15:01:03.510Z</updated>
   </entry>
   <entry>
     <author>
@@ -238,7 +253,7 @@ triggered</p>]]>
       <![CDATA[<p>突然想起来用 <a href="https://travis-ci.com/">Travis]]>
     </summary>
     <title>改为由Travis CI部署</title>
-    <updated>2026-08-25T14:57:45.432Z</updated>
+    <updated>2026-08-25T15:01:03.510Z</updated>
   </entry>
   <entry>
     <author>
@@ -253,7 +268,7 @@ triggered</p>]]>
       <![CDATA[<p>正好有人借593的笔记，稍微整理了一下=-=（还是可能有些许错误的）]]>
     </summary>
     <title>算法笔记</title>
-    <updated>2026-08-25T14:57:45.432Z</updated>
+    <updated>2026-08-25T15:01:03.509Z</updated>
   </entry>
   <entry>
     <author>
@@ -270,7 +285,7 @@ Nightlife，体验过后每一点都不会让人失望。三月中旬去的天�
 <p><img src="/images/neworleans/IMG_6972.JPG" /></p>]]>
     </summary>
     <title>烤翅不存在的新奥尔良</title>
-    <updated>2026-08-25T14:57:45.432Z</updated>
+    <updated>2026-08-25T15:01:03.510Z</updated>
   </entry>
   <entry>
     <author>
@@ -283,7 +298,7 @@ Nightlife，体验过后每一点都不会让人失望。三月中旬去的天�
       <![CDATA[<p>备案是不可能备案的</p>]]>
     </summary>
     <title>停用七牛云</title>
-    <updated>2026-08-25T14:57:45.432Z</updated>
+    <updated>2026-08-25T15:01:03.510Z</updated>
   </entry>
   <entry>
     <author>
@@ -298,7 +313,7 @@ Black试了试，在iPhone上尝试了一下效果提升了一耳朵，然后又
 <p><img src="/images/audioquest/aq1.jpg" /></p>]]>
     </summary>
     <title>吹一波AudioQuest</title>
-    <updated>2026-08-25T14:57:45.432Z</updated>
+    <updated>2026-08-25T15:01:03.509Z</updated>
   </entry>
   <entry>
     <author>
@@ -312,7 +327,7 @@ Black试了试，在iPhone上尝试了一下效果提升了一耳朵，然后又
       <![CDATA[<p>在Austin抽空去探访了一下当地的咖啡馆</p>]]>
     </summary>
     <title>Coffee in Austin</title>
-    <updated>2026-08-25T14:57:45.432Z</updated>
+    <updated>2026-08-25T15:01:03.509Z</updated>
   </entry>
   <entry>
     <author>
@@ -333,7 +348,7 @@ but should work for macOS/Linux.</p>
 <p>啊好想吃猫鱼（叹气。</p>]]>
     </summary>
     <title>Catfish</title>
-    <updated>2026-08-25T14:57:45.432Z</updated>
+    <updated>2026-08-25T15:01:03.509Z</updated>
   </entry>
   <entry>
     <author>
@@ -350,24 +365,6 @@ but should work for macOS/Linux.</p>
 <p><img src="/images/graduation/thesis.png" /></p>]]>
     </summary>
     <title>Gene Selection</title>
-    <updated>2026-08-25T14:57:45.432Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Leaf</name>
-    </author>
-    <category term="tour" scheme="https://cateaf.com/tags/tour/"/>
-    <id>https://cateaf.com/2017/05/06/thailand-tours/</id>
-    <link href="https://cateaf.com/2017/05/06/thailand-tours/"/>
-    <published>2017-05-06T12:57:30.000Z</published>
-    <summary>
-      <![CDATA[<p>拖延症大概就是二月份的旅行拖到现在才想起动笔，而且还是毕设做得头晕脑胀过来缓缓。去泰国的缘由都不太记得了，反正是看到亚航的打折机票就直接剁了。签证也没有办，还好护照是有的。</p>
-<p>攻略的话<a href="http://www.lonelyplanet.com">Lonely Planet</a>的City
-Guides和<a
-href="https://www.tripadvisor.cn">TripAdvisor</a>之类的基本上撸了一遍，然后在Google
-Map里把点标记上就准备走人了。</p>]]>
-    </summary>
-    <title>二月的泰国行</title>
-    <updated>2026-08-25T14:57:45.432Z</updated>
+    <updated>2026-08-25T15:01:03.509Z</updated>
   </entry>
 </feed>
