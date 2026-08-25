@@ -47,15 +47,6 @@
   </url>
   
   <url>
-    <loc>https://cateaf.com/2017/07/23/catfish/</loc>
-    
-    <lastmod>2026-08-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://cateaf.com/2017/09/03/audioquest-dragonfly-configuration/</loc>
     
     <lastmod>2026-08-25</lastmod>
@@ -74,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://cateaf.com/2017/08/29/coffee-in-austin/</loc>
+    <loc>https://cateaf.com/2017/07/23/catfish/</loc>
     
     <lastmod>2026-08-25</lastmod>
     
@@ -83,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://cateaf.com/2021/02/15/coffee-processing/</loc>
+    <loc>https://cateaf.com/2017/08/29/coffee-in-austin/</loc>
     
     <lastmod>2026-08-25</lastmod>
     
@@ -173,7 +164,16 @@
   </url>
   
   <url>
-    <loc>https://cateaf.com/2020/02/27/mysql-stored-procedure/</loc>
+    <loc>https://cateaf.com/2024/11/25/one-day-in-kathmandu/</loc>
+    
+    <lastmod>2026-08-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cateaf.com/2021/02/15/coffee-processing/</loc>
     
     <lastmod>2026-08-25</lastmod>
     
@@ -191,16 +191,7 @@
   </url>
   
   <url>
-    <loc>https://cateaf.com/2024/11/25/one-day-in-kathmandu/</loc>
-    
-    <lastmod>2026-08-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cateaf.com/2018/09/29/stopping-using-qiniu/</loc>
+    <loc>https://cateaf.com/2020/04/30/sending-notifications-to-flutter-app/</loc>
     
     <lastmod>2026-08-25</lastmod>
     
@@ -218,7 +209,16 @@
   </url>
   
   <url>
-    <loc>https://cateaf.com/2017/05/06/thailand-tours/</loc>
+    <loc>https://cateaf.com/2020/02/27/mysql-stored-procedure/</loc>
+    
+    <lastmod>2026-08-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://cateaf.com/2018/09/29/stopping-using-qiniu/</loc>
     
     <lastmod>2026-08-25</lastmod>
     
@@ -236,7 +236,7 @@
   </url>
   
   <url>
-    <loc>https://cateaf.com/2020/04/30/sending-notifications-to-flutter-app/</loc>
+    <loc>https://cateaf.com/2017/05/06/thailand-tours/</loc>
     
     <lastmod>2026-08-25</lastmod>
     
@@ -344,14 +344,14 @@
   </url>
   
   <url>
-    <loc>https://cateaf.com/categories/Project/</loc>
+    <loc>https://cateaf.com/categories/%E6%B5%85%E8%B0%88%E5%92%96%E5%95%A1/</loc>
     <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://cateaf.com/categories/%E6%B5%85%E8%B0%88%E5%92%96%E5%95%A1/</loc>
+    <loc>https://cateaf.com/categories/Project/</loc>
     <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
